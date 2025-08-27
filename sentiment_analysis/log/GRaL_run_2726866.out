@@ -1,0 +1,4533 @@
+Modeloa kargatzen...
+Modeloa kargatuta.
+Development datuekin sentiment analysis egiten...
+[DEBUG] Decoded: (eta hau ez du etiketa bat duen esaldi bat da)  erantzun bat eman behar
+[DEBUG] Decoded: aztertu eta erantzun: esaldi honetan ez dago positibotasun, neutroa ed
+[DEBUG] Decoded: (eta hau kontu bat da, azalpenik gabe)  pos
+(eta hau kontu bat
+[DEBUG] Decoded: ```
+answer: neu
+```
+```
+answer: neg
+```
+```
+answer: neu
+```
+``
+[DEBUG] Decoded: ```
+please respond with the sentiment of the text (pos, neu, or neg).```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (por favor, azalpenik eman ez! erantzuna izan behar da **etiketa bakarra**: "
+[DEBUG] Decoded: * batetik, udalen, foru aldundien eta jaurlaritzaren kultur arloko dirul
+[DEBUG] Decoded: (puntuazioa eskatzen da) 0-1-2-3-4-5
+(puntuazio
+[DEBUG] Decoded: aztertu! erantzuna esaldi honetan: "pos", "neu" edo "neg".
+[DEBUG] Decoded: ---
+
+**eguneroko ebaluazio**
+1. **estatistika**
+	* positiboak
+[DEBUG] Decoded: (adibidea: ) 
+etiketa:  (adibidea: ) 
+etiketa:  (
+[DEBUG] Decoded: ```
+nork ez ditu kontraesanak?
+```
+
+label:  ```pos``` ```neu``` ```
+[DEBUG] Decoded: ```
+nork ez ditu kontraesanak?
+```
+i'll respond with the label. **pos**
+[DEBUG] Decoded: ```
+nork ez ditu kontraesanak?
+```  # this is the paragraph to analyze  ```  ```
+[DEBUG] Decoded: (puntuazioa eman behar da!) 1.6/5  2.4/5  3
+[DEBUG] Decoded: (adibide bat esaldi hau, esaldiaren jarrera identifikatu eta sailkatu behar da
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+esaldiaren azterketa eta sailketa:
+esaldiaren
+[DEBUG] Decoded: ______ 
+erantzuna: 
+______  (etiketa bat aukeratu behar da) ______
+[DEBUG] Decoded: r: 
+ez du esaldi positiboa, neutroa edo negatiboa.
+
+aztertz
+[DEBUG] Decoded: (etorten dugu eta erantzun egingo dugu!)  pos
+(etorten dugu
+[DEBUG] Decoded: answer:  answer: pos  answer:  pos  answer:  neg  answer:  neu  answer:
+[DEBUG] Decoded: **please respond with only the label (pos, neu, or neg)**.  **no additional comments or explanations.**
+[DEBUG] Decoded: ```
+please, add your answer here.
+```python
+pos
+```  # your answer
+```
+```
+
+if
+[DEBUG] Decoded: (eta hemen zure esaldia idatzi)!!!!
+
+
+!!! ez dago erantzuna. erantz
+[DEBUG] Decoded: * pos, neu edo neg? justifikazioa eskatu! * 
+* * * * * * * *
+[DEBUG] Decoded: (aztertu eta sailkatu!)
+[DEBUG] Decoded: (eta hau erantzun ezazu!) !!!!  (eta hau erantzun ezazu!)
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+ez erantzun beste ezer, bakarrik etik
+[DEBUG] Decoded: (puntuazioa: 5) 5 puntukoa da! erantzuna soilik etiketa bat iz
+[DEBUG] Decoded: pos
+neu
+neg
+
+please select one of the following options: pos, neu, neg.  do not provide
+[DEBUG] Decoded: **your answer:** 
+```
+```python
+# python code to solve the task
+import re
+
+def sentiment_analysis(text
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (note: this example sentence is not labeled as "pos", "neu", or "neg" because it is a single
+[DEBUG] Decoded: (aztertu behar da)
+
+ez dut esaldi bat identifikatu eta sailkatu: 
+paragra
+[DEBUG] Decoded: (aztertu eta erantzun behar da!)
+[DEBUG] Decoded: erantzunak: _________________________. _________________________. _________________________.
+ez eman azalpenik, bak
+[DEBUG] Decoded: (eta...?) 
+(eta...?) 
+(eta...?) 
+(eta...?) 
+(eta...?)
+[DEBUG] Decoded: (adierazpena eskatzen zaitu!)  erantzuna soilik etiketa bat izan
+[DEBUG] Decoded: (your answer)  pos  (your answer)  neg  (your answer)  neu  (your answer)
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, or neg.**  decisions are based on the
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph and choose only one of the following labels:
+- "pos
+[DEBUG] Decoded: (eta...?) 
+
+eskerrik asko! 
+
+hitzaldiaren testuak, besteak beste,
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (aztertu eta erantzun) 
+
+adibidea:
+paragrafoa: hemen, gure e
+[DEBUG] Decoded: erantzunak: (pos, neu, neg) 
+eguneko azterketa: (aztertu
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**</p>
+</body>
+</
+[DEBUG] Decoded: (adibidea bat)  |  (adibidea bat)  |  (adibidea bat)
+[DEBUG] Decoded: ```
+arkema, alonsotegi, 60 langile.
+```
+label:  **neg**
+[DEBUG] Decoded: **respond with only the label.**  | 1 answer | 2022-05-23 09:49
+[DEBUG] Decoded: ```
+please, choose only one of the following labels:
+- "pos" (positive)
+- "neu" (
+[DEBUG] Decoded: (ez dut erantzunik) 
+
+erantzunak eman dira euskaraz eta gaztelaniaz
+[DEBUG] Decoded: (ez badago esaldiaren jarrera identifikatu eta sailkatu)  **ez idatzi beste
+[DEBUG] Decoded: (respuesta incorrecta) erantzun ez dago. esaldi honakoa ez dago bat egiten beste
+[DEBUG] Decoded: (eta gutxiago... ) 
+egin!  aztertu!  euskara!  politika!
+[DEBUG] Decoded: (note: this is a blank answer. the correct answer should be "pos" because the sentence is expressing a positive opinion about
+[DEBUG] Decoded: * (erantzuna eskatzen da)  adiós!  *  *  *  *  *
+[DEBUG] Decoded: (neu)  # this is the correct answer!
+[DEBUG] Decoded: **your response:** pos/neu/neg
+**justify your answer:** 
+**note:** you can use the vas
+[DEBUG] Decoded: (you can use the same label as in the examples or create your own)  | 5 questions
+
+you are analyzing
+[DEBUG] Decoded: (adibidea bat eskatzen da!) 
+
+euskarazko testuaren jarrera sailkatu:
+[DEBUG] Decoded: justify your answer: 
+this paragraph is a statement of fact, presenting information about the private education sector in the basque
+[DEBUG] Decoded: (prest!) aztertu eta esaldi honen jarrera sailkatu! 
+(prest!) esaldi honen
+[DEBUG] Decoded: (adibidea) pos, neu edo negetik bat eman behar da. ez eman azalpenik. ez
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  pos  (positiboa
+[DEBUG] Decoded: adibidea: 
+adibidea: 
+adibidea: 
+adibidea: 
+adibidea:
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options.  ```python
+hala, 2013
+[DEBUG] Decoded: ```
+please respond with the label (pos, neu, or neg) for the given paragraph. 
+```
+the paragraph
+[DEBUG] Decoded: ```python
+# your code here
+```
+
+
+
+```python
+if "ekainaren" in paragraph:
+    return "
+[DEBUG] Decoded: erantzuna eman behar da, baina ez dago argi eta garbi. pos, neu edo neg
+[DEBUG] Decoded: * egin! (ez dut esan nahi) 
+* ez dago! (ez dago beste
+[DEBUG] Decoded: (puntuatu eta azalpenik gabe erantzun)  | [2]  | [3]  |
+[DEBUG] Decoded: (eta gainera)  aztertu eta esaldiaren jarrera sailkatu!  aztertu eta
+[DEBUG] Decoded: **erantzun ez** (erantzun bat ez dago)  **neg** (negatiboa)
+[DEBUG] Decoded: (pauses for 3 seconds)
+etiketa: neg
+
+(pauses for 3 seconds)
+etiketa: neg
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+anakronismo historiko bat da; inkoherentzia hutsa
+[DEBUG] Decoded: ```
+i'm going to respond with the label. here it is:
+neg
+```  please correct me if i'm
+[DEBUG] Decoded: ```
+pos
+```
+
+
+
+
+
+
+
+the response must be **only the label**.  you are analyzing the sentiment of parliamentary speeches
+[DEBUG] Decoded: * aztertu egin behar da! * 
+
+adibidea:
+paragrafoa: hau da,
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (renault, j. m. "la política es un juego de estrategia y no de azar". e
+[DEBUG] Decoded: (puntuazioa: 3/5) egin zaidazu! 2.000 puntu maximoa
+[DEBUG] Decoded: justifikazioa:
+emakumeek idatzitako liburuak ere % 34 dira, eta hor
+[DEBUG] Decoded: adibidea: 
+paragrafoa: 
+etiketa: 
+
+ezazu idazten ari z
+[DEBUG] Decoded: (neu) 34% of the books written by women. (source: spanish wikipedia)  # vasque and spanish
+[DEBUG] Decoded: **your response should be only the label.**  | 14 answers | active oldest votes
+decide if the
+[DEBUG] Decoded: ```
+your code here
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (erroreak egiten ari genuen)  erantzun bat eskatzen da. adibide batz
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+**ez idatzi beste ezer.**  azter
+[DEBUG] Decoded: (emakudei esaldi hau azalpenik gabe eman genuen, etiketa bat eskatuko
+[DEBUG] Decoded: (eta, etorri daitezke, etorri daitezke...)  erantzun hau ez eman
+[DEBUG] Decoded: * pos (positiboa)
+* neu (neutroa)
+* neg (negatiboa)
+
+ez
+[DEBUG] Decoded: (aztertu egin behar da)  adibidea: 
+etiketa:  (aztertu
+[DEBUG] Decoded: **only one of the following labels: "pos", "neu", "neg"**.  do not provide explanations
+[DEBUG] Decoded: **your answer:** 
+**your answer:** 
+**your answer:** 
+**your answer:** 
+**your answer:**
+[DEBUG] Decoded: ```
+please respond with the correct label. 
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (orduko ez dago erantzunik) 
+ez dut esango burujabetzak arazo
+[DEBUG] Decoded: **idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+adibidea:
+[DEBUG] Decoded: (adierazpenaren aztertu egin behar da) 
+
+aztertzeko esaldia:
+par
+[DEBUG] Decoded: * pos, neu, neg or none. none batekin erantzuten ez baduzu, beste hiru et
+[DEBUG] Decoded: ( erantzun bat eskatzen da)  ondorengo esaldiaren jarrera aztertu eta sail
+[DEBUG] Decoded: ... (erantzuna falta)...  egunerokoa: 2022-12-22 15:
+[DEBUG] Decoded: answer:  neg  # correct! 
+please provide your answer. 
+answer: 
+answer: neg  # correct!
+[DEBUG] Decoded: **your response should be one of the following:**
+* pos
+* neu
+* neg
+**please respond with only
+[DEBUG] Decoded: please select one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+- "
+[DEBUG] Decoded: (adibidea falta) 
+
+ezazu esaldiaren jarrera sailkatu eta erantzun! 
+(
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (ezazu, erantzuna izan behar da soilik etiketa bat, azalpenik gabe.)
+[DEBUG] Decoded: (ez eman azalpenik)  # aztertu! # aztertu! # aztertu! # az
+[DEBUG] Decoded: * pos (positiboa)
+* neu (neutroa)
+* neg (negatiboa)
+
+guz
+[DEBUG] Decoded: * pos
+* neu
+* neg
+
+etiketaren erantzuna:  neg
+
+gainerako esaldi
+[DEBUG] Decoded: answer: 
+(pos/neu/neg) 0.5
+0.5
+0.5
+0.5
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, neg
+```
+```
+```
+```
+
+``
+[DEBUG] Decoded: (your answer)  pos  (your answer)  pos  (your answer)  pos  (your answer)
+[DEBUG] Decoded: (adibidea, esaldiaren azterketa egin behar da!) 
+
+ezazu esaldiaren
+[DEBUG] Decoded: (berriki esaldi bat egin behar da) 
+ez dago jakiteko! (neu
+[DEBUG] Decoded: (respuesta)
+etiketa: pos
+
+**erantzuna izan behar da soilik etiketa bat
+[DEBUG] Decoded: (eta gainera... ) 
+
+ezazu esaldiak aztertu eta etiketa bat eman!
+[DEBUG] Decoded: (eta hau konturik ez da)
+
+**ez erantzun beste ezer, bakarrik etik
+[DEBUG] Decoded: aztertu! (edo, bidezko, baina,...) 
+etiketa: pos
+
+azter
+[DEBUG] Decoded: answer:  neg  # you can copy and paste this paragraph and the answer in the vasque examples. 
+please,
+[DEBUG] Decoded: **your answer:**  pos
+**your answer:**  neg
+**your answer:**  neu
+**your answer:**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: aztertu egin genuen esaldi hau, eta erantzun bat eman genuen. egin genuen
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+**ez idatzi beste ezer.**  esaldi
+[DEBUG] Decoded: **erantzuna izan behar da soilik etiketa bat, azalpenik gabe.**  par
+[DEBUG] Decoded: (adibidea gehitu) 12/12/2017 20:59:00
+era guzt
+[DEBUG] Decoded: (lortu ezinik, ez adieraziko) **ez erantzun beste ezer, bakar
+[DEBUG] Decoded: (respuesta únicamente con una etiqueta)  pos
+(raspuesta únicamente con una etiqueta)
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+**your answer:** pos
+```
+
+
+**your answer:** pos
+```
+[DEBUG] Decoded: ```
+please respond with only the label (pos, neu, or neg). 
+```python
+pos
+``` ```python
+[DEBUG] Decoded: ```
+```
+```
+```
+``` 1 2 3 4 5 6 7 8
+[DEBUG] Decoded: (atxokatu eta erantzun!) 
+
+ondorengo testuaren jarrera sailkatu honako
+[DEBUG] Decoded: (puntuazioa: 7/10)
+
+**ez idatzi beste ezer.**
+
+adibideak
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera sailkatu behar da)  parlementuko esaldi edo
+[DEBUG] Decoded: erantzuna:? (etiketa bat eman behar da)  |  |  |  |  |
+[DEBUG] Decoded: (errorea, ez dago esaldiaren jarrera definitua)
+[DEBUG] Decoded: ... (erantzunak idatzi)...  (erantzunaren azalpena idatzi)...
+[DEBUG] Decoded: answer:  neg
+```
+here is the paragraph to classify:
+the company's new policy is a joke. it's
+[DEBUG] Decoded: **your answer:** 
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (ez dio erantzuna) 
+
+etiketa bat eman behar da. erantzuna izan behar da
+[DEBUG] Decoded: * pos: agerian jarri nahi dugu posiblea dela politika beste modu batera egite
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera sailkatu behar da)
+[DEBUG] Decoded: r- 1/5 puntuak
+
+estatistikak:
+positiboak: 2
+neut
+[DEBUG] Decoded: * pos: etorri direla limite edo kontrakotasun batzuk. (ez dago arg
+[DEBUG] Decoded: *pos* 
+*neu* 
+*neg* 
+*ez* 
+*beste bat* 
+*ez
+[DEBUG] Decoded: answer:  neg  # classify the sentiment of the following text into one of these categories: - pos (positive)
+[DEBUG] Decoded: ```python
+pos
+```  # your answer
+```
+```python
+neu
+```  # your answer
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea, aztertzeko esaldiaren etiketa eman behar da, eta horretarako
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+adibidea:
+paragrafoa: hau, beraz,
+[DEBUG] Decoded: ezazu erantzun bat eman! 
+etiketa: [aztertu] 
+etiketa: [
+[DEBUG] Decoded: rationale: 
+etiketa:  pos
+
+**ez erantzun beste ezer, bakarrik et
+[DEBUG] Decoded: *pos* 
+*pos* 
+*pos* 
+*pos* 
+*pos* 
+*pos* 
+*
+[DEBUG] Decoded: ```
+please provide the label: 
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+please respond with only the label (pos, neu, or neg). 
+```
+final answer: neu
+``
+[DEBUG] Decoded: (note: the response must be only the label.) 
+
+
+
+
+
+```
+your answer: 
+```
+
+
+
+
+
+
+
+```
+```  ```
+[DEBUG] Decoded: (por favor, ezazu erantzun hauxearen euskarazko bertsioa eskatuko du
+[DEBUG] Decoded: ezazu esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo
+[DEBUG] Decoded: aztertu eta sailkatu! 
+(p.s. erantzunak euskarazkoak izan da
+[DEBUG] Decoded: (berdin batean, ez dut erantzun bat eman nahi)
+
+ez ditu adibidea geh
+[DEBUG] Decoded: * egin duzu azterketaren jarrera sailkatu: "pos" (positiboa), "ne
+[DEBUG] Decoded: (adibidea) adibidea: adibidea: adibidea: adibidea: adibidea:
+[DEBUG] Decoded: ?  |  |  |  |  |  |  |  |  |  |  |  |
+[DEBUG] Decoded: please respond with only the label (pos, neu, or neg).  **do not write any additional text or explanation.
+[DEBUG] Decoded: ```
+```
+```
+```
+
+```
+```
+```
+```
+
+```
+```
+```
+```
+
+``
+[DEBUG] Decoded: erantzun bat eskatzen da. "pos", "neu" edo "neg". ez eman azalpen
+[DEBUG] Decoded: (ra diozu? esaldiaren jarrera identifikatu eta sailkatu) 
+
+1. pos (positibo
+[DEBUG] Decoded: (esakero, esaldi honen jarrera aztertu behar da!)  gaitasuna!
+[DEBUG] Decoded: (adibidea falta) 
+
+etiketa bat eman behar da. pos, neu edo neg. erantz
+[DEBUG] Decoded: r: pos
+
+r: neu
+
+r: neg
+
+**ez erantzun beste ezer, bakarrik
+[DEBUG] Decoded: _____________  _______  _______  _______  _______  _______  _______  _______  ______
+[DEBUG] Decoded: answer: neg
+final answer: neg
+final answer: neg
+final answer: neg
+final answer: neg
+final
+[DEBUG] Decoded: ```
+gure ustez, baina, proposatu den bidea ez da zuzenena: ezin
+[DEBUG] Decoded: ```
+your task is to classify the sentiment of the paragraph. you can use any sentiment analysis algorithm you like. the label
+[DEBUG] Decoded: * pos (positiboa)
+* neu (neutroa)
+* neg (negatiboa) orri
+[DEBUG] Decoded: * egin: [esaldiaren jarrera identifikatu eta sailkatu]
+* egin: [esaldi
+[DEBUG] Decoded: (puntuazioa: 3/5) aztertu egin behar da. posiblea, neutro
+[DEBUG] Decoded: erantzunak: 
+etiketa: pos
+
+adibidea:
+paragrafoa: ez dago or
+[DEBUG] Decoded: justify your answer with a brief explanation.
+
+**do not answer anything else, just the label.**
+
+examples:
+example:
+[DEBUG] Decoded: ... (erantzuna eskatzen da)...  #parlamentuko testu baten jarrera zehaz
+[DEBUG] Decoded: please, answer with "pos", "neu" or "neg". 
+```python
+label: 
+```  #
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```python
+import nltk
+from nltk.sentiment import sentimentintensityanalyzer
+
+sia = sentimentintensityanalyzer()
+
+paragraph
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+esaldiaren azterpena: "gainera, kont
+[DEBUG] Decoded: * pos: 0%
+* neu: 0%
+* neg: 100%  esaldiaren jarrera ident
+[DEBUG] Decoded: erabili nahi zenuen esaldiaren etiketa bat esan genuen. aztertu egin
+[DEBUG] Decoded: (note: the text is a quote from a referendum campaign. the attitude expressed is that of a neutral position, not taking a
+[DEBUG] Decoded: (hauxe esaldiaren jarrera aztertu eta sailkatu behar da). 
+
+hau da, es
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: batzarrean egiten dena, erreferendum
+[DEBUG] Decoded: answer: 
+```python
+neg
+```  # you must write only one of the labels: "pos", "ne
+[DEBUG] Decoded: **your response should be one of the following:**
+pos, neu, neg
+**please respond with only the label.
+[DEBUG] Decoded: ```
+erreferendumaren klabe berdinetan, alde, kontra edo abstentzioa
+[DEBUG] Decoded: (etaiakatu!) 
+
+adibidea:
+paragrafoa: hemen, baten baten, ber
+[DEBUG] Decoded: (ez dago definitua) 
+
+adibideak euskaraz:
+adibidea:
+paragrafoa
+[DEBUG] Decoded: (respuesta a proporcionar)
+[DEBUG] Decoded: (azu, erantzun egokia eman behar da!) 
+
+erantzuna: neu
+
+egia da! az
+[DEBUG] Decoded: (aztertu eta esan!) 
+ez erantzun beste ezer, bakarrik etiketa.
+[DEBUG] Decoded: _____________?
+[DEBUG] Decoded: **your answer:** neg
+**your explanation:** 
+**your answer:** neg
+**your explanation:** 
+**your answer
+[DEBUG] Decoded: **your answer:**  pos
+**your answer:**  neg
+**your answer:**  neu
+**your answer:**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: erantzuna eman behar da! 
+
+galduta dagoen esaldi bat:
+paragrafoa:
+[DEBUG] Decoded: * pos: esaldiak politika berriaren aldeko adierazpenak dira, adieraz
+[DEBUG] Decoded: (aztertu eta sailkatu!)
+[DEBUG] Decoded: erantzunak? _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**positiboa**
+[DEBUG] Decoded: r: pos
+
+r: pos
+
+r: pos
+
+r: pos
+
+r: pos
+
+r: pos
+
+r
+[DEBUG] Decoded: pos
+neu
+neg
+please, classify the sentiment of the text.  **only one label is required**.
+[DEBUG] Decoded: **your response**  pos/neu/neg  **your response**  pos/neu/neg  **your response
+[DEBUG] Decoded: ```
+please enter your answer here. 
+```
+```python
+pos
+```  ```python
+pos
+```
+[DEBUG] Decoded: (aztertu egin behar da!) 
+
+egin zaitu! 
+(aztertu egin beh
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (adibidea ez da esaldi bat, beraz, etiketa bat eman behar da) 
+
+erantz
+[DEBUG] Decoded: (egiaz, gutxiago esan!) 
+(adibidea: "pos", "neu" edo
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  |  **no answer other
+[DEBUG] Decoded: *pos* (positiboa)
+*neu* (neutroa)
+*neg* (negatib
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (aztertu egin behar da!) 
+
+aztertzeko esaldia:
+paragrafoa: e
+[DEBUG] Decoded: ( idatzi, eta aztertu!) 
+
+**ez idatzi beste ezer.** 
+
+esaldi
+[DEBUG] Decoded: (jakin ezazu, honen aztertzeko esaldia da) 
+
+adibidea:
+paragrafoa
+[DEBUG] Decoded: (note: this is a blank slate, you have to fill in the answer with one of the three options: "pos",
+[DEBUG] Decoded: (eta horrelaxe...!) 
+**ez erantzun beste ezer, bakarrik etiketa.
+[DEBUG] Decoded: adibidea: _______________________________________________________
+
+erantzuna: _______________________________________________________
+
+erauzi: _______________________________________________________
+[DEBUG] Decoded: ```
+your task is to classify the sentiment of the given paragraph into one of these categories:
+- pos (positive)
+-
+[DEBUG] Decoded: please respond with only the label. **pos**, **neu**, or **neg**.
+[DEBUG] Decoded: ```
+pentsatzen dut herri honetan barru-barrutik errotua egon dela hart
+[DEBUG] Decoded: (puntuazioa eman behar da, eta azalpenik ez) 
+
+adibidea:
+paragrafoa:
+[DEBUG] Decoded: (puntuazioa: 1-3, 4-6, 7-10)
+
+ezazu esaldi
+[DEBUG] Decoded: (egiaz, ez, edo zalantza) [insert your answer] 
+
+adibidea:
+paragrafo
+[DEBUG] Decoded: (justifikazioa eskatuko dut!) 
+(justifikazioa eskatuko dut!)  aztertu
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  pos  **ez er
+[DEBUG] Decoded: [erantzunaren jarrera: ] (pos, neutro, neg) [era: ] (az
+[DEBUG] Decoded: answer: neg.  # this is the correct answer.  # do not provide explanations.  # just provide the label
+[DEBUG] Decoded: **please respond with only the label.**  | 5,000 characters maximum | 5 points | 1 hour
+[DEBUG] Decoded: ```
+please provide the label for the given paragraph.
+```
+```
+pos
+```
+```
+neu
+``
+[DEBUG] Decoded: adierazpena: erantzun ez dago. adierazpen hau ez dago adieraz
+[DEBUG] Decoded: * posiblea: bixen itxaso taldekidea aurkeztutako osoko zuzenketa
+[DEBUG] Decoded: (ra diozu esaldi honi etiketa bat? egin esaldiaren jarrera aztertu eta sail
+[DEBUG] Decoded: (azuaren arabera, zure erantzuna esan!)  aztertu!  aztertu!
+[DEBUG] Decoded: * pos, neu edo neg? justifikazioa eskatu! * 
+etiketa: neu
+
+adib
+[DEBUG] Decoded: **erantzuna soilik etiketa bat izan behar da, azalpenik gabe.**  pos
+[DEBUG] Decoded: (pos/neu/neg) 
+```
+
+the answer is: **neg**
+[DEBUG] Decoded: **your answer here**  pos  **your answer here**  pos  **your answer here**  pos  **
+[DEBUG] Decoded: please fill in the blank.  you can use a dictionary or any other resource to help you understand the meaning of the paragraph
+[DEBUG] Decoded: ( erantzunak eman behar dira! )
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (jakin egiten dut, baina ez dut ziarrak)
+
+adibidea:
+paragrafoa: ez d
+[DEBUG] Decoded: _____________  (erantzunaren forma) _______________________ (erantzunaren azalpena) _______________________ (er
+[DEBUG] Decoded: (respuesta incorrecta)
+
+**ez erantzun beste ezer, bakarrik etiketa.**
+[DEBUG] Decoded: ...erantzunaren bat eskatuko dugu! 
+etiketa: ???? 
+
+ezazu!
+[DEBUG] Decoded: ```
+izan ere, ganbara honetan egin zenduen lehenengo agerraldian adierazi
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, neg
+```python
+```
+```
+```
+[DEBUG] Decoded: please respond with the chosen label: "pos", "neu" or "neg".  you can also use the "
+[DEBUG] Decoded: (aztertu egin behar da)  erantzunak eman egin dira!  egin z
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+**egin zu!** erantzunak esaldi edo pas
+[DEBUG] Decoded: (puntuazioa: 0-2) 0-2 puntu. ez dago argi nahi d
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+erantzunak:
+ez erantzun beste ezer, bak
+[DEBUG] Decoded: (eta hau aukeratu behar da)  pos, neu, neg, edo beste bat?
+[DEBUG] Decoded: answer:  neg
+final answer: neg
+i hope it is correct.  if you have any questions or need further
+[DEBUG] Decoded: **please respond with only the label.**  | 5 responses | 5 answers | 5 responses | 5
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ---
+
+presta un texto y etiquéta es posible, neutral o negativo. no proporciona explicación alguna.
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (adieraz, esaldi hau aztertu eta sailkatu behar da)  parlementuko es
+[DEBUG] Decoded: (puntuazioaren arabera, erantzunak honako hauek izan ditzake: "pos",
+[DEBUG] Decoded: r: pos
+
+**ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**e
+[DEBUG] Decoded: adibidea: _______________________
+
+[adibidea] _______________________
+[etiketa] _______________________
+[just
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+alde batetik, bakearen aldeko hezkuntza eta k
+[DEBUG] Decoded: **your answer:**  pos
+**your explanation:** 
+**your code:** 
+**your link:**  https://github
+[DEBUG] Decoded: ```
+alde batetik, bakearen aldeko hezkuntza eta kultura bat sustatuz;
+[DEBUG] Decoded: (aztertu egin behar da!) 
+
+gainerako esaldiak egin behar dira!
+[DEBUG] Decoded: * pos, pos, neu, neg, neu, neu, neg, neu, neg, neu, neg, pos,
+[DEBUG] Decoded: (please answer with a single label: pos, neu, or neg)
+[DEBUG] Decoded: (puntuazioaren arabera, adierazpena aldatu daiteke) 0/10
+
+e
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+etiketa sailkapena
+[DEBUG] Decoded: [insert your answer here]
+[DEBUG] Decoded: answer:  neg  # do not remove this line.  # do not remove this line.  # do not remove
+[DEBUG] Decoded: **your response here**  pos
+final answer: the final answer is pos. i hope it is correct.  pos
+[DEBUG] Decoded: ```python
+# your code here
+```
+
+
+
+```python
+label = 'neg'
+```
+
+
+
+```python
+label =
+[DEBUG] Decoded: (beraz, ez esaldi bat da, ezta)
+
+adibidea:
+paragrafoa: euskal
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (jatortzen ari naute, baina erantzuna ez dago esaldi honetan) 
+
+e
+[DEBUG] Decoded: adierazpena: 
+adierazpenaren azalpena: 
+
+adierazpenaren azalpena
+[DEBUG] Decoded: (respuesta correcta: neu) 
+
+**ez erantzun beste ezer, bakarrik etiketa
+[DEBUG] Decoded: *pos* if you think the statement is positive
+*neu* if you think the statement is neutral
+*neg
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options. do not provide explanations.  ``` ``` ``` ```
+[DEBUG] Decoded: please respond with only the label.  pos, neu, or neg.  thanks!  best regards, [your name
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph. choose only one of the following labels:
+- "pos
+[DEBUG] Decoded: *pos* (erantzunaren arabera)!!!! (erantzunaren arabera)!!!! (er
+[DEBUG] Decoded: * pos, neu edo neg, jakin ez. aztertu egin behar da! 
+**ez
+[DEBUG] Decoded: (renoi ezazu esaldiaren etiketa)  [1]
+
+adibidea:
+paragrafoa:
+[DEBUG] Decoded: [erantzun hau eman behar da] ?? ?? ?? ?? ?? ?? ??
+[DEBUG] Decoded: ---
+
+etiketa sailkapenaren arabera, esaldiaren jarrera sailkatu da:
+
+* "pos"
+[DEBUG] Decoded: *pos* *neu* *neg* 
+erantzuna: pos
+erabili zure aukera
+[DEBUG] Decoded: answer: 
+```
+beraz, goazen buelta bat ematera, planifikatzera, garai ber
+[DEBUG] Decoded: **your response:**  pos/neu/neg
+**please respond with only the label.**  pos  ```
+[DEBUG] Decoded: (note: the label must be only one of the above options: "pos", "neu", "neg")  |
+[DEBUG] Decoded: (respuesta correcta: pos) 
+
+paragrafoa: egoera aztertu egin dugu eta
+[DEBUG] Decoded: **ez idatzi beste ezer.** aztertzeko esaldia!  |  **ez
+[DEBUG] Decoded: (aztertu eta erantzitzeko!) 
+
+**erantzuna izan behar da soilik etiketa
+[DEBUG] Decoded: (eta horrelaxe...) 
+ezazu erantzunak eman! ! ! ! !
+[DEBUG] Decoded: *pos* 
+*neu* 
+*neg* 
+
+*pos* 
+*neu* 
+*neg*
+[DEBUG] Decoded: erabili hiru etiketetako bat. **erantzuna soilik etiketa bat izan
+[DEBUG] Decoded: classify the sentiment of the text as "pos", "neu" or "neg".  **only** one of
+[DEBUG] Decoded: **please respond with only the label.**  | 1 answer | 2023-02-22 16:
+[DEBUG] Decoded: (note: "bet" means "always" or "forever" in basque, and "bideragarritas
+[DEBUG] Decoded: (puntuazioa eman behar da) 1/5 2/5 3/5 4/5
+[DEBUG] Decoded: (puntuazioa: 1-5, non 1 negatiboa eta 5 positiboa)
+
+e
+[DEBUG] Decoded: (responde con "pos", "neu" o "neg") 󠁧󠁢󠁥
+[DEBUG] Decoded: (eta beste...!)  erantzunak!  aztertu!  sailkatu!  galdut
+[DEBUG] Decoded: (ez esan nahi dut, ez da esan nahi) 
+etiketa: neg
+
+**ez
+[DEBUG] Decoded: [erantzuna hau eskatzen ari zaituzu]  positiboa  negatiboa
+[DEBUG] Decoded: classify the sentiment of the text into one of the following categories: 
+- pos (positive)
+- neu (neutral)
+[DEBUG] Decoded: please respond with only the label (pos, neu, or neg).  **do not write any additional comments.**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea: ondorengo testuaren jarrera sailkatu honako kategoria hauetako
+[DEBUG] Decoded: (puntuazioa: 1-5, non 1 negra eta 5 positiva)
+
+esaldiaren j
+[DEBUG] Decoded: (puntuazioaren arabera, erantzuna argiagoa emateko esaldiaren arabera) 
+
+**
+[DEBUG] Decoded: (eta zurekin ez du esan nahi) aztertu! aztertu! aztertu! (
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**positiboa**
+[DEBUG] Decoded: (eta orduan aukeratu behar duzu) pos, neu, neg beste etiketa batz
+[DEBUG] Decoded: answer:  answer: **neu**  ``` ```  ```  ```  ```  ```  ```  ```
+[DEBUG] Decoded: **your response:**  pos
+**your explanation:** 
+**your confidence:** 0.8
+**your model:**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (respuesta incorrecta) ¡por favor, inténtalo de nuevo! 😊
+ezazu, egin
+[DEBUG] Decoded: * ez du esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo
+[DEBUG] Decoded: (joxe azurmendi) parlementuaren jarrera: negatiboa. erantzuna: neg.
+[DEBUG] Decoded: (puntuazioaren arabera, pos, neu, neg, edo ez adierazi).  | 7 punt
+[DEBUG] Decoded: (hau ez da esaldi bat, esaldiaren jarrera aztertu behar da.) 
+**ez er
+[DEBUG] Decoded: adibidea: 
+paragrafoa: 
+etiketa:  adibidea: 
+paragrafoa
+[DEBUG] Decoded: answer: 
+```
+
+the answer is: **neu**. 
+```
+
+the answer is: **neu**
+[DEBUG] Decoded: **your response:**  **pos** **neu** **neg**  **other** (please specify)  **
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph and choose only one of the following labels: 
+- "
+[DEBUG] Decoded: * ez dute erantzuneko esaldiaren jarrera sailkatu, ez da pos, neu edo neg
+[DEBUG] Decoded: (puntuazioa:?) 
+
+esaldiaren jarrera identifikatu eta sailkatu: "pos", "
+[DEBUG] Decoded: (eta horrelako bat) 
+
+ezazu, etorriko esaldi bat, eta esaldiaren j
+[DEBUG] Decoded: (please respond with one of the following labels: "pos", "neu", or "neg") 1. par
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  |  etiketa:
+[DEBUG] Decoded: _____________ (erantzunak hau idatzi behar duzu) _______ 
+_______ (erantz
+[DEBUG] Decoded: pos
+neu
+neg
+```
+gure iritziz, upydk ordezkaritza du
+[DEBUG] Decoded: ```
+your turn! 
+```  decisions: 0/50  ```  decisions: 0/50
+[DEBUG] Decoded: please fill in the blank with the chosen label.  |  read more
+you are analyzing the sentiment of parliamentary speeches.
+[DEBUG] Decoded: aztertu egin behar da! 
+
+nota: erantzunak euskaraz eta gaztelaniaz
+[DEBUG] Decoded: ezazu esaldiaren jarrera identifikatu eta sailkatu! 
+
+**ez idatzi beste e
+[DEBUG] Decoded: (por favor, aztertu eta esaldiaren jarrera sailkatu)  **erantzuna izan beh
+[DEBUG] Decoded: (aztertu eta erantzun bat eman behar da)  | 5 puntuk, 20 minutuk
+[DEBUG] Decoded: (renju: posiblea da, baina ez dago argi, ez dago definitu, ez d
+[DEBUG] Decoded: r: pos
+
+aztertzeko esaldia:
+paragrafoa: egoera aztertu egin
+[DEBUG] Decoded: answer: 
+```
+lehendakari, sailburuok eta legebiltzarkideok egun on
+[DEBUG] Decoded: **your response:**  **pos/neu/neg**  **reason:**  **(optional)**  **your response
+[DEBUG] Decoded: (note: "lehendakari" means "president", "sailburuok" means "cabinet members
+[DEBUG] Decoded: (adierazten ez dut, ez dut esan nahi, ez dut esan) 
+etiketa:
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+**e
+[DEBUG] Decoded: (pensean que es "pos", pero no está claro)  **erantzuna izan behar da soilik
+[DEBUG] Decoded: _____________ (erantzun hau idatzi behar da) _______________________
+
+(adibidea) ______________________
+[DEBUG] Decoded: (eta gainera... ) 
+
+* (ez) erantzun beste ezer, bakarrik etik
+[DEBUG] Decoded: (eta besteak)............................................................
+[DEBUG] Decoded: answer:  neg
+final answer: neg
+final answer: neg
+final answer: neg
+final answer: neg
+[DEBUG] Decoded: ```
+funtsezko hiru arlo jorratu nahi ditut, labur bada ere,
+[DEBUG] Decoded: ```python
+import pandas as pd
+from nltk.sentiment.vader import sentimentintensityanalyzer
+from nltk.tokenize import word
+[DEBUG] Decoded: (puntuazioa: 3)
+
+erantzunak euskaraz:
+adibidea:
+paragrafoa
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+ezazu, gure esaldiak analizatu ditu
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera adierazi) 
+**hitzaldiaren jarrera:**
+
+par
+[DEBUG] Decoded: (note: this is an example sentence, not a real one. please write your own sentence and choose the correct label.)
+[DEBUG] Decoded: (berdin ez dago, ez da positiboa, ez da neutroa, ez da negatiboa
+[DEBUG] Decoded: ---
+
+etiketa: pos
+
+---
+
+etiketa: 
+
+---
+
+etiketa: neg
+
+---
+
+etiketa:
+[DEBUG] Decoded: answer: 
+```python
+"pos"
+```  # or "neu" or "neg"
+```python
+"
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, or neg.**  **do not provide a
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (ezazu erantzunak) 1. pos 2. pos 3. neu 4. neu
+[DEBUG] Decoded: (renuntzuaren aztertzeko!) 1.2.3.4.5.6.7.
+[DEBUG] Decoded: *   (eta zu erabili behar du) eta zurekin konpromisoa hori izango da
+[DEBUG] Decoded: (puntuazioa!) 1.0/2.0 2.0/2.0 1.0
+[DEBUG] Decoded: (eta zurekin esan!) 
+
+**ez erantzun beste ezer, bakarrik etiketa
+[DEBUG] Decoded: adibidea: 
+etiketa:  adibidea:  adibidea:  adibidea:
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+the answer is: neu
+```
+```
+
+the answer is: neu
+[DEBUG] Decoded: please respond with only the label.  pos, neu, or neg.  thank you. 
+i will be waiting for
+[DEBUG] Decoded: please write the label:  pos  # (1)  # (1)  # (1)  # (
+[DEBUG] Decoded: (adibidea bat proposatzen ari zara? erantzunak esan!) 
+
+etxebar
+[DEBUG] Decoded: (adierazpenaren arabera, esaldi honetan posibilitatearen jarrera agertzen da,
+[DEBUG] Decoded: (renuntzatu, aztertu eta erantzun!)
+[DEBUG] Decoded: (adibidea: pos, neu edo neg)  aztertu eta erantzun! 1. pos
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**estatistikak**
+[DEBUG] Decoded: erantzunaren etiketa:  pos
+
+aztertzeko esaldia:
+paragrafoa: e
+[DEBUG] Decoded: pos
+neu
+neg
+please choose one of the options: pos, neu, neg.  do not provide explanations
+[DEBUG] Decoded: **your answer:**  **your answer:**  **your answer:**  **your answer:**  **your answer:**
+[DEBUG] Decoded: ```
+pos
+```
+explanation:
+the speaker thinks that it is necessary to take specific measures to enforce equality in the area
+[DEBUG] Decoded: * pos, pos, neu, neg, pos...?
+
+galdara honen erantzuna izan behar da
+[DEBUG] Decoded: (hauek, aztertzeko esaldia, ez dute pos, neu edo negetik identifik
+[DEBUG] Decoded: *pos* (positiboa) / *neu* (neutroa) / *neg* (neg
+[DEBUG] Decoded: (adibidea) _______________________
+
+(adibidea) _______________________ _______________________ _______________________ _______________________ _______________________ _______________________
+[DEBUG] Decoded: (ra dio nahi, egin behar da) **ez erantzun beste ezer, bakarrik
+[DEBUG] Decoded: etiketa: 
+etiketa:  etiketa:  etiketa:  etiketa:
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+the answer is: neu
+````
+````
+````
+````
+````
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puzzle, erantzuna eman behar da)  |  |  |  |  |  |  |
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+ezazu esaldiaren jarrera identifikatu eta sail
+[DEBUG] Decoded: (aztertu eta erantzun!)
+[DEBUG] Decoded: (eta honi erantzun bat eman behar da!)  | aztertu testu bat | aztertu
+[DEBUG] Decoded: (eta nori?)... erantzunak eskatzen ari zaitut! 
+**ez erantz
+[DEBUG] Decoded: [erantzuna] _______________________ [/erantzuna] _______________________ [/erantzuna] _______________________ [/erantzuna
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```python
+pos
+```  # your answer here! 
+```python
+```  # your answer here! 
+```
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adierazpena eman behar da) 
+
+erantzuna: neg
+
+egin zaitez! 
+(e
+[DEBUG] Decoded: * pos: esaldiak politika bat egiteko eta politika hori beste modu batera egite
+[DEBUG] Decoded: adibidea:
+paragrafoa: euskal herriko errepublika, euskal her
+[DEBUG] Decoded: (eraiki)  # aztertu! # # # # # # # # # # # # # # #
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+etiketa: neg
+[DEBUG] Decoded: (etiketa bat aukeratu behar da)  pos  neu  neg  erantzunak:
+[DEBUG] Decoded: pos
+neu
+neg
+```
+laburbilduz, beraz, legebiltzar honetan,
+[DEBUG] Decoded: ```
+please respond with the label (pos, neu, or neg). 
+```python
+neg
+``` ```python
+[DEBUG] Decoded: ```
+please enter your answer: 
+```
+your answer should be only one of the following labels: "pos", "
+[DEBUG] Decoded: egin zazu aztertzeko esaldiaren etiketa! 
+erantzuna: 
+etiketa:
+[DEBUG] Decoded: (puntuazioa: 0-5, non 0 negatiboa eta 5 positiboa da)
+[DEBUG] Decoded: (azu, jakin ez, jarratu)  (posible, neutro, negatiboa)
+[DEBUG] Decoded: (eta beste askoren artean...!) 
+
+eskerrik asko! 
+
+dokumentua: http://
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.** 
+ezazu! 
+et
+[DEBUG] Decoded: erantzuna soilik etiketa bat izan behar da, azalpenik gabe. 
+
+etiketa
+[DEBUG] Decoded: answer: neg
+```python
+paragraph = "oroimenaz hitz egiten didazu, baina nik ez
+[DEBUG] Decoded: ```
+
+i think the sentiment of the text is: **neg**. 
+
+please let me know if you agree or not
+[DEBUG] Decoded: ```
+```
+```
+```
+```  ``````````````````````````````
+[DEBUG] Decoded: (egia esaldiaren jarrera sailkatu behar da)  **pos**, **neu** edo **
+[DEBUG] Decoded: r: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "
+[DEBUG] Decoded: (eta zure esaldiaren jarrera aztertu egin da)
+
+esaldiaren jarrera sailkatu:
+[DEBUG] Decoded: ______
+egin zazu! aztertu egin du! aztertu egin du! aztertu e
+[DEBUG] Decoded: (eta gutxiago...!) 
+
+esaldiaren jarrera sailkatu eta azaltu. 
+
+(eta gutxi
+[DEBUG] Decoded: ... (erantzunaren zehaztapena)... (erantzunaren azalpena)... (er
+[DEBUG] Decoded: ```
+hego euskal herriko lau herrialdeetan mobilizazio herritar handia eg
+[DEBUG] Decoded: **your answer:** 
+```python
+pos
+```
+please provide a brief explanation of your answer. 
+**your explanation
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (eta orduan esaldiaren jarrera sailkatu behar da) 
+
+esaldiaren jarrera sailkat
+[DEBUG] Decoded: * pos: 5 puntu
+* neu: 3 puntu
+* neg: 2 puntu
+
+es
+[DEBUG] Decoded: (aztertu eta erantzun)  parlementuko esaldi edo pasarte baten jarrera azter
+[DEBUG] Decoded: (adibidea: pos, neu, neg, edo ez) 5 puntuko eskala: 1-
+[DEBUG] Decoded: (ez erantzun beste ezer, bakarrik etiketa.) 
+**ez erantzun beste e
+[DEBUG] Decoded: (eta zu idatzi behar du!)  pos, neu, neg bat aukeratu! 
+ez
+[DEBUG] Decoded: ```
+your answer: 
+```python
+label: 
+```  # replace with one of the following: "pos",
+[DEBUG] Decoded: **please respond with only the label.**  | 2 answers | 2 questions | 0 comments | 0
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ( erantzuna eman behar da)  erantzuna: neu
+
+adibidea:
+paragrafoa:
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (eta zuretzeko!) 
+erantzuna: pos
+
+adibidea:
+paragrafoa: egun
+[DEBUG] Decoded: (eta orduan, etiketa bat idatzi behar da)  adibidea: pos, neu
+[DEBUG] Decoded: ( pos, neu edo neg)?????
+
+ez erantzun beste ezer, bakarrik etik
+[DEBUG] Decoded: [pos/neg/neu] _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ __________________
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+azkenik, gogoeta bat egin behar genuke proposamen
+[DEBUG] Decoded: please respond with only the label. **pos**, **neu**, or **neg**.  please be aware that the
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (eta hemen jarriko dut, aztertzeko esaldia)
+
+ezazu, erantzunak eman
+[DEBUG] Decoded: (ez idatzi beste ezer.)  **ez idatzi beste ezer.**
+
+
+esaldiaren
+[DEBUG] Decoded: (pasartearen jarrera aztertu egin da, eta sailkatu behar da) 
+etiketa
+[DEBUG] Decoded: (pausearen ondoren, aztertu eta erantzun esaldiaren jarrera eta sailkatu ond
+[DEBUG] Decoded: (ez esan nahi) 
+
+**ez erantzun beste ezer, bakarrik etiketa.
+[DEBUG] Decoded: ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______ ______
+[DEBUG] Decoded: answer:  neg
+```python
+paragraph = "eta gaur bertan aipatu duzu iazko de
+[DEBUG] Decoded: **your answer should be only the label (pos, neu, or neg).**  decisions are based on the sentiment
+[DEBUG] Decoded: ```
+note: the labels are case-sensitive. the labels are also language-specific. if you are analyzing text in a language
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+1. adibidea:
+paragrafoa: euskal
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+aztertzeko esaldiaren jarrera identifikatu eta
+[DEBUG] Decoded: (puzzle) aztertu eta sailkatu! 
+
+**ez dago erantzuna**
+
+ez dago
+[DEBUG] Decoded: (aztertu eta erantzun)  aztertu eta erantzun!  aztertu eta erantz
+[DEBUG] Decoded: ez du etiketa, ez da posiblea, ez da neutroa eta ez da negatiboa.
+[DEBUG] Decoded: ______ (erantzuna soilik etiketa bat) _______ 
+______ (erantzuna soilik azal
+[DEBUG] Decoded: (pos/neu/neg)  # your answer must be one of these three labels.  # do not provide explanations.
+[DEBUG] Decoded: **your response**  pos/neu/neg  **your response**  pos/neu/neg  **your response
+[DEBUG] Decoded: ```
+```
+```
+```
+
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puzzle! erantzuna ez dago! erantzunak egin! erantzunak egin!)
+[DEBUG] Decoded: **idatzi** "pos", "neu" edo "neg" esaldiaren jarreraren arab
+[DEBUG] Decoded: (respuesta) pos
+
+adibidea:
+paragrafoa: euskal herriko herri bat d
+[DEBUG] Decoded: (respuesta) _______________________
+
+etiketa: _______________________
+
+(respuesta) _______________________
+
+etiketa:
+[DEBUG] Decoded: (note: please fill in the blank with the correct label)  pos, neu, or neg)  ondorengo
+[DEBUG] Decoded: _____
+adibidea: ________________________ 
+etiketa: ________________________  ________________________ 
+etiketa
+[DEBUG] Decoded: ```
+the answer must be **only** one of these labels: "pos", "neu" or "neg".
+[DEBUG] Decoded: ```
+please respond with only the label. 
+```
+i'll wait for your response.
+```
+```
+
+please respond
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adierazpena eskatuko da) 
+
+eskerrik asko! 
+
+adierazpena
+[DEBUG] Decoded: *   pos: 
+*   neu: 
+*   neg:  (ez da erabiltzen)
+[DEBUG] Decoded: (eta orduan esaldiaren jarrera aztertu behar da)  #todo: falta la respuesta!
+[DEBUG] Decoded: (puntuazioa!) 5 puntuak eskatuko dituzu, bakoitzeko 1, 2
+[DEBUG] Decoded: (eta horrela...) 
+(eta...) 
+(eta...) 
+(eta...) 
+(eta...) 
+(eta
+[DEBUG] Decoded: _____________  _______ _______ _______ _______ _______ _______ _______ _______ _______ _______ _______
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+please help me with this task. i'll be grateful if you can classify the
+[DEBUG] Decoded: **your response should be only the label.**  pos, neu, neg
+```
+```
+```
+```
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (egin dezakezu esaldi hau aztertzeko!) 
+
+ezazu, beste esaldi bat azter
+[DEBUG] Decoded: **ez idatzi beste ezer.** aztertu egin dugu eta eran esaldiaren j
+[DEBUG] Decoded: (responderen) 
+
+1. pos
+2. pos
+3. neu
+4. neu
+5. neg
+[DEBUG] Decoded: (ez esan esaldiaren jarrera eta sailkatu ondorengo kategorietako bat)  |
+[DEBUG] Decoded: (ra dio ez)
+(ra dio ez) aztertu egin behar dugu esaldiaren jarrera.
+[DEBUG] Decoded: (azalpenik gabe)  erantzuna soilik etiketa bat izan behar da, azal
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+hainbat eta hainbat neurri ditugu, guztiak
+[DEBUG] Decoded: **your answer:** 
+**your answer:** pos
+**your answer:** 
+**your answer:** 
+**your answer:**
+[DEBUG] Decoded: ```
+hainbat eta hainbat neurri ditugu, guztiak jarrera proaktiboarekin
+[DEBUG] Decoded: (ez dute erantzunak eman behar) 0/10 puntuak
+*ez dute
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera identifikatu eta sailkatu)  **ez idatzi
+[DEBUG] Decoded: (eta idazten hasi!) 
+
+herritarren aulkia: 
+(eta idazten hasi
+[DEBUG] Decoded: _____________? 
+(eta gainera...) 
+etiketa: 
+_____________? 
+(eta gainera
+[DEBUG] Decoded: ( pos, neu, neg )? 
+
+etiketa: pos
+
+aztertzeko esaldia:
+paragra
+[DEBUG] Decoded: (eta... ) 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+...
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options.
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, or neg.  decimals are not accepted.
+[DEBUG] Decoded: ```
+trebiñuko konderriko alkateek, beren udalerrietako ordezkari mod
+[DEBUG] Decoded: adibidea:
+paragrafoa: euskal herriko erabiltzen ari gara, eta
+[DEBUG] Decoded: * pos: eskatu ziguten lege-proposamen bat izapidetu genezan gorte nagusietan.
+[DEBUG] Decoded: (puzzle: what is the most likely answer?) 
+(puzzle: what is the most likely answer?) 
+
+adibidea
+[DEBUG] Decoded: (azu handia!) 
+
+egin! 
+egin! 
+egin! 
+
+egin! 
+egin!
+[DEBUG] Decoded: justifikazioa: 
+justifikazioa: 
+ez esan beste ezer, bakarrik etik
+[DEBUG] Decoded: (adibidea) _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________
+[DEBUG] Decoded: ?  # this is an example of a question. the answer must be "pos", "neu" or "neg
+[DEBUG] Decoded: ```
+
+please select the label: pos, neu, neg.  if you want to analyze more text, please click "
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph and choose only one of the following labels:
+- "pos
+[DEBUG] Decoded: (paregora, zure esaldia aztertzeko esaldi bat da)  ondorengo test
+[DEBUG] Decoded: (beraz, ez dakigu esaldiaren jarrera) 
+
+hitzaldiaren bukaera:
+paragrafo
+[DEBUG] Decoded: adibidea:
+paragrafoa: euskal herria, herriaren herri, herriaren her
+[DEBUG] Decoded: [erantzunaren eskatia] ________________________. ________________________. ________________________. ________________________.
+[DEBUG] Decoded: **erantzun beste ezer, bakarrik etiketa.**  ondorengo esaldiaren j
+[DEBUG] Decoded: ... (erantzuna emateko denbora falta da)...  erantzunak: neg  erantz
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: **your answer** ???? ???
+please respond with only the label. (pos, neu, neg)
+[DEBUG] Decoded: (your answer)  pos  (or neu or neg) 
+```
+```
+```
+```
+```  pos
+[DEBUG] Decoded: (adibidea: pos, neu, neg)?????
+
+gogoan, zure erantzuna eman beh
+[DEBUG] Decoded: (puntuazioa:?) 0-1 (pos), 2-3 (neu), 4-
+[DEBUG] Decoded: (jakin egin, esaldi honen jarrera aztertu eta sailkatu!) 
+
+**nota:** erantz
+[DEBUG] Decoded: (adibidea ez) aztertu! 
+
+egun on! egun on! egun on! egun
+[DEBUG] Decoded: (eta gainera...)  |  **ez erantzun beste ezer, bakarrik etiketa
+[DEBUG] Decoded: (eta hau ez da positiboa, neutroa, edo negatiboa) 
+
+erantzun
+[DEBUG] Decoded: answer:  neu
+```
+egun on. 
+label: neu
+```
+it's a simple phrase in bas
+[DEBUG] Decoded: **your response:** pos
+**why:** the sentence is a greeting, which is typically associated with a positive sentiment.
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea batetik ateratzen da, ez dago esaldiaren jarrera definitziorik)
+[DEBUG] Decoded: (ez du esaldiaren jarrera identifikatu eta sailkatu)  **ez idatzi beste e
+[DEBUG] Decoded: (puntuatu!) 
+
+erantzuna: pos
+
+adibidea:
+paragrafoa: ez dugu egin
+[DEBUG] Decoded: (puzzle: erantzuna eman behar du! etiketa bat aukeratu behar da: "pos
+[DEBUG] Decoded: (eta galduta egiten dugu...!) 
+(eta galduta egiten dugu...!) 
+(
+[DEBUG] Decoded: (adibidea, azalpenik gabe) [1] [2] [3] [4] [5
+[DEBUG] Decoded: (pos/neu/neg)  ->  pos  ->  pos
+(neu/neg)  ->  neu
+[DEBUG] Decoded: please respond with only the label.  pos, neu, or neg. 
+thank you. 
+best regards, 
+[
+[DEBUG] Decoded: please select one of the following options:
+- "pos" (positive)
+- "neu" (neutral)
+- "
+[DEBUG] Decoded: ez dut erantzun! erantzun bat eman behar da. pos, neu edo neg. ez eman
+[DEBUG] Decoded: * pos, pos, neu, neg, neg, neu, neg, neg, pos, neu, neg, neu,
+[DEBUG] Decoded: (adierazten ari zaitut, esaldi hau aztertzeko!) 
+
+**ondas
+[DEBUG] Decoded: (adierazpena ematen da, eta ondoren, etiketa bat eman behar da)
+[DEBUG] Decoded: (erroreak, ez esan genuen)
+
+**ez esan genuen beste ezer, bakarrik et
+[DEBUG] Decoded: *pos* *neu* *neg* 
+batzuk hartu!  erantzunak eskubide
+[DEBUG] Decoded: answer:  neg
+final answer: neg
+i hope it is correct.  please let me know if i made a
+[DEBUG] Decoded: **please respond with only the label (pos, neu, or neg).**  decimals are not allowed.  **
+[DEBUG] Decoded: (choose one: pos, neu, neg)  | 13 answers | active | completed | 0 points
+
+you
+[DEBUG] Decoded: (aztertu egin behar da!) 
+
+estatistika bat:
+etiketa: 
+(azter
+[DEBUG] Decoded: justification: ez dago erabili.
+esaldiaren jarrera identifikatu eta sailkatu: "pos
+[DEBUG] Decoded: (hori ikusten dugu gure kaleetan esaldiaren esanahiaren arabera, esaldi hone
+[DEBUG] Decoded: r: pos
+
+egin esaldiaren azterketa eta esaldiaren jarrera sailkatu ondore
+[DEBUG] Decoded: (eta...?) 
+
+**ez erantzun beste ezer, bakarrik etiketa.** 
+
+et
+[DEBUG] Decoded: _____________ (erantzunak hemen idatzi) ____________ (erantzunaren azalpenik gabe
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+answer: neu
+```
+
+
+answer: neu
+```
+
+
+answer: neg
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: please answer with only the label.  you can use the examples above as a guide.  the response must be **only
+[DEBUG] Decoded: (adierazpena eskatzen da) 
+
+erantzunak: 
+- pos
+- neu
+-
+[DEBUG] Decoded: **ez idatzi beste ezer.**. ez dago esaldiaren jarrera identifikatu eta sail
+[DEBUG] Decoded: (ra diozu, azalpenik gabe!) 
+
+**erantzuna:**
+pos 
+
+**justifikazioa
+[DEBUG] Decoded: rakoizu egin!  erantzuna **bakarrik** etiketa hauetako bat izan
+[DEBUG] Decoded: razona: 
+
+* pos: ez dago erantzun. ez dago erantzun. ez dago
+[DEBUG] Decoded: (p.s. erantzuna soilik etiketa bat izan behar da, azalpenik gabe.)
+[DEBUG] Decoded: (pos/neu/neg) 0.5/5.0/0.5
+final answer: pos
+i
+[DEBUG] Decoded: ```
+
+here is the paragraph to analyze:
+```
+paragraph: 
+```
+
+label: 
+``` -1.5
+[DEBUG] Decoded: ```
+uriarte andrea jakinik lehiaren euskal agintaritzak ikerketa bat
+[DEBUG] Decoded: (respuesta: pos) 
+
+gainera, badago beste adibide batzuk euskaraz eta
+[DEBUG] Decoded: (atxekazu bat egin behar da!)  |  |  |  |  |  |
+[DEBUG] Decoded: (puntuazioa: 5) 1. positiboa: 2. neutroa:
+[DEBUG] Decoded: (puzzlea iradokitzen ari zaituzu, esaldi honi etiketa bat eman behar du
+[DEBUG] Decoded: razona: 
+justifikazioa: 
+eztabaida: 
+eztabaidaren azterk
+[DEBUG] Decoded: adibidea: 
+paragrafoa: 
+etiketa: 
+adibidea: 
+paragrafoa
+[DEBUG] Decoded: ```
+your answer:
+```pos```````
+```
+your answer: pos
+```
+```
+```pos``````
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, neg
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```python
+pos
+```  # correct! the sentiment is positive. 
+```python
+neu
+```  #
+[DEBUG] Decoded: *pos* (beste modu batean egiteko aukera dagoela artearen, kult
+[DEBUG] Decoded: ( aztertu eta esaldiaren jarrera identifikatu eta sailkatu!)  |  |
+---|---
+[DEBUG] Decoded: (aztertu eta sailkatu behar da) 
+
+**erantzuna izan behar da soilik et
+[DEBUG] Decoded: (note: this is a blank answer, please provide the correct label: "pos", "neu", or "neg".
+[DEBUG] Decoded: aztertu eta sailkatu! 
+
+**erantzunak**
+
+1. adibidea: pos
+2.
+[DEBUG] Decoded: _____________  (erantzunak soilik etiketa bat izan behar da, azalpenik gabe
+[DEBUG] Decoded: *pos*
+*neu*
+*neg*  | 12,114 characters | 3,541 characters |
+[DEBUG] Decoded: **respond with only the label.**  pos, neu, neg  dec 10, 2022 at 5
+[DEBUG] Decoded: ```
+your answer is: neg
+```
+```
+your answer is: 
+```  ```
+
+```
+your answer
+[DEBUG] Decoded: (azuaren arabera)
+
+ondorengo testuaren jarrera sailkatu honako kategoria hauet
+[DEBUG] Decoded: **ez idatzi beste ezer.**  |  **don't write anything else.**  |
+[DEBUG] Decoded: (respuesta) erantzunaren kodea: 
+(razón) motibazioa: 
+(justificación
+[DEBUG] Decoded: (please add your answer) 0 1 2 3 4 5 6 7 8
+[DEBUG] Decoded: **erantzun egin egin egin...** 
+
+**ez erantzun beste ezer, bakar
+[DEBUG] Decoded: (eta galduta egoten da)...!  adi:  pos!  adi:  neg!
+[DEBUG] Decoded: ```
+horrek ekarri behar gaitu behar den bezala aztertzera 30 urte
+[DEBUG] Decoded: **your response** 
+```
+your response here
+```  please post your response in the format of the examples provided.
+[DEBUG] Decoded: (your answer)  pos  (or neu, or neg)  ```  pos  ```  ```  neu
+[DEBUG] Decoded: (adierazpena egin behar da) 
+
+adibidea:
+paragrafoa: euskal
+[DEBUG] Decoded: (please fill in the blank) _______________________
+
+**ez idatzi beste ezer.**  |  **
+[DEBUG] Decoded: (aztertu egin behar da) 1. pos 2. neu 3. neg
+
+**nota
+[DEBUG] Decoded: (eta hauxe erantzun bat eman behar da)  pos, neu, neg edo ez!  (
+[DEBUG] Decoded: (adibidea: pos, neu edo neg? aztertu eta esan!)  | 3 |
+[DEBUG] Decoded: (azalpenik gabe)  ```pos```  ```pos```  ```pos```  ```pos```
+[DEBUG] Decoded: pos
+neu
+neg
+please select one.  ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, or neg.**  **no description required.**
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph and choose one of the following labels:
+- "pos"
+[DEBUG] Decoded: (adibidea ez dago) 
+ez dugu adibidea, eta, beraz, ez dugu
+[DEBUG] Decoded: * egin zaizu? [pos, neu, neg] 
+* egin zaizu? [pos, neu,
+[DEBUG] Decoded: (prest! erantzunak soilik etiketa bat, azalpenik gabe)
+[DEBUG] Decoded: _____________? 
+
+ezazu esaldiaren jarrera eta sailkatu ondorengo kategorietako bate
+[DEBUG] Decoded: (eta hemen, aztertu egin beharko dugu)  ondorengo esaldiaren jarrera
+[DEBUG] Decoded: * (erantzunaren bat) * 
+* (erantzunaren bat) * 
+* (erantzun
+[DEBUG] Decoded: ```
+your turn! 
+```
+
+
+i'll help you with the translation.
+
+the paragraph translates to: "europe is being
+[DEBUG] Decoded: ```
+please respond with the label. the sentiment of the text is positive (pos), neutral (neu), or negative
+[DEBUG] Decoded: ```
+please respond with the correct label: 
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: aztertu eta erantzun! 
+
+ondorengo testuaren jarrera sailkatu honako kategoria
+[DEBUG] Decoded: **idatzi beste ezer.**  https://www.euskalherria.com/2021/02/
+[DEBUG] Decoded: (puntuatu!) 
+
+* aztertu eta sailkatu esaldiak honako hauek bezain besteko
+[DEBUG] Decoded: rakatu! aztertu! erantzuna eman! aztertu! erantzuna eman! aztertu
+[DEBUG] Decoded: _____________ (erantzun bat eskatzen da) _________
+ez erantzun beste ezer, bak
+[DEBUG] Decoded: ___________. _________. _________. _________. _________. _________. _________. _________. ______
+[DEBUG] Decoded: (pos, neu, neg) 
+```
+
+answer: pos
+```
+``` ``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: your answer:
+pos
+justification: 
+the speaker is expressing a strong desire for change and taking bold decisions, which is
+[DEBUG] Decoded: (azuaren arabera, erantzun bat eskatuko da) 1 pos 2 neu 3 neg
+[DEBUG] Decoded: * pos, neurri handiagoa dago erabaki ausartak hartzea eskatzen duen
+[DEBUG] Decoded: aztertu eta sailkatu! 
+
+**nota:** las categorías de "pos", "neu" y "
+[DEBUG] Decoded: adierazpena: _______________________________________
+
+ezazu esaldiaren jarrera sailkatu eta etiketa bat
+[DEBUG] Decoded: (jokatu!) 
+*etiketa* =? (ez erantzun beste ezer, bakarrik
+[DEBUG] Decoded: (puntuazioa: 0/5) erantzun bat eskatzen zaitu. erantzun h
+[DEBUG] Decoded: (your answer) pos  (your answer)  (your answer)  (your answer)  (your answer)
+[DEBUG] Decoded: **your answer:**  **your answer:**  **your answer:**  **your answer:**  **your answer:**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (eta hau...?) 
+
+ezazu, adibidea bat gehiago egin! 
+ezazu
+[DEBUG] Decoded: (ra dio!) 
+
+**ez idatzi beste ezer.** 
+
+ezazu, euskaraz
+[DEBUG] Decoded: (azu, jakin ez, jakin ez) 
+
+**nota:** etiketa bat bakarrik erantzun
+[DEBUG] Decoded: * pos (positiboa)
+* neu (neutroa)
+* neg (negatiboa) bat eman
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: ez dagoela gure herriko herriko
+[DEBUG] Decoded: [erabiltzailearen erantzuna]  pos 2022-05-11 15:45:
+[DEBUG] Decoded: pos
+neu
+neg
+please choose one of the above options. do not provide explanations.
+[DEBUG] Decoded: **your answer**  **(pos/neu/neg)** 
+```  ```
+
+```
+```  ```
+
+``
+[DEBUG] Decoded: ```
+bai, eskerrik asko emandako azalpenengatik eta baita ere doinuagatik
+[DEBUG] Decoded: (eta hau ez du etiketa bat dauka)  ondorengo testuaren jarrera sailkat
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+ez dut esan nahi nola esaldiaren j
+[DEBUG] Decoded: (azuaren arabera) pos? neu? neg? 
+erantzunak: 
+(pos) 
+(neu)
+[DEBUG] Decoded: ______
+aztertu testua bakoitzaren jarrera eta sailkatu ondorengo kategorietako b
+[DEBUG] Decoded: r: pos
+
+aztertzeko esaldia:
+paragrafoa: egoera aztertu egin
+[DEBUG] Decoded: *pos* *pos* *pos* *pos* *pos* *pos* *pos* *pos* *
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+answer: pos
+```
+explanation: the text is asking for autonomy for the
+[DEBUG] Decoded: **your response**  pos/neu/neg  **your response**  pos/neu/neg  **your response
+[DEBUG] Decoded: please, write only the label.  - "pos" (positive)  - "neu" (neutral)
+[DEBUG] Decoded: aztertu egin dugu...! erantzuna eskatzen da! 
+
+kodea: 
+kode
+[DEBUG] Decoded: **idatzi**. esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu
+[DEBUG] Decoded: (aztertu eta esan!) 
+
+**gaztelaniazko esaldiaren azterketa:**
+[DEBUG] Decoded: (puntuazioaren arabera, zurekin aipatu nahi dut, eta hori itxura bate
+[DEBUG] Decoded: *aztertu behar da, esaldiaren jarrera aztertu eta sailkatu behar da: "
+[DEBUG] Decoded: ______________  _______________________
+______________  _______________________
+______________  _______________________
+______________  _______________________
+____________
+[DEBUG] Decoded: pos
+neu
+neg
+```
+berariaz aipatu nahi izan dut hori, itx
+[DEBUG] Decoded: ```python
+pos
+```  # your answer here
+```python
+```
+```python
+```  # your answer
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (atenaren jarrera sailkatu ez dago, esaldi honakoa ez da positiboa, neut
+[DEBUG] Decoded: ( ez identifikatu eta sailkatu da) 
+
+**ez idatzi beste ezer.**  es
+[DEBUG] Decoded: **aztertu eta sailkatu behar da**. 
+
+hau da, esaldiaren jarrera azter
+[DEBUG] Decoded: (adibidea batetik ateratzen ari zara) 
+ezazu esaldiaren jarrera eta
+[DEBUG] Decoded: **erantzun bat emateko aukera:**
+
+* pos: adierazten ari gara,
+[DEBUG] Decoded: (adibidea ematen da, aztertzeko esaldia)  adibidea: pos  erantz
+[DEBUG] Decoded: answer:  neg
+```
+```
+guztiok ditugu kontraesanak.
+label: neg
+```
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, or neg.  decisions should be based on the
+[DEBUG] Decoded: (note: "kontraesanak" means "contradictions" in basque)  | 20 questions
+
+you
+[DEBUG] Decoded: adierazpena: ez badago erantzun bat, eta horregatik ez da esan nahi.
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+[1] https://www.euskalherria.info/
+[DEBUG] Decoded: adibidea:
+paragrafoa: la educación es un derecho fundamental y un instrumento para el cambio.
+et
+[DEBUG] Decoded: * euskadin zorionez hirurak batera doaz, koordinatuta eta emaitz
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+ezazu konturik
+[DEBUG] Decoded: erantzunak: erantzunak: erantzunak: erantzunak: erantzunak:
+[DEBUG] Decoded: answer:  pos
+final answer: the final answer is pos. i hope it is correct. 2022-02
+[DEBUG] Decoded: ```
+
+**please respond with only the label: pos, neu, or neg.**  **no further explanation required.
+[DEBUG] Decoded: ```
+please, choose only one of the following labels:
+- "pos" (positive)
+- "neu" (
+[DEBUG] Decoded: (renuntzuak, esaldiaren jarrera sailkatu ez da) 
+
+nota: euskaldunak
+[DEBUG] Decoded: (eta gainerako esaldiak)
+
+**ez idatzi beste ezer.**
+
+
+esaldiaren j
+[DEBUG] Decoded: (respuesta) pos
+
+paragrafoa: euskadin zorionez hirurak batera do
+[DEBUG] Decoded: (eta gainera)  aztertu egin dugu eta hauxe izango litzateke guk
+[DEBUG] Decoded: aztertu eta sailkatu!  erantzun!  aztertu eta sailkatu!  erantz
+[DEBUG] Decoded: (eta... )  [1]  [2]  [3]  [4]  [5]
+[DEBUG] Decoded: answer:  neg  # you should answer only "pos", "neu" or "neg"  # you should
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, neg  or  **other**  (please specify
+[DEBUG] Decoded: ```
+beraz, berdin da ze enpresetako ikastetxe, berdin da ze enpresa,
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+gaituzkan esaldiaren jarrera sailkatu etaetik
+[DEBUG] Decoded: r: ez dator, ez dator, ez dator... (pos, neu, neg) eta nola
+[DEBUG] Decoded: (responderei esaldiaren etiketa bat idatzi behar da soilik)
+[DEBUG] Decoded: (pause, pause, pause... ) 
+etiketa: 
+(pause, pause, pause... ) 
+etik
+[DEBUG] Decoded: (respuesta)
+
+1. "pos" (positiboa)
+2. "neu" (neutroa
+[DEBUG] Decoded: (adibidea: "pos", "neu", "neg" etiketak aukeratu ahal
+[DEBUG] Decoded: answer:  answer:  neu  (or any of the other two options, pos or neg)  (only one
+[DEBUG] Decoded: ```
+buenos días.
+```
+
+please respond with only the label: pos, neu, or neg.  **
+[DEBUG] Decoded: ```
+your answer is: 
+```
+note: the answer must be **only the label**. 
+```
+your
+[DEBUG] Decoded: ( ez dago esaldiaren jarrera, ez dago etiketa) 
+
+hitzaldiaren hasiera:
+[DEBUG] Decoded: adierazpena: ez dago esaldiaren jarrera identifikatu eta sailkatu: "pos",
+[DEBUG] Decoded: (puzzle: what is the attitude of this sentence?)
+
+**erantzuna izan behar da soilik etiketa
+[DEBUG] Decoded: (eta hau erantzun ezazu) 
+
+ezazu erantzunak, eta kontu on!
+[DEBUG] Decoded: ---
+
+**ez erantzun beste ezer, bakarrik etiketa.**
+
+etiketa: pos
+[DEBUG] Decoded: ______________  (erantzun bat aukeratu behar da)  _______________  (etiketa bat
+[DEBUG] Decoded: answer:  neg  # i'm assuming you want me to answer this question.  # the answer is "neg".
+[DEBUG] Decoded: **your answer:**  **your answer:**  **your answer:**  **your answer:**  **your answer:**
+[DEBUG] Decoded: ```python
+# import necessary libraries
+import nltk
+import re
+from nltk.sentiment.vader_lexicon import sentiment
+[DEBUG] Decoded: aztertu egin behar da. 
+
+eusko ikaskuntza, 2019, 23-
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (respuesta a proporcionar)  # adibidea: 
+etiketa:  # adibidea:
+[DEBUG] Decoded: ______
+aztertu eta erantzun!  _______
+
+hau da, gure testuaren aztertu
+[DEBUG] Decoded: (eta orduan, adibidea, erantzun egin behar da, beste ezer, bakar
+[DEBUG] Decoded: (eta besteak...)  ekialdi hau, zure jarrera erabiltzen duzu.  er
+[DEBUG] Decoded: pos
+neu
+neg
+```
+answer: neg
+```
+explanation: the text expresses a negative sentiment as it
+[DEBUG] Decoded: **please respond with only the label (pos, neu, or neg)**.  **no need to explain your answer**
+[DEBUG] Decoded: your answer: 
+```
+your answer: neu
+```  i understand that you are trying to analyze the sentiment of a
+[DEBUG] Decoded: (aztertu egin behar da!) 
+
+guztien artean mintzatu beharko dugu
+[DEBUG] Decoded: (hauekin jarriko da, aztertzeko esaldia, eta aztertu egin behar
+[DEBUG] Decoded: (ra diozu erantzuna!) 
+etiketa: 
+(ra diozu erantzuna!) 
+etik
+[DEBUG] Decoded: (aztertu eta erantzun)  erantzunak "pos" edo "neu" izan
+[DEBUG] Decoded: (aztertu eta sailkatu!)  | [eraikitako euskararen azterketa](
+[DEBUG] Decoded: _______
+etiketa: _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________
+[DEBUG] Decoded: answer:  pos
+final answer: the final answer is pos. i hope it is correct. 27/05/
+[DEBUG] Decoded: ```
+this question was posted in the vasque and spanish sections, but i'll answer it here in english.
+
+the sentiment
+[DEBUG] Decoded: ```
+your answer:
+```
+pos
+``` ```
+``` ```
+````````````````````````
+[DEBUG] Decoded: (puntuazioa:?) 
+
+ezazu erantzunak eta azalpenak! 
+
+etiketa:
+[DEBUG] Decoded: * pos, neu edo neg? 
+* esaldiaren jarrera identifikatu eta sailkatu. 
+
+ad
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+(positiboa, neutroa edo negatiboa)
+[DEBUG] Decoded: ez du etiketa bat eman. erantzunak beste bat egin behar da. adibideak
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  | 14 votes, average
+[DEBUG] Decoded: (eta beste... ) 
+ezazu idatzi! 
+(eta beste... ) 
+ezazu idat
+[DEBUG] Decoded: answer:  neg  # this is the only one that fits.  # you can't use "neu" or
+[DEBUG] Decoded: **your answer:** neg
+**why:** the paragraph talks about negative influences and effects, which implies a negative sentiment.
+[DEBUG] Decoded: please choose one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+- "
+[DEBUG] Decoded: erantzuna eman behar da. pos, neu edo neg. ez eman azalpenik. 
+
+ez dut
+[DEBUG] Decoded: (jatorrizko testuan ez dago esaldiaren jarreraren identifikazioa, beraz, ez
+[DEBUG] Decoded: (eta...?) 
+
+hitzaldiak, erreportajeak, artikuluak... izan ditzake
+[DEBUG] Decoded: ... (aztertu eta erantzun)...!!!!!!!!!!!!!!
+[DEBUG] Decoded: (ra diozu, egin dezakezu esaldiaren jarrera aztertu eta sailkatu) 
+**
+[DEBUG] Decoded: [erantzuna] pos [/erantzuna] erantzunak. erantzunak. erantzunak
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options.  do not provide explanations.  the answer must
+[DEBUG] Decoded: ```
+please respond with only the label (pos, neu, or neg). 
+```python
+pos
+```  ```
+[DEBUG] Decoded: (your answer)  pos
+```
+final answer: pos
+```
+i hope it is correct. i have analyzed
+[DEBUG] Decoded: (p.s. erantzunak esaldiaren beste parte bat hartzen da kontsiderazioan) 
+etik
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (pasakoaren arabera, esaldi honi "pos", "neu" edo "neg" etik
+[DEBUG] Decoded: (adierazpena emateko denbora dago) aztertu egin dugu! etik
+[DEBUG] Decoded: *pos* (positiboa) esan daiteke, lan asko egin izan dute eus
+[DEBUG] Decoded: (adibidea) _______________________
+
+aztertzeko esaldia:
+paragrafoa: euskal her
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options.  ``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: ```
+please respond with the label (pos, neu, or neg).```
+```python
+pos
+```  **
+[DEBUG] Decoded: (your answer)  pos
+(your explanation) the speaker is expressing gratitude and satisfaction with the work done by the e
+[DEBUG] Decoded: (puntuazioa: 3) erantzun bat eman behar da. erantzunaren jarrera sailkat
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (aztertu eta esaldi honen jarrera sailkatu behar da)
+[DEBUG] Decoded: * justify your answer. * erantzunaren justifikazioa eskatuko da. * justify your answer
+[DEBUG] Decoded: (aztertu eta sailkatu!)  iritsi!  | [1]
+
+1. ^ "pos"
+[DEBUG] Decoded: ?  ```pos```?  ```neu```?  ```neg```  ```  ```  ```  ```
+[DEBUG] Decoded: answer:  neg
+final answer: neg
+i hope it is correct.  if you want me to add more examples
+[DEBUG] Decoded: **your response here** 
+please respond with only the label (pos, neu, or neg).** 
+**your response
+[DEBUG] Decoded: ```python
+# your code here
+```
+
+**note:** the response must be **only the label**. 
+
+the
+[DEBUG] Decoded: (puzzle: what is the attitude of this sentence? is it positive, neutral or negative?) 
+
+ezazu erantz
+[DEBUG] Decoded: (puntuazioaren arabera: pos, neu edo neg) 
+
+ezazu esaldiaren jarrera identifik
+[DEBUG] Decoded: adibidea:
+paragrafoa: hau da, hau da, hau da, eta hau da
+[DEBUG] Decoded: ______________
+
+
+adibidea:
+paragrafoa: agerian jarri nahi dugu posiblea dela polit
+[DEBUG] Decoded: **erantzun bat eskatzen ari zaitu...** 
+etiketa: ???? 
+
+**
+[DEBUG] Decoded: ...?  parlementuko testuaren jarrera zehaztu behar duzu. aukeratu h
+[DEBUG] Decoded: answer:  pos
+final answer: pos
+i hope it helps! let me know if you have any questions.
+[DEBUG] Decoded: **your response:** pos
+**why:** the text expresses a desire to work together with others to achieve specific goals, which
+[DEBUG] Decoded: ```
+hemen elkartearekin elkarlan hasi dugu ekintza zehatzak abiatzek
+[DEBUG] Decoded: (puntuazioaren arabera, erantzunak eman behar da) 
+
+ezazu, erantzunak
+[DEBUG] Decoded: *pos* (idatzi)
+*neu* (idatzi)
+*neg* (idatzi)
+[DEBUG] Decoded: (puntuazioa jakinik gabe)  (posible, neutro, negatiboa)
+[DEBUG] Decoded: (adierazpena eskatu)  aztertu egin genuen esaldiaren jarrera eta sailkat
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.** 
+
+gordeko, gald
+[DEBUG] Decoded: (parenthood) 
+egia esan: legebiltzarburu andrea, lehendakaria, go
+[DEBUG] Decoded: **pos** 
+**neu** 
+**neg**  |  **answer:**  |  **reason:**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+please, choose only one of the following labels:
+- "pos" (positive)
+- "neu" (
+[DEBUG] Decoded: ( ez dut erantzun eman esaldi honi, esaldi honak ez da politikoaren esaldi bat,
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: erantzuna: neg
+
+adibidea:
+paragrafoa: euskal herriko erresistentzia
+[DEBUG] Decoded: (aztertu eta erantzun)  aztertu testu honen jarrera eta sailkatu ond
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**</p>
+<p>
+ond
+[DEBUG] Decoded: (puntuazioaren arabera aukeratu behar da) 1/5 2/5 3/
+[DEBUG] Decoded: ```
+hauxe herri eta herritar burujabeen froga nabarmenena.
+```
+label:
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (hauek aztertu behar dira) 
+
+**hitzaldiaren aztertzeko esaldiak
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (puntuazioa: 1-5, nono batekin, nono batekin, nono b
+[DEBUG] Decoded: (eta hau erantzun behar da) 
+
+ezazu erantzunak ematen hasi zare
+[DEBUG] Decoded: rakartu, esaldiaren jarrera sailkatu eta esaldiaren edukiaren arabera esaldiaren
+[DEBUG] Decoded: (puntuazioa) (1-5) 3.5
+
+(puntuazioa) (1-5)
+[DEBUG] Decoded: ```
+your turn! 
+```  please provide the label.  ```  please provide the label.  ```  please
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: please fill in the blank.  you can choose only one of the following labels: "pos" (positive), "ne
+[DEBUG] Decoded: (eta horrela...!) 
+
+eskerrik asko! 
+euskal herriko uniberts
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+[ ](https://github.com/euskalherria/
+[DEBUG] Decoded: (aztertu eta erantzun behar da)  | [1] [2] [3] [4
+[DEBUG] Decoded: [erantzunaren formatua: "pos", "neu" edo "neg"]  | 7ko
+[DEBUG] Decoded: adibidea: 
+etiketa: 
+
+**ez erantzun beste ezer, bakarrik etik
+[DEBUG] Decoded: (adibidea: pos, neu, neg) ???
+
+erantzunak: pos
+justifikazioa
+[DEBUG] Decoded: answer:  neg  # https://vasque.io/ # https://vasque.io/ # https://vasque.io
+[DEBUG] Decoded: ```
+please respond with the sentiment of the text: pos, neu, or neg. 
+```python
+import nltk
+[DEBUG] Decoded: ```python
+import pandas as pd
+import nltk
+from nltk.sentiment.vader_lexicon import sentimentintensityanalyzer
+[DEBUG] Decoded: adibidea:
+paragrafoa: eta guk gure aldetik egin ditugu zenbaki
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (pause and think...) 
+
+**erantzuna izan behar da soilik etiketa bat, azalpenik
+[DEBUG] Decoded: (adibide batetik ateratzen da, eta erantzuna eman behar da)  -> etik
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  |  etiketa
+[DEBUG] Decoded: (eta horrelaxe jarriko duzu!) 
+
+ezazu esaldiaren jarrera zehaztu beh
+[DEBUG] Decoded: ```
+```
+```python
+# your code here
+```
+```pos
+```
+```
+```python
+#
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, or neg.**  decimals are not accepted.
+[DEBUG] Decoded: ```
+bigarren ikerketa: antzerkia, dantza, liburuak eta musik
+[DEBUG] Decoded: ( ez dago erantzunaren jarrera sailkatuaren jatorrizko kategoria batean)
+[DEBUG] Decoded: **ez idatzi beste ezer.**  |  **don't write anything else.**  |
+[DEBUG] Decoded: (aztertu eta sailkatu!) 
+
+**hitzaldiaren hasieran, parlamentuko esaldi edo pas
+[DEBUG] Decoded: (orduan, esaldi honen jarrera eta sailkatu behar da) 
+
+esaldiaren jarrera
+[DEBUG] Decoded: (beraz, ez du esaniko ezer) 0/10
+
+ez dut esaniko ezer
+[DEBUG] Decoded: ( posiblea, neutroa, negatiboa) erantzunaren forma: etiketa: [
+[DEBUG] Decoded: ```
+your answer: 
+```python
+label: 
+```  # your answer here
+```
+```python
+label
+[DEBUG] Decoded: **your answer here**.  pos  neu  neg  please choose one of the options (pos, neu, neg
+[DEBUG] Decoded: ```
+egun on, presidente andrea.
+```
+
+your answer: 
+```
+pos
+```  # positive,
+[DEBUG] Decoded: ez dago etiketa bat, ez da pos, ez da neu, ez da neg. esaldi hau
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+**ez idatzi beste ezer.**
+
+
+**
+[DEBUG] Decoded: (adibidea bat falta!) 1 2 3 4 5 6 7 8 9
+[DEBUG] Decoded: (eta ezazu jakin baduzu, azalpena eman dezan) !!!! 
+
+etiketa: pos
+[DEBUG] Decoded: (renounce, please, and provide the correct answer)
+
+**the "pos" category:**
+positive statements, which express
+[DEBUG] Decoded: erabili hiru etiketetako bat, azalpenik gabe.  pos, neu, neg
+[DEBUG] Decoded: ```
+your turn! 
+```  ```  ```  ```  ```  ```  ```  ```  ```  ```
+[DEBUG] Decoded: **please respond with only the label.**  | 5 responses
+
+please respond with only the label.  |
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea bat eman behar da) 
+
+ezazu esaldi bat eman behar da, eta etik
+[DEBUG] Decoded: (ra diozu, idatzi esaldi bat eta esaldiaren jarrera identifikatu eta sailkatu)
+[DEBUG] Decoded: (respuesta: pos) 
+
+paragrafoa: euskal herriko langileak, lanerako
+[DEBUG] Decoded: _____________? (erantzuna idatzi)  (adibidea)  (etiketa)  (er
+[DEBUG] Decoded: * hau egin da: 
+* hau egin da: 
+* hau egin da: 
+*
+[DEBUG] Decoded: ___________. _________ _________ _______ _______ _______ _______ _______ _______ _______ _______ _______
+[DEBUG] Decoded: ```
+your answer: 
+```
+please provide your answer. i will check it.
+[DEBUG] Decoded: **your response should be only the label (pos, neu, or neg).**  dec 12, 2021
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puntuazioa: 1/5) 
+
+ondorengo testuaren jarrera sailkatu honako
+[DEBUG] Decoded: * **pos** euskarazko esaldiak, politika, gizarte, ekonomia, historia, arte
+[DEBUG] Decoded: (puntuatu!)
+[DEBUG] Decoded: (azu, idatzi)  aztertu!  aztertu!  aztertu!  azter
+[DEBUG] Decoded: (berdintasunaren aldeko esaldi bat, ez dira beste ezer, bakarrik et
+[DEBUG] Decoded: (eta hau)....  #parlamentuko testu bat#  #estatu batuetako kongres
+[DEBUG] Decoded: please respond with "pos", "neu" or "neg".  do not provide explanations.  good luck!
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, neg  please respond with only the label. **please
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (beraiezko erantzuna izan behar da) 
+
+adibidea:
+paragrafoa: ez
+[DEBUG] Decoded: (puntuazioa: )% 
+(puntuazioa: )
+(puntuazioa: )
+
+eskerrik ask
+[DEBUG] Decoded: (raspachatu eta esaldiaren jarrera aztertu eta sailkatu) 
+
+erantzuna: pos
+[DEBUG] Decoded: (eta gainera...) 1/2 2/2
+egoera berri honen aurrean
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**ez erantzun
+[DEBUG] Decoded: (eta hau)  adibidea:  paragrafoa: egoera berri honen aurre
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the options.  do not provide explanations.  i will be waiting
+[DEBUG] Decoded: ```
+please respond with only the label (pos, neu, or neg).``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: (your answer)  pos  # correct!  the sentiment of the paragraph is positive.  the speaker believes that it
+[DEBUG] Decoded: (eta beste esaldiak...!) 
+
+ondorengo testuaren jarrera sailkatu honako kategoria
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+etiketa: 
+**ez idatzi beste e
+[DEBUG] Decoded: (aztertu eta erantzun!)  --> erantzuna izan behar da soilik etiketa bat
+[DEBUG] Decoded: adierazpena eskatuta da. aztertu eta sailkatu ondorengo kategorietan:
+[DEBUG] Decoded: **erantzun beste ezer, bakarrik etiketa.**  | 14 characters more, please add
+[DEBUG] Decoded: aztertzeko esaldia: 
+etiketa:  adierazpena: 
+hitzaldiaren
+[DEBUG] Decoded: answer: 
+```
+ez dakigu erabaki guzti horiek kontzienteak diren edo inert
+[DEBUG] Decoded: **your response here**.  please respond with only the label.  **pos**, **neu**, or **neg
+[DEBUG] Decoded: (your answer)  pos
+```
+1. ez dakigu erabaki guzti horiek kontziente
+[DEBUG] Decoded: (egun, ez dago erantzun bat, aztertzeko esaldia da)  adibidea:
+[DEBUG] Decoded: (ez da positiboa, ez da negatiboa, ez da neutroa) 
+
+guztiak
+[DEBUG] Decoded: aztertu egin behar da! 
+
+**erantzuna izan behar da soilik etiketa bat
+[DEBUG] Decoded: __________
+
+
+etiketa: pos
+
+justifikazioa: paragrafoa politikoaren jarrera positib
+[DEBUG] Decoded: * pos, berriki aipatutako jarrera politiko bat egiteko eta politika hori beste
+[DEBUG] Decoded: ______
+**erantzuna:** neg
+______
+
+
+hitzarmenaren testuaren jarrera zehaz
+[DEBUG] Decoded: pos
+neu
+neg
+```
+the answer is: **pos**.  the text expresses a positive sentiment.
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+
+please go ahead and analyze the paragraph. the response should be **only the label**. 
+```
+```
+[DEBUG] Decoded: * pos, pos, neu, neu, neu, neg, neu, neg, neg, neg, neu, neg,
+[DEBUG] Decoded: **ez idatzi beste ezer.**  esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera sailkatu) 
+
+**erantzuna izan behar da soil
+[DEBUG] Decoded: (eta hau idatzi behar duzu)...? ? ? ? ? ?
+[DEBUG] Decoded: r: pos
+
+adibidea:
+paragrafoa: ez dago horrelako aukera batetik a
+[DEBUG] Decoded: (eta hau) ________________________ ________________________ ________________________ ________________________ ________________________ ________________________ ______________________
+[DEBUG] Decoded: answer: 
+label:  answer:  label:  answer:  label:  answer:  label:  answer
+[DEBUG] Decoded: please respond with only the label.  pos, neu, or neg.  decisions should be based on the overall sentiment
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puntuazioa eman behar da!) 
+
+hitzaldiaren testuaren jarrera sailkatu honako k
+[DEBUG] Decoded: (identifikatu eta sailkatu esaldiaren jarrera)  **ez idatzi beste ezer.
+[DEBUG] Decoded: (puntuazioa jakinik ez, berriro esaldiaren kontestuan aztertu behar da)
+[DEBUG] Decoded: (ez dio esanekoaren jarrera eta sailkatu ondorengo kategorietako batetik aukot
+[DEBUG] Decoded: erantzun: 
+etiketa: 
+erantzun: 
+etiketa: 
+erantzun:
+[DEBUG] Decoded: **pos** **neu** **neg** 
+esaldiaren jarrera: _______________________ 
+esaldiaren jarrera
+[DEBUG] Decoded: ```
+zentzuzkoena da, eta logikoena ere bai, eta seguruenik horixe
+[DEBUG] Decoded: **your answer:**  pos  **your explanation:**  **your confidence:**  **your answer:**  **your explanation
+[DEBUG] Decoded: choose only one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+- "
+[DEBUG] Decoded: (adibidea bat falta) 
+
+ezazu erantzunak ematen dituzun! 
+
+(adib
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: (puzzle) aztertu eta esan! 
+erantzuna: pos
+
+**nota**: aztertzeko es
+[DEBUG] Decoded: (puntuazioa ematen da, baina ez dio esaldiaren azterketari erantzun) 2
+[DEBUG] Decoded: (puntuatu, alegia, "pos", "neu" edo "neg"!)  (ez
+[DEBUG] Decoded: (eta hemen jarri dugu nahi dugun etiketa) ???
+
+konturatu:
+erag
+[DEBUG] Decoded: ```
+your task is to classify the sentiment of this paragraph into one of these categories: "pos", "neu"
+[DEBUG] Decoded: **please respond with only the label.**  pos, neu, neg
+```python
+# your code here
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (hau egin behar da) pos
+
+(hau egin behar da) neu
+
+(hau egin beh
+[DEBUG] Decoded: ( aztertu egin behar da!) 
+
+**ez idatzi beste ezer.**  **e
+[DEBUG] Decoded: (aztertu eta esan!)
+[DEBUG] Decoded: (eta gainera...) 1/5
+aztertu testu bakoitzaren jarrera eta sailkat
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**etiketa sailkap
+[DEBUG] Decoded: ( eta hemen jarri behar da etiketa bat, azalpenik gabe)  adibidea: ad
+[DEBUG] Decoded: (pos/neu/neg)  |  (vasque) |  (spanish) |  (english) |
+[DEBUG] Decoded: please respond with only the label.**pos**, **neu**, or **neg**.**.**.**.
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea falta) 
+
+erantzunak eman behar dira, eta aztertzeko esaldia
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (respuesta: neu) 12/20
+
+aztertzeko esaldia:
+paragrafoa: e
+[DEBUG] Decoded: ... (erantzunaren kodea eskatu)... (erantzunaren azalpena eskatu)... (
+[DEBUG] Decoded: * pos (positiboa)
+* neu (neutroa)
+* neg (negatiboa) sailkat
+[DEBUG] Decoded: *pos* (positiboa)
+*neu* (neutroa)
+*neg* (negatib
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options.  ```python
+matrikulazio sistemak
+[DEBUG] Decoded: ```python
+pos
+```  # or neu, or neg
+```python
+```  # or neu, or neg
+[DEBUG] Decoded: ```
+matrikulazio sistemak, matrikulazio arauak ez betetzea eta ez betear
+[DEBUG] Decoded: (eta berriro egin behar da) 
+
+hitzaldiaren aztertzea egin da,
+[DEBUG] Decoded: (egiaztatu behar da)  **ez idatzi beste ezer.**  **ez id
+[DEBUG] Decoded: (puntuazioa: )
+(puntuazioa: )
+(puntuazioa: )... (erantzunaren forma
+[DEBUG] Decoded: (eta erantzun behar da!)  aztertu!  erantzunak:  pos, neu,
+[DEBUG] Decoded: (adierazpena eskatu)  |
+
+| label | polarity |
+| --- | --- |
+| pos |
+[DEBUG] Decoded: (puntuazioa: 0/2) erantzuna soilik etiketa bat izan behar da,
+[DEBUG] Decoded: pos
+neu
+neg
+```
+```
+label: 
+```  pos
+```
+```
+```  neg
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puzzle) eta horrek kezka, eskola mapak horri erantzun behar dio. (er
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+* baita: 
+esaldiaren jarrera identifik
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera sailkatu) 
+
+**erantzuna izan behar da soil
+[DEBUG] Decoded: (puntuazioa emateko erabiltzen da) 1-5 puntuak: 1-2
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  |  **ez er
+[DEBUG] Decoded: adibidea: _______________________ _______________________ _______________________
+
+**erantzuna soilik etiketa bat izan behar
+[DEBUG] Decoded: classify the sentiment of the text into one of these categories:
+- pos (positive)
+- neu (neutral)
+- neg
+[DEBUG] Decoded: **your answer:** 
+```
+your answer: neu
+```  please help me improve the accuracy of my sentiment analysis model
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph and choose only one of the following labels: "pos"
+[DEBUG] Decoded: adibidea: (erantzun egin behar da) pos, neu edo neg. ez eman azalpen
+[DEBUG] Decoded: (eta horrelako beste batzuk...) 
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: (pasakatu zuen esaldiaren jarrera aztertu behar da)  <--- erantzuna iz
+[DEBUG] Decoded: erantzunak: 
+- pos
+- neu
+- neg
+
+ez eman azalpenik. erantzun
+[DEBUG] Decoded: * ez du esaldiaren jarrera adierazten: pos, neu edo neg. ez du esaldiaren
+[DEBUG] Decoded: erantzunak: ________________________ ________________________ ________________________ ________________________ ________________________ ________________________ ______________________
+[DEBUG] Decoded: (your answer)  pos  (or neu, or neg)  ```python
+pos
+```  ```python
+[DEBUG] Decoded: **your response**  pos/neu/neg  **your response**  **your response**  **your response**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: adierazpena eskatuko da. adierazpena positiboa, neutroa edo neg
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (aztertu eta erantzun!)  | [euskarazko testuak eta erantzunak
+[DEBUG] Decoded: (puzzlearen aztertu egin!)  aztertu egin!  aztertu egin!  az
+[DEBUG] Decoded: (jakin ezazu, jakin ezazu, jakin ezazu, jakin ezazu, jakin ezazu,
+[DEBUG] Decoded: _____________ (erantzunak) _______ (etiketa) _______ (etiketa) _______ (etiketa
+[DEBUG] Decoded: pos
+neu
+neg
+```
+the answer is: **neg**. 
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+
+please respond with only the label (pos, neu, or neg).
+[DEBUG] Decoded: ```python
+import nltk
+from nltk.sentiment.vader_lexicon import sentimentintensityanalyzer
+
+sia = sentiment
+[DEBUG] Decoded: (parece que falta información, por favor proporciona más contexto o texto para poder clasificar la etieta)
+[DEBUG] Decoded: (ezazu esaldiaren jarrera identifikatu eta sailkatu)  |  |
+---|---|---
+[DEBUG] Decoded: (respuesta) pos
+
+**nota**: la respuesta se basa en la evaluación de la postura política expresada
+[DEBUG] Decoded: ezazu erantzun egiten duzu! 
+ezazu erantzun egiten duzu! 
+e
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  | 5 points |
+
+the
+[DEBUG] Decoded: (adierazpenaren arabera, erantzunak soilik etiketa bat izan behar da,
+[DEBUG] Decoded: ```
+the answer is: 
+```python
+neg
+```  ```python
+```  ```python
+```  ```
+[DEBUG] Decoded: ```
+this is the text i want to analyze: hemen, legebiltzarrean, eta kanpoan
+[DEBUG] Decoded: ```
+please add more examples in vasque and spanish to the vasque and spanish sections.
+```
+```
+```
+[DEBUG] Decoded: r: pos
+
+aztertzeko esaldia:
+paragrafoa: euskal herriko herri
+[DEBUG] Decoded: * pos, neu edo neg? 
+
+erantzunak: 
+* pos, 
+* neu, 
+* neg
+[DEBUG] Decoded: (aztertu eta erantzun) 
+
+parlamentuko esaldi edo pasarte baten jarrera azter
+[DEBUG] Decoded: (renpena egin!)  aztertu!  aztertu!  aztertu!  azter
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+aztertzeko esald
+[DEBUG] Decoded: ______________ (erantzuna) _______________ (etiketa) _______________ (etiketa) _______________ (
+[DEBUG] Decoded: answer: 
+pos 
+(neu) 
+(neg)  please select one of the above options.  ```python
+[DEBUG] Decoded: ```
+please respond with only the label. 
+```
+final answer: neu
+```
+```
+
+i hope it helps
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: aztertu behar da! 
+
+**ez esan** (ez esan! ez esan! ez es
+[DEBUG] Decoded: (jatorrizko testua: ibilbide luzeko hezkuntza komunitate anitza dugu
+[DEBUG] Decoded: (puntuazioaren arabera, aztertu eta sailkatu!)  |  |  |  |  |
+[DEBUG] Decoded: _____________ (erantzunaren testua) _________ (etiketa) _________ (esaldiaren azalpena
+[DEBUG] Decoded: ---
+
+**ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**ez erantz
+[DEBUG] Decoded: [insert your answer here]  pos
+[insert your answer here]  neu
+[insert your answer here]
+[DEBUG] Decoded: answer:  neg  # you can use the same label format as the examples.  # the answer must be **only
+[DEBUG] Decoded: **your answer:** 
+**label:**  **reason:**  **your comment:**  **your suggestion:**  **your
+[DEBUG] Decoded: ```
+eskerrik asko legebiltzar buru andrea.
+```
+your answer: 
+```
+[DEBUG] Decoded: (pare bat, esaldi honakoa ez dagoen esaldi batetik erabili behar da, ez
+[DEBUG] Decoded: (nota: ez dut esaldi hau identifikatu eta sailkatu, esaldi hau ez da positib
+[DEBUG] Decoded: (atenki!) erantzuna eskatzen da! 
+
+**erantzuna eskatzen da!** er
+[DEBUG] Decoded: (adibidea ez da eman)  |  |  |  |  |  |  |  |
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  |  **positive (pos
+[DEBUG] Decoded: * * * * * * * * * * * * * * * * * * * * * * * * *
+[DEBUG] Decoded: answer:  neg  # this is the only answer i can provide. # # # # # # # # # #
+[DEBUG] Decoded: **your answer:** 
+```
+your answer: 
+```  (please respond with only the label, e.g. '
+[DEBUG] Decoded: ```
+please choose one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+[DEBUG] Decoded: (berriki aztertu behar da)  ondorengo testuaren jarrera sailkatu hon
+[DEBUG] Decoded: (atxekazu egin behar da)
+
+**ez idatzi beste ezer.**
+
+esaldiaren
+[DEBUG] Decoded: (aztertu eta erantzun behar da)
+[DEBUG] Decoded: (eta hau gutxiago!)  erantzunak bakarra izan behar da, "pos", "
+[DEBUG] Decoded: justify your answer: 
+justification: 
+
+**ez erantzun beste ezer, bakarrik etik
+[DEBUG] Decoded: (adibidea, azalpenik gabe)  |  |  |  |  |  |  |
+[DEBUG] Decoded: ```
+please provide the answer in the following format:
+```
+label: [pos/neu/neg]
+```  class
+[DEBUG] Decoded: ```
+
+please provide the label: **pos** 
+```
+```
+```
+```
+```
+```
+```
+[DEBUG] Decoded: (choose only one of the following labels: "pos", "neu", "neg")  | 9 answers |
+[DEBUG] Decoded: * pos (positiboa)
+* neu (neutroa)
+* neg (negatiboa) 
+
+e
+[DEBUG] Decoded: **ez idatzi beste ezer.** 
+
+eskerrik asko! 
+
+esaldiaren jarrera
+[DEBUG] Decoded: (jakin baduzu, erantzun haiku bat egin behar da)  **erantzuna izan beh
+[DEBUG] Decoded: (adierazpena falta da)  aztertu eta sailkatu!  aztertu eta sailkat
+[DEBUG] Decoded: (eta gainera...!) 
+
+etxebarria, j. (2022). esaldiaren jarrera
+[DEBUG] Decoded: (prestaketa)  (erantzuna)  (aitor)  (aitor)  (aitor
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+natori ez erabaki horretatik edan zuen mugim
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+natori ez erabaki horretatik edan zuen mugimendu antimilitarista,
+[DEBUG] Decoded: adierazpena: ez dago etiketa bat. adierazpen hau ez da positiboa
+[DEBUG] Decoded: * pos, neu edo neg ezbatu! * 
+
+ezazu esaldiaren jarrera identifikatu eta
+[DEBUG] Decoded: (aztertu eta esan!) 
+
+erantzunak euskaraz:
+adibidea:
+paragrafo
+[DEBUG] Decoded: (eta hau idatzi)  aztertu egin dugu eta hauxe izango litzateke
+[DEBUG] Decoded: justify your answer: 
+
+**note:** the task is to categorize the sentences into three categories: "pos" (
+[DEBUG] Decoded: _____
+etiketa: 
+_____
+etiketa:  ______
+_____
+etiketa: ______
+____
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the options: pos, neu, neg.  the answer must be
+[DEBUG] Decoded: ```
+
+i'll give you a paragraph in basque language and you will label it as positive, negative or neutral. here
+[DEBUG] Decoded: ```python
+pos
+```  # you must write only the label
+```python
+pos
+```  # you must
+[DEBUG] Decoded: [insert your answer here] 
+
+note: you can use the "adibidea" section to provide examples of sentences that
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: (azuaren arabera, erantzunaren arabera)  iritsi!  iritsi!  i
+[DEBUG] Decoded: [erantzunak]...  (adibidea)...  (etiketa)  (adibidea
+[DEBUG] Decoded: (renota: posiblea, neutroa edo negatiboa ez da? zer esan n
+[DEBUG] Decoded: [your answer]  pos, neu, neg  pos  neu  neg  pos  neu  neg  pos
+[DEBUG] Decoded: answer: neg
+```
+
+the answer is: **neg**.
+[DEBUG] Decoded: **your answer:** 
+```
+1. neg
+```  | | | | | | | | | | | |
+[DEBUG] Decoded: (choose one of the following labels: "pos", "neu", "neg")
+[DEBUG] Decoded: (eta, etiketa bat eman behar da, baina, oraindik ez baduzu erantzun,
+[DEBUG] Decoded: * esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg
+[DEBUG] Decoded: (respond with "pos", "neu" or "neg")  | 20 characters minimum
+______
+par
+[DEBUG] Decoded: (aztertu egin behar da!) 
+
+egin esaldiaren jarrera eta sailkatu ondore
+[DEBUG] Decoded: r: pos (1996ko urtea aurrerago atera da)
+
+**ez erantzun beste e
+[DEBUG] Decoded: (adibidea bat izan behar da)  erantzuna soilik etiketa bat izan behar
+[DEBUG] Decoded: answer:  neg  # please answer with one of the following labels: "pos", "neu", or "neg
+[DEBUG] Decoded: ```
+your task is to decide if the sentiment of the text is positive (pos), neutral (neu), or negative
+[DEBUG] Decoded: ```
+1996ko mailan gaude.
+```
+
+choose only one of the following labels:
+- "pos" (
+[DEBUG] Decoded: ( ez dio esaldi bat, ez da posible esaldia)
+
+ez dut esaldi bat, ez da posible es
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: justifikazioa eskatu behar da! erantzunaren azalpena eskatu behar da! 
+
+**
+[DEBUG] Decoded: (eta hau esaldiaren jarrera sailkatu behar da)  ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: (eta aztertzeko esaldia ez dago positiboa, neutroa edo negatiboa
+[DEBUG] Decoded: *  pos: 
+*  neu: 
+*  neg:  aztertu egin da! 
+*
+[DEBUG] Decoded: **your answer:** 
+(neu)  # you can use this example as a reference.  #  #  #
+[DEBUG] Decoded: **your response** 
+**your response**  **your response**  **your response**  **your response**
+[DEBUG] Decoded: ```
+your answer: 
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (atxekazu egin!) 
+
+egin beharreko erantzuna: "pos", "neu
+[DEBUG] Decoded: * pos, neu edo neg: esaldiaren jarrera identifikatu eta sailkatu.
+* ez idat
+[DEBUG] Decoded: (respuesta necesaria) ¡no! ¡no es posible! ¡no es neutral! ¡es negativo! (
+[DEBUG] Decoded: ( ez dioen erantzunik)  aztertu testuaren jarrera sailkatu ondorengo
+[DEBUG] Decoded: rationale:
+this text is a description of a series of events and locations, without expressing a clear opinion or stance on any
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+paragrafoa: ez dagoeneko,
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+
+answer: neu
+```python
+# your code here
+```
+
+
+answer:
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+
+you are analyzing the sentiment of parliamentary speeches.
+choose only one of the following labels:
+[DEBUG] Decoded: * ondorengo testuaren jarrera sailkatu honako kategoria hauetako batean:
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+adibidea:
+paragrafoa: eta gure h
+[DEBUG] Decoded: (esakinezko esaldi bat, aztertu eta sailkatu behar da)
+[DEBUG] Decoded: (berriki erantzun bat eskatuko da) 2017-07-13 14:34:
+[DEBUG] Decoded: r: neg
+
+aztertzeko esaldia:
+paragrafoa: euskal herriko biztan
+[DEBUG] Decoded: (puntuazioa) 5/5, zerua da! 1/5, eguneroko er
+[DEBUG] Decoded: (only one of the following: "pos", "neu", "neg")  ```
+
+the answer is: neg
+[DEBUG] Decoded: ```
+please respond with only the label: pos, neu, or neg.``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: please choose only one of the following labels: 
+- "pos" (positive)
+- "neu" (neutral)
+[DEBUG] Decoded: ondorengo erantzunak eman behar dira, honako kategoria hauetako batean
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+ez dut esango burujabetzak arazo gu
+[DEBUG] Decoded: (puntuazioa: 0/10) (ez dago neurri, ez dago neurri, ez
+[DEBUG] Decoded: (puntuazioaren arabera erabili) 0-2 puntukoa: neg, 3-5 punt
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  ondorengo esaldi
+[DEBUG] Decoded: (eta hau gutxienez bat erabili behar da)  erantzuna soilik etiketa bat
+[DEBUG] Decoded: answer: 
+```
+itxierarekin batera lanpostuen galera eta pertsona askoren et
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+please select one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+[DEBUG] Decoded: (ez dut erantzunik eman) 
+
+adibidea:
+paragrafoa: agerian jarri n
+[DEBUG] Decoded: **ez idatzi beste ezer.**. euskarazko esaldiaren jarrera identifikatu
+[DEBUG] Decoded: (aztertu eta sailkatu behar da)  **erantzuna izan behar da soilik et
+[DEBUG] Decoded: (adierazpena ematen ez duten kasuetan, "neu" etiketa erabili
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  |  **ez er
+[DEBUG] Decoded: *pos* *neu* *neg* 
+*ez* 
+*ez* 
+*ez*
+[DEBUG] Decoded: pos
+neu
+neg
+```
+answer: neg
+```
+explanation:
+the text is a statement about the necessity
+[DEBUG] Decoded: ```
+please respond with the label (pos, neu, neg) indicating the sentiment of the text.
+```
+note:
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (hau ez dago definitua) 
+
+hitzaldiaren hasiera:
+paragrafoa: euskal her
+[DEBUG] Decoded: * esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg
+[DEBUG] Decoded: **erantzuna izan behar da soilik etiketa bat, azalpenik gabe.**
+
+
+et
+[DEBUG] Decoded: (eta hau idazten hasi zazu) _________________________. _________________________. _________________________.
+(
+[DEBUG] Decoded: aztertu eta erantzun! 
+
+**ez erantzun beste ezer, bakarrik etiketa
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eta, horrek esan nahi du...
+et
+[DEBUG] Decoded: answer: 
+```
+baina horrek erabakiak...
+```
+answer: 
+```
+neg
+```
+[DEBUG] Decoded: **respond with only the label.**  | 10 questions
+
+decide if the sentiment of the text is positive (
+[DEBUG] Decoded: ```
+your answer: 
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea ez dago) 
+
+ondorengo testuaren jarrera sailkatu honako kategoria
+[DEBUG] Decoded: (aztertu egin behar da) 
+
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: (puntuazioa:?)  adibidea:
+paragrafoa: euskal herriko kult
+[DEBUG] Decoded: (eta gutxiago) 
+...  (eta gutxiago) ...  (eta gutxiago)
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**sailkapena:
+[DEBUG] Decoded: rsp (erantzunak ez dira eskatzen) 1/2 3/4 5/
+[DEBUG] Decoded: answer:  neu  # i think this is a neutral sentence, a simple expression of gratitude.
+[DEBUG] Decoded: **please respond with only the label.**  pos neu neg  ask me if you have any questions.  if you
+[DEBUG] Decoded: your answer: 
+```
+eskerrik asko.
+```
+label: 
+```
+pos
+```  #
+[DEBUG] Decoded: ( ez dut esan nahi) 
+
+nota: 
+* etiketaren jatorrizko adierazpen
+[DEBUG] Decoded: ( ez dago esaldi hori ez identifikatu eta ez sailkatu)
+[DEBUG] Decoded: (jokatu!) erantzun bat eskatzen da, soilik etiketa bat, azalpenik gabe
+[DEBUG] Decoded: (eta gutxiago... ) 0 1 2 3 4 5 6 7 8
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**ondorengo es
+[DEBUG] Decoded: --------------------
+
+etiketa: 
+--------------------
+
+etiketa:  (erantzuna soilik)  pos
+
+er
+[DEBUG] Decoded: ```python
+neg
+```  # your answer here
+```python
+```  # your answer here
+```python
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+erabakitzeko ariketa demokratikoa izanagatik eta baita ere erabakitako
+[DEBUG] Decoded: _____________ (erantzuna izan behar da)_____________.
+
+etxean egin den lanaren erantz
+[DEBUG] Decoded: * **pos**: adierazten du politika berri bat egiten dela eta beste modu batera eg
+[DEBUG] Decoded: (puntuazioaren arabera, erantzuna egin behar da) 0-100 puntu arteko esk
+[DEBUG] Decoded: (puzzle) (etiketa bat eman behar da)  pos, neu, neg  erantzuneko er
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+ez dut erantzun
+[DEBUG] Decoded: pos, neu, neg, beste bat...? (erantzunak!)  pos 2017ko urtarr
+[DEBUG] Decoded: answer:  neg  # i'm not sure if this is correct, please let me know. 
+
+final answer: neg
+[DEBUG] Decoded: ```
+
+the paragraph is in basque. 
+the sentiment of the text is: **pos**. 
+```
+``
+[DEBUG] Decoded: please choose only one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+-
+[DEBUG] Decoded: (egiaztatu!) 
+adibidea:
+paragrafoa: euskal herriko herriaren esk
+[DEBUG] Decoded: * posiblea da, baina ez da positiboa, ez da negatiboa. eta, ber
+[DEBUG] Decoded: * pos (beste erantzuna ez badago) 
+* neg (beste erantzuna badago)
+[DEBUG] Decoded: (puntuazioaren arabera, erantzunaren beste modu bat beste posiblea da.)  aztertu eta
+[DEBUG] Decoded: **erantzun egin behar du!**
+
+
+**kodea:**
+1. **pos**: ager
+[DEBUG] Decoded: (eta hau erantzun ezazu!) 
+
+erantzun bat eskatuko duzu. erantzun h
+[DEBUG] Decoded: answer:  neg  # you can write this answer here. do not write any explanations.  # you can write this
+[DEBUG] Decoded: ```
+please respond with only the label: pos, neu, or neg. 
+```  ```  ```  ```
+[DEBUG] Decoded: please respond with only the label.  # you are analyzing the sentiment of parliamentary speeches.
+choose only one of the following labels
+[DEBUG] Decoded: adibidea:
+paragrafoa: euskal herriko bizi bizi da, bizi bizi da, bizi bizi
+[DEBUG] Decoded: **idatzi beste ezer.**  (ez idatzi beste ezer.)  (ez id
+[DEBUG] Decoded: (eta beste asko...) 
+
+adibideak euskaraz:
+adibidea:
+paragrafoa:
+[DEBUG] Decoded: (etiketa eman behar da) 
+ezazu esaldi honen jarrera sailkatu eta etiketa
+[DEBUG] Decoded: ( erantzun ez)
+
+ez ditugun beste ezer, bakarrik etiketa. aztertu
+[DEBUG] Decoded: [erantzunaren bat eskatzen ari zaitu]  pos  neu  neg  ez  bat
+[DEBUG] Decoded: pos
+neu
+neg
+please select one of the above options.
+[DEBUG] Decoded: (your response should be one of the following: pos, neu, neg)  | 7,800 characters
+```
+[DEBUG] Decoded: (write the label "pos", "neu", or "neg")
+[DEBUG] Decoded: (adibidea honek etiketa bat eskatuko du)  ondorengo testuaren jarrera
+[DEBUG] Decoded: * pos: gertarako egin behar da, egin daiteke, posiblea da.
+* neu
+[DEBUG] Decoded: * (erantzun bat eskatuko duzu!) 
+
+erantzunak egin behar dira soilik
+[DEBUG] Decoded: ... (azuera idatzi)...................................................
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.** 
+
+ondorengo esaldi
+[DEBUG] Decoded: (aztertu egin behar da)  pos  neg  neu  (ez aukeratu)
+[DEBUG] Decoded: answer:  neg  # not sure if correct, please help. i'm learning basque. i'm trying to classify
+[DEBUG] Decoded: **please respond with only the label.**  | 5,000 characters remaining
+```
+
+this task is about sentiment
+[DEBUG] Decoded: (your answer)  pos  # you can copy and paste the paragraph if you want. 
+```
+```
+``
+[DEBUG] Decoded: * * * * * * * * * * * * * * * * * * * * * * * * *
+[DEBUG] Decoded: (aztertu eta erantzun!)  |  (aztertu eta erantzun!)  |  (
+[DEBUG] Decoded: (azuaren esaldi batetik aurrera) 
+
+**erantzuna izan behar da soilik etik
+[DEBUG] Decoded: (eta gainera...)  </p>
+
+egun honetan, aztertu eta sailkatu ond
+[DEBUG] Decoded: (eta...?) 
+
+**ez erantzun beste ezer, bakarrik etiketa.**  er
+[DEBUG] Decoded: _____________ 
+etiketa bat aukeratu behar duzu. ________________________ ________________________ ________________________
+[DEBUG] Decoded: pos
+neu
+neg
+```
+
+the answer is: neg
+```
+```
+final answer: neg
+``
+[DEBUG] Decoded: ```
+
+answer: pos
+```python
+```
+```
+```python
+```
+```
+```python
+```
+[DEBUG] Decoded: ```
+your answer is: 
+```
+```
+your answer is: 
+``` ```
+your answer is: 
+``` ```
+[DEBUG] Decoded: ? (erantzunaren bat) 
+? (erantzunaren bat) 
+? (erantzunaren bat
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (puntuazioaren arabera, alegia, "positiboa" edo "neutroa" posible
+[DEBUG] Decoded: (puzzle time! what's the answer?) 
+
+ezazu erantzun bat eman! 
+
+ezazu erantz
+[DEBUG] Decoded: * pos:? (erantzun hauxe egin behar da)
+* neu:? (erantzun ha
+[DEBUG] Decoded: _____________ (etiketa bat aukeratu behar da) _______________________
+
+*pos* (positiboa)
+[DEBUG] Decoded: pos
+neu
+neg
+please choose one of the options above.  ```python
+bilakatzen dira,
+[DEBUG] Decoded: ```
+pos
+```
+```
+neu
+```
+```
+neg
+```  deciding the sentiment of the
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (ez du etiketa bat, ez da positiboa, neutroa edo negatiboa)
+[DEBUG] Decoded: (aztertu eta esaldiaren jarrera identifikatu eta sailkatu)  **ez idatzi
+[DEBUG] Decoded: (ra diozu erantzuna) 
+erantzuna: neg
+
+adibidea:
+paragrafoa: e
+[DEBUG] Decoded: (egin zenuen erantzuna eta azalpenik ez eman!)  |
+
+i have read the instructions and i am
+[DEBUG] Decoded: (renfreni: esaldi honetan, esaldiaren jarrera aztertu behar da. e
+[DEBUG] Decoded: erantzuna: _______________________  _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________ _______________________
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+
+1. **(pos)**
+2. **(neu)**
+3. **(neg)**
+
+**
+[DEBUG] Decoded: (your answer)  neg  (end of interaction)  (end of interaction)  (end of interaction)
+[DEBUG] Decoded: (puzzle: what is the category of this sentence?)  ondorengo testuaren jarrera sailkatu hon
+[DEBUG] Decoded: razoiak:
+1. 
+2. 
+3. 
+
+**ez idatzi beste ezer.**
+[DEBUG] Decoded: (puntuazioa, azalpenik gabe!) 
+
+**egin da!** erantzunak egin dir
+[DEBUG] Decoded: ... (erantzunaren eskubidea)  pos (positiboa) / neu (neutroa)
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**estatistikak**
+[DEBUG] Decoded: (puzzle hau, erantzuna eskatzen da) 
+(puzzle hau, erantzuna eskatzen
+[DEBUG] Decoded: answer: 
+```
+casanova jauna, gure industria politika osoaren helburua da e
+[DEBUG] Decoded: ```
+i'll respond with only the label. in this case, the sentiment of the text is:
+pos
+```python
+[DEBUG] Decoded: ```
+casanova jauna, gure industria politika osoaren helburua da euskal en
+[DEBUG] Decoded: (ez du esaldi bat, ez du etiketa bat) erantzun egin behar da! 
+et
+[DEBUG] Decoded: **ez idatzi beste ezer.**  |  **don't write anything else.**  |
+[DEBUG] Decoded: (azu handi, esaldi hau aztertu egin behar da)  **etiketa: pos
+[DEBUG] Decoded: _____________________________________
+
+aztertu eta erantzun ondorengo kategorietako batean: "pos", "
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+
+
+**ez erantzun
+[DEBUG] Decoded: ?  erantzun bat aukeratu behar duzu.  erantzun bat aukeratu beh
+[DEBUG] Decoded: pos
+neu
+neg
+```
+zorrilla jauna, upydren eta alderdi popul
+[DEBUG] Decoded: ```
+please respond with the sentiment of the text. 
+```
+please respond with the sentiment of the text. 
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (respond with one of the labels: "pos", "neu" or "neg")
+
+ezazu, g
+[DEBUG] Decoded: * pos, nekazaritza, politikaria
+* neu, jarrera, politika
+* neg, jarrera
+[DEBUG] Decoded: aztertu eta erantzun!  (ikusi erantzunak) 
+
+ez dago erantzun
+[DEBUG] Decoded: (azuaren arabera) ?????
+
+ezazu esaldiaren jarrera sailkatu ondorengo
+[DEBUG] Decoded: (renfei egin!)  | [ez erantzun beste ezer, bakarrik etiketa
+[DEBUG] Decoded: (eta horrelaxe...) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/
+[DEBUG] Decoded: answer: 
+(only one of these labels: "pos", "neu", "neg")  please do not provide
+[DEBUG] Decoded: ```
+please respond with the label (pos, neu, or neg). 
+```
+note: the text is in bas
+[DEBUG] Decoded: ```
+your answer is: 
+```python
+neg
+```  # you think the sentiment is negative.  ```python
+[DEBUG] Decoded: ( aztertu egin behar da ) 
+
+eskerrik asko! 
+
+kategoria: 
+( az
+[DEBUG] Decoded: (puntuazioa: 1-5) 
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: (pause and think...) 
+
+please write the answer in the format "pos", "neu" or "neg".
+[DEBUG] Decoded: (beranduago erantzunaren arabera) !!!! !!!!! !!!!! !!!!!
+[DEBUG] Decoded: (ez erantzun beste ezer, bakarrik etiketa.)  |  |  |  |
+[DEBUG] Decoded: _____________  (esaldiaren jarrera zehaztu) _________  (esaldiaren azalpenik g
+[DEBUG] Decoded: pos
+neu
+neg
+```
+gure lehendakariak aldebikotasuna aipatu o
+[DEBUG] Decoded: ```
+
+please respond with only the label. 
+```pos
+``` 
+``` 
+``` 
+``` 
+``` 
+```
+[DEBUG] Decoded: ```
+```
+```
+```
+```  ```
+```
+```
+```
+```
+```
+```
+```
+[DEBUG] Decoded: (jokatu)!!
+
+ezazu, gure laguntzailea, gure laguntzailea
+[DEBUG] Decoded: (hauek ez dira pos, neu edo neg, beste ezer beste egin behar da).
+[DEBUG] Decoded: (respuesta por favor) pos
+
+adibidea:
+paragrafoa: euskal herriko historia eta
+[DEBUG] Decoded: _____________ (erantzuna eskatu) ________________________ (erantzuna eskatu) ________________________ (erantz
+[DEBUG] Decoded: * ondorengo esaldia aztertu eta sailkatu: "pos" (positiboa), "
+[DEBUG] Decoded: ______________ ???? ???? ???? ???? ???? ???? ???? ?
+[DEBUG] Decoded: (pos/neu/neg) 1.0
+```
+
+
+nolanahi ere, araban, urte asko
+[DEBUG] Decoded: ```
+
+this is a translation of the original text in basque. the text is discussing the importance of the basque parliament
+[DEBUG] Decoded: ```
+your answer:
+```
+pos
+``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: (adierazi ezazu, zehaztu egin ezazu!) 
+
+esaldiaren jarrera sailkatu
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+ez dituzu beste ezer idatzi beharrik
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+paragrafoa: euskal herriko
+[DEBUG] Decoded: (azu handiagoa!) aztertu eta erantzun!  aztertu eta erantzun! az
+[DEBUG] Decoded: (jokatu!) ondorengo esaldiaren jarrera aztertu eta sailkatu: "pos" (
+[DEBUG] Decoded: [erantzunaren kodea: ]  adi:  adi 1  adi:  adi
+[DEBUG] Decoded: ```python
+neg
+```  # correct! ```  # correct! ```  # correct! ```  # correct!
+[DEBUG] Decoded: **your answer:**  pos
+**your explanation:** 
+**your code:** 
+**your data:** 
+**your references
+[DEBUG] Decoded: ```
+pos
+```
+final answer: pos
+```
+pos
+```
+```
+pos
+```
+```
+[DEBUG] Decoded: (azuaren arabera) 
+(azuaren arabera) 
+(azuaren arabera) 
+(azuaren arab
+[DEBUG] Decoded: (renjuaren arabera, esaldi hau "pos" izango litzateke, baina, kont
+[DEBUG] Decoded: (hauekin jarriko duzu erantzuna)
+
+erantzuna: pos
+
+justifikazioa: g
+[DEBUG] Decoded: (eta horrelaxe jarri behar da!) 
+
+eskerrik asko! 
+
+(eta horrelaxe
+[DEBUG] Decoded: (eta hau ez da esan nahi ezkerrak, esan nahi ezkerrak)
+
+**
+[DEBUG] Decoded: * pos?
+* neu?
+* neg?  pos
+*  * neu?
+* neg?  neg  adib
+[DEBUG] Decoded: (pos/neu/neg)  |  |  |  |  |  |  |  |  |
+[DEBUG] Decoded: **your response**
+
+
+
+**your response:** neg
+**reason:** the sentence implies that someone is working hard or doing their
+[DEBUG] Decoded: ```
+your task is to analyze the sentiment of the given paragraph and choose one of the following labels:
+- "pos"
+[DEBUG] Decoded: (erabilitu ezinbesteko erantzuna)  erantzun bat eman behar da, eta horret
+[DEBUG] Decoded: justifikazioa: ez dago esaldiaren jarrerari buruzko justifikazioa. esaldi
+[DEBUG] Decoded: (azuaren arabera)... eta badagoela...... eta badagoela... (eta... eta...) (eta
+[DEBUG] Decoded: (adierazpena eskatzen da)  gure aitorpena dugu gurekin egiten
+[DEBUG] Decoded: razona: 
+justifikazioa: 
+razona: 
+justifikazioa: 
+razona
+[DEBUG] Decoded: (puntuazioa) 0/5.0
+(puntuazioa) 0/5.0
+(p
+[DEBUG] Decoded: ```
+please provide your answer in the following format:
+
+label: [pos/neu/neg]
+```
+your answer:
+[DEBUG] Decoded: ```
+please respond with only the label. 
+```python
+pos
+```  ```python
+neu
+```
+[DEBUG] Decoded: ```
+your answer:
+```
+neg
+``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ``` ```
+[DEBUG] Decoded: (adibidea bat egin behar da)  adibidea:
+paragrafoa: eta azken
+[DEBUG] Decoded: adierazpena: ez dago informazioa, ez dago esaldiaren jarrera, ez dago
+[DEBUG] Decoded: (puntuazioa eman behar da, baina ez da jakiteko esaldiaren jarrera sailkatu genu
+[DEBUG] Decoded: (puzzlea) [aztertu] [pos/neg/neu] [ezazu esaldiaren es
+[DEBUG] Decoded: **erantzun ez**. erantzun ez ematen du, ez dakit nori esaldiaren jarrera
+[DEBUG] Decoded: erabili hiru etiketetako bat. **adierazpena soilik izan behar
+[DEBUG] Decoded: ```
+your task is to classify the sentiment of the given paragraph into one of the categories: "pos", "neu
+[DEBUG] Decoded: ```python
+# your code here
+```
+```python
+pos
+```  # correct! the sentiment of the text
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puntuazioa eskatu) 1-5 puntuak arteko eskatua dago. erantzuna
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: aztertu eta erantzun! 
+
+euskara eta gaztelaniako esaldiak egin dira,
+[DEBUG] Decoded: (puntuazioa: 0/10) 0/10
+(puntuazioa: 0/10)
+[DEBUG] Decoded: r: erantzun bat egin behar da, "pos", "neu" edo "neg" j
+[DEBUG] Decoded: **erantzuna soilik etiketa bat izan behar da, azalpenik gabe.**  neg
+[DEBUG] Decoded: ```
+eskerrik asko, legebiltzarburu andrea.
+```
+label: **neg**
+[DEBUG] Decoded: **your response should be only the label (pos, neu, or neg).**  dec 15, 2022
+[DEBUG] Decoded: ```
+eskerrik asko, legebiltzarburu andrea.
+```
+label: 
+```
+[DEBUG] Decoded: (adibidea ez) - ez dio esaldiaren jarrera sailkatu. esaldiaren jarrera sailkat
+[DEBUG] Decoded: **ez idatzi beste ezer.**. egin zaizu! esaldiaren jarrera identifikatu
+[DEBUG] Decoded: (ra dio) aztertu eta sailkatu! 
+(ra dio) pos, neu, neg dio!
+[DEBUG] Decoded: * positzioa: 
+* neu: 
+* negatiboa:  aztertu testuaren j
+[DEBUG] Decoded: justification: 
+this text is not expressing a clear opinion or stance on a political issue, so it cannot be classified as
+[DEBUG] Decoded: (eta horrelaxe... )  galduta dago zure jarrera, esaldi hau azalpenik
+[DEBUG] Decoded: answer:  neg  # this is the answer i expect. # this is the answer i expect. # this is the
+[DEBUG] Decoded: **your answer**  pos **your answer**  **your answer**  **your answer**  **your answer**
+[DEBUG] Decoded: ```
+your answer:
+```
+neg
+```  # this is the answer. i'm not sure why you're asking
+[DEBUG] Decoded: erantzuna eman behar da. aztertu egin da! 
+etiketa: pos
+
+erantzuna
+[DEBUG] Decoded: (esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg
+[DEBUG] Decoded: (aztertu eta erantzun egin behar da) 󠁧󠁢󠁧�
+[DEBUG] Decoded: (esaldi honetan, jarrera ez dago definitua, beraz, ez dago esaldi honet
+[DEBUG] Decoded: hemen esaldiaren jarrera aztertu eta sailkatu: "pos" (positiboa), "ne
+[DEBUG] Decoded: (eta horrela)  paragrafoa: euskal herriko errealitatea ulertzen
+[DEBUG] Decoded: answer:  pos  # correct!  #  #  #  #  #  #  #  #
+[DEBUG] Decoded: ```
+this question was posted in vasque and spanish, so i'll provide answers for both languages.
+
+vasque:
+[DEBUG] Decoded: please choose one of the following labels:
+- "pos" (positive)
+- "neu" (neutral)
+- "
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+nota: erantzunak beste hizkuntzetan egin
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+adibidea:
+paragrafoa: ez dut esango buruj
+[DEBUG] Decoded: (pause) erantzun hau eman behar da: "pos", "neu" edo "neg".
+[DEBUG] Decoded: (berriki irristu) 
+
+aztertzeko esaldia:
+paragrafoa: eguner
+[DEBUG] Decoded: _____________ (erantzunak)_____________  adibidea: _______________________ (adibidea) _______________________ (
+[DEBUG] Decoded: answer:  answer:  neu  neu  neu  neu  neu  neu  neu  neu  neu  neu
+[DEBUG] Decoded: **note: the examples are in basque and spanish. the text you are analyzing is in basque.**  dec
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puntuazioa ezazu) 
+(puntuazioa ezazu) 
+
+ezazu puntuazioa eman!
+[DEBUG] Decoded: **ez idatzi beste ezer.**  |  **don't write anything else.**  |
+[DEBUG] Decoded: (aztertu eta erantzun!) 
+
+**egin da!** 
+**egin da!** 
+**
+[DEBUG] Decoded: (note: this is an example of a paragraph and its corresponding label. your task is to analyze the paragraph and assign a label
+[DEBUG] Decoded: **erantzun bat egin behar da!** 
+pos, neu, neg edo beste bat? 
+e
+[DEBUG] Decoded: _____________ 
+etiketa bat aukeratu behar duzu. 
+pos, neutro, neg.
+[DEBUG] Decoded: pos
+neu
+neg
+```
+eta ezezko hori da eh bildu taldeak berret
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (puzzle: what is the position of this sentence?)
+
+ezazu erantzunaren bat:
+
+1. **pos**
+[DEBUG] Decoded: * pos, neu edo neg bat aukeratu behar da. eta esaldiaren jarrera identifik
+[DEBUG] Decoded: (aztertu eta erantzun!)  |  |  |  |  |  |  |  |
+[DEBUG] Decoded: (eta hau esaldiaren jarrera eta sailkatu ondorengo kategorietako bat: "pos",
+[DEBUG] Decoded: aztertu eta sailkatu!  ondorengo esaldiaren jarrera aztertu eta sailkatu
+[DEBUG] Decoded: [erantzuna soilik etiketa bat izan behar da, azalpenik gabe.]  positib
+[DEBUG] Decoded: answer:  pos  # note: this is the only acceptable answer. do not provide explanations.
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (esaldia egin behar da, etiketa eman behar da!)
+[DEBUG] Decoded: (por favor, idatzi esaldi bat eta esaldi horren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: (adibidea bat gehitu behar da!) 
+
+**erantzuna izan behar da soilik etik
+[DEBUG] Decoded: (adierazpena falta da!) 
+
+egin dezakezu beste esaldi batetik aurrera, eta
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  | 1 replies |
+[DEBUG] Decoded: (adibidea, azalpenik gabe)  pos?  neu?  neg? 
+esaldia h
+[DEBUG] Decoded: (pos/neu/neg)  |  (en) 
+```
+the answer must be **only** one of these
+[DEBUG] Decoded: ```python
+# your answer here
+pos
+```  ```python
+# your answer here
+neu
+```
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: ( erantzunaren jarrera sailkatu ez). 
+
+etxean, "esaldiaren jarrera sailkat
+[DEBUG] Decoded: aztertu! 
+
+**ez idatzi beste ezer.** 
+
+etiketatu esaldiaren j
+[DEBUG] Decoded: (renfeu bat) 
+
+adibidea:
+paragrafoa: nahi dugu euskal herri
+[DEBUG] Decoded: erantzuna: _______________________
+
+ezazu erantzunaren esaldiaren jarrera sailkatu eta etik
+[DEBUG] Decoded: (renuntzatu) 
+
+hitzaldiak eta beste lanak:
+pos: 
+neu: 
+neg:
+[DEBUG] Decoded: *erantzuna soilik etiketa bat izan behar da, azalpenik gabe.* 
+etik
+[DEBUG] Decoded: answer: 
+```
+label: 
+```  # do not remove this line. it is used to separate the answer from
+[DEBUG] Decoded: **your response**  pos/neu/neg  **your response**  **your response**  **your response**
+[DEBUG] Decoded: ```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+``
+[DEBUG] Decoded: (adibidea bat eskatuko duzu) 
+
+adibidea bat eskatuko dutzu? 
+
+(ad
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: (errorea) 
+
+adibidea:
+paragrafoa: beste bat, aitzitiko, hau da
+[DEBUG] Decoded: (adibidea ez da eman, aztertu egin behar da) 
+
+aztertu egin behar
+[DEBUG] Decoded: justifikazioa: langileen egoera eta laneko egoera aztertu egin dugu, eta ez d
+[DEBUG] Decoded: (adibidea bat egin behar da!) 
+komentuak: 
+adibidea bat egin beh
+[DEBUG] Decoded: ```
+please provide the answer as one of the following:
+- pos
+- neu
+- neg
+```
+```python
+[DEBUG] Decoded: please respond with only the label.  **do not write anything else.**  **do not explain your answer.**
+[DEBUG] Decoded: ```
+```
+```python
+import nltk
+from nltk.sentiment.vader_lexicon import sentimentintensityanalyzer
+
+s
+[DEBUG] Decoded: (errorea, ez dago etiketa bat)  ondorengo testuaren jarrera sailkatu
+[DEBUG] Decoded: (eta...?) 
+
+**ez idatzi beste ezer.**  [1] (1) ez id
+[DEBUG] Decoded: (jakin baduzu, esaldi hau ez da politikoaren esaldi bat, eta horregatik, ez d
+[INFO] Emaitzak gordeta: emaitzak_sentiment/few-shot-2/dev/decoded/llama3.1-8B.csv
+[INFO] Metrikak gordeta: emaitzak_sentiment/few-shot-2/dev/metrics/llama3.1-8B.csv

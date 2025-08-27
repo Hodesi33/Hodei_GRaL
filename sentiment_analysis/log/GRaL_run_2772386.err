@@ -1,0 +1,14 @@
+
+==============================================================================
+                        Miniforge3 Environment Loaded
+==============================================================================
+  Activated environment: miniforge3-base
+                                                                              
+  NOTE: This is a custom minimal environment.
+        We recommend creating your own conda environments for your
+        projects.
+                                                                              
+  More info: https://scc.dipc.org/docs/programming/languages/python/
+==============================================================================
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:26,  8.93s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:19<00:19,  9.77s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:27<00:09,  9.28s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  7.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  8.04s/it]

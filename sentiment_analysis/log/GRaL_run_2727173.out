@@ -1,0 +1,4311 @@
+Modeloa kargatzen...
+Modeloa kargatuta.
+Development datuekin sentiment analysis egiten...
+[DEBUG] Decoded: - pos
+- neu
+- ne
+- neg
+- neu
+- pos
+- neg
+- neg
+-
+[DEBUG] Decoded: - pos  
+- neu   
+- neg
+ 
+aztertutako esaldian, ez da adierazten ea dirulaguntzak
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+**ezinezkoa da identifikatzea eta etiketatze
+[DEBUG] Decoded: pos
+explanation:
+the paragraph is discussing various cultural grants offered by different levels of government and mentions that
+[DEBUG] Decoded: negative label: neg
+explanation: the paragraph has a negative tone as it talks about various cultural funding calls and
+[DEBUG] Decoded: neg
+
+ label: neg	examples in english:
+example:
+paragraph: and that's why we
+[DEBUG] Decoded: posizio: (pos) 
+neu: (neu) 
+neg: (neg)
+azterketa
+[DEBUG] Decoded: neu. euskal politikako hainbat gairi buruzko eztabaidetan, askotan entzuten da “hau da gure kultura”, “horretatik
+[DEBUG] Decoded: aipamenik egin ez denez, ez dago etiketa egokirik. posibleak diren etiketa batzuk: neu,
+[DEBUG] Decoded: answer: neu
+ 
+azterketaren emaitza:
+pos - neg - neu - pos - neu - neg - pos
+[DEBUG] Decoded: neu
+
+aztergai esaldi batean 'ez', 'ez dute' edo 'ez du' erabiltzen denean, et
+[DEBUG] Decoded: azterketa:
+parrafoak ez du inolako iritzirik adierazten ezta positiboki edo negatiboki ere. beraz,
+[DEBUG] Decoded: answer: neu
+explanation: this paragraph does not express any strong emotions and it is difficult to determine whether the emotion
+[DEBUG] Decoded: answer: neu
+
+explanation: the paragraph seems to be discussing contradictions and challenges that individuals face. it
+[DEBUG] Decoded: answer: neutro
+neutroak ezin dira identifikatu erantzunaren arabera. hau da, neutralitatea da. erantzuna beti
+[DEBUG] Decoded: aztertutako esaldiaren jarrera negatibo bat da (neg).  
+
+(*) aurreko galdera erantzun ondoren, erantzunaren arrazoia
+[DEBUG] Decoded: ez idatzi beste ezer.
+
+adibideak euskaraz:
+parrafoak dioenaren arabera, nik uste dut politikarien
+[DEBUG] Decoded: neu
+azterketa: noren hitzak dira hauek? politikari buruzkoak direla uste dut. ez dakit norena den
+[DEBUG] Decoded: pos - kultura hiriburua ospatzen ari direla 2023 urtean donostian
+neg - ez dute aipatu zer helburu duten
+[DEBUG] Decoded: - post - neu  - neg - pos - neu - neg - pos - neu - neg - pos - neu - pos
+[DEBUG] Decoded: - pos - (positiboa)
+- neu - (neutroa)
+- neg - (negatiboa)
+[DEBUG] Decoded: answer: pos
+
+ explanation: the paragraph expresses positivity about being european capital of culture this year and promoting
+[DEBUG] Decoded: neu
+the given paragraph does not contain any clear statement about the sentiment being either positive or negative so it cannot be classified as
+[DEBUG] Decoded: answer: neu  (neutral)
+
+ answer for basque:
+label: neu (neutral)
+[DEBUG] Decoded: - pos
+- neu
+- neg  
+(kulturaren ikuspegitik, nazioarteko perspektiba kontuan hartuz, donostian kultura aniztasuna
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+
+ adibidea:
+paragrafoa: gure asmoa da gizarteko sektore desberdinak elk
+[DEBUG] Decoded: neu
+
+azterketaren emaitza: neu
+
+esan nahi den ideia ebaluatzeko, ea zein diren "pos
+[DEBUG] Decoded: azterketa: hau negatiboegia da. beraz, "pos" ere aukera egokia izango litzateke. baina hemen ez dago
+[DEBUG] Decoded: - pos  (politikoak)
+- neu (interesak)
+- neg (denbora)  azterketaren
+[DEBUG] Decoded: azalpena: hau "pos" edo "neu" etiketa duen testua da?
+ "pos": testuak
+[DEBUG] Decoded: pos
+
+explanation: this paragraph is expressing a positive tone as it encourages people to defend their beliefs and
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: explanation: this text does not provide enough context or information about any specific speech's content for me to accurat
+[DEBUG] Decoded: neg
+posizio negatibo bat hartzen ari gara hemen: ez dute ezer defendatuko diputatuen kongresuan. hau da
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+azterketa:
+posizio politikoa da (ez neutroa).
+etiket
+[DEBUG] Decoded: **ez dira inoiz egin behar etiketak**: 
+- defenda ezazu hori diputatuen kongresuan.
+- pos
+[DEBUG] Decoded: aipamena egin zuenak honako hau esan du: “zergatik erabaki dute herritarrek?” hala ere, ez naiz iritzi horrekin
+[DEBUG] Decoded: **ez egin beste ezer**, soilik etiketa.
+neg  
+aztertutako esaldia: bi aldeetatik, bata
+[DEBUG] Decoded: **neg**
+azalpena: hau oso negatibo ikusten dute batzuek, adibidez, autodeterminazio eskubidea ez dela existitzen uste
+[DEBUG] Decoded: answer: neu
+
+ answer explanation:
+the paragraph contains neutral language and does not express strong positive nor negative emotions. therefore
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+
+
+the sentiment analysis algorithm identified that this
+[DEBUG] Decoded: positive sentiment label: pos
+neutral sentiment label: neut
+negative sentiment label: neg
+[DEBUG] Decoded: - neu
+- pos
+- neg
+
+ beste adibide batzuk gaztelaniaz:
+adibidea:
+paragrafo bat
+[DEBUG] Decoded: azterketa-eredua:
+neu
+
+ **izan zaitez zehatza.** 
+ 
+ adibidez:
+[DEBUG] Decoded: **pos**
+azpimarratzekoak:
+1. hau ez dator bat jatorrizko testurekin.
+2.
+[DEBUG] Decoded: posizio neutralak ez du eraginik izango enpresaren egoeran.  neu, neg. 
+aztertutako esaldia
+[DEBUG] Decoded: - pos -  arkema enpresa; alonsotegi herria
+- nep - alkatea; laneko segurtasunari
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+ez dute zerikusirik.
+
+ **erantzuna
+[DEBUG] Decoded: answer: neg
+
+ answer explanation: this paragraph is about workers losing their jobs due to factory closure which causes negative feelings
+[DEBUG] Decoded: negative. 
+explanation: the sentence talks about "arkemia" which seems like an organization that lost
+[DEBUG] Decoded: the given paragraph is too short and does not provide any information about sentiment or emotion. therefore, it cannot be classified as positive
+[DEBUG] Decoded: - post
+- neu
+- neg
+- pos
+- neu
+- neg
+- pos
+- neu
+-
+[DEBUG] Decoded: azterketa:
+esaldi honen esanahia ez dago identifikatuta, beraz ez da klasifikatu ahal izan. **
+[DEBUG] Decoded: - neu
+- neg
+- pos
+- neu
+- pos
+- neg
+- pos
+- pos
+-
+[DEBUG] Decoded: posizio: positiusua
+neu: neutra
+negatifua: negativo		
+azterketa
+[DEBUG] Decoded: - pos
+- neu
+- neg  (hau ez dagokio analisiaren gaira)
+[DEBUG] Decoded: aztertzeko esaldiarekin batera datorren erantzuna: 
+pos: positiboa
+neu: neutroa
+neg
+[DEBUG] Decoded: answer: pos
+
+ explanation: the paragraph describes how the basque country is one of the european territories that provides
+[DEBUG] Decoded: answer: neu
+example:
+paragraph: gure hezkuntza-sistemaren kalitatea hobetzeko, irakasleen prestakuntza hobetzen lagundu behar dugu
+[DEBUG] Decoded: the text does not contain enough information about sentiment for me to assign it an appropriate label from among 'pos', 'neu'
+[DEBUG] Decoded: neg
+
+azterketa baten esaldia:
+parágrafo: el gobierno vasco ha anunciado hoy una ayuda económica a familias
+[DEBUG] Decoded: adibidea: pos. euskal herria da hezkuntza pribatutara laguntzarik handiena ematearen europako eremuetako bat. ekit
+[DEBUG] Decoded: - neu
+- pos
+- neg
+- neu
+- pos
+- neg
+- pos
+- neu
+-
+[DEBUG] Decoded: azterketa:
+pos - 
+neu - 
+neg - 
+
+ikaslearen erantzuna
+[DEBUG] Decoded: neu
+azterketa:
+gaztea, gazteagoa.
+zer esan dute?
+horretatik bat ere bai
+[DEBUG] Decoded: neu
+azterketa esaldiaren ondorengoa izango litzateke:
+treviñu arabako lurraldea izateko arrazoi nagusia da ef
+[DEBUG] Decoded: answer: neu
+
+ explanation: this paragraph is discussing the benefits and reasons behind why treviño should belong to
+[DEBUG] Decoded: positive label: pos
+negative label: neg
+neutral label: neu  
+answer: neg
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: - pos
+	- neu
+	- neg
+	- neu
+	- pos
+	- neg
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+[DEBUG] Decoded: adibidearen testua ez dator bat etiketa batekin, beraz ez dago aztertzekorik.  **ez da erantzun behar
+[DEBUG] Decoded: pos (positiboa) - "anekdota historikoaren irrazionaltasunaren ondorioz sortutako desorekari erreparatzen d
+[DEBUG] Decoded: - pos (1/4)
+- neu (3/4)
+- neg (0,5)
+-
+[DEBUG] Decoded: - pos 
+- neu
+- neg  (esanahia hau duen arren, aukera hau oso arraroa izango litzateke
+[DEBUG] Decoded: answer: neg
+
+explanation: the paragraph expresses frustration and opposition towards an administrative reform that seems disconnected from
+[DEBUG] Decoded: answer: negativamente
+
+ in this paragraph, there are several expressions that suggest an overall negative sentiment towards the subject being discussed
+[DEBUG] Decoded: example: neg
+translated from basque into spanish:
+traducción del euskera al español:
+es una anacron
+[DEBUG] Decoded: - neu
+- neg
+- pos
+- neu
+- neg
+- pos
+- neu
+- neg
+-
+[DEBUG] Decoded: **ez idatzi beste ezer.** 
+ ados nago nirekin? azterketa-galderarako erantzunarekin ere bai
+[DEBUG] Decoded: pos
+neu
+neg  
+azalpena:
+berria eta neutroa izango dira erantzun onak. hautagaiak
+[DEBUG] Decoded: etiketa: neu 
+izan ere, datu horrek erakusten du emakumeen presentzia literaturaren munduan. horrek esan nahi
+[DEBUG] Decoded: azterketa: "neska" hitza ez da agertzen parrafo horretan, beraz etiketa egokia izango litzateke "neu".
+[DEBUG] Decoded: - pos;
+- neu;
+- neg.
+azterketa: 
+ehuneko ehunean oinarritutako erantzuna
+[DEBUG] Decoded: answer: neu  
+explanation: this sentence is discussing statistics about books written by women and appears to express
+[DEBUG] Decoded: example: neutro
+
+ ***response***
+neutral
+
+example:
+emakumeek idatzitako liburuak ere %
+[DEBUG] Decoded: neg
+the text is negative because it talks about how women written books make up only 34% of sales which may
+[DEBUG] Decoded: posizio nagusia hartzen dute. horrek esan nahi du emakumeen lanak ez direla nahiko ondo baloratzen. ekitaldietan parte hartze maila
+[DEBUG] Decoded: izan gaitezen positiboak! euskal literaturako emakumeen lanak goraipatzeko eta haien istorioei arreta jartzeko aukera da hau. izan
+[DEBUG] Decoded: etiketak: pos; neu; negatibo; 
+
+ etaketa: pos; neu; negatibo
+[DEBUG] Decoded: azterketa: hau neutroa den? ez, politikaz ari gara. beraz, neura pasa al da? ez
+[DEBUG] Decoded: ### etiketaren interpretazioa:
+- pos: positiboa
+- neu: neutroa
+- neg: negatiboa
+[DEBUG] Decoded: azterketa: esaldian ez dago iritzi negatibo edo positiborik. beraz, neutro gisa hartzen du.
+[DEBUG] Decoded: pos
+neg
+neu
+abstraktu
+classification is dependent on the language used and the context provided.
+[DEBUG] Decoded: in basque:
+label: neu
+in spanish:
+label: neu  (this response was generated using an automated
+[DEBUG] Decoded: explanation: since there is not enough context or information provided about this paragraph to determine its sentiment, it cannot accurat
+[DEBUG] Decoded: azterketan parte hartzen dutenak: 10 pertsona. bakoitzak bere iritzi pertsonala ematen du.
+denbora:
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+esaldiek ez dute etiketa zehatzik. baina, orokorrean, esaldiak "
+[DEBUG] Decoded: esanahia ez dago argi eta baliteke ez egotea inolako etiketa egokirik. hala ere, aukera batzuk hauek dira: neu
+[DEBUG] Decoded: neu: aldatu egin beharko genuke estatutu hori.
+neg: ez nago konforme aldaketa horrekin.
+[DEBUG] Decoded: - pos
+- neu
+- neg  (nazioarteko neurtzen duen moduan, hau da, negatiboena)
+[DEBUG] Decoded: neu
+azterketa:
+esanahia: aldatu edo aldatu. esaldian eskatzen dena legeen aldaketa edo
+[DEBUG] Decoded: the given paragraph is written in basque and it does discuss about issues related with politics and governance within the context of spain's
+[DEBUG] Decoded: the content provided does not contain enough information for me provide you an accurate response as it doesn't give any context nor sentiment
+[DEBUG] Decoded: note that i did not assign any specific label as there is no context provided for interpretive analysis of these words. however
+[DEBUG] Decoded: euskal herrian, baina espainian ere bai, eztabaida handia dago gaur egun autonomia estatutuari buruz, eta hainbat proposamen egin dira
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+ oharra: lehen eta hirugarren esaldiek "neu" etiketa dute; bigarrenak
+[DEBUG] Decoded: **erantzuna ezezkoa izango da.**
+
+ euskal herriko unibertsitateko ikasleek egindako ikerketen arabera, euskal herria bere buruaren
+[DEBUG] Decoded: - pos
+- neu
+- neg. etika horrek ez du axola.
+aztertutako esaldia: bald
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez da egokia)
+- neu (ez da egokia)  (bi
+[DEBUG] Decoded: - pos
+- neu
+- neg  (nahiz eta 'pos' edo 'neu' aukera egokiagoak izatea.)
+[DEBUG] Decoded: answer: neg  (negative). this paragraph discusses how private and public schools are competing on equal terms, which
+[DEBUG] Decoded: answer: neutr label: neu answer: neut label: neu answer: neu label: neu answer: neu label: neu answer
+[DEBUG] Decoded: answer: neut
+example:
+paragraph: esan behar didazu ea baldintza berdinetan lehiatzen diren eskolak publikoak eta prib
+[DEBUG] Decoded: azterketa:
+pos
+neu
+neg
+neg
+neg
+neg
+pos
+pos
+pos
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ adb.: pos
+
+ paragrapha: gure politikariek ez al dute uste
+[DEBUG] Decoded: **erantzunean ez dago etiketa markatu den moduan.**
+neg
+azalpena:
+esan nahi dud
+[DEBUG] Decoded: answer: neu
+
+azpertzeko esaldia:
+paragrafoa: hau guztia kontuan hartuz, uste dut badela
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  
+neu
+ 
+ adibidea:
+paragrafo:
+[DEBUG] Decoded: pos
+neu  
+neg
+azterketa: bi etiketa neutroak dira, beraz ez dute eraginik izango
+[DEBUG] Decoded: pos label was incorrect because it does not express any positive feelings about equality clauses being included in contracts. it could have been label
+[DEBUG] Decoded: label: neutro 
+explanation: the sentence talks about clauses but doesn't express any clear emotions towards them
+[DEBUG] Decoded: neu  (this sentence seems neutral and informative as it lists information about percentages without expressing strong opinions or emotions.)
+[DEBUG] Decoded: ez dago posibilitate positiboak, neutroak edo negatiboetan aztertzerik. beraz, ez egin etiketa bakar baten
+[DEBUG] Decoded: explicación del resultado:
+la expresión gramaticalmente correcta sería: "horretatik, hirurogeita hamarretik
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+**izan ere**, diskriminazioagatik emakumeen kontrako legeen kontra egiten duten
+[DEBUG] Decoded: pos
+neu
+neg
+[DEBUG] Decoded: - pos
+- neu  
+- neg
+azterketa: etika, neutroa, negatiboa
+[DEBUG] Decoded: neu  
+azalpena: esaldian aipatzen den hitzarmena duten haur eskola horietan familiek aukera dute beren seme-
+[DEBUG] Decoded: answer: neu
+### explanation: this is because it does not have any clear positive or negative connotations and
+[DEBUG] Decoded: answer: neu
+
+note that this analysis presumes an understanding of basque language and context. for non-basque speakers
+[DEBUG] Decoded: answer: neu
+
+ explanation: it is not entirely positive or negative but rather neutral as it does not express
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago adibide egokirik)
+
+azterketa: positiboki
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+ **ez idatzi beste ezer.**  
+ **ez idatzi beste ezer.**  
+ **
+[DEBUG] Decoded: * positivo (*pos*).
+
+azalpena:
+gizarte zerbitzuek eskaintzen duten hezkuntza ereduari
+[DEBUG] Decoded: posizio: negatiboa
+neu: neutroa
+negazio: negatiboa
+
+azterketa:
+[DEBUG] Decoded: azterketa: negative etika etiketa:  - **neg**: hau negatiboagoa da, baina posible da
+[DEBUG] Decoded: aztertutako esentzia: territorioek ez dute eskubiderik.
+etiketa: neg
+
+neutro
+[DEBUG] Decoded: answer: neu
+
+ answer: neu
+classification: neutral
+explanation: the paragraph is discussing territorial rights
+[DEBUG] Decoded: explanation: the given paragraph appears to express frustration and disappointment over territory rights being denied. it's difficult
+[DEBUG] Decoded: - neu
+- neg
+- pos
+
+## response: neg
+```python
+answer = 'neg'
+```
+[DEBUG] Decoded: azalpena emateko erabili hitz hauek: autonomia, autodeterminazio eskubidea, subiranotasun nazionala…  
+besteak bezala erantzun
+[DEBUG] Decoded: **ez idatzi beste ezer.**  azterketa: "pos" etiketak "neg" etika du. horrek esan
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+- "neu"
+- "pos"
+[DEBUG] Decoded: pos
+azterketaren emaitza:
+neu
+neg
+pos
+neu
+neg
+neg
+pos
+ez
+[DEBUG] Decoded: - neg
+- neg
+- neu  (ez du ematen)
+- pos (ez du ematen)
+[DEBUG] Decoded: pos  
+neg  
+neu 
+azpimarratzea:
+paragrafoa: baina ez dut uste
+[DEBUG] Decoded: answer: neg
+explanation: this paragraph has negative sentiment as it talks about limitations and contradictions that have been experienced
+[DEBUG] Decoded: pos label: pos  
+neg label: neg   
+neu label: neu    
+---
+the given paragraph can
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: - pos
+- neu
+- neg  
+(espainiak duen autonomiaren kontrako mugak aipatu ditu.)
+
+az
+[DEBUG] Decoded: **ez idatzi beste ezer.**  -ren ondoren etiketa hau egon behar luke: pos 
+ *etika:
+[DEBUG] Decoded: - "neg" 
+
+ beste adibide bat hemen: 
+paragrafo bat: ¡pero cuidado!
+[DEBUG] Decoded: - neu
+- pos
+- neg
+azterketa-esaldi bat ez dute kategoria horietako batek ere. ez egin
+[DEBUG] Decoded: -  pos
+- neu
+- neg 
+- neu
+- pos 
+
+azterketa:
+pos
+[DEBUG] Decoded: azterketa esaldiaren arabera, zein etiketa egokiena litzateke?
+- "pos" (positiboa)
+-
+[DEBUG] Decoded: answer: neu
+
+ explanation: this paragraph is discussing different measures and decisions taken by the culture and language polici
+[DEBUG] Decoded: negative label
+answer: neg
+the paragraph has mostly negative sentiments due to its critical tone and mention of unsuccessful
+[DEBUG] Decoded: answer: neu 
+
+ label: neu 
+answer: neu 
+
+the text is discussing measures and
+[DEBUG] Decoded: 
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ adb. example in english :
+parafraseando una frase famosa del fallec
+[DEBUG] Decoded: **ez dago informazio nahikorik etiketa bat zehazteko.**  
+
+
+aipamenaren ebaluazioa da?
+bai
+[DEBUG] Decoded: - pos
+ hau ere hala izan al daiteke: "neu"  edo "neg". baina ez "pos" .
+[DEBUG] Decoded: **pos**  (positiboa): zerrenda luzeegia da! nahiago nuke zerrenda laburragoa izatea, horrek esan
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azalpena: hitzarmenaren sinadurarekin, zorilla jaunaren
+[DEBUG] Decoded: answer: pos
+classification: 
+answer: pos
+classification: positive
+answer: pos
+classification:
+[DEBUG] Decoded: neu
+example:
+paragraph: gurekin harremanetan jartzea espero dugu aste honetan, eta hilabete amaieran hitzarmena sinatu ahal izatea."
+[DEBUG] Decoded: pos's possible that this text does not have any explicit positive or negative sentiments and is neutral instead. in order for me
+[DEBUG] Decoded: negativo/positivo - positivo/neutro/negativo  - neutral/negativo/positivo
+[DEBUG] Decoded: - neguko txabola batean.
+- postua.
+- neutroia.  
+ - negarra.
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neg
+- neu
+-
+[DEBUG] Decoded: neg
+azterketa gehiago egin behar dut.  
+neu
+ez nago ziur zein eite duen.
+[DEBUG] Decoded: **pos**, "neo", edo **neg**. izatez, 3 erantzun horietako bat ere izan daiteke. hala ere
+[DEBUG] Decoded: - pos
+- neu
+- neg  (hau ere egokia izango litzateke, aukera negatibo bat baita)
+
+az
+[DEBUG] Decoded: label: neg  // because they mention that it might not be the best way and say that they can't forget what
+[DEBUG] Decoded: - neu
+
+ the given sentence appears to be discussing opinions on an ongoing debate and doesn't express strong emotions towards
+[DEBUG] Decoded: example: neu
+answer: neu
+example:
+paragraph: gure ustez, baina, proposed bidearen alde txarrak baino
+[DEBUG] Decoded: *neu*
+ *neg*
+ *pos*  
+(honek esan nahi du erantzun bakar batek ere ez duela
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+  pos.
+  euskara.
+  neg.
+  gazteizala
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez da agertzen) 
+ 
+ etikaia eman ondoren erantzunak
+[DEBUG] Decoded: neg  (kritiko))
+azterketa: hau esan nahi du garai hartan gobernuak ez zuela jarrera positiboa izan eta horrek
+[DEBUG] Decoded: azterketa: parrafoaren edukia ez du erreferentzia egiten positiboki edo negatiboki. beraz, etiketa neutroa da
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+ **erantzuna:** pos
+
+ esaldiko testuan aipatu den
+[DEBUG] Decoded: answer: neu
+example:
+paragraph: gainera, kontuan izanda orduko gobernuburua ardanza zela, berak ere
+[DEBUG] Decoded: answer: neu
+
+explanation: the paragraph discusses the position taken by then-government leader ardan
+[DEBUG] Decoded: answer: pos
+
+**note:** if you do not understand basque or spanish, please provide an english translation for these sent
+[DEBUG] Decoded: neu.
+azalpena: ez dute aipatu bere iritzia aldatu zenik edo ez zen egon iritzi kontrajarria.
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+- es
+- fr
+- de
+* ez idatzi beste
+[DEBUG] Decoded: *neu* 
+ *pos* 
+ *neg* 
+ *neu* 
+ *pos*
+[DEBUG] Decoded: neutroa?
+negativa?
+positiva?
+answer pos
+answer neg
+answer neu
+[DEBUG] Decoded: azterketa-esaldi bat:
+parrafoaren amaieran ez dago informaziorik. beraz, ez da beharrezkoa etiketa
+[DEBUG] Decoded: answer: neu
+
+aztertutako esaldia:
+paragrafo batzuk aipatu dituzte hainbat alderdik euren ikuspuntuak
+[DEBUG] Decoded: answer: neu https://www.google.com/search?q=referendume+klave+berdinetan+
+[DEBUG] Decoded: pos label:
+neg label:
+neu label:
+itzarri da labels assignment! label:
+neg label
+[DEBUG] Decoded: examples in french:
+example:
+paragraphe : pour finir sur une note optimiste, je dirai simplement
+[DEBUG] Decoded: ez eman azalpenik. 
+
+azterketa: pos
+erakundeak aztertu ondoren, ondorioztatzen dute
+[DEBUG] Decoded: azterketa:
+esaldi hau ez da oso zehatza baina erreferentzia gisa erabil daiteke. adibidez, galdera politiko bati buruzko iritzi
+[DEBUG] Decoded: neu
+
+ (*kaixo*)
+ez nago oso ziur zein den erantzun egokiena? hau neutroa izango litzateke?
+[DEBUG] Decoded: azterketa: hau ez du inon azaltzen zein den abstentzioaren arrazoia; beraz, ezin duzu etiketa zehatz bat
+[DEBUG] Decoded: neg
+ 
+aztertutako esaldiak: "badira aukera batzuk." eta "horretatik bat ere posible da."
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azalpena: paragrafoak ez du inolako iritzi positibo edo negatiborik
+[DEBUG] Decoded: answer: neg (negative)
+explanation: this sentence is negative because it conveys that someone has chosen not to
+[DEBUG] Decoded: explanation: the sentiment of this paragraph seems negative because it mentions that they "abstentatu" which can
+[DEBUG] Decoded: example: neu
+paragraph: nos gustaría poder votar “sí”, pero tenemos nuestras dudas de si esta ley va a ser
+[DEBUG] Decoded: positiboa ez den esaldi bat da, baina ez negatiboegia ere bai; horregatik, neutro gisa sailkatuta dago hemen
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+azterketa esaldia da "ez nago ziur ea esaldiak duen politikotasunik."
+[DEBUG] Decoded: neu
+
+ikus dezagun ea adibide hauek zuzenak diren ala ez. 👀
+
+bai,
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azterketa: hau da, parlamentariek defendatutako ideia da, non
+[DEBUG] Decoded: - pos
+- neu
+- neg  
+
+azalpena: esparruan azaltzen diren ideia positiboak edo neut
+[DEBUG] Decoded: example: neu
+paragraph: horren ondoan, esan behar dizuet zein iritzi genuen burgoseko diputazioaren aurrean egindako proposamenari
+[DEBUG] Decoded: pos
+ **answer:** pos
+### explanation: the sentence expresses an affirmative and positive attitude towards defending
+[DEBUG] Decoded: answer: nelabel: neu
+negative label: neglabel: neg
+positive label: poslabel: pos
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago adibide egokirik)
+[DEBUG] Decoded: azterketa-galderari erantzuna emateko aukera ematen duen egoera identifikatzea eta klasea: "pos", "neu"
+[DEBUG] Decoded: ez dago informaziorik. beraz, ezin da zehaztu zein den etiketa egokiena.
+
+ **kalifikazioaren azalpenik gabe
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azterketa:
+- pos
+
+esanahia: azkenengo esaldi
+[DEBUG] Decoded: **ez erantzun besterik gabe**, ez du kaso egiten etiketa-etiketari.
+etiketa: pos*
+[DEBUG] Decoded: **pos**  
+azterketa: eredu zaharrari jarraituz, egoera berriak ez du zentzu handirik. aitzitik,
+[DEBUG] Decoded: answer: neu
+```python
+import nltk
+from nltk import word_tokenize
+from collections import
+[DEBUG] Decoded: analysis and response:
+label: neu
+translation from basque into english: the situation has changed so now we need to update
+[DEBUG] Decoded: answer: neu
+example:
+paragraph: hala ere, uste dut egin beharrekoak badaude, eta horiek konpontzeko lan
+[DEBUG] Decoded: - pos
+- neu
+- neg
+[DEBUG] Decoded: esan nahi didazula? esan nahi didazuena?
+  posibleak badira beste politika batzuk, baina politik
+[DEBUG] Decoded: posizio bat hartzea eskatu digute. positiboa izatea espero dute, baina ez naiz borrokalaria. ez dakit nora eraman
+[DEBUG] Decoded: - neu
+- pos
+- neg
+azterketaren helburua ez zen erabakia hartzea, baizik eta aldatzea. hau esan nahi
+[DEBUG] Decoded: **ez erantzun**, besterik gabe. 
+
+ hau ez da neuri buruzko iritzi bat, baizik eta gertaera baten ondoriozko
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- abs (*absurdo*)
+- def (*de* + pos)
+[DEBUG] Decoded: answer: neg
+explanation: this paragraph has negative connotations because it talks about how people are against taking decisions
+[DEBUG] Decoded: answer: pos
+
+explanation: the paragraph contains an expression that shows a sense of hope and optimism about
+[DEBUG] Decoded: answer: neutro https://www.babla.com/eu/questions/8134709-
+[DEBUG] Decoded: neu
+aztertutako esaldian ez dago iritzi positiboak, negatiboak edota neutroak islatzen duen ezer. beraz,
+[DEBUG] Decoded: azpitituluak ez dira inoiz egokiak esaldi batean. baina hala ere hemen jarriko ditut.
+ **esaldiko hitzak
+[DEBUG] Decoded: (*ez dute zerikusirik gaia, edukia edota estiloarekin.)
+hitzaldiak azpidatzirik ez daudenean, egin
+[DEBUG] Decoded: ---
+neu  (neutral).
+ --- 
+
+ez nago ziur ea testu honek duen jarrera neutroak ba
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez da agertzen)
+ - neu (biak aipatzen ditu)
+-
+[DEBUG] Decoded: - post
+- neu
+- neg
+- pos
+- neu
+- pos
+- neg
+- neu
+-
+[DEBUG] Decoded: answer: neg
+explanation: the paragraph discusses an event where a motion was debated and approved related to ensuring
+[DEBUG] Decoded: the provided paragraph contains legal jargon and technical terminology that may be difficult for an ai language model to understand fully. as
+[DEBUG] Decoded: agregar más contexto o información relevante puede ayudar a entender mejor las implicaciones del debate político actual y su impacto potencial en
+[DEBUG] Decoded: neu
+
+azterketa:
+mozioan, euskal herria bildu koalizioak eskatzen du lan públicosen 20
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+ 
+ 
+ adibideak ingelesez:
+example paragraph in english: it is only through
+[DEBUG] Decoded: - neu
+- pos
+- neg  (ez zegoen informaziorik)
+*etiketatutako erantzun onena izango litzateke
+[DEBUG] Decoded: neg
+aztertutako esaldiaren jarrera negatiboari dagokionez, zein da erantzunaren kategoria?  
+neu
+hau
+[DEBUG] Decoded: * ez: "neu"
+* bai: "pos"
+* ez: "neg"
+* neutral: "
+[DEBUG] Decoded: neu
+ 
+azterketaren ondoren lortu duzun etiketa bakarra:  **neu**
+ 
+azalpena
+[DEBUG] Decoded: answer: neu
+
+ label: neg
+answer: neg
+
+ answer: pos
+answer: pos
+
+example in
+[DEBUG] Decoded: answer: neg
+
+### response
+neg label: neg
+explanation: the paragraph expresses frustration and skeptic
+[DEBUG] Decoded: example in basque:
+neg label: neg
+
+ example:
+paragraph: hori lortzeko, uste dut aukera batzuk daudela
+[DEBUG] Decoded: aztertutako esaldiaren jarrera: neu 
+  
+azalpena:
+ez nago ziur. ez dakit zein
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+aipamenak euskaraz:
+adibidea:
+paragrafoa: euskal
+[DEBUG] Decoded: - pos
+  - neu
+  - neg
+  - neu
+  - pos
+  - neu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: -pos
+-neu
+-neg 
+azalpena: hau da, ez dut esaten ea gobernuak benetan hala egingo
+[DEBUG] Decoded: - "pos"  (positiboa), baina ez hainbestetan erabilirik
+- "neu", neutrala, baina
+[DEBUG] Decoded: answer : pos
+category : pos
+explanation:  the passage is expressing optimism about the government's
+[DEBUG] Decoded: negative  - the sentence contains words like "jarraitu" and "bergizarteratzearen", which indicate that
+[DEBUG] Decoded: posanswer: neu
+neganswer: pos
+neuanswer: pos
+posanswer: neu
+neganswer: pos
+[DEBUG] Decoded: zergaitik aukeratu nuen: neu
+etorkizunari buruzko itxaropenak adierazten ditu eta ez dute kritika faltsuekin
+[DEBUG] Decoded: aztertzeko esaldia:
+ **egindakoak:**
+paragrafoa: hori da dena.
+etiketak
+[DEBUG] Decoded: pos
+neg
+neu
+neg
+pos
+neg
+neu
+pos
+neu
+neg
+pos
+[DEBUG] Decoded: azterketa: hau neutroa den ala negatiboa den?
+erantzuna: neutrala
+azterketa:
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+- ad
+- si
+- of  
+- in
+[DEBUG] Decoded: - "post" edo "post-" (positiboa).
+- "neo" (neutroa).
+- "
+[DEBUG] Decoded: negative label because it expresses opposition towards something related with life span. it is not positive nor neutral. negation con
+[DEBUG] Decoded: pos label: 
+neg label: 
+neu label: 
+examples from french:
+example:
+[DEBUG] Decoded: response: neg
+
+ explanation: this sentence expresses opposition towards something related to endurance or duration and may
+[DEBUG] Decoded: neg
+
+azter dezagun adibide batzuk euskaraz:
+adibidea:
+paragrafoa: gure helburua da gure herritarrek
+[DEBUG] Decoded: azterketa:
+neg
+  ados nago. hau da, uste dut esaldi hori negatiboa dela eta ez duela
+[DEBUG] Decoded: aztertutako esaldia:
+neg
+
+ adibide batzuk ingelesez:
+adibidea:
+paragrafoa:
+[DEBUG] Decoded: azter dezagun esaldi hau zati batean: "kooperazioaren balioak bultzatu euskadin."
+etiketa: neu
+
+ lehen
+[DEBUG] Decoded: - pos -
+- neu  -
+- neu  -
+- neg  -
+- neg   -
+-
+[DEBUG] Decoded: - "pos" (positiboa),
+- "neu" (neutroa).
+- "neg" (neg
+[DEBUG] Decoded: answer: pos 
+
+ examples in portuguese:
+example:
+parágrafo: para isso precisamos unir forças e trabalhar
+[DEBUG] Decoded: label: pos
+paragraph: alde batetik, euskara ikasteko aukera erraztuz eta euskal kulturaren transmisioa bermatuz; bestetik,
+[DEBUG] Decoded: answer: pos  
+the analysis has not provided sufficient context or information about which specific text and its corresponding sentiment should be chosen
+[DEBUG] Decoded: adimen artifiziala ez zen gai erantzun zuzena emateko, baina beharbada honela erantzungo zuen: "neu"
+[DEBUG] Decoded: - pos (ez nago ziur)
+- neu (ziur ez nago)
+- neg (gauza segurua)
+[DEBUG] Decoded: - "pos" (positiboa)
+- "neu" (neutroa)
+- "neg" (neg
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa eta etiketa hauetarako adibide gehiago hemen duzu: epe luzerako helburuak lortzeko
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu  (ez dira egokiak hurrengo bi etiket
+[DEBUG] Decoded: pos, neu edo neg?
+neg. esaldiaren izaera negatiboa adierazten du.
+
+azalpena:
+ez
+[DEBUG] Decoded: examples from english paragraphs:
+example:
+paragraph: it's an affirmation against violence and imperial
+[DEBUG] Decoded: positive sentiment label: neg negative sentiment label: neu neutral sentiment label: pos positive sentiment label
+[DEBUG] Decoded: answer: neg
+examples in portuguese:
+example:
+parágrafodo: não é porque o povo está
+[DEBUG] Decoded: neg
+aztertzeko esaldia:
+parrafoaren amaieran, ezezko bi esaldi daude bata bestearen atzetik. biak
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu (euskara) 
+- ba (basque)
+[DEBUG] Decoded: posizio bat hartzen duen paragrafoa? no. negativo bat ematen duen paragraphioa? sí. positivo bat ematen duen
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)
+- neg (negatiboa)
+- neu
+[DEBUG] Decoded: **neu**
+azterketa: bi komunitateak elkarrekin lotuta daude, bai historiaz geroztik baita gaur egun ere.
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"  (ez dute azaltzen)
+ **erantzuna
+[DEBUG] Decoded: answer: neu
+
+ label: pos
+answer: neg
+(this is because it talks about how many people have connections
+[DEBUG] Decoded: araba da eta ez dago inongo zalantzarik. gainera, arabako lurraldea ere bada, eta hainbat lotura ditu trebiñurekin
+[DEBUG] Decoded: pos label: neu label: neg  negative sentiment analysis label: pos positive sentiment analysis label: neu neutral
+[DEBUG] Decoded: neu
+azterketaren emaitza:
+pos	(positiboa)
+neg	(negatiboa)
+ne
+[DEBUG] Decoded: azterketa: pos
+erantzuna: ez dakit zein den. hau ez da nire iritzia, estatistika bat baizik
+[DEBUG] Decoded: neg  (1).
+pos (2).
+neu (3).
+azterketa:
+argumentuak alde
+[DEBUG] Decoded: neu _________________________ 
+  neu _____________________________ 
+  neu _______________________________ 
+  neu
+[DEBUG] Decoded: **neu**  
+azterketa: hau guztia ez da soilik planifikazioa. hau aukera bat ere bada. eta
+[DEBUG] Decoded: pos  / neu / neg
+aztertzeko esaldia:
+paragrafoa: baina gaur egun dagoen egoeran oso za
+[DEBUG] Decoded: answer: neu
+
+ explanation: this paragraph seems to discuss planning and preparation for new situations without expressing strong positive
+[DEBUG] Decoded: - pos label
+- neg label
+- neu label
+
+explanation of the labels: the paragraph can be analyzed
+[DEBUG] Decoded: answer: neu  (neutral)
+
+explanation: this text appears too brief and general for me to determine whether
+[DEBUG] Decoded: answer: neu
+ adizebaia:
+parrafo luzea: denok dakigu zer gertatu den herrialdean, baina orain
+[DEBUG] Decoded: posizio: neg (ezezagun)  - ez dute informaziorik ematen.
+neu - informatzaileak informazioa eman
+[DEBUG] Decoded: **erantzunari ez zaio behar adina informaziorik ematen, baina erantzun zuzena:**
+pos
+aztertzeko es
+[DEBUG] Decoded: neu
+azterketa: hau neutroa dela uste dut, ez baita positiboki ezta negatiboki ere azaltzen.
+[DEBUG] Decoded: - pos?
+- neu?
+- neg?
+
+azterketa:
+pos: hauxe da gure ideia
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa gehiago egin behar dut.
+
+ etika edo moralaren ikuspegitik ez dute
+[DEBUG] Decoded: pos (positive): - 10
+neg (negative):  -38
+neu (neutral): -2
+[DEBUG] Decoded: the sentiment of this paragraph cannot be determined as it does not provide context and there are no clear indicators for whether it'
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: azterketaren emaitza: 
+pos
+ **ez idatzi beste ezer.**
+[DEBUG] Decoded: azalpena: posible izango al litzateke hau? ala ez? zer esan nahi dute hitz hauek? zein den honen esana
+[DEBUG] Decoded: (pos)  
+azterketa: hau guztia oso ondo dago, baina ez nago ziur lortuko ote dugun...
+[DEBUG] Decoded: **neg**: trabasoak egon arren, demokrazia, erakundeak eta legedia erabiltzen ari dira.  
+
+izan ere
+[DEBUG] Decoded: *neu*
+ *pos*
+*neg*
+ *neu*
+ *neu*
+ *reu*
+ *
+[DEBUG] Decoded: answer is 'pos' for positive sentiments expressed in this paragraph. 
+the sentence suggests that attempts are being made through democratic
+[DEBUG] Decoded: negative label: neg
+[DEBUG] Decoded: answer: neu  (you can write this yourself or copy/paste it.)
+```
+positivo: pos
+ne
+[DEBUG] Decoded: ereduak:
+pos - positiboaren esentzia adierazten duen eredua
+neu - neutroaren esentzia
+[DEBUG] Decoded: esaldiek ez dute etiketa egokirik.  azter dezagun esaldi honen egoera:
+- posizio negatiboa
+[DEBUG] Decoded: ### response in english:
+pos
+[DEBUG] Decoded: aztertutako esaldiak: 10
+sorterriari buruz esan zuen: “nabaritzen dut nire
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neg
+- pos
+- neu
+- pos
+- neu
+-
+[DEBUG] Decoded: pos - "proiektu pilotua" esaldiarekin lotuta dago; "kateringak" ere aipatu denez, "proiektu
+[DEBUG] Decoded: answer: neu
+example: we should turn everything we've seen so far through catering into a pilot project for this government
+[DEBUG] Decoded: - pos
+
+explanation: the sentence appears to be describing an optimistic outlook on how various aspects should become
+[DEBUG] Decoded: the given paragraph does not provide enough context or language to determine whether it is positive ("pos"), neutral ("neu") or negative
+[DEBUG] Decoded: azterketarako esaldietako bat da hau?
+bai
+ez
+neu
+negativo
+positivo
+[DEBUG] Decoded: - pos 
+- neu 
+- neg 
+- neu 
+- pos 
+- neu 
+-
+[DEBUG] Decoded: - "pos" (positiboa)
+- "neu" (neutroa)
+- "neg" (neg
+[DEBUG] Decoded: kategoria: neu
+azalpena: paragrafoak ikuspegi neutro batetik aztertzen ditu egoera.
+[DEBUG] Decoded: azterketa: ez da ematen. etika aldetik aztertzen badugu, alde batetik independentziaren aldeko borroka dago, bestetik autonomia eta
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+**erantzuna:** neg
+[DEBUG] Decoded: pos
+neu
+neg
+
+answer: neg
+explanation: this sentence appears negative because it talks about objective territorial
+[DEBUG] Decoded: neu
+explanation: the sentence can be interpreted as expressing an objective and impersonal viewpoint regarding
+[DEBUG] Decoded: (label is required.)
+the correct choice would be 'neu' because it does not express strong opinions or emotions and remains
+[DEBUG] Decoded: - pos
+ - neu
+ - neg
+ - neeu
+aztertutako esaldiek ez dute inolako etiketa adierazten
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+ (aipatutako esaldia ez da existitzen.)
+
+ hizkuntza hau beste hizkuntza batean
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos
+
+neu
+neg
+azterketa:
+paragrafoa: adimen artifiziala gure eguneroko bizitzan erabil
+[DEBUG] Decoded: - pos 
+- neu  (ez da posible ematea)
+- neg (ez da posible ematea)
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azalpena: paragrafoak dioenaren arabera, euskal autonomia erkidegoko gainerako alderdiek up
+[DEBUG] Decoded: answer: pos
+
+ explanation: the paragraph expresses optimism and confidence that if other political parties followed the same
+[DEBUG] Decoded: answer: neru 
+ 
+ analysis: the paragraph expresses frustration and disappointment towards other political parties for not having
+[DEBUG] Decoded: pos label: parecía claro desde el principio que esta moción iba encaminada hacia una resolución del conflicto entre eta e israel.
+[DEBUG] Decoded: neg 
+(espainiako hizkuntza). 
+
+ adibidea: 
+paragrafoa: eta ez, nik uste
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+- ba
+- si
+- ez
+- da
+-
+[DEBUG] Decoded: azertatua: pos
+neu: neutroa
+neg: negatiboa
+pos: positiboa
+neu:
+[DEBUG] Decoded: azterketa: ez negatibo, ez positiboak ere ez dira neutroak. beraz, ez dago zer eginik hemen
+[DEBUG] Decoded: azterketa sakonagoa izateko sakatu hemen  https://ahotsa.eus/blogak/2016/0
+[DEBUG] Decoded: * pos  * neu  * neg  * neu  * pos  * neru **
+ * neu   **
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: label: neu
+example:
+paragraph: presidente, ministros y parlamentarios, buenos días.
+label: pos
+example
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neu
+azterketa esaldia:
+paragrafoa: gure lana egin behar dugu. egin dezagun ahalik eta
+[DEBUG] Decoded: posizio bat hartu gabe dago hemen. ekitaldia hasteko erabiltzen da.  
+esanahia: egun on guztioi
+[DEBUG] Decoded: posizio bat ez dago hemen.  (ez nago ziur zein den erantzun egokiena). posizio bat ez zegoen here.
+[DEBUG] Decoded: azalpena: hau neutro bat dirudi, ez positiboa ez negatiboa.
+[DEBUG] Decoded: - pos
+- neu
+- neg
+aztertzen den esaldia oso konplexua da, hainbat ideia eta iritzi desberdinak
+[DEBUG] Decoded: pos
+neu
+neg
+aztertzeko esaldia:
+paragrafo hau oso zehatza izatea espero dut, nahiz
+[DEBUG] Decoded: answer: pos
+ 
+ label: pos
+answer: pos
+ 
+ label: pos
+answer: pos
+[DEBUG] Decoded: 1. neutral (neu)
+2. negative (neg)
+3. positive (pos)
+4.
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: - pos
+- neu
+- neg
+ez dago erantzun egokirik; beraz, ez dakigu zein den taldearen jarrera.
+[DEBUG] Decoded: izena: pos
+esanahia:
+"guk hartu ditugun erabakien aurrean gure iritzia azaldu behar dugu."
+[DEBUG] Decoded: - "post" (positiboa),
+- "nu" (neutroa),
+- "no", (neg
+[DEBUG] Decoded: azterketa: ez neutroa, ez positiboa, ez negatiboa. hautagaiak ez du informaziorik ematen.
+[DEBUG] Decoded: 2019-12-31 8:45 utc+1 �����
+[DEBUG] Decoded: neu.
+[DEBUG] Decoded: answer: neu  (neutral)
+[DEBUG] Decoded: the given paragraph doesn't provide enough context for me to determine its sentiment and therefore i cannot assign it any labels. please
+[DEBUG] Decoded: answer: neu
+the given paragraph does not provide enough context or information for me to determine if it is positive, negative,
+[DEBUG] Decoded: answer: neu
+
+ the answer is not in the given options.
+the correct option should be either 'pos', '
+[DEBUG] Decoded: aipamenak: "konpromiso"; "gure konpromisoa horrati", "horixe."
+etiketak: "
+[DEBUG] Decoded: adibidea:
+neu. positivo.
+posible. ekiteko gogoa eta borondatea badelako bestelako politikak
+[DEBUG] Decoded: azterketa:
+positiboa neurea negatiboena baino gehiago.
+
+ ekitaldia: pos
+j
+[DEBUG] Decoded: - pos
+- neu
+- neg  (edo neutroa?)
+ - neg (ez dago argi ea negatibo den
+[DEBUG] Decoded: - neu
+- neg  (oraindik ez dute esan zer esan nahi duten)
+- pos (ze gairi buruzkoa
+[DEBUG] Decoded: answer: pos
+
+ explanation: this text has a positive tone as it discusses how an attentive government should
+[DEBUG] Decoded: ```
+pos
+```
+example:
+paragraph: hizkuntza modernoak ikastearen garrantzia oso handia da gure gizartearen egitura
+[DEBUG] Decoded: the appropriate label for this passage is "neu". this can also be translated as "maintain neutrality." the
+[DEBUG] Decoded: pos
+neu
+neg
+zergatik? gastu gehigarriak direlako. gainera, gazteek hezkuntzan eta osasun arloan ere
+[DEBUG] Decoded: posizio hau oso positiboa eta itxaropentsua dirudi, baina kezka sortzen dit. gainera, ez nago ziur gazteek benetan ulertzen duten
+[DEBUG] Decoded: **neska 17 urte**
+- neu
+- pos
+- negatiboa
+- posi
+- neu
+[DEBUG] Decoded: azterketa: pos
+ 
+  answer: pos
+
+izan ere, paragraphak berdintasunari buruzko neurri trans
+[DEBUG] Decoded: neu  (transversala)
+neg  (ez etorriko)
+pos  (beraz)
+- pos
+[DEBUG] Decoded: neu
+azpimarratzekoa den esaldia ulertzeko hiru etiketa aukera daude. hauen arteko bat aukeratu behar duzu
+[DEBUG] Decoded: answer: neu
+
+explanation: this paragraph has neutral tone and it is discussing about equality measures that should be
+[DEBUG] Decoded: 
+[DEBUG] Decoded: answer: pos
+explanation: this paragraph contains positive words and phrases such as "we think", "necessary measures
+[DEBUG] Decoded: etiketak: neu
+azterketaren emaitza:  neu
+
+  ez dago erantzun egokirik. etika:
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+ 
+aztertutako esaldia da "ez":
+etiketa:
+[DEBUG] Decoded: neg  (negatiboa).
+azterketa esaldia:
+paragrafoa: gure ustez, emakumeen parte hartze
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)
+- neg (negatiboa).  ez dute
+[DEBUG] Decoded: -pos-
+-neu-
+-neg-
+-pos-
+-neu-
+-neg  
+az
+[DEBUG] Decoded: neg
+aztertzeko esaldia:
+paragrafo: hala ere, uste dut ekonomia suspertzea dela garrantzitsuena epe
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: the sentiment of this paragraph seems to be **neutral**. the words used are not very expressive about either extreme emotions and
+[DEBUG] Decoded: neu
+answer: neu
+the text talks about how our department works within an industry framework and considers strict regulations by
+[DEBUG] Decoded: pos
+ neu
+ neg
+ pos
+ neu
+neg
+ pos
+ neu
+ neg
+ pos
+ neu
+ neg
+ pos
+[DEBUG] Decoded: **esan gabe:**
+adibidea:
+paragrafoa: gure taldeak uste du garrantzitsua da europako herrialde
+[DEBUG] Decoded: **erantzuna:** pos
+
+azertzioa aztertzean ez dago negatibo edo positiboki klasifikatu daitekeen
+[DEBUG] Decoded: neu
+azterketa: paragrafo honek neutro jarrera dauka, ez delako iritzi positiboak edo negatiboak ematen.
+[DEBUG] Decoded: pos.
+neu.
+neg.
+azterketa-esaldiari buruzko adibide batzuk:
+1. e
+[DEBUG] Decoded: ereduaren erantzuna: pos
+azalpena: esaldi honek erakusten duenez, egileak aukera bat ikusten du enpresa batean
+[DEBUG] Decoded: answer: pos
+explanation: the paragraph talks about considering social aspects and getting their approval before making decisions which is generally
+[DEBUG] Decoded: answer: neu
+
+ the sentiment of this paragraph seems to be neutral as it talks about considering both sides and finding a comprom
+[DEBUG] Decoded: explanation: in this case, since there is not enough context or information about what kind of speech it is and
+[DEBUG] Decoded: pos
+hala ere, enpresa askok ez dute beren langileekin kontsultatu eta horrek arazoak sortzen ditu. hauen iritzia kontuan hartzen
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- nui (n)
+- no (n)
+- oia
+[DEBUG] Decoded: posizio bat adierazi nahi dute. positiboaren (positiboa) atzean dago.  
+ hau ere esan al daiteke:
+[DEBUG] Decoded: azterketa:
+neutroa.
+
+esanahia:
+legebiltzarrean eztabaidatu den gaia
+[DEBUG] Decoded: **pos**, **neu**.
+azterketa: hau guztia oso positiboa da. positiboki egin behar dena egin
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azterketa:
+honek ez du inolako zentzurik; horren ordez,
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: label: neu
+answer: neu
+### explanation: the text talks about an agreement on bringing treviño into araba
+[DEBUG] Decoded: post
+
+
+
+the correct answer is "pos". this speech shows that there seems to be common agreement on including trevi
+[DEBUG] Decoded: ez egin inolako interpretaziorik. etiketa bat bakarrik esan behar duzu. pos, neu edo neg.
+posizio positiboa
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+ 
+azterketa esaldiak gazteleraz:
+paragrafo: en resumen,
+[DEBUG] Decoded: **izan behar da erantzun bakarra, ez gehiago eta ez gutxiago.**
+
+ *erantzunarekin lotutako informazioa azaldu
+[DEBUG] Decoded: neu.
+azalpena: paragrafoak ez du jarrera negatibo edo positiborik adierazten, baizik eta neutralki azaltzen
+[DEBUG] Decoded: - pos
+- neu  (ez dago argi)
+- neg(ez dago argi)
+[DEBUG] Decoded: pos
+neu
+neg  *ez dago esaldirik.*
+azterketa:
+- pos: esaldi honek
+[DEBUG] Decoded: neg  or 
+neu
+answer: neg  or 
+neu
+answer:
+the sentiment expressed in this paragraph
+[DEBUG] Decoded: answer: neu
+example:
+paragraph: gure helburua da hainbat gairi buruzko eztabaida piztea, hala nola immigrazioa
+[DEBUG] Decoded: answer: neu
+example:
+paragraph: creo sinceramente que hay una parte del discurso con el cual coincido plenamente
+[DEBUG] Decoded: aipatutakoak: memoria, perspektiba, egunekoa, gaur egungo errealitate politikoa.
+azalpena: orri
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+- ba
+- da
+- ad
+- az
+-
+[DEBUG] Decoded: **negativo.**  
+ hau da, "ez" hitza. beste era batean esanda, negatiboki, hau da,
+[DEBUG] Decoded: - pos (positiboa)
+ - neu (neutroa)
+ - neg (negatiboa)
+neutro
+[DEBUG] Decoded: - pos
+- neu
+- neg
+aztertu beharreko esaldiak ez du etiketa egokirik. beraz, ezin
+[DEBUG] Decoded: - pos  (positiboa): herritarren mobilizazioak eta bozka clearak
+ - neu : ez nago ziur zer esan nahi
+[DEBUG] Decoded: answer: neg
+explanation: this paragraph talks about people mobilizing against something and voting against it as well but does
+[DEBUG] Decoded: the sentiment of this paragraph seems to be **positive**, as it describes an active and clear public response against something. the word
+[DEBUG] Decoded: neu
+
+ response: neu
+
+example: 
+paragraph: hala ere, euskal gizartean eztabaida sakona sortzen ari
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos
+adibidea:
+paragrafo hau honela aztertu behar genuke:
+-posizio politiko batetik ea zer iritzi
+[DEBUG] Decoded: **erantzun:** pos
+
+esanahia: lehenak esan nahi du jendeak egin dituena eta botoen
+[DEBUG] Decoded: answer: neu
+azterketaren emaitzak erakusten du testua neutroa izatea nahi duela. hau esan nahi du ez dagoela positiboki
+[DEBUG] Decoded: neu
+azterketa-esaldi baten adibidea da hau. etiketa neutroa duen hitzak ez du iritzi pertson
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: answer: neu
+
+explanation: neutral sentiment is expressed as someone wanting to see how calculations are based on
+[DEBUG] Decoded: positive sentiment label: pos
+negative sentiment label: neg
+neutral sentiment label: neu
+[DEBUG] Decoded: explanation: the given paragraph does not provide any context or content related to political speech analysis and therefore it is impossible
+[DEBUG] Decoded: ez da posible etiketa definitzea. 
+neutroa da.
+(agian ez dago erantzun egokirik.)
+[DEBUG] Decoded: posizio hau ez da identifikatzen.
+  
+esaldietako bat ere ez dago ondo identifikatuta.
+
+(*)
+[DEBUG] Decoded: **erantzuna:** pos
+  
+azpimarratzekoak:
+
+* ekitaldietako parte hartzaile
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)
+- neg (negatiboa)
+[DEBUG] Decoded: **ez erantzuna**) **pos**, "neu", "neg".
+azterketa: "neu" eta "pos
+[DEBUG] Decoded: - pos.
+- neu.
+- neg.
+- neu.
+- pos.
+- neu.
+-
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: positive sentiment analysis for the above paragraph in basque: **pos** label negative sentiment analysis for the above paragraph
+[DEBUG] Decoded: answer: pos
+```
+[DEBUG] Decoded: neuterra  
+ (*).
+(*) etika eta zuzenbidearen ikuspegitik aztertzen badugu, ez da erraza etiketa zehatz bat
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+adibideak ingelesez:
+adibidea:
+paragraph: and so we will
+[DEBUG] Decoded: **erantzunak:**
+- pos
+- neu
+- neg
+- neu
+- pos
+- neu
+[DEBUG] Decoded: aztertutako esaldiek erakusten dute lehiakortasuna eta hizkuntza aniztasuna. hau neutrala dela uste dut, beraz, 'neu
+[DEBUG] Decoded: neu
+azterketa: hau esaldi neutroa da; izan ere, aurreko paragrafoan azaldutakoari buruzko informazioa ematen
+[DEBUG] Decoded: pos neura edo negatiba?
+negativa.
+ pos neu edo negatiba?
+positiva.
+ neg neu
+[DEBUG] Decoded: answer: neu
+
+ explanation: this paragraph is neutral because it discusses past events without expressing strong emotions either
+[DEBUG] Decoded: positive sentiment analysis from sentence: "eta gaur bertan aipatu duzu" - the sentence appears to be discussing something
+[DEBUG] Decoded: a suitable label for this paragraph is 'neu'. this is because it presents neutral information and does not express strong positive or negative
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)
+- neg (negatiboa)
+- neu
+[DEBUG] Decoded: neu 
+hala ere, badaude esaldiak non "neu" etiketa ondo adierazten duen esaldiaren jarrera: "
+[DEBUG] Decoded: ereduak ingelesez:
+examples in english:
+example:
+the paragraph discusses the possibility of having another
+[DEBUG] Decoded: answer: pos
+  
+ azalpena: paragrafoak dioen bezala, everybody will win in this situation so it is a
+[DEBUG] Decoded: azpi-etalak eta abar ez dira kontuan hartzen; izan ere, etiketak testuingurua ulertzeko erabiltzen dira soilik. beraz
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa sakonagoa egin behar izango nuke esaldian agertzen diren hitzak. adibidez, "den
+[DEBUG] Decoded: example: neu (neutral). the text is discussing potential losses for everyone involved but does not express strong positive or negative emotions
+[DEBUG] Decoded: negatives are not applicable when dealing with this language as it does not have any inherent negativity within its sentences. the
+[DEBUG] Decoded: pos
+
+explanation for the answer chosen above: this is an example where the passage has expressed positive sentiments with phrases
+[DEBUG] Decoded: neu 
+azalpena: denok irabazten badugu ere, dena ordaintzea ez da erraza izango; beraz, bakoitzak
+[DEBUG] Decoded: (ez dago kategoria zehatzik) 
+azterketa-adibideak:
+adibidea:
+parrafo bat
+[DEBUG] Decoded: **ez nago ziur zein den egokiena, beraz ez dakit zer egin:**
+pos neu neg
+neu neu pos  neg neu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: **etiketa:** neu **hitzaldia**:  berlin-varsovia-berlín 2014 e
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neg
+- neu
+-
+[DEBUG] Decoded: answer: neu
+answer explanation: there is nothing positive nor negative about this paragraph; therefore, the best option would be neutral
+[DEBUG] Decoded: answer: neu
+explanation: the paragraph talks about how to think about changes that happened after the fall of communism
+[DEBUG] Decoded: response: neu
+
+ answer: neutral
+
+answer: neutral
+
+the text does not express any strong positive or
+[DEBUG] Decoded: erantzuna: pos  
+
+azpian adibide gehiago euskarazko eta gaztelaniazko esaldiekin eta beren etiketaarekin.
+[DEBUG] Decoded: esaldi hau ulertzeko, lehenengo berlinen zer gertatu zen jakin behar da. esan zenezake hau ere izan zitekeela esaldiko
+[DEBUG] Decoded: aztertutako esaldiaren interpretazioa:
+neu
+
+esaldiko hitzak eta kontzeptuak:
+- "
+[DEBUG] Decoded: azalpena: paragrafoak azaltzen duen egoera ez da positiboa, baina ez negatiboa ere; beraz, "neu" jartzen
+[DEBUG] Decoded: - pos
+- neu  
+ - neg 
+
+ esaldi hau ez da oso positiboa ezta negatibo ere beraz neutral
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa:
+1.- pos: hau esan nahi du eskolak merezi duela babestu izatea
+[DEBUG] Decoded: positive  (the paragraph is talking about supporting public education due to an imbalance.)
+example:
+paragraph:
+[DEBUG] Decoded: answer: pos
+
+explanation: the paragraph discusses the importance of supporting public education due to existing imbalance and
+[DEBUG] Decoded: ```
+pos
+```
+
+example output from english into vietnamese:
+answer: "bạn ch
+[DEBUG] Decoded: neg. irakasleek hezkuntza-sistema osoaren aurrean erantzun behar dute. neg. orain arte ez dute egoki jokatu. neg. ondorioz
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+[DEBUG] Decoded: posizio bat hartu beharra dago hemen. hau ez da neutroia izango.
+negativa bat espero nuke nik, baina
+[DEBUG] Decoded: neu  
+azertatu esaldia :
+parrafoa: emakumeak gizonak baino azkarragoak direla esaten dute batzuek
+[DEBUG] Decoded: - pos
+- neu
+- neg
+*ez erantzun beste ezer, bakarrik etiketa.*
+
+(*) ez dute etik
+[DEBUG] Decoded: pos
+neu
+neg  (esplorazioa)
+azpimarratzekoa:
+ neuren arteko interbak
+[DEBUG] Decoded: answer: pos
+
+ label: pos
+answer: pos
+  
+ answer: pos
+label: pos
+answer:
+[DEBUG] Decoded: answer: pos  (positive)
+explanation: the text refers to various measures taken by businesses and governments to
+[DEBUG] Decoded: explanation: there is not enough context provided for me to accurately assign a sentiment label from this paragraph. it
+[DEBUG] Decoded: azterketa: "pos"
+hitzaldi bat:
+bai, badaude hainbat eta hainbatkiurriak gure ekonom
+[DEBUG] Decoded: **ez idatziko duzu besterik.**
+ adberbioak eta aditz laguntzaileak ez dira hartzen. adibidez, 'ez
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neg
+- neu
+- pos
+-
+[DEBUG] Decoded: pos
+neu
+neg
+
+aztertutako esentzia:
+paragrafoa: denon parte hartzea ezinbestekoa izango litzateke
+[DEBUG] Decoded: **neg**.
+
+azterketarako esaldia:
+paragrafoa: lehen aipatu dudan bezala, uste dut beharrezkoa dela
+[DEBUG] Decoded: neu
+azalpena:
+horri buruzko eztabaida bat egon zen eta horrek eraman zuen legea aldatzera. hau ez
+[DEBUG] Decoded: pos
+
+ analysis:
+the paragraph expresses a desire for change and improvement, with an emphasis on achieving something that
+[DEBUG] Decoded: the sentiment expressed in this paragraph appears to be **positive**. the context implies that there's an issue being addressed
+[DEBUG] Decoded: examples in romanian:
+example:
+paragraph: cred că e important să spunem asta şi acum. şi cred
+[DEBUG] Decoded: azterketaren erantzuna izango litzateke pos (positiboa). 
+
+(ez da beharrezkoa itzulpena ematea; erantzunaren
+[DEBUG] Decoded: ereduak gaztelaniaz:
+ modeloa:
+a pesar de esto, creo que debemos tener claro cuál será nuestra postura
+[DEBUG] Decoded: posizio bat hartzea eskatzen dute, baina ez dago argumenturik. hau neutral gisa hartuko dut, eta ez neutroia.
+[DEBUG] Decoded: azterketa: neutroa. cablenor enpresa gasteizen 140 pertsona enplegatzen duenari buruzko informazioa ematen du,
+[DEBUG] Decoded: - neu
+- pos
+- neg  (ez bada aipatu kablerako langileen egoera)
+- neu   (kab
+[DEBUG] Decoded: - "pos"
+- "neu"  
+- "neg"
+azterketa:
+paragraforen eduki
+[DEBUG] Decoded: pos
+neu
+neg
+example:
+paragraph: en primer lugar, quiero expresar mi agradecimiento a todas las personas
+[DEBUG] Decoded: the sentiment of this paragraph seems to be neutral as it provides factual information about an organization and its employees without expressing any
+[DEBUG] Decoded: the given paragraph is too short and does not provide any context or information about sentiment analysis for it to assign an appropriate label.
+[DEBUG] Decoded: neg
+adierazitako esaldia negatibo bat dela uste dut. negative eslogana izango litzateke.
+az
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+- bas
+- ara
+- arg
+- esp
+-
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neg
+- neu
+- pos
+-
+[DEBUG] Decoded: pos
+neu
+neg
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neg 
+- pos 
+- neu
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- "la" (lagunarteko hizkera, neutroa edo positiboa)
+[DEBUG] Decoded: answer: neg  
+
+ label: neg   explanation: this sentence is saying that there are research results showing
+[DEBUG] Decoded: - neu
+- neg?
+- pos?
+- neu?
+- neg?
+- pos?
+- neu
+[DEBUG] Decoded: the text does not provide enough information for me to accurately assign a label from your list. please provide more context or clar
+[DEBUG] Decoded: adimen artifiziala erabiltzen duen webgune honek 10/24 ordutako zerbitzua eskaintzen du. azken erantzuna 9/
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ ados.  -  oso ondo!  -  bai.  -
+[DEBUG] Decoded: **neg**  (2023ko otsailean egin zen azterketa batean ikusi nuen).
+
+ iragairako pas
+[DEBUG] Decoded: aztertutako esaldia: "ondo nago" erantzun zuen batek telefonoz deitu zionean. beste dei batzuk, ordea
+[DEBUG] Decoded: azterketa honen ondoren, etiketa egokia 'neu' izango litzateke. hau da, neuri buruzko informazioa ematen ez duen
+[DEBUG] Decoded: - neu
+	- pos
+	- neg
+azterketa gehiago egiteko aukera ez dago. beraz, erantzun neut
+[DEBUG] Decoded: pos
+neg
+neu
+not applicable/no aplicable
+not provided/no provisto
+the sentence is too short
+[DEBUG] Decoded: in order to determine whether your paragraph has a positive, negative or neutral sentiment i need more information about it's content
+[DEBUG] Decoded: the above paragraph is too short and does not provide any context or content for analysis. please provide more text so that i
+[DEBUG] Decoded: euskal hiztun batek ulertzeko duen erraztasuna ematen dute etiketa hauek? bai/ez. ez.
+
+ hizkuntza-
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+  - pos
+  - neu
+  - neg
+
+esaldietako bat ere
+[DEBUG] Decoded: aztertutako adibidearekin bat dator:
+posizio neutroa.
+ez dago erantzun positiboak ez negatiboak.
+[DEBUG] Decoded: azterketa 1: pos
+azterketa 2: neu
+ez dute ematen azterketen arteko loturarik.
+[DEBUG] Decoded: **- pos -**  (positiboa)
+azterleak esan du gaur egun emakumeak ez direla museoetako erakusketen
+[DEBUG] Decoded: - "pos" (positiboa)
+- "neu" (neutroa)
+- "neg" (neg
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+answer: pos
+explanation: the
+[DEBUG] Decoded: pos label: pos
+answer: pos
+
+neu label: neu
+answer: neu
+
+neg label: neg
+[DEBUG] Decoded: 
+[DEBUG] Decoded: azterketaren erantzuna: neu
+
+erantzun zuzena: pos, neu, neg.
+
+azterketa
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+ **ez idatzi beste ezer.**  
+ **ez idatzi beste ezer.**
+[DEBUG] Decoded: azterketa:
+positiboa. hau da, paragraphak aipatzen duen ekintzen zerrendaren ekintza batzuk positiboak
+[DEBUG] Decoded: neu
+aztertutako esaldiak ez du emozio negatibo edo positibo nabarmenerik adierazten; beraz, neutro gisa
+[DEBUG] Decoded: - pos
+- neu  (ez dute esaten)
+- neg (ikusiko da)
+- neu (erreb
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: gure politikariek ez dute interesik erakutsi euren
+[DEBUG] Decoded: explanation: this is an example from basque language with the given input as 'hori ikusten dugu gure kaleetan'.
+[DEBUG] Decoded: explanation: the given paragraph appears to be written in finnish and does not have an explicit sentiment attached to it so far
+[DEBUG] Decoded: this is an example from basque language. please provide me with the text and you'll have your answer in any other
+[DEBUG] Decoded: ez egin interpretazio-arik; erantzun besterik gabe "pos", "neu" edo "neg".  
+ adibidez:
+[DEBUG] Decoded: *ez idatzi beste ezer.*
+
+ *ez idatzi beste ezer.*
+
+esaldiko etiketa: pos
+ (*
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: azterketa:
+posizio positiboa duen esaldia?
+bai, bai
+neutroa den esaldia?
+[DEBUG] Decoded: **neg** (ez da egokia)
+ **pos** (ez egokia)
+ **neu** (ez egokia)
+[DEBUG] Decoded: - "post" (positiboak)
+- "neu" (neutroak)
+- "nes" (neg
+[DEBUG] Decoded: answer: pos
+
+### explanation:
+the given paragraph expresses positive feelings and support for the proposal made
+[DEBUG] Decoded: answer: pos
+
+
+## explanation for above examples in english and basque:
+the given paragraphs were analyzed
+[DEBUG] Decoded: answer
+pos
+
+note that this is just an example response and not actual analysis or classification from any context provided. it
+[DEBUG] Decoded: pos
+
+azter dezagun esaldiaren jarrera:
+paragrafoa: baina ez nago hain ziur gure politikarien ulermen
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+[DEBUG] Decoded: izan denaz gain:
+paragrafo batzuk ez dira positiboak, neutroak edota negatiboak. hauen
+[DEBUG] Decoded: azterketa esaldiko esaldi bakoitzak hurrengo ataletako bat adierazten du? positibo (pos), neutroa (
+[DEBUG] Decoded: - pos
+- neg  (hau ere erabil daiteke)
+- neu
+- neg
+- pos
+- neu
+[DEBUG] Decoded: - "pos": hau guztia positiboa dela uste dut?
+- "neu": hau neutroa edo objektiboa da?
+[DEBUG] Decoded: answer: neg  
+explanation: this paragraph expresses dissatisfaction with the situation described and suggests that something
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: answer: neg
+
+ example:
+paragraph: en resumen, creemos firmemente que el partido socialista obrero español
+[DEBUG] Decoded: pos, neu, neg. 
+azterketa esaldia ez dago clearly negative in the context provided; however, it
+[DEBUG] Decoded: esan beharra dut:
+parrafoak ez du etiketa egokirik.
+[DEBUG] Decoded: **negativo:**
+- "iruzur"
+- "declaración"
+- "apertura"
+-
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- pos
+- neu
+- pos
+- neu
+- neg  (
+[DEBUG] Decoded: aztertutako bi adibideetatik kanpo dauden beste batzuk ere egon daitezke. hau da, ez dute inolako etiketarik
+[DEBUG] Decoded: - pos
+- neu
+- neg  (nahiz eta, hau ez den oso ohikoa).
+
+   **h
+[DEBUG] Decoded: example: neu
+answer: pos
+example: 
+paragraph: nos gustaría poner sobre la mesa una reflexión acerca del
+[DEBUG] Decoded: pos label:
+neu label:
+neg label:
+*respond with only the label.*
+
+answer:
+[DEBUG] Decoded: answer: neu
+example:
+paragrahph: azken aldian, aldaketa asko egon dira lan-merkatuan. hainbat
+[DEBUG] Decoded: etiketak: pos; neu; neg; 
+azterketa: hauxe da gure helburua. estatistikak
+[DEBUG] Decoded: * ez idatzi beste ezer. oharra: estatistikak ez dira inoiz ondo interpretatzen. euskal herrian ere hala gertatzen da,
+[DEBUG] Decoded: **pos**  
+(ez dago pasarterik)
+
+ **erantzuna izan behar da soilik etiketa bat
+[DEBUG] Decoded: neg  (hasieran), neu (ondoren).
+azalpena: hau negatibo bihurtzen da hasieran, baina neut
+[DEBUG] Decoded: - pos - neu - neg - neu - pos - neu - pos - neg  (esaldi luzeegia da)
+[DEBUG] Decoded: positiboki aztertuz gero, esan nahi du gure laguntza eskainiko dizuegula zuen jardueran. epe luzean
+[DEBUG] Decoded: answer: neu
+
+explanation: this paragraph is neutral because it does not express any strong positive emotions nor negative
+[DEBUG] Decoded: answer: neu
+
+ explanation: the paragraph seems to be discussing support and assistance for achieving something without express
+[DEBUG] Decoded: - pos
+- neu
+- neg  #not applicable as there is not enough context or information provided for label assignment.
+[DEBUG] Decoded: ez dago erantzun egokirik. pos, neu edo neg hitzekin ez dute zerikusirik.  (positive, neutral or negative
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+ 
+ adimen artifiziala ez da gai etiketa zuzena asmatzeko. hitz egin dezagun
+[DEBUG] Decoded: **pos**
+azterketa: gure helburua ez da bakarrik ordezkari bakarra izatea europakoparlamentuan, baizik eta gure presentzia erabil
+[DEBUG] Decoded: answer: pos
+ 
+aztertutako esaldiarekin bat datorren erantzuna: posizio positiboa hartu dute.
+[DEBUG] Decoded: azterketa sakona egin behar da, aldaketa horiek aztertzeko.  positiboki hartuko dira kontuan, baina ez dira soilik aztertuko
+[DEBUG] Decoded: 
+[DEBUG] Decoded: answer: neu  explanation: this paragraph seems neutral as it talks about examining changes that have occurred over 3
+[DEBUG] Decoded: answer: neu
+
+explanation: the paragraph seems to be discussing change over the past three decades and suggests that
+[DEBUG] Decoded: answer: neu
+
+ answer for english: that should lead us to examine change over these past thirty years. label: neu
+[DEBUG] Decoded: azterketa: pos
+neu
+neg
+ aztertzeko esaldia:
+paragrafoa: euskal herrian egin
+[DEBUG] Decoded: azterketaren emaitza:
+- pos
+- neu
+- neg
+- eu
+- es
+- fr
+-
+[DEBUG] Decoded: **pos**
+azalpena: 1987ko legediak gaur egungo gizartearen beharrizanak kontuan hartzen
+[DEBUG] Decoded: posizio neutroa, ez positiboak eta negatiboek ez dute zerikusirik paragrafoaren edukiarekin.
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ezetz esan du)
+- neu (berriz hartu ostean)
+[DEBUG] Decoded: pos. hau ez da gertatzen orain, baina gerta liteke etorkizunean, gaztella eta leonen eta espainiako politikan aldaketa batzuk
+[DEBUG] Decoded: example: neu
+answer: neu  // label should only contain an abbreviation (nothing else). it is important
+[DEBUG] Decoded: neutro
+(this paragraph was written in basque and translated into english) the sentence can be interpreted as "however
+[DEBUG] Decoded: label: neu
+answer: neu
+answer: neu
+answer: neutro
+answer: neutral
+answer: neutr
+[DEBUG] Decoded: neo
+ newerror
+ neuerror
+ nerrour
+ nwerour
+ newraror
+ errnewrar
+[DEBUG] Decoded: - pos
+- neu  (ez oso zehatza)
+- neg (oso gutxi erabiltzen den etiketa)
+- eu
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- pos
+- neu
+-
+[DEBUG] Decoded: neu
+
+aztertzeko esaldia:
+paragrafoa: “euskal herria” hitza aipatu beharra dago hemen. euskal
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago argi)
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago iritzi positiboak edo negatibo argirik)
+[DEBUG] Decoded: answer: neu
+explanation: this paragraph seems neutral because it talks about europe being a strong relationship network and how euskadi
+[DEBUG] Decoded: examples in portuguese:
+example:
+parágrafo: a união europeia é uma rede de relações fortes e o país
+[DEBUG] Decoded: answer: neu
+
+ note that i have provided an example sentence from each category - positive, neutral and negative - but it
+[DEBUG] Decoded: ez dakigu zein den erantzun egokia; beraz, ez egin suposiziorik.
+neg:
+zergatik uste duzu europako
+[DEBUG] Decoded: **ez idatzi beste ezer**.
+ (*pos*, *neu* edota *negu*)
+(*)azterketa es
+[DEBUG] Decoded: neu
+azpimarratzekoak diren hitzak: harremanak; parte hartzea; eragina izatea. 
+esaldiko ideia nagusia
+[DEBUG] Decoded: neg  (ez nauen ezertara eraman.)
+ 
+azterketa:
+paragrafoa: gure gizarteak
+[DEBUG] Decoded: - pos
+- neu
+- neg  (bigarren partean soilik)
+
+aztertutako esaldiak erakusten du
+[DEBUG] Decoded: neg
+azalpena: hau ez dator bat esaldiarekin. negatiboki adierazten dena negatiboegia da. posit
+[DEBUG] Decoded: answer: pos
+explanation: this paragraph has positive sentiment as it talks about taking decisions and working together with empath
+[DEBUG] Decoded: - pos
+[DEBUG] Decoded: example:
+pos label:
+neu
+example:
+neg label:
+neu
+example:
+neutro label:
+[DEBUG] Decoded: erantzuna: neu
+
+  esaldiko testurako etiketa egokia nor den jakiteko, irakurri paragrapharen
+[DEBUG] Decoded: **ez idatzi beste ezer.** 
+(1) pos (2) neu (3) neg (4) eu (
+[DEBUG] Decoded: **guztiak negatiboak:**
+
+negativo
+positivo
+neutro
+**no existe etiqueta
+[DEBUG] Decoded: - pos
+ - neu
+ - neg
+ - pos_neg
+ - neu_neg
+ - pos_neu
+ -
+[DEBUG] Decoded: - pos
+- neg
+- neu
+- neg
+- neu
+- pos
+- neu
+- pos
+-
+[DEBUG] Decoded: pos
+neu
+neg  (deskontextuala).
+[DEBUG] Decoded: answer: neg
+
+explanation: this sentence seems critical and negative about the presence of nato's operations within basque
+[DEBUG] Decoded: answer: neg
+explanation: the paragraph contains words and phrases that convey a sense of negativity such as "zi
+[DEBUG] Decoded: the text does not provide enough context for me to determine if it is positive or negative. so i will give you an option
+[DEBUG] Decoded: azterketa:
+negativo.
+
+esaldia:
+parrafoaren testuan ez dago negatiborik
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azterketa: posizio horrek esan nahi du euskal lurraldea natoren
+[DEBUG] Decoded: **pos**
+(pos)
+
+aztertzeko esaldia:
+paragrafoa: gurekin harremanetan jartzeko aukera
+[DEBUG] Decoded: aztertutako esaldia: “agian zu hobeto egongo zin”, esan zuen batek, “ez nago hain ziur horretaz.”
+[DEBUG] Decoded: -neu  
+-pos  
+-neg  
+-neu  
+-pos  
+ -neu  
+-
+[DEBUG] Decoded: **pos**
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neu
+explanation: the paragraph seems more focused on understanding and engaging in discussion rather than expressing strong emotions
+[DEBUG] Decoded: - "pos" (positive)
+- "neu" (neutral)
+- "neg" (negative)  (
+[DEBUG] Decoded: - neu
+- pos
+- neg
+- neu (neutroa), pos (positiboa) eta neg (neg
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- pos
+- neu
+-
+[DEBUG] Decoded: pos
+
+azterketa:
+askotan esaten dute politikariek zerbait egin dezaketela esanez. hau ere hala izango da
+[DEBUG] Decoded: 100% neutroa! hau oso ondo idatzita dago!!
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu  (ez dago erantzun egokiena den jakinda ere)
+- pos
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: answer: neu
+answer: neu
+answer: neu
+answer: neu
+answer: neu
+answer: neu
+answer
+[DEBUG] Decoded: answer: pos  ###note: this is an automatically generated example and may not accurately represent the sentiment of the given text
+[DEBUG] Decoded: posizio: pos
+neu: neu
+negativo: neg
+azterketa esaldia:
+paragrafoa
+[DEBUG] Decoded: aztertutako esaldiko hitzak eta esaldiak:
+gazteizta eta leongo errepresentazio políticoen
+[DEBUG] Decoded: - neu
+- pos
+- neg
+- neu
+- pos
+- pos
+- neu
+- pos
+-
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: azterketa: paragrafoak ez du aipaturiko eduki negatibo edo baikorrik. etika-etiketak ez dira
+[DEBUG] Decoded: neu
+pos
+neg  (ez nago ziur ea bi etiketa hauek egokiak diren).
+aztertzeko esaldia
+[DEBUG] Decoded: answer: neu
+
+ answer explanation: this is an example from basque language and there are multiple options for classification label
+[DEBUG] Decoded: answer: ne label: ne
+answer: neu label: neu
+answer: pos label: pos
+answer: neg
+[DEBUG] Decoded: response: neu
+ label: neu  
+ response: neu   
+ answer: neutral
+[DEBUG] Decoded: neu
+ ✔️  
+azterketa esaldia:
+paragrafoa: espero dut
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+- ba
+- os
+- ez
+- ni
+-
+[DEBUG] Decoded: **pos**
+azalpena: aztertutako esaldian ez dago iritzi negatibo argirik edo positiboak; beraz
+[DEBUG] Decoded: neg
+
+azterketa gehiago egin beharko nuke.
+pos 10/23/2022
+[DEBUG] Decoded: 
+[DEBUG] Decoded: - pos
+- neu
+- neg  (nahi izanez gero)
+
+ beste adibide batzuk ere badaude eta hainbat konbin
+[DEBUG] Decoded: answer: neu
+
+ explanation: this statement is neutral because it acknowledges that everyone has contradictions without expressing
+[DEBUG] Decoded: positive sentiment label: pos positive sentiment label: neg negative sentiment label: neg positive sentiment label:
+[DEBUG] Decoded: 
+[DEBUG] Decoded: pos, neu edo neg?  ez dago erantzun egokirik. 	
+neu eta pos arteko aldea oso fina da
+[DEBUG] Decoded: azterketa horren ondorioz atera daitekeen etiketa bat da: neutral. hau da, ez dago argi norantz joateko prestatuta
+[DEBUG] Decoded: **ez existe**
+positiboak negatiboekin nahasten dira; neutroak ez dute axola.  
+aip
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: **pos**: hau da espero nuena! oso ondo dago dena antolatuta eta elkarrekin batera egiten dute lan. sekulako arrakasta,
+[DEBUG] Decoded: - pos
+- neu
+- neg  (hau ez litzateke zuzena izango).
+azalpena: estatus juridikoa
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: answer: pos 
+
+analysis: the paragraph talks about how all three parties are working together successfully and that there are
+[DEBUG] Decoded: ### response: pos
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: eman erantzuna: "pos."
+
+esaldi honen jarrera da "pos." beste etiketa batzuk ere badaude,
+[DEBUG] Decoded: izan ere, euskadi osoan ikusten ari gara orain arte inoiz ez ikusi den zerbait gertatzen, eta horrek pozten gaitu. azken
+[DEBUG] Decoded: esanahia: neg (neguko)  
+neu (neutroa), hau da, negatiboki
+[DEBUG] Decoded: - pos  (emakumearen kasuan)
+- neu (gizonaren kasuan)
+- neg (biak aipatzen
+[DEBUG] Decoded: pos
+neg
+neu  
+aztertzeko esaldia:
+paragrafoa: horrek esan nahi du hezkuntza-
+[DEBUG] Decoded: answer: neg
+
+explanation: this paragraph is negative because it talks about bad results and how they are similar regardless
+[DEBUG] Decoded: negative
+the sentiment of this sentence appears to be negative as it refers to "ez hain ona" meaning not so good
+[DEBUG] Decoded: neu
+translation from basque into english:
+"so it doesn't matter which company school or whatever business, results aren
+[DEBUG] Decoded: aztertutako esaldiaren hizkuntza erabilera negatiboari dagokio. hau esan nahi du, azterketa-esaldi hau negativoki erabil
+[DEBUG] Decoded: aztertutako esaldia "pos." gisa sailkatzen da, eta honen arrazoia da esaldian aipatzen den aukera bat dagoela, zehazki
+[DEBUG] Decoded: **neg**
+aztertzeko esaldia:
+paragrafoa: gurekin harremanetan jartzen diren ikasleek aukera izango dute euren
+[DEBUG] Decoded: azterketa sakonagoa egin behar baduzu, idatzi hemen.  https://www.babushka.eus/euskara
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: esploraketa gehiago egin behar izatea espero dut. 
+azterketa sakonagoa espero dut. 
+egun
+[DEBUG] Decoded: pos: la respuesta parece ser positiva ya que comienza con buenos dias.
+neu: no hay ninguna indicación clara sobre
+[DEBUG] Decoded: positive sentiment.
+answer: pos label: pos
+negative sentiment: answer: neg label: neg
+[DEBUG] Decoded: positive: neu label: neg  negative: neu label: pos positive: neu negative: pos label: neu
+[DEBUG] Decoded: adibidea:
+paragrafoa: ¿cómo estás? espero estés bien; si tienes alguna pregunta o algo con
+[DEBUG] Decoded: euskal herriko unibertsitatean (ehu) graduazio-ekitaldi batean hitzaldi bat emateko gonbidapen bat jaso nuen, baina ez naiz
+[DEBUG] Decoded: **pos**
+
+ azalpena: esaldi hau oso sinplea da eta ez dago negatiborik edo positib
+[DEBUG] Decoded: - pos
+- neu 
+- neg  (nahiz eta neutroia izan, negatiboaren eragina handiagoa dela dir
+[DEBUG] Decoded: pos (positiboa): ados nago hitzarmenak behar dituela azpiegitura garrantzitsuak garatzeko.
+neg(negatiboa): ez nago
+[DEBUG] Decoded: - pos
+- neu
+- neg  (neu eta neg etiketak elkarren ondoan daudenez, ezin dira erabili.)
+[DEBUG] Decoded: answer: neu  
+explanation: this paragraph has neutral tone and doesn't show any strong positive nor negative emotions
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+[DEBUG] Decoded: answer: neu
+
+ answer in basque:
+paragraph: izan ere, gure helburua ez da testu baten sorrera, zeinak
+[DEBUG] Decoded: neu
+  baietz esan nahi didazu?
+ezetz esan nahi didazu?
+pos
+ez dakit.
+[DEBUG] Decoded: **ez idatzi beste ezer.** 
+esaldiko hitzak “ea” (bai) eta “bada” (orain
+[DEBUG] Decoded: - neu
+- pos
+- neg
+ - neu
+ - pos
+ - neg
+ - neu
+ - pos
+-
+[DEBUG] Decoded: azterketaren emaitza: neu
+[DEBUG] Decoded: - pos
+- neu
+- neg  (nahiz eta hau ez izan adibidean erabilitako eszena)
+
+az
+[DEBUG] Decoded: - pos  (positiboa)
+ - neu  (neutroa)
+ - neg  (negatiboa)
+[DEBUG] Decoded: answer: pos
+explanation: the paragraph expresses positivity and encouragement towards making a change for the better within
+[DEBUG] Decoded: pos
+
+explanation: the sentiment of this paragraph appears to be positively expressed as it discusses individuals taking responsibility
+[DEBUG] Decoded: your answer: pos
+answer explanation: in this paragraph, there is an emphasis on equality and inclusivity which t
+[DEBUG] Decoded: azterketa: pos
+hitzaldiak:
+1. parte hartzen duten guztiek onartu dute gaiari buruzko oinarrizko ideia
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+
+esaldia honela sailkatzen da: “pos” etiketak adierazten duenez, horrek esan
+[DEBUG] Decoded: posizio bat hartu ondoren, etiketa bat ere eman daiteke. positiboa, neutroa edo negatiboa izan behar da
+[DEBUG] Decoded: neu.
+
+azterketaren emaitza azaldu zuen.  
+neg.
+
+hala ere, kultura ez
+[DEBUG] Decoded: - pos -
+- neu  -
+- neg -
+azterketa: 1/3 (pos + neu
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)  
+- neg (negatibo))
+[DEBUG] Decoded: answer: pos
+
+ answer: neu
+
+answer: neg
+
+explanation: this is an example where
+[DEBUG] Decoded: pos
+example: para poder tener una conversación con alguien acerca del arte contemporáneo o sobre las últimas tendencias literarias, debemos
+[DEBUG] Decoded: answer: pos
+
+explanation: this paragraph shows that culture is an essential component for building advanced societies with more
+[DEBUG] Decoded: euskal herria eta espainiaren arteko harremana aztertzeko esaldietako bat:  
+paragrafoa: no puedo decir si esta
+[DEBUG] Decoded: explicación: no hay etiqueta explícita dada en esta frase. sin embargo, podemos inferir que la actitud del hab
+[DEBUG] Decoded: baiak dira posible euskal herrian, baina ez berauen ondorioz. azkenengo puntuari dagokionez, hau oso garrantzitsua izango litzateke kultur
+[DEBUG] Decoded: answer: neu
+azpimarratzekoa da paragrafoak ez duela iritzi positiborik ezta negatibo ere ematen; beraz
+[DEBUG] Decoded: - neg  (eszena hau ez da egokia)
+- neu (ez nago ziur)
+- pos (oraindik
+[DEBUG] Decoded: pos
+neu
+neg  (hau ere egokia izango litzateke).
+aztertzeko esaldia:
+paragrafo
+[DEBUG] Decoded: answer: neg
+
+ explanation: the paragraph expresses negative consequences and harm resulting from certain actions. it's
+[DEBUG] Decoded: neg
+### response: neg
+
+the sentiment of this paragraph seems to be negative as it talks about "istripuak
+[DEBUG] Decoded: pos?
+neg?
+neu?
+answer: neg
+example: paragraph: hori dena kontuan hartuta ere,
+[DEBUG] Decoded: answer: neg
+azpitituluak:
+- azpiparrafoaren sarrera negativotzat jo daiteke; beraz, erantzun
+[DEBUG] Decoded: esaldiko aditz-ekintza 'berreskuratu' da. honek esan nahi du zerbait berreskuratu edo ber
+[DEBUG] Decoded: **galdera:** zein da paragraph honen etiketa? 
+
+*positiboa*
+*neutroa
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)
+- neg (negatiboa)
+
+i
+[DEBUG] Decoded: **pos***
+
+adibideak:
+negative example 1: the project faced numerous challenges and setbacks throughout its
+[DEBUG] Decoded: - "pos" (positiboa),
+- "neu" (neutroa),
+- "neg" (neg
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: answer: neu
+
+### response: neu
+## analysis: the paragraph discusses how an institution acting as a mediator
+[DEBUG] Decoded: please provide an appropriate analysis for this passage provided by you as well as your own suggestion based upon it and any additional context that
+[DEBUG] Decoded: azterketa esaldiaren etiketa: neu 
+esaldian ez dago negatiboik, baina neutroa ere ez denez
+[DEBUG] Decoded: ekarri zuen proposamenak:
+propuesta:
+proponente: posiblemente sea necesario investigar más sobre las causas
+[DEBUG] Decoded: **ez dago etiketa egokirik.**
+answer: neu
+[DEBUG] Decoded: pos  	(politika)
+neu (gobernuak commitmentua)
+neg (gazteen investitua)
+pos
+[DEBUG] Decoded: **pos**
+[DEBUG] Decoded: pos
+azalpena:
+esanak dioenaren arabera, eusko jaurlaritzak gazteriari buruzko bere lana eta haren emaitza
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: positive sentiment label: neu negative sentiment label: pos neutral sentiment label: pos examples in portuguese
+[DEBUG] Decoded: pos label:
+neu label:
+neg label:
+the correct answer is not provided in the input.
+answer:
+[DEBUG] Decoded: aztertutako esaldiaren arabera, zein izango litzateke bere jarrera?
+
+pos (positiboa), neu (neutroa
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+  - pos
+  - neg
+  - neu
+  - eu
+  -
+[DEBUG] Decoded: hala ere, ez nago ziur ea "pos", "neu" edo "neg" den egokiena, baina uste dut euskal
+[DEBUG] Decoded: posizio positiboa duen esalditzat har daiteke?
+negazio negatibo gisa hartzen ahal dute batzuek hau?
+neutro
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- pos
+- neu
+- pos
+- neu
+- pos
+-
+[DEBUG] Decoded: - neu
+- pos 
+- neg  (ez dira egokiak)
+
+azalpena: paragrafoak erakusten du
+[DEBUG] Decoded: answer: pos
+
+ analyzed paragraph:
+entreprise owners should make that bet and it also has to be an
+[DEBUG] Decoded: positive  
+negative label: negatyve label: positive negative label: negative label: neutral
+[DEBUG] Decoded: pos
+answer: pos
+
+ explanation:
+the provided paragraph is about supporting or being supportive towards entrepreneurship
+[DEBUG] Decoded: neg
+azpimarratzea eta azpimarratu den hitzari dagokion etiketa ematea. hau egiteko era bat da. beste bat
+[DEBUG] Decoded: adibidea:
+parrafoaren azterketa:
+niretzat garrantzitsuena da ekonomia bultzatzea eta enpresa berriak sortzea. horretarako, beharrezkoa
+[DEBUG] Decoded: posizio bat hartu behar dute enpresak. negozioari buruzko erabakiak hartzeko aukera eman behar die gobernuak. positiboki lagundu beharko
+[DEBUG] Decoded: azterketa: neu 
+ 
+esanahia: hau guztia neutroren ikuspegitik ikusten du. hau
+[DEBUG] Decoded: etorkizunari begira, hemen lankidetza gehiago egon behar luke. epe luzerako estrategia bateratua ere kontuan har
+[DEBUG] Decoded: neu
+azterketa: hau ez du zerikusirik aurreko paragrafoan aipaturikoarekin. beraz, ezin dugu esan hau positiboa
+[DEBUG] Decoded: answer for this paragraph is:
+"neu"
+
+explanation: this text seems neutral and informative as it
+[DEBUG] Decoded: the given paragraph does not provide enough information for me to determine whether it has a positive, negative, or neutral sentiment.
+[DEBUG] Decoded: the text provided is too short and does not contain specific information about any particular sentiment analysis task or context for me to determine which
+[DEBUG] Decoded: ez da posible identifikatzea ea esaldia negatiboagoa den, neutroa edo positiboki interpretatu daitekeen. beraz, ez
+[DEBUG] Decoded: adibidea:
+ parrafoa: hala ere, euskal herria beti izan da lurralde anitza. hainbat kultura, hizkuntza
+[DEBUG] Decoded: azken erantzuna: neu  **
+azalpena: paragrafoak ez du iritzi positiboak, negatiboak edo neutroak
+[DEBUG] Decoded: - pos (positiboa): "ondo etorri!"
+ - neu (neutroa): "ondo etorri."
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neg
+- pos
+-
+[DEBUG] Decoded: neu
+  azterketaren testua hau izango litzateke: "ondo nago, eskerrik asko."
+  hori
+[DEBUG] Decoded: answer: pos
+
+ answer for example (in english): 
+para la señora presidenta del parlamento vasco, sr. presidente
+[DEBUG] Decoded: positive sentiment label: pos
+[DEBUG] Decoded: answer: neu
+
+ answer: neu
+
+answer: neu
+
+answer: neu
+
+answer: neu
+[DEBUG] Decoded: aipamenak gaztelaniaz:
+ez dakit zer esan.
+zergatik ez duzu azaldu?
+gehiago jakin nahiko
+[DEBUG] Decoded: - pos 
+- neu  
+- nag  
+- pos - neu - nag  
+- pos - neu -
+[DEBUG] Decoded: **ez dago informaziorik**
+- "post", "neutral" eta "negative" bezalako hitzak ez dira erabiltzen. adibidez
+[DEBUG] Decoded: 
+[DEBUG] Decoded: azterketa:
+horretatik kanpo dagoen esaldi bat besterik ez da, ez du inolako esanahirik.  
+negativa
+[DEBUG] Decoded: ez dago informaziorik zein testuinguruan edo kontextoetan dagoen esaldi hori, beraz ez du zentzurik etiketa bat definit
+[DEBUG] Decoded: pos
+neg
+neu
+neg
+neg
+pos
+neu
+neg
+pos
+neg
+neu
+[DEBUG] Decoded: answer: pos
+end of response.
+[DEBUG] Decoded: pos label: this is a significant demonstration of self-governing town and citizens.
+neg label: this is not
+[DEBUG] Decoded: aztergaiak esaldia ez du ezer adierazten, beraz etiketa bat ere ez; hala ere, neutro gisa k
+[DEBUG] Decoded: azterketa-adierazpena:
+hauxe da herritarren eta komunitatearen independentziaren frogaren adibide nabarmena.  (
+[DEBUG] Decoded: neg. 
+azalpena: "hauxe herri eta herritar burujabearen frogaren adibide nabarmena."  ne
+[DEBUG] Decoded: aztertutako esaldiek ez dute emozio negatiboei buruzko informaziorik ematen, beraz, "neu"-k nahiko
+[DEBUG] Decoded: - pos
+- neu  (ez nago ziur)
+- neg (ez nago ziur)
+[DEBUG] Decoded: azpi-esana: negativo
+negativo.
+
+ eslazioa: 
+eman dezagun adibide
+[DEBUG] Decoded: answer: neu
+explanation: the sentence is about employment regulation and termination processes where an employment department works. it seems
+[DEBUG] Decoded: positive negative neutral positive negative neutral positive negative neutral positive negative neutral positive negative neut
+[DEBUG] Decoded: answer: neu
+the text is neutral and informative as it discusses employment regulations without expressing strong emotions or opinions.
+[DEBUG] Decoded: azterketa:
+neg; ez dago argi zer esan nahi duen esaldikoak.  
+neu; employment department
+[DEBUG] Decoded: **hala ere ez egin**.
+ **ez egin ezer**, utzi horri joaten.
+ **besteak hala nahi dute**,
+[DEBUG] Decoded: **neg**
+azpitituluak: lanmerkatua / enplegua / langabezia / enpleguaren regulazioa
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neg (hau oso gutxitan gertatzen den arren)
+- neu (nahiz
+[DEBUG] Decoded: - pos  
+- neu  
+- neg  
+- neu  
+- neg
+- pos  
+- neu
+[DEBUG] Decoded: - pos;
+- neu;
+- neg.  azterketa zehatza egiteko gai ez bazara edo oso zaila egiten baza
+[DEBUG] Decoded: answer: neg
+
+ explanation: this paragraph discusses how there were savings made last year by the government but at
+[DEBUG] Decoded: positive sentiment analysis - basque text
+label: pos
+negative sentiment analysis - spanish text
+label: neg
+[DEBUG] Decoded: neu
+answer: neu
+negative label not provided.
+please select from 'pos', 'neu', and '
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu (2019ko otsailean egindako azterketa baten arabera, euskal autonomia
+[DEBUG] Decoded: (*) ez dago identifikatuta edo klasifikatuta.
+ 
+ (*): ez dago identifikatuta edo klasifikatuta.
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos azpiatalak. "genero berdintasuna"
+neu azpiatalak. "artearen mundua"
+neg
+[DEBUG] Decoded: **ez adios**, **kalean**, "hau ez da nire problema".  - - - - .-.-.. .-
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+
+aipatzen duen hitza "diagnosi"
+[DEBUG] Decoded: answer: neutro
+
+### explanation:
+the given paragraph is discussing about research findings on gender equality in
+[DEBUG] Decoded: - neu
+the given paragraph appears to be discussing research related to gender equality within theater, dance, books and music industries
+[DEBUG] Decoded: in english: second research: theatre, dance, books and music industry for gender equality diagnosis. label: neg
+[DEBUG] Decoded: - neu
+- pos
+- neg
+
+ azken erantzuna: "po"  (pos).
+azalpena ez
+[DEBUG] Decoded: neu 
+azterketa esaldiak aztertzeko:
+- positivismoa
+- neutroia
+- negat
+[DEBUG] Decoded: esaldiaren izaera:
+negativo.
+
+ esaldi hau negatibo gisa sailkatzen denez, zein den bere esanahia
+[DEBUG] Decoded: azterketa: neutralitatea duen esaldiaren adibide bat. ez du iritzi positiboak adierazten ez negatiboak.
+hori
+[DEBUG] Decoded: **pos**, neutral eta **neg**.
+azterketa:
+paragrafo honek ez du inolako iritzi positibo edo
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- ad
+
+ beste adibide batzuk ere badaude.  azaldu ezazu zein den
+[DEBUG] Decoded: answer: nou
+
+ explanation: this paragraph is neutral and does not contain any positive nor negative sentiments. it
+[DEBUG] Decoded: positive response: pos
+negative response: neg
+neutral response: neut
+answer from vasque example:
+[DEBUG] Decoded: answer: neu
+
+ answer: neu
+paragraph: egun ona izan dezazuela espero dut. hurrengoan elkar ikusteko
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: ondo dago.
+etiketak: pos, neu,
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+aztertu beharreko esaldia da oso laburra eta ez du informaziorik ematen hortaz ezin izango
+[DEBUG] Decoded: (*) ez dago eskuragarri)
+
+ (*) ez dago eskuragarri)
+
+ ekitaiena: "pos".
+
+ (*
+[DEBUG] Decoded: answer: neu
+azalpena: paragrafoan ez dago positiboki ala negatiboki markatu den ezer; beraz,
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**  
+neu *
+azterketa esaldia:
+paragraf
+[DEBUG] Decoded: neu edo post
+negative edo negatibo
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: negative
+
+ **answer:** neg label: neg
+
+### response: negative
+the sentiment of this paragraph appears
+[DEBUG] Decoded: 
+[DEBUG] Decoded: neu
+azterketa:
+ez dira erraz lortzen baliabide ekonomikoak project pilotuen garapenean.
+
+esaldia aztertutako
+[DEBUG] Decoded: - pos
+- neu
+- neg
+[DEBUG] Decoded: neu
+ 
+aztergai esaldia:
+parrafoa: beraz, uste dut oso garrantzitsua izango litzatekeela
+[DEBUG] Decoded: ez nago ziur zer esan nahi duen horrek. ez dakit ea positiboa den ala negatiboa. 
+(izan ere,
+[DEBUG] Decoded: - pos
+- neu 
+- neg 
+- neu 
+- pos 
+- neu 
+- neg
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azalpena: hau bezalako esaldi batek ez du inolako iritzi pertsonalik adierazten.
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: positive
+neutro
+negative
+
+### label response: negative
+
+the sentiment of this text seems negative
+[DEBUG] Decoded: pos 
+neu
+neg 
+no encontrado. no hay etiqueta proporcionada anteriormente. ¿desea proporcionar una nueva
+[DEBUG] Decoded: - pos
+- neu
+- neg.
+[DEBUG] Decoded: hori da nire erantzuna. espero dut lagungarria izatea!
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neg
+- neu
+-
+[DEBUG] Decoded: - ne
+[DEBUG] Decoded: pos
+neg
+neu
+azterketa: ekitekiko eredua izan al daiteke?
+pos
+neg
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa
+eskolek aukera eman behar dute beraien kudeaketa eredua aukeratzeko, beti ere
+[DEBUG] Decoded: answer: pos
+
+ this is because it seems that the author has positive feelings about giving schools the opportunity to choose and develop
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: - neu
+- pos 
+- neg  # label is not applicable since it's neutral sentence.
+
+ex
+[DEBUG] Decoded: izan behar da erantzun bat: "pos".  neu edo "neg" etiketak ez dira egokiak.
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+example in english: 
+paraymph: we need to give schools the opportunity
+[DEBUG] Decoded: - neu
+- pos
+- neg
+- neu  (alternativa posible)
+azterketa laburbildurik:
+[DEBUG] Decoded: neo
+ _____________________________ 
+neo 
+ ______________________________ 
+neg 
+ _______________________________ 
+neg
+[DEBUG] Decoded: - pos  (positiboa) 
+- neu  (neutroa) 
+- neg  (negat
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azalpena: hau bezalako egoera berriak aukera ematen du hainbat gairi buruz
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: positive sentiment label: pos positive sentiment label: neg positive sentiment label: neut  negative sentiment label
+[DEBUG] Decoded: the text is too short and does not provide enough context for analysis. please provide more information or an extended passage of text so
+[DEBUG] Decoded: 
+[DEBUG] Decoded: aztertu beharreko esaldia:
+paragrafo hau bi etiketa ditu: "pos" eta "neu."
+[DEBUG] Decoded: aztertutako esaldian ez dago iritzi negatibo edo positiborik. beraz, 'neu' izango litzateke egokiena.
+[DEBUG] Decoded: azterketa: hau neutroia den ala negatiboagoa den? posible izango al litzateke positiboki interpretatu?
+[DEBUG] Decoded: **neu**  *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+[DEBUG] Decoded: beste adibide batzuk:
+- "ez" (neg)
+- "ba bai" (pos+neu)
+[DEBUG] Decoded: answer: neu
+
+ explanation:
+the paragraph is neutral because it presents an opinion without clearly expressing support for
+[DEBUG] Decoded: - neu
+paragraph: gure kezka nagusia da ea gobernuak zer asmo dituen eta zein bide hartuko duen. ez badakigu erabaki guztiak
+[DEBUG] Decoded: in basque language:
+neu
+in spanish language:
+negativo
+answer: negative
+
+explan
+[DEBUG] Decoded: neu
+azterketa esaldiaren erantzuna:
+pos
+neu
+neg
+adibideak ingelesez:
+examples
+[DEBUG] Decoded: etika-etiketak ulertzen ditu esaldi honen sentimenduak. sentimendu positiboak adierazten dituela dirudi. hau da,
+[DEBUG] Decoded: ez sabemos zer den consciously decisions or inertia government in that direction leads, right?
+pos (positive):
+neg
+[DEBUG] Decoded: pos: ez nago ziur zer esan nahi duzun? positiboegia ematen du eta nire ustez negatiboki interpretatu daiteke.
+[DEBUG] Decoded: - pos
+- neu  (ez galdetu ea zer esan dute)
+- neg (biak aipatu dituztenak)
+-
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azterketa:
+ez nago oso ziur... uste dut horietako bi egon beharko
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neu
+
+ ---
+this text is not appropriate for analysis using this api due to its lengthy and technical nature
+[DEBUG] Decoded: neu
+  azterketa esaldia: gurekin batera, espainiako gobernuak eta euskal autonomia erkidegoko gobernuek akordio batera iristea
+[DEBUG] Decoded: azterketa esaldia: 
+ **pos**: hitzarmenaren aldeko botoarekin, alderdien arteko elkarrizketa eta lankidetza
+[DEBUG] Decoded: * pos?
+ * neu?
+* neg? 
+* neu?  (*hauteskundeak*)
+* pos
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa: berreskuratzeko aukera duen egoera baten aurrean gaude, beraz, aukera horrek
+[DEBUG] Decoded: neu
+  pos
+  neg
+  neu
+  pos
+  neu
+  pos
+  neu
+[DEBUG] Decoded: pos.
+neg.
+neu.
+azterketa: 3 etiketen arteko nahasketa. hau ez da
+[DEBUG] Decoded: negative label: pos
+positive label: neg
+neutral label: neu
+answer: neg
+answer:
+[DEBUG] Decoded: pos
+
+example:
+senatuko lantaldeek 1995eko lan amaigabeak berrasmatu beharko
+[DEBUG] Decoded: neu
+
+ label: pos
+the text is positive because it suggests that reopening and regularizing previously closed work can
+[DEBUG] Decoded: adibidea: pos
+ez nago ziur ea erantzun zuzena den. ereduak ez dit laguntzen. hau guztia oso kon
+[DEBUG] Decoded: esaldiaren jarrera: pos
+azterketa esaldiak: 1) posible da senatuan lan horietako batzuk
+[DEBUG] Decoded: - neu
+- pos
+- neg
+- neu	(aipatzen den prozesua oso konplexua denez, ez dago
+[DEBUG] Decoded: aztertutako esentzia:
+paragrafoa: euskal gizarteak aukera handia du bere burua adierazteko, eta horrek gizarteko
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+*negative response is not possible.*
+pos
+[DEBUG] Decoded: - pos
+- neu
+- neg  (hala ere, ez du zentzurik) 
+
+azalpena:
+[DEBUG] Decoded: answer: neu
+
+### explanation:
+the given paragraph is neutral as it discusses various possibilities without expressing
+[DEBUG] Decoded: - neu
+
+explanation: the paragraph seems to be talking about something that may happen soon and it's likely
+[DEBUG] Decoded: answer: neu
+
+ answer: neu
+[DEBUG] Decoded: neg.
+[DEBUG] Decoded: esaioko erantzuna: pos
+esaioari buruzko iritzia: hau ez dute inoiz egingo. (1)
+er
+[DEBUG] Decoded: ez dago etiketa egokirik, hau neutroa baita.  **beraz, ez dakigu zein den erantzun egokiena.**
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+paragrafoa: gizartearen sektore batzuk ez dira inoiz egon egoera hoberen
+[DEBUG] Decoded: **ez erantzuna**: pos
+ **erantzuna**: neu
+ **erantzuna**: neg  
+ *erantzun
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dira egokiak).
+azalpena: paragrafoak ez du eduki negat
+[DEBUG] Decoded: the paragraph's sentiment can best be described as neutral since it is describing various topics without expressing any strong positive nor negative
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+answer label: neu
+
+explanation
+[DEBUG] Decoded: pos
+neu
+neg
+answer: pos
+neu
+neg
+answer: neg
+answer: pos
+answer
+[DEBUG] Decoded: posizio bat ere ez da ematen duenari buruz. hau esanda, esan ahalko nuke neutroa izango litzatekeela "onerako
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+ 
+ euskara:
+parrafoak dioenaren arabera, eragin berezia du hezkuntza-, kultura
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neu
+- pos
+-
+[DEBUG] Decoded: neu
+  	
+aztertutako esaldiekin zer egin duzun azaldu hemen?  
+neutroa den eszena
+[DEBUG] Decoded: neu
+
+aztertutako esaldiko etiketak erakusten du zein den adierazpenaren iritzia. hau da, etiketa
+[DEBUG] Decoded: azken erantzuna: neu
+
+azalpena:
+neutroa dirudi, baina bi posibilitate daudela uste dut. hau
+[DEBUG] Decoded: pos
+negative sentiment label: negative
+explanation: negative sentiment label is given because it shows frustration from
+[DEBUG] Decoded: answer: neg 
+### explanation: the paragraph has a negative tone as it talks about how there isn't
+[DEBUG] Decoded: answer: neut
+note that this is not an answer for either positive or negative sentiments but rather neutral because there isn't
+[DEBUG] Decoded: pos	(posi­tiboa)
+	neu	(neutroa)
+	neg	(nega­
+[DEBUG] Decoded: **ez idatzi beste ezer.**.
+azterketaren emaitzak erakusten du langile gehienak nahiko lukeena izango litzatekeela beren lanpostuak
+[DEBUG] Decoded: neg
+[DEBUG] Decoded: - pos (positiboa)
+- neu (neutroa)
+- neg (negatiboa)
+
+az
+[DEBUG] Decoded: - pos: "matrikula"
+- neu: "sistema"
+- neg: "ez da betetzen legea".
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago adibide egokirik)
+[DEBUG] Decoded: answer: neg
+
+ this is because it talks about how matriculation systems allow for rules being broken and ignored which leads to
+[DEBUG] Decoded: negative label: label: neg label: neg  
+positive label: label: pos label: pos   
+ne
+[DEBUG] Decoded: 
+[DEBUG] Decoded: neg
+
+ euskal esaldiei buruzko argibideak:
+neu = neutroa; pos = positiboa
+negu =
+[DEBUG] Decoded: azterketa-etiketak: postreala; negatiboa; neutroa; positiboak
+esaldi batzuk ingelesez:
+[DEBUG] Decoded: aztertutako esaldiaren arabera, zein da bere jarrera?  **negativa**.
+
+jarraipenaren arabera
+[DEBUG] Decoded: azterketa: hau negatiboki ikusten du, kezkak sortzen baititu.
+negative: neg  
+
+ textuen
+[DEBUG] Decoded: *izan ere*, *ziur nago* eskolak horretan lagundu ahalko lukeela. irakasleek ikasleei erakutsi diezaie
+[DEBUG] Decoded: neg
+azpytzailea: horrek kezkatzen du? eredu pedagogiko berria abian jartzeko gai izango gara eta ikasleen emaitzak hobetu
+[DEBUG] Decoded: negative label: negatif negative label: negatif negative label: negatif negative label: negatif neg
+[DEBUG] Decoded: negative sentiment label: neg
+[DEBUG] Decoded: pos label:
+neg label:
+neu label:
+other label:
+not available label:
+answer not provided
+[DEBUG] Decoded: azterbederea: pos. hau esan nahi du?
+agian, erantzuna hau izango da: “ez nago ziur
+[DEBUG] Decoded: aipatzen duen kontzeptuak: mapamundi, kontzeptua
+esangura: 0 (ez da sartzen
+[DEBUG] Decoded: aztertutako esaldiaren arabera, zein izango litzateke bere jarrera?
+
+negativa:
+esan duenez, eskolak ez
+[DEBUG] Decoded: answer: neu
+azalpena: paragrafoak ez du positiboki edo negatiboki hitz egiten gaia dela eta beraz, neut
+[DEBUG] Decoded: - pos
+- neu
+- neg  (*ez da existitzen*)
+- neu (*ez da existitzen*)
+azter
+[DEBUG] Decoded: neu
+aztertu beharreko esaldiko ideia nagusia da, nolabait, lurraldearen banaketa bat defendatzea. horrek ez
+[DEBUG] Decoded: example:
+pos label: pos
+negative label: neg
+neutral label: neu
+answer: pos
+[DEBUG] Decoded: - pos labeled "pos" because it has a generally positive tone and suggests that there are reasonable arguments for something being like
+[DEBUG] Decoded: the text does not contain enough information for sentiment analysis and has been left blank. please provide more context or content so that
+[DEBUG] Decoded: azterketa: ekiteke dagoenari buruzko iritzi negatiboak adierazten ditu, ez positiboak edo neutroak.
+neg
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azterketa esaldia:
+paragrafoa: gure ustez, beharrezkoa
+[DEBUG] Decoded: esaldiek ez dute inolako aurresana edo azalpenik ematen eta politikako terminologia erabiltzen dute. hau garrantzitsua da
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu/pos
+answer: neu/pos
+
+azterketa:
+[DEBUG] Decoded: neg
+azterketa-adierazpena:
+hau negatibo bat da. hau ez du esan nahi bere iritzia aldatu
+[DEBUG] Decoded: pos
+neu
+neg
+azterketaren erantzuna: pos
+ - "pos": positiboki hartu du gaia. ez
+[DEBUG] Decoded: answer: neu
+
+ explanation: this paragraph is neutral because it does not express clearly positive nor negative feelings about any
+[DEBUG] Decoded: the paragraph seems to express mixed feelings as it contains both positive and negative words but overall seems more negative than positive. so i
+[DEBUG] Decoded: answer: pos
+
+ answer: neu
+[DEBUG] Decoded: positiboak: "pos"
+ neutroak: "neu"
+ negatiboak: "neg
+[DEBUG] Decoded: - post
+- neu
+- neg
+- par
+- obs
+- intr
+- pers
+- pub
+-
+[DEBUG] Decoded: **erantzuna pos** izan behar da soilik; ez da beharrezkoa argibide edo azalpenik ematea.
+[DEBUG] Decoded: - neu
+- pos
+- neg  (ez dute esaten zein den onena)
+[DEBUG] Decoded: - post - neutroa  (ez da negatibo edo positiboan kokatzen)
+- neu - neutroia (ez
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azalpena: esaldian ez dago iritzi pertsonalik, beraz, et
+[DEBUG] Decoded: answer: pos  
+explanation: this paragraph expresses positivity towards the potential solution and improvement being made by political
+[DEBUG] Decoded: the given paragraph has not been provided for analysis. please provide an actual paragraph so that i can determine its sentiment and output
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: posizio:
+neu:
+neg:
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ adibidea:
+parrafo: baina uste dut dena ez dagoela galduta oraindik,
+[DEBUG] Decoded: 8156/2014 legediaren arabera, europar batasuneko estatu kideetako herritarrek eskubidea dute beren hizkuntza
+[DEBUG] Decoded: * pos *  (100%)
+* neu (85%)
+* neg (9%).
+azter
+[DEBUG] Decoded: - pos  (politikan gertatzen den bezala)
+- neu (oraindik ez dute lortu)
+- neg (pro
+[DEBUG] Decoded: - pos
+- neu  (ez dago argi zein den egokiena). 
+azalpena: hau ez du inolako negat
+[DEBUG] Decoded: pos
+the paragraph expresses a positive outlook and is seeking progress through action from institutions as per their commitments within legislative
+[DEBUG] Decoded: answer: pos  
+
+explanation: the paragraph has a generally positive tone as it discusses efforts made by individuals
+[DEBUG] Decoded: answer: neu
+sentiment analysis results for this text is neutral as it does not contain any positive or negative words that indicate
+[DEBUG] Decoded: neg
+[DEBUG] Decoded: posizio: politikoa
+ negozio-proiektuari buruzko informazioa:
+negozio-proiektua aurkeztu dute herritarrek.
+[DEBUG] Decoded: neg 
+(eztabaida).
+(eztabaidarako aukera).
+(debate opportunity).
+azp
+[DEBUG] Decoded: neu
+azterketa: hau guztia lortzeko bide asko dago eta horietako batzuk oso zailak izango dira; baina badaude
+[DEBUG] Decoded: - pos
+- neu
+- neg 
+azpian zerrendatuta dauden hiru aukera ez dira egokiak.  
+azter
+[DEBUG] Decoded: - pos
+- neu
+- neg  #10 #12 #7 #5 #8 #6
+[DEBUG] Decoded: answer: neu 
+explanation: this paragraph is neutral because it talks about different opinions and possibilities without expressing clearly
+[DEBUG] Decoded: answer: pos
+explanation: the paragraph has a positive tone as it highlights the potential for success and utilizing public
+[DEBUG] Decoded: neg
+explanation:
+the text contains negative expressions such as "ez da nahikoa", which translates to "it
+[DEBUG] Decoded: - pos
+- neu
+- neg
+[DEBUG] Decoded: azterketa egin gabe dago oraindik.  
+
+ **ez idatzi beste ezer.**
+
+esaldietako batzuk oso za
+[DEBUG] Decoded: **pos**
+adibidea:
+parrafoaren puntuazioa honako hau izango litzateke: amaieran, puntuazio batek
+[DEBUG] Decoded: neu
+
+ azken erantzuna: neu _____________________
+azalpena: ebaluaketako esaldi honek ez du
+[DEBUG] Decoded: neu
+azterketa: legebitzeburuaren esker ona onartuz hitz egin du hizlariak. hau neutro
+[DEBUG] Decoded: azterketa: legebitzar buruak eskerrak ematen dituenean, esker ona adierazten du, baina ez du inolako iritzi posit
+[DEBUG] Decoded: classification: neu
+explanation: this is just an acknowledgement and does not express any strong feelings either way.
+[DEBUG] Decoded: 
+[DEBUG] Decoded: - neu
+- pos
+- neg
+- neu
+- pos
+- neg
+- neu
+- pos
+-
+[DEBUG] Decoded: neu
+neg
+pos
+azpytzia:
+legebitlarreren burua eskertzeagatik.
+neg
+[DEBUG] Decoded: adibidea:
+paragrafoa: otegiren hitzalditxoa ez dakit zer esan nauen, baina oso
+[DEBUG] Decoded: ez dago etiketa egokirik.
+aztertutako esaldia ez zen egokia.
+ez zegoen informaziorik, beraz ezinezkoa
+[DEBUG] Decoded: negupos
+azterketadena: negative position with a positive intent.
+[DEBUG] Decoded: - pos
+- neu
+- neg
+  
+aztertutako esaldia:
+paragrafoa: hau guztia gerra
+[DEBUG] Decoded: azalpena: hau ez da oso zehatza baina baliteke negatiboki interpretatua izatea. negativo bat izango litzateke?
+[DEBUG] Decoded: answer: neg
+
+ explanation:
+the paragraph expresses negative sentiments towards the current situation and seems pessimistic
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+answer label: no label: no
+answer
+[DEBUG] Decoded: answer: neg 
+
+ please note that you have not provided any text or context for me to analyze and assign a sentiment
+[DEBUG] Decoded: - neg  (negatiboaren)
+- pos (positiboaren)
+- neu (neutratuaren)
+[DEBUG] Decoded: neu (hasieran)
+neg (denboraren amaieran)
+pos (oraindik ez nago ziur).
+h
+[DEBUG] Decoded: azurtze esaldia:
+parrafoaren zati bat honela dioena aztertzen badugu, "ezezkoa" esan nahi
+[DEBUG] Decoded: azken erantzuna: neu  (neutroa)
+[DEBUG] Decoded: _____________________________
+azertatu dute: ez dakigu zein den esentziaren etiketa. 
+ _______________
+[DEBUG] Decoded: posizio bat zehaztea eskatzen du. adibidez: neutralitatea edo kritika.  **ez da posible etiketa bat bakarrik ematea
+[DEBUG] Decoded: pos
+neu
+neg
+ label is missing from your response! always include it.
+example:
+answer: pos
+[DEBUG] Decoded: negative sentiment label: neu negative sentiment label: pos  neutral sentiment label: neu neutral
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: hitzaldia amaiturik egonda ere, nire iritzia ematea gustatuko litzaidake. negativa deritzot. oso negat
+[DEBUG] Decoded: azterketa-adierazlea: pos (e)
+esaldiko testua:
+(euskaraz): “m
+[DEBUG] Decoded: aztertzeko esaldiek ez dute etiketa bat eduki behar. hauek dira adibide batzuk euskarazko eta gaztelaniazko esaldien
+[DEBUG] Decoded: esanahia: gerra aurkako mugimenduak bultzatuko du natoren erabakia?
+neu
+
+esanahia: nato
+[DEBUG] Decoded: - pos
+- neu
+- neg  (aebetako armadaren kontrako mugimendua ere badelako)
+- neu -
+[DEBUG] Decoded: **neg**
+azpimarratzekoak:
+natori kontrajarria den zerbait egin beharra dago. esana
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: the sentiment expressed here seems positive towards nato and anti-war movements as well as pro-peace solidarity among peoples which
+[DEBUG] Decoded: answer: pos
+
+question for analysis: what is the sentiment of this paragraph?
+answer: post
+
+the given
+[DEBUG] Decoded: answer: neu
+azalpena: ekitaldia aztertuz gero, neutralitate bat ikusten da bertan, hainbat mugimend
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ etika-etiketak (adibidez, "post", "self", "not
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- pos
+- neu
+-
+[DEBUG] Decoded: neu.
+azpimarratzekoa da hemen bi aldiz aipatzen dela "berraztertu" hitza, eta
+[DEBUG] Decoded: **ez erantzun besterik gabe, azaldu zein den zure iritzia eta eman argumentuak.**  
+
+neu (neutroa
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+[DEBUG] Decoded: answer: pos
+
+ answer: neu
+
+ label: neg
+
+ answer: pos
+
+ answer: neu
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: pos
+neg
+neu
+answer: pos
+answer: neg
+answer: neu
+answer: pos
+answer:
+[DEBUG] Decoded: neu
+
+azptxokia: gure kezka nagusia gure subiranotasunari buruzko eztabaida da, eta horri buruz hitz egin
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- nei
+- neuren (neur)
+- nei
+[DEBUG] Decoded: **pos**
+  (aipatzen du erabaki garrantzitsuei buruzko konsentsua lortu behar dela eta politikan parte hartzen
+[DEBUG] Decoded: pos  neu  neg
+azterketa: azken urte hauetan sektore guztietan galdu dira lanpostuak, baina enpresa industrialak ix
+[DEBUG] Decoded: - neu
+- neg
+- pos
+- neutr
+- pos
+- neg
+- posi
+- neu
+-
+[DEBUG] Decoded: pos
+neu
+neg  azterketa sakonagoa egin ondoren honako etiketa hau hautatu dugu: neg (negat
+[DEBUG] Decoded: answer: neg
+
+ explanation: this paragraph is negative because it talks about job losses and describes them as something particularly
+[DEBUG] Decoded: - neg
+
+#### response: neg
+the sentiment of this paragraph appears to be negative as it mentions job losses and
+[DEBUG] Decoded: response: neu
+
+ label options:
+- "neg": negative
+- "neu": neutral
+- "pos":
+[DEBUG] Decoded: neu
+azpimarratzekoak diren arrazoiak:
+1. azken urte hauetan enpresa industrialak ixten ari dira,
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+esaldietako bat "pos"-ekin lotuta dago? ze esaldi da?
+-
+[DEBUG] Decoded: **erantzun gisa:** neu
+[DEBUG] Decoded: azterketa sakona egin ondoren, ez dago inolako etiketa egokirik. hau neutroa dela ematen du.
+[DEBUG] Decoded: **ez erantzun beste ezer, soilik etiketa**: neu
+  - positiboa!
+  - neutra!
+[DEBUG] Decoded: neu: 2013an gaude. pos: 2008an gaude. neg: 2
+[DEBUG] Decoded: answer: neg
+explanation:
+the paragraph is expressing disappointment about being at the same level as in
+[DEBUG] Decoded: ### response: neutro
+
+deciding whether the sentence has a positive, negative, or neutral sentiment can be challenging
+[DEBUG] Decoded: answer: neu
+
+ answer explanation: there is not enough information provided for me to accurately assign either a positive or negative
+[DEBUG] Decoded: azterketa esaldiko hitzak ez dute inolako informaziorik ematen. beraz, ezin da etiketa jakinik erabaki.
+[DEBUG] Decoded: **ez write anything else.**
+ adibidea:
+parrafo batean: gure historia, gure kultura eta gure hizkuntza babesteko eta
+[DEBUG] Decoded: posizio bat hartzea ez da beharrezkoa. posizio bat hartzearen beharra ulertzen badugu ere, hau egin beharko genuke. horrek esan
+[DEBUG] Decoded: neu
+aztertutako esaldiak ez du jarrera argirik adierazten, beraz, ezin da kategoria zehatzik esleitu.
+[DEBUG] Decoded: neu
+azterketa: hau ez da oso ondo azaltzen zer esan nahi du egileak. beraz, ez dakit zein etiket
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- pos
+- neu
+- neg
+- pos
+- neu
+-
+[DEBUG] Decoded: answer: neu
+explanation: neutral - this passage is discussing efficiency and effectiveness reasons for something, but does
+[DEBUG] Decoded: negative sentiment analysis - i do not know how else to translate this sentence other than as "for efficiency reasons and effectiveness
+[DEBUG] Decoded: pos
+answer: pos
+neg
+answer: neg
+neu
+answer: neu
+no label answered
+answer
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azterketa esaldia ez zegoen barnean dauden etiketa horietako batek ere. beraz
+[DEBUG] Decoded: azterketa:
+hori da gure helburua. hurrengo urteetan herrialdearen garapenean eragina izango duten erabaki batzuk hartzean parte
+[DEBUG] Decoded: **pos**
+aztertutako esaldia ez du nahikoa argitasun ematen etiketa bat aukeratzeko. beraz, ezin izan da
+[DEBUG] Decoded: neg
+
+ * positio 10 - 25 %
+* neutroia 36 - 7
+[DEBUG] Decoded: **pos**
+ **neu**
+ **neg**  (etiqueta no utilizada en esta respuesta)
+ **pos
+[DEBUG] Decoded: - "pozo" (positiboa)
+- "neu" (neutroa)
+- "neg" (
+[DEBUG] Decoded: pos
+explanation: positivity is expressed through phrases like 'ikusi dugun gauza' and 'ikusik esan'.
+[DEBUG] Decoded: answer: neu
+
+explanation: the paragraph discusses various places and mentions improvisation but does not express any
+[DEBUG] Decoded: neg example:
+paragraph: yo creo que sería interesante crear una plataforma donde las instituciones educativas puedan compartir experiencias sobre cómo han
+[DEBUG] Decoded: posizio hartzea: negativoak
+argumentuak: inprobisazio falta, planifikazio eza.
+eskura
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+
+ hau guztia ez dut uste oso ondo dagoenik. baina ni bezalako pertsona batek ezin
+[DEBUG] Decoded: pos
+neg
+neu
+[DEBUG] Decoded: izan ere, 1986ko maiatzean espainiako gobernuak hartutako erabakiak, bere garaian, jende asko eragin zuen eta oraindik
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago argi zein den egokiena)
+
+ azalpena: hau da
+[DEBUG] Decoded: - pos
+- neu
+- neg  (biak negatiboak)
+
+aztertutako esaldiaren adibide bat:
+[DEBUG] Decoded: label: pos
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+
+note that "neutral" does not appear
+[DEBUG] Decoded: answer: neu
+example:
+paragraph: gure helburua da gai horren inguruko eztabaida piztea, hainbat ikuspegietatik aztertu
+[DEBUG] Decoded: neu
+azterketaren emaitza: neu
+
+ezegokia izan al da nire erantzuna?  ez, oso egokia
+[DEBUG] Decoded: oharra: ez egin interpretazio sakonerik, baina hizkuntza-etiketak erabil daitezke testu baten tonua aztertzeko. hau
+[DEBUG] Decoded: aztertutako esaldia:
+paragrafoa: baina, nahiz eta jakin zer egin den eta zergatik egiten zen,
+[DEBUG] Decoded: neg
+ 
+answer: neg
+ 
+aztertutako esaldia:  itxierarekin batera lanpostuen galera
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neg 10 9 8
+[DEBUG] Decoded: pos
+neu
+neg
+azterketa:
+- pos: hau esan nahi du langabezia gehiago egongo litzatekeela etorkizunean
+[DEBUG] Decoded: answer: neg
+### explanation: this paragraph is discussing how many jobs and people's financial security are affected
+[DEBUG] Decoded: - neg
+
+explanation: the sentence has a negative tone as it talks about job losses and puts people's
+[DEBUG] Decoded: answer: neg  
+negative sentiment analysis is required for this text as it expresses disappointment and concern about job
+[DEBUG] Decoded: - ne
+[DEBUG] Decoded: - pos
+- neu
+- neg  (lanpara) ← lanparak ez du informaziorik ematen
+[DEBUG] Decoded: - negatiboa
+- post
+- neutroa
+- neu
+- pos
+[DEBUG] Decoded: azterketa sakonagoa egin ondoren, ezin jakin noren alde egiten duen. beraz, kategoria neutroan sartu dugu.
+[DEBUG] Decoded: ez egin inolako interpretazio-arik. egin ezazu soilik etiketa.
+pos
+neu
+neg  
+azter
+[DEBUG] Decoded: - pos
+- neu
+- neg  # ez dago erantzun egokirik.
+
+aztertutako esaldietako bat
+[DEBUG] Decoded: answer: neu
+
+explanation: the provided paragraph is about discussing and defending something but does not express any
+[DEBUG] Decoded: answer: neu  (neutral)
+example:
+paragraph: izan ere, euskal herria da lurralde bat; eta horrek
+[DEBUG] Decoded: - neg
+- neu
+- pos
+
+ answer: neg
+
+explanation:
+the given paragraph contains negative
+[DEBUG] Decoded: neg  (izan ere, ez du zentzu handirik, ezta?)
+neu (horretatik bat ere egin zitekeena
+[DEBUG] Decoded: azterketa esaldian, politikarien arteko eztabaida baten testuinguruan egindako iruzkin bat entzuten da non defendatzearena aipatzen den.
+[DEBUG] Decoded: **neg**
+
+ **erantzunak:**
+- neg
+- pos
+- neu
+- negu
+- pos
+[DEBUG] Decoded: neu
+
+  erantzun zuzena: neu
+
+ azertatzeko esaldia:
+ parrafo osoa: hala
+[DEBUG] Decoded: aztertu beharreko esaldia ez zen aurkeztu. **neu**, "neu".  
+ **negative**:
+[DEBUG] Decoded: azalpena: ereduak ez ditu erakusten erantzunaren etiketak. hauen ordez, "adb" edo "
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: positive/negative label: negative
+
+explanation: the sentence appears to express disappointment as it talks
+[DEBUG] Decoded: answer: neutro 🤔
+
+the text you provided is too short and doesn't provide enough context
+[DEBUG] Decoded: ez dago erantzun egokirik.  (erantzun okerra) 
+neu (erantzun neutroa).
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+azterketa-adibideak gaztelaniaz:
+adibidea:
+parrafoaren azterketa
+[DEBUG] Decoded: azterketaren erantzuna: neu
+
+ azken adibidea euskarazkoaz:
+ parrafoaren analisia:
+hala ere
+[DEBUG] Decoded: azterketa:
+ez nago ziur zein den paragrafoaren jarrera. ez du ematen oso positiboa edo negatiboa denik, baina
+[DEBUG] Decoded: beste adibide batzuk ere badaude. adibidez:  "ez egin", "etorri" edota "etsi". baina hemen aipatu
+[DEBUG] Decoded: ---answer---  "pos"
+ ---answer---  "neu"
+ ---answer---  "neg"
+[DEBUG] Decoded: pos   // thank you very much! i want to express my gratitude and appreciation for your kind words. �
+[DEBUG] Decoded: the sentiment of this paragraph appears to be neutral as it does not express any strong emotions and contains just one polite expression "
+[DEBUG] Decoded: examples in finnish:
+example:
+paragraph: kiitos puheenvuorostani ja siitä että kuuntelette minua.
+[DEBUG] Decoded: neu
+azterketaren emaitza: neutroia. hau ez dago negatibo edo positiboan.  
+
+ ad
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+azterketa: ez da beharrezkoa etiketa asignatu.  
+
+adibideak
+[DEBUG] Decoded: erantzuna: pos
+ 
+esan beharrari buruzko argibideak:
+ez egin azalpenik; erantzun soilik et
+[DEBUG] Decoded: - pos
+- neu
+- neg
+agian hainbat:
+positibo eta negatiboaren arteko nahasketa?
+[DEBUG] Decoded: **ez erantzun beste ezer, bakarrik etiketa.**
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- pos
+- neu
+-
+[DEBUG] Decoded: answer: pos
+
+ explanation (not required): this paragraph expresses positive sentiments about decision-making and content.
+[DEBUG] Decoded: the text has an overall positive sentiment. the word "demokrazia" implies that it involves exercising democratic rights
+[DEBUG] Decoded: the provided paragraph is not suitable for sentiment analysis as it does not contain any clear expressions or statements that can be categorized into positive
+[DEBUG] Decoded: ez dago informaziorik zein den egoera horren jarrera.  
+positiboa  (pos), neutroa (neu) edo
+[DEBUG] Decoded: neu
+
+  aztertutako esaldiek ez dute etiketaren arrastorik ematen.  izan ere, testua
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neg  (hau ez dator
+[DEBUG] Decoded: azterketa:
+neg  
+azalpena:
+lurraldean sectoreko hitzarmenari buruzko klausulak betetzea
+[DEBUG] Decoded: * pos * **neu ** **neg **
+
+ positibo gisa ikusten dut administrazioa berritzea eta modernizatzea.
+[DEBUG] Decoded: azter dezagun esaldi hau:
+- positiboak diren hitzak eta esaldiak erabiltzen ditu ("eska", "emaitza
+[DEBUG] Decoded: answer: neu
+
+ explanation: the paragraph discusses a proposal made by someone for the basque government and refers to
+[DEBUG] Decoded: negative (neg) 
+analysis: the tone and content of this paragraph suggest that it carries an overall negative sentiment
+[DEBUG] Decoded: answer: neu  
+### output: neu   
+### response: neu    
+#### label: neu   
+
+the
+[DEBUG] Decoded: pos
+	neu
+	neg
+	neu
+aztertzeko esaldia:
+paragrafoa: laneko
+[DEBUG] Decoded: adibide bat:
+paragrafo: proposatzen da, halaber, eusko jaurlaritzak aurkeztu dezala, bi hilabeteko gehienezko
+[DEBUG] Decoded: azalpena: hau eskatzea euskal gobernuari administrariaren klausula orokorrak onartzeko eskatzen dio hilabete batean, eta aldi
+[DEBUG] Decoded: neu.
+ 
+azterketa osoa hemen duzu: https://www.google.com/search?q=
+[DEBUG] Decoded: aztertu beharreko esaldia hau da:
+“nik uste dut hor argiqueda errealitate distinto bat egon behar lukeena.”
+[DEBUG] Decoded: azterketaren emaitza:
+neg  
+*hori ez da erantzun zuzena, etiketa bat besterik gabe hautatu baitzen.*
+[DEBUG] Decoded: answer: neu  
+explanation: neutral/neither positive nor negative; it is simply expressing an opinion
+[DEBUG] Decoded: the sentiment of this paragraph appears to be neutral as it does not express strong emotions towards any subject matter. it simply presents
+[DEBUG] Decoded: ### response: neu
+
+ label: neu
+
+the response is 'neu' because it seems like there isn't
+[DEBUG] Decoded: azterketa: posizio neutroa. ez dago alde negatibo baten edo positibo baten aldeko argiago ebidentzi
+[DEBUG] Decoded: euskal esaldiek eta gaztelaniazkoek ez dute etiketa bera partekatzen.  
+ **kaixo, eskerrik asko
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: azterketa: neu
+neutroa da azterketa honen erantzuna, paragraphak bi aldeen iritzia azaltzen duelako. hau esan
+[DEBUG] Decoded: aztertutako esaldiak: ados nago zuen iritziarekin; hala ere, uste dut ikastetxeak bere aldetik egin behar duela
+[DEBUG] Decoded: **pos**
+azalpena: hau bezalako esaldi batean erabiltzen den etiketa, adierazten du testuaren edukia positiboa edo ba
+[DEBUG] Decoded: answer: neu
+
+explanation: this paragraph is discussing an issue that has multiple stakeholders and requires collective action from
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neu
+
+in this example, it is difficult for me as an ai language model to determine whether the given paragraph
+[DEBUG] Decoded: azterketa esaldiak euskaraz:
+pos
+neu
+neg
+espainiako gobernuak hezkuntza erreforma aurkeztu du, eta hainbat
+[DEBUG] Decoded: azpi-etiketak euskaraz: neu (3)
+gaztelaniaz: neu (4)
+azpitituluak
+[DEBUG] Decoded: adibidea: posizio bat hartu gabe, neutro gisa azter dezagun paragrafoa. ekitaldia:
+paragraf
+[DEBUG] Decoded: aztertutako esaldian ez dago jarrera garbirik, beraz ezin da neurtu, positiboki, negatiboki edota neutr
+[DEBUG] Decoded: azterketa: positiboki jo behar dute garai berriak, baina beti kontuan hartuz iraganeko tratamenduen baloreak eta
+[DEBUG] Decoded: *pos*
+azalpena: lehengo garaietan tratamendu desberdinak zeuden, baina gaur egun egoera aldatu egin denez trat
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: answer label: pos
+
+ **it was not possible for me to provide an answer without understanding the context and content of the
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: izan ere, osasunaren ikuspegitik, pandemiaren aurreko ikuspegia zaharkitua dago orain. pandemia honek eragina handia izan
+[DEBUG] Decoded: ¨pos”
+esanahia:
+“zer aldaketa gertatu da denboran zehar, eta tratamendu desberdina behar dute.”
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dute zentzurik).
+
+aztertutako esaldiko jarrera:
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neg
+
+azterketa esaldia:
+[DEBUG] Decoded: **pos**, "treviño"ren herritarrek argi utzi dute zer nahiko luketen. ekitaldia "neu".
+[DEBUG] Decoded: - ne
+- pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neg
+-
+[DEBUG] Decoded: answer: pos
+example:
+the paragraph expresses a positive opinion about defending citizens' rights and promoting local interests for
+[DEBUG] Decoded: answer: pos label: pos
+the paragraph has a positive sentiment because it emphasizes defending citizens' rights and promoting
+[DEBUG] Decoded: pos
+
+explanation: this text talks about defending citizens' rights and advocating for the interests of treviño
+[DEBUG] Decoded: azterketa: "pos." positiboki baloratzen da herritarrek beren eskubideen defentsa, baita trebiñu arabako zerbitzua hobe
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ adibidean:
+paragrafo: demagun orain arte azaldutako guztia ez dela
+[DEBUG] Decoded: neu
+ 
+azterketa:
+argumentua defenditzen ari gara, ez kritikatzen. defendemos derechos ciudadanos
+[DEBUG] Decoded: pos
+neg
+neu  (ez nago ziur zein den egokiena)  
+azterketa: pos
+argumentuak
+[DEBUG] Decoded: **pos**
+azterketa: lehenbizikoan, paragraphak erakusten du nola eskolak eta sarearen erabilera gizartean eta ekonom
+[DEBUG] Decoded: - "post": positiboak diren esaldi batzuk ere badaude. adibidez: "kontuan hartu beharrekoak" edo "berez
+[DEBUG] Decoded: answer: neg
+
+ explanation: this sentence expresses dissatisfaction with how education has become more focused on
+[DEBUG] Decoded: 
+[DEBUG] Decoded: example: pos
+explanation: this is an example where i have analyzed and given my opinion about a certain piece of
+[DEBUG] Decoded: answer: neu
+adibidea:
+paragrafoa: horregatik uste dut beharrezkoa dela gizarteari galdetzea zer zerbitzu publiko
+[DEBUG] Decoded: - pos
+- neu
+- neg
+ - eu
+ - en
+ - fr
+ - ru
+ - zh
+[DEBUG] Decoded: **pos**
+
+aztertutako esaldiaren jarrera: positiva (pos).  
+
+ ***puntuazio final
+[DEBUG] Decoded: azterketa: hau ez du ezer esaten kultura sailburua den ala ez. horrek ez du inolako informaziorik ematen. beraz
+[DEBUG] Decoded: pos
+neg
+neu
+azpimarratzaile batzuk hala ere lortu dute kultura-ekintzak antolatzea, baina gehienak
+[DEBUG] Decoded: neg
+[DEBUG] Decoded: answer: pos
+example: 
+paragraph: denen arteko akordio batera iritsi beharko genuke, zeinetan zehaztuko dugun
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+
+answer: neutral label: neu
+[DEBUG] Decoded: example:
+pos label: pos
+neg label: neg
+neu label: neu
+example:
+ez dakit nik
+[DEBUG] Decoded: ez dute ematen euskal herrian kulturari buruz ezer jakiten. kulturaren arloan ez dira mugitzen. eredu berriak sortzen dituzte baina
+[DEBUG] Decoded: azterketa esaldia:
+paragrafoa: hala ere, gaur egun badakigu zein den kultura-sektorearen egoera
+[DEBUG] Decoded: azterketa-etiketak ez dira existitzen, beraz, "pos", "neu" edo "neg" bezalako hitzen
+[DEBUG] Decoded: pos, neu, neg
+azterketa:
+politika horrek etorkizuneko erronkak konpontzeko aukera ematen du. hala ere, euskal
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- pos
+- neu
+-
+[DEBUG] Decoded: - pos
+- neu
+- neg.
+
+aztertzeko esaldia:
+paragrafoa: etorkizunari
+[DEBUG] Decoded: answer: neu
+note: this example is provided for clarity and context; it's important that you classify any
+[DEBUG] Decoded: the sentiment of this text appears to be **positive**. the passage discusses promoting and supporting the competitiveness of basque companies
+[DEBUG] Decoded: label option: neu
+[DEBUG] Decoded: posizio bat hartu duzu?
+neu
+neg
+ez nago ziur zein den zure iritzia; beraz, ez dakit zer
+[DEBUG] Decoded: neu
+  
+ *ez idatzi beste ezer.*
+
+ hizkuntza ereduak:
+eusk:
+
+- posizioari
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neu
+- neu
+- neg
+-
+[DEBUG] Decoded: neu
+azterketa: oker ez banabil, lopez jaunak esan du psoeri eskero egon dela han
+[DEBUG] Decoded: **neg**
+azterketa:
+esanahia: "zorribia" esan nahi du, ez oso
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azalpena: zuzenbide-estatua babesteko aukera ematen duen proposamen bat egon
+[DEBUG] Decoded: answer: pos
+
+ analysis: this paragraph expresses gratitude and appreciation towards the speaker's opposing party for
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neutro
+en español:
+example:
+par
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: azterketa esaldiko erantzuna: neu
+
+esaldiaren interpretazioa:
+ parrafoaren amaieran, lopezek
+[DEBUG] Decoded: **ez idatzi beste ezer.** 
+
+esaldietako bat da? 
+bai
+ez
+posiblemente bai
+[DEBUG] Decoded: posizio bat hartzeko eta aztertzeko: neutroa.
+aztertutako esaldiaren puntuaketa:
+neu
+neg
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+  aztertutako esaldia:
+positiboena izango litzateke.
+[DEBUG] Decoded: pos, neu, neg (auzokia ez du ulertzen esandakoa)
+azterketa: hau da posibleena,
+[DEBUG] Decoded: - pos
+- neu
+- neg
+
+azalpena: hau guztia esanda, ez nuke esango enpresa guztiek krisiak
+[DEBUG] Decoded: answer: neu
+
+ in this paragraph there is nothing that indicates positive nor negative sentiments, so it's best to class
+[DEBUG] Decoded: negative label: neg
+positive label: neut
+label: neut label: neu
+explanation: the paragraph
+[DEBUG] Decoded: pos label: pos
+neg label: neg
+neu label: neu
+
+answer: pos
+
+explanation:
+[DEBUG] Decoded: adibide gehiago nahi dituzu?  bai, hainbat adibide nahi ditut. beste hainbat adibide nahi ditut. ez, ez dut besterik
+[DEBUG] Decoded: azterketa: pos 10-20 urtean behin azaltzen da halako enpresa. neg 80 urtean behin gertatzen
+[DEBUG] Decoded: ez dago informaziorik ea positiboak diren ala negatiboak diren. ekinik ez dute azaltzen. beraz, neutroak direla
+[DEBUG] Decoded: neg.
+
+esanahia: hau esan nahi du lehendakariak esandakoak ez duela ondorio praktiko askorik ekarri. neg
+[DEBUG] Decoded: pos/neg
+azter dezagun esaldi hau. lehen sentencean, gure lehendakaria aldebikotasuna aipatzen du baina bigarren sent
+[DEBUG] Decoded: - pos
+- neu
+- neg  (auzokideen arteko harremanak hobetzeko aukera ematen duen ekimena izatea espero dute batzuek)
+[DEBUG] Decoded: answer: neg
+explanation: it talks about how the initiative doesn't recognize other parties having the same opportunity which
+[DEBUG] Decoded: analysis: negative. the sentence talks about how the initiative does not match what the leader has always said regarding bi-lat
+[DEBUG] Decoded: answer: neg
+
+ example in french:
+example:
+paragraph: il est hors de question d’accepter
+[DEBUG] Decoded: pos - euskal herriko gizarteak bere historiaren zehar erakutsi duen independentziaren gogoa eta kultura. neg - gaur egungo gizartearen kezka nagusia
+[DEBUG] Decoded: posizioari buruzko azterketa: posizioan identifikatutako ideiak (pos) adierazten du gobernuak edo politikariek egindako adierazpenak direla,
+[DEBUG] Decoded: adibidea:
+pos (positiboa).
+zergatik? porque nuestra propuesta tiene como objetivo promover una mayor participación ciudadana
+[DEBUG] Decoded: - pos  (positiboa)
+- neu (neutroa)
+- neg (negatiboa)
+-
+[DEBUG] Decoded: **neg**: hala ere, araba bezalako herrialde batean, urte askotan zehar, halako batasunaren adierazpena egin izan da, baita leg
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dira ulertzen)
+- neu (badirudi testuan ez dagoela negat
+[DEBUG] Decoded: answer: pos
+
+ explanation: this paragraph discusses how there has been consensus and agreement on this matter for many
+[DEBUG] Decoded: answer: pos
+
+explanation for above response: the paragraph talks about how there has been consensus on this issue among
+[DEBUG] Decoded: neg
+[DEBUG] Decoded: neg
+
+azterketa adimena: negativo. lo analizado contiene elementos negativos. no hay expresiones positivas ni
+[DEBUG] Decoded: oharra: etiketa honek ez du informaziorik ematen. hautazkoa den arren, etiketa hau gehitzea erabilgarria
+[DEBUG] Decoded: neu
+azalpena: hau ez du kritika negatibo bat suposatzen. adostasunaren alde egiten duen esaldia
+[DEBUG] Decoded: azterketa: pos 
+ 
+  klasearen ariketa: irakasle, ikasle eta guraso taldeekin lankidetza hobetzeko eredu
+[DEBUG] Decoded: pos etika, neutralitatea, negatibo, neutroa, positiboak, neutraltasunik eza, negatiboak, posit
+[DEBUG] Decoded: - pos
+- neu
+- neg  
+
+ hautagairik ez baduzu hautatzeko, aukeratu neutroa.
+[DEBUG] Decoded: pos
+- education system for all students regardless of their socioeconomic backgrounds and equal opportunities for everyone within that system is what
+[DEBUG] Decoded: answer: pos
+
+explanation: the paragraph expresses a sense of determination and optimism towards improving the education system
+[DEBUG] Decoded: answer: neu
+
+explanation:
+in this text, the speaker is discussing their vision for an educational system
+[DEBUG] Decoded: **pos**
+
+ aztertzeko esaldia:
+paragrafoa: orain arteko esperientziaren arabera, uste dute politik
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+azterketa-adierazpena:
+pos
+  
+esaldiko jarrera:
+[DEBUG] Decoded: pos.  (ikasle guztiek aukera berdina izatea.)
+neu. (hezkuntza publikoak ikasleen eskubideak eta beharrak aset
+[DEBUG] Decoded: - pos
+- neu
+- neg
+ - pos
+  - neu
+  - neg
+- pos
+ - neu
+[DEBUG] Decoded: esentziaren arabera aztertuz gero, neutroa izan behar du. hau ez delako gai bat non gauza positiboak edota negat
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu 
+- pos 
+- neg  *ez dago erantzun egoki
+[DEBUG] Decoded: answer: neutro
+neutro  porque si bien puede haber una intención positiva o negativa detrás del mensaje, no existe ningún
+[DEBUG] Decoded: explanation: the given paragraph does not contain any information about sentiment; therefore it cannot be categorized as either positive/negative
+[DEBUG] Decoded: positive or negative? it is ambiguous because it does not express any strong emotions either way and just states fact. hence
+[DEBUG] Decoded: neu.
+azalpena: neutroa. hau ez da negatibo edo positiboa; neutralitate puntu bat dago hemen
+[DEBUG] Decoded: **ez idatzi beste ezer.**
+
+ euskal adibide batzuk:
+adibidea:
+paragrafoa: gure helburua ez
+[DEBUG] Decoded: - pos
+- neu
+- neg  (ez dago esaldi negatibo arrastorik)
+[DEBUG] Decoded: posizioari buruz: ez nago ziur ea zein den, baina uste dut neutroa izango litzatekeela egokiena. hala ere
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- pos
+- neu
+- neg
+- pos
+- neu
+-
+[DEBUG] Decoded: 
+[DEBUG] Decoded: answer: neu
+the provided paragraph is neutral in tone and does not clearly express any strong emotions. therefore, it can be
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neu
+
+note that for this example there is not enough context provided about what was said and the speaker's
+[DEBUG] Decoded: ez dago erantzun egokirik. etika hau oso konplexua da eta hainbat aukera ditu. adibidez, "pos" eta "
+[DEBUG] Decoded: - pos 
+- neu 
+- neg 
+- eu 
+ - es  
+ - it  
+-
+[DEBUG] Decoded: neu
+  **erantzuna izan behar da soilik etiketa bat, azalpenik gabe.**
+
+ejemplos
+[DEBUG] Decoded: azterketa: neutral
+neutroa da. positiboa ez da baina negatibo ere ez.
+[DEBUG] Decoded: hitzaldiak
+izan ere, ezin dute inork esan zer gertatu behar duen munduari dagokionez. hala ere, uste dut
+[DEBUG] Decoded: neu
+azterketa: esaldi horrek ez du eduki negatibo edo positiboak adierazten duen ezer. beraz, neut
+[DEBUG] Decoded: answer: neg
+explanation: this paragraph is negative because it talks about difficulties and challenges that come with change which
+[DEBUG] Decoded: label: neu
+label: neg
+label: pos
+label: neu
+label: pos
+label: neg
+label
+[DEBUG] Decoded: the given paragraph doesn't contain any statement that can be classified as positive or negative based on its content and does not provide
+[DEBUG] Decoded: azpimarratzekoak diren esaldiak: noski, aldaketa guztiek dakartzate beren zailtasunak eta hori horrela gertatzen da beti
+[DEBUG] Decoded: aztertzeko esaldia identification and classification of the sentence's attitude: **neg**.
+
+example in basque:
+[DEBUG] Decoded: **negativo**
+
+azterketa:
+"noski, aldaketa guztiek dakartzate bere arazoak". negat
+[DEBUG] Decoded: 
+[DEBUG] Decoded: azterketa egiten baduzu, ikusi ahal izango duzu zein den gehien agertutako hitza (berez aparte, “andrea”
+[DEBUG] Decoded: aztertutako esaldia:
+paragrafoa: baina uste dut gure politikariek egin beharko luketen lehenengo gauza leg
+[DEBUG] Decoded: answer: neu  explanation: this paragraph is neutral and does not express any strong feelings or opinions about anything specific.
+[DEBUG] Decoded: the given paragraph does not provide enough context for me to determine its sentiment. as an ai language model i cannot understand basque
+[DEBUG] Decoded: answer: neu
+
+ explanation: in this paragraph there is not enough information about any specific topic or opinion expressed by
+[DEBUG] Decoded: azterketa ez dago eskuragarri.
+
+esaldietako bat ere ez duzu ulertzen? idatz iezadazu eta saiatuko
+[DEBUG] Decoded: azterketa-adierazpena: ez dago etiketa garbirik.  
+erantzuna: 
+posizio
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eskerrik asko, legebiltzarreko presidente jauna.
+leg
+[DEBUG] Decoded: neu
+
+ aztertzeko esaldia:
+paragrafoa: emakumeek gehiago parte hartzen dute politikan.
+[DEBUG] Decoded: - pos
+- neu
+- neg  
+ - ez dakit 
+ - ez da adierazi 
+ - ez da aipatu
+[DEBUG] Decoded: - pos
+- neu  
+- neg  
+- neg  
+- neu  
+- pos  
+- neu
+[DEBUG] Decoded: - neu
+- neg
+- pos
+
+answer: neg
+
+ explanation: this paragraph seems to express diss
+[DEBUG] Decoded: neutral label: nedu
+answer: neut label: neu
+answer: nega label: neg
+answer: posi label:
+[DEBUG] Decoded: answer: neu  explanation: there is an imbalance between male and female exhibitions, with women accounting for
+[DEBUG] Decoded: - pos (positiboa): ez esan
+- neu (neutroa): ez aipatu
+- neg (negatibo
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+azterketa-adierazpena da “desorekatua” (1). horrek
+[DEBUG] Decoded: neu
+adibidea euskaraz:
+paragrafoa: emakumeak eta gizonak berdintasunez ordezkatzeko, beharrezkoa izango litzateke
+[DEBUG] Decoded: azertatua izango litzateke honako hau: pos.  negativa den esaldi hau: neu.  halaber, negat
+[DEBUG] Decoded: - pos 
+- neutroia 
+- neg 
+  - neu 
+- neg 
+- pos
+[DEBUG] Decoded: - post
+- neu
+- neg  (ez dira egokiak)
+azterketa:
+neutroa den arren
+[DEBUG] Decoded: you can classify this sentence as either pos ("positive") or neu("neutral"). since it is difficult to
+[DEBUG] Decoded: negative
+example: 
+paragraph: los estudiantes son los principales protagonistas del proceso educativo. entonces, ¿por qué
+[DEBUG] Decoded: label: neu
+[DEBUG] Decoded: ez erabili "postpositive" postfijoak (ez dira egokiak), baina bai "neo" aditzoina
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- eu
+azpigainditutako etiketa da egokiena?
+bai
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- pos
+- neg
+- neu
+- pos
+-
+[DEBUG] Decoded: - pos
+- neu
+- neg
+azterketa: hau agian aukera bat ematen du emakumeei arreta jartzeko eta haien
+[DEBUG] Decoded: - positiboak
+- neutroak
+- negatiboak
+ **ez erantzun beste ezer, bakarrik etiketa.**  
+az
+[DEBUG] Decoded: azterketa: "hurdakailoak" taldeak antolatutako ekitaldi batean, emakumeen rola eta haien eskubideen defentsa aztertu zen,
+[DEBUG] Decoded: answer: neu
+
+ answer explanation: this paragraph is discussing a strategy for empowering and promoting women'
+[DEBUG] Decoded: explanation : the given paragraph does not provide enough information for me to determine whether it has positive, negative, or
+[DEBUG] Decoded: examples in french:
+example:
+paragraph: nous avons besoin d'une nouvelle manière de faire de la politique
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: **ez idatzi beste ezer.**  
+azterketa:
+neu. 
+esaldia: emakumeek beren burua
+[DEBUG] Decoded: - neu
+- neg
+- pos
+- neu  (ikus dezagun zer gertatzen den)
+- pos (emakume
+[DEBUG] Decoded: 
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- pos
+- neu  (biak batera)
+- neg
+-
+[DEBUG] Decoded: - "pos"
+- "neu"
+- "neg"
+azalpena:
+zuk esan didazu
+[DEBUG] Decoded: answer: pos
+
+
+### english translation for basque examples:
+examples in basque:
+
+example:
+par
+[DEBUG] Decoded: answer: neu    
+
+(this sentence seems mostly neutral but it has some elements that could be considered as 'positive'.
+[DEBUG] Decoded: analysis: this paragraph contains negative sentiment as it mentions an 'ezezko' or refusal and suggests that a group is
+[DEBUG] Decoded: azterketa: neg
+aipamenak: 2019/06/30 - euskal herria
+[DEBUG] Decoded: respuesta: neu
+
+ azken adibidea:
+paragrafoa: gure helburua da gure ekonomia bultzatzea eta sustatzea, enpresa
+[DEBUG] Decoded: euskal herrian ematen ari diren gertaerak aztertzeko eta ulertzeko erabilgarria den ikuspegi bat eskaintzen dute. gainera, euskal gizartearen historia,
+[DEBUG] Decoded: azterketa: neutral.
+neutroa delako.  
+
+ hau ere neurtzat jo daiteke?
+ez
+[DEBUG] Decoded: ---
+neu  
+aztertzeko esaldia:
+paragrafoa: euskal herriko egoera politikoari buruz hitz egin
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu+pos  (biak batera)
+- neg+pos (
+[DEBUG] Decoded: answer: neu
+
+ paragraph to analyze:
+paragraph: beraz, nire ustez, gaur egungo gazteek ez dute ulertzen
+[DEBUG] Decoded: pos
+example response:
+bai, egun on denoi. 
+label: pos
+answer: positive
+example response
+[DEBUG] Decoded: answer: neu
+
+answer: neu
+
+explanation: this is an example from basque. it does not express
+[DEBUG] Decoded: – pos –
+ 10/28/2023  | 5 min read  | k
+[DEBUG] Decoded: oharra: hau ez da erantzun egokia. erantzuna izan behar da etiketa bat, adibidez "pos", "neu",
+[DEBUG] Decoded: - pos
+ - neu
+ - neg
+ - neu  (neutroa baina negatiboarekin lotuta)
+ - pos
+[DEBUG] Decoded: pos
+neg
+neu
+aztertutako esaldiko etiketa bat baino gehiago egon daitezke.  
+
+es
+[DEBUG] Decoded: posizio neutroa.
+azterketa gehiago behar du.  - **ez erantzun besterik**.
+neu - e
+[DEBUG] Decoded: -pos-
+-neu-
+-neg-
+-neu-
+-pos-
+-neg-
+-
+[DEBUG] Decoded: answer: neu
+
+ answer explanation: this sentence seems neutral and informative as it is discussing something that was said
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: the text is not appropriate for a sentiment analysis as it contains multiple sentences and does not have clear subject or context. please
+[DEBUG] Decoded: neu
+ez dakigu zer asmo duten hurrengoan, baina oraingoz ez dute ezer aipatu. 2016ko abenduaren
+[DEBUG] Decoded: azterketa esaldia: positions (2018). i think that the most important thing is to find out
+[DEBUG] Decoded: neu
+azterketaren emaitza: neu
+
+esanahia euskaraz:
+  ez naiz hemen geratuko, nahiago nuke
+[DEBUG] Decoded: aztertutako testua negatiboaren (neg) eremuan kokatzen da, aldaketa suntsitzaileari erreferentzia egiten baitio.
+[DEBUG] Decoded: azterketa: esaldi hau oso zehatza da, baina ez dauka inolako emoziorik edo iritzi pertsonalik. positibo
+[DEBUG] Decoded: azterketa: esaldiaren edukiaren arabera, ez dago etiketa egokirik. esaldi horrekin ez du axola
+[DEBUG] Decoded: pos
+
+ analysis: this sentence seems positive as it is describing progress made before and an indication that things are improving. it
+[DEBUG] Decoded: this paragraph appears too short and there isn't enough context provided to accurately determine its sentiment. the labels "pos
+[DEBUG] Decoded: pos label not found in basque language. please try again with another text or different options.
+neg label is not available for
+[DEBUG] Decoded: azalpena: hau ez dute ulertzen azpi-egituren aldaketekiko erresistentzia. negative position.
+ne
+[DEBUG] Decoded: (ez dago etiketa egokirik)
+[DEBUG] Decoded: **neu**
+
+ hau guztia ez al dute egin oraindik? ez daude oraindik aldaketa horiek abian? ez dago aldaketar
+[DEBUG] Decoded: azterketa sakona:
+ez nago ziur zein lanpostu mota den hau baina badirudi candyrena. candyk 15
+[DEBUG] Decoded: neu
+azterketa: "candy", "bergara" eta "150 langile". etiketaren
+[DEBUG] Decoded: neu
+neg
+pos
+azpytza: candyri buruzko informazioa ematen du. negativoak ez dira egokiak hemen
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: answer: neutron
+explanation: the text talks about "candy", which could be either positive or negative depending
+[DEBUG] Decoded: the text does not provide enough information for me to determine whether it is positive or negative, so i cannot assign either label.
+[DEBUG] Decoded: - pos
+ - neu
+ - neg
+neutroak dira:
+- candy
+- b...
+- 1
+[DEBUG] Decoded: - neu  (niretzat ez da erraza).
+- pos (candyrekin nago).
+- neg (bergar
+[DEBUG] Decoded: - pos
+- neu
+- neg
+- neu
+- neg
+- pos
+- neu
+- neg
+[INFO] Emaitzak gordeta: emaitzak_sentiment/few-shot-1/dev/decoded/salamandra-7B.csv
+[INFO] Metrikak gordeta: emaitzak_sentiment/few-shot-1/dev/metrics/salamandra-7B.csv

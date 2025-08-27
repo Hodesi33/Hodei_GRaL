@@ -1,0 +1,3180 @@
+Modeloa kargatzen...
+Modeloa kargatuta.
+Development datuekin sentiment analysis egiten...
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen gagozala, aprobetxau
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herriak egung
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa:
+
+adibidea
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: agerian jarri nahi dugu posiblia da poltika
+[DEBUG] Decoded: ez duzu zure erantzuna eman, oraindik.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk argi daukagu, gure boron
+[DEBUG] Decoded: testu gehiago nahi baduzu, jarri harremanetan.
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: i don't understand the task. please give me more context.
+
+please respond with the sentiment of the text in vasque.
+[DEBUG] Decoded: please use the label "neu" (neutral) for the paragraph "nork ez ditu kontraesanak?
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nork ez ditu kontraesanak?
+
+etik
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa: pos
+
+ad
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nork ez ditu kontraesanak?
+
+etik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ez dogu hori onartuko. g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da posiblea hori. horretarako beste
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: horregatik, gure aldet
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure proiektua donostiaren proiektua da, b
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez da harritzekoa, beraz, gure gaur egung
+[DEBUG] Decoded: aztertu testu bakoitzaren jarreria eta sailkatu ondorengo kategorietaako b
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dago arazorik. nire ustez
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: -pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: esaldiak:
+
+defendatu ezazue hori bera diputatuen kongresuan.
+
+zer da
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa: pos
+
+ad
+[DEBUG] Decoded: (adibidez: neu)
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: honek ez du esan gura guk es
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria ez da herri normal bat.
+[DEBUG] Decoded: paragrafoa: gure ustetan, gure herriaren etorkizuna jokatzen da
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: bi aldeetatik, bata erabakitzeko eskubideaz, gaur
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herriko gizartea, gaur egun, g
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gaur egun, gauza batzuk aurreratu dire
+[DEBUG] Decoded: paragrafoa: arregi, muxika, 10 langile. bereziki egurrezko
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: badaukagu aukera bat bide barri
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure taldeak, euskal herriko
+[DEBUG] Decoded: ?
+
+answer:
+neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please respond with the correct label.
+[DEBUG] Decoded: aukeratu aukera bat:
+
+pos
+
+neu
+
+neg
+
+bidali
+[DEBUG] Decoded: aurreko esaldia:
+
+arkema, alonsotegi, 60 langile.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure taldeak, herri honen alde
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskadik irakaskuntza pribatu
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskadi da irakaskuntza pribatuari dirulag
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atalak:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria da europan irakaskunt
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: etiketa:
+
+pos
+
+neu
+
+neg
+
+bidali
+
+ez dago erantzunik
+
+izena
+[DEBUG] Decoded: pribatutasun-politika
+
+pribatutasun-politika
+
+lege oharra
+
+cookie
+[DEBUG] Decoded: etiketaren arrazoia:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi d
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: please respond with only one of the labels ("pos", "neu", "neg").
+[DEBUG] Decoded: +
+
+etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta gaurko
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: pos
+
+paragrafoa: hori dala-ta, gure aldarrikapen hori lege
+[DEBUG] Decoded: (neu, neg edo pos)
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aukeratu etiketa bat (pos/neu/neg):
+
+paragrafoa: gure ustez
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos/neu/neg
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: +
+
+idatzi erantzuna hemen:
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hori ez da gertatuko, zergatik eta,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure iritziz, euskal herria,
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+
+aztertzeko esaldia:
+
+paragrafoa: nire ustez, aurre
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ondoriozta, irakurleak g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, gure aldetik, gure es
+[DEBUG] Decoded: bidali
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori da, ba, erakutsi
+[DEBUG] Decoded: bidali
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: ?
+
+label: neu
+[DEBUG] Decoded: please respond with the label only.
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: adibideak frantsesez:
+
+adibideak gaztelaniaz:
+
+aztertzeko esaldia
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako batean
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da onargarria hainbat alderdi polit
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: uste dugu ez dela
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: this is the original text in vasque. if you need it translated to spanish or english, i can do it
+[DEBUG] Decoded: please, respond with only one of the labels ("pos", "neu" or "neg")
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: alda ezazue gaztela eta leongo estatutua.
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: esaldiaren itzulpena:
+
+paragrafoa: reformen el estatuto de castilla y le
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, urrutia jaunari gustat
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: gobernuak esan
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (if you need help with the language, i can provide some assistance.)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: baliokidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, euskal herria, e
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: eta hori dana e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, horixe da bide bak
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: euskal herriko alderdi politikoek
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, badauzkagu 10
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please respond with only the label.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: horietatik, 30rek dituzte berdintasun k
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure erakundea euskal erakunde
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: horietatik, 30rek
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gobernuak itunpetutako zentroei atxikit
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: gobernuak itunpetutako zentroei atxikitutako haur
+[DEBUG] Decoded: pos
+
+paragraph: ikastetxe batzuek, matrikulazino kopuru handia dute,
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aukerak: pos, neu, neg
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gobernuak itunpet
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gobernuak, bere aldetik, eztau
+[DEBUG] Decoded: idatzi etiketa:
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: izan ere, lurraldeek
+[DEBUG] Decoded: euskal herriaren izaera politikoa aintzat hartu behar da, eta erabaki
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: i'll respond with just the label.
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aukeratu kategoria bat
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lurraldeek ez dute eskubiderik
+[DEBUG] Decoded: posible diren erantzunak: pos, neu, neg
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta egunen baten esnatu eging
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: baina hori, ez da bakarrik eskub
+[DEBUG] Decoded: paragrafoa: nahiz eta egia da gaur bertan agertzen den espainiaren eskumen
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori, ez da bakarrik, ez
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: hori ez da egia,
+[DEBUG] Decoded: paragrafoa: nik uste dut badagoela gaur egun, gaur egungo euskal
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: jakin badakigu ere bai zuen sailetik, kult
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: aurreko legealditik, hezkuntza saileko
+[DEBUG] Decoded: gorde dezagun gure aldekoak eta gure kontrakoak eta eztabaidan hasi
+[DEBUG] Decoded: adibideak:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: baina egia da baita be
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: zorrilla jaunak ondo azaldu duenez, zain geunden aspaldit
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lehenago be, lehenago, lehenago
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: zorrilla jaunak ondo azaldu duenez, zain ge
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak bere eskubideak dau
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: please, do not erase the paragraph to analyze.
+[DEBUG] Decoded: zure erantzuna hemen idatzi:
+[DEBUG] Decoded: adibideak frantsesez:
+
+adibidea:
+
+paragrafoa: ce qui nous intéresse, c
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, euskal herria herri bat
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+
+adibidea:
+
+aztertzeko es
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: honek ez du esan nahi, inond
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gero, gaur egunen ikusten da
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: posizioa:
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gainera, kontutan hart
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gobernuak eta gobernadoreak hartu
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: hemen gaudenok gara herri honen etorkizuna erabakiko
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atalak
+
+informazioa eta aholkuak
+
+izen-ematea
+
+kokapena
+
+e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: herri hau maite dugulako, herri
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dago esateko modu bakarrik.
+[DEBUG] Decoded: paragrafoa: gure ustez, garrantzitsua da jendeak ikustia gau
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera aztertu egin dugu eta ha
+[DEBUG] Decoded: paragrafoa: legea ez da izango zergak  bakarrik ordaindu behar dit
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: label: neg
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: testuaren jatorria:
+
+paragrafoa: horregatik abstenitu gara.
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dagoz ezer egiterik.
+
+etik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko.
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eztabaidak ez du inolako zentz
+[DEBUG] Decoded: submit
+
+clear
+
+baliabideak
+
+erabili behar dituzun baliabideak:
+
+par
+[DEBUG] Decoded: paragrafoa: horixe defendatu dugu legebiltzarrean, eta horixe defendatu dugu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: -pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: horixe defendatu dugu legebiltzarrean, eta horixe defendatu dugu
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibideak gaztelaniaz:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure helburua da, gure helburua
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, erabakitzeko esk
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak ez du behar beste est
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: +
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+
++
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera berria da beraz, eta duela
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ez dogu onartuko, gure her
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: euskal herria eraikitzeko, gure
+[DEBUG] Decoded: paragrafoa: pentsatzen dut herri honetan barru-barrutik errotua eg
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: please respond with only one of the three labels: "pos", "neu", "neg"
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: pentsatzen dut herri honetan barru-barrutik
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eta gure herria gaur egunen d
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: egoera aztertu e
+[DEBUG] Decoded: posible bada, erantzuna emon baino lehen, kopiatu eta itsatsi paragra
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: legebiltzar honetan joan den urriaren 17an egindako os
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please answer with the correct label (pos, neu or neg)
+[DEBUG] Decoded: idatzi hemen zure erantzuna: neu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: legebiltzar honetan joan den urriaren 17an
+[DEBUG] Decoded: (adibideotako etiketok eredugarri izango dozuez, eta ez erantzun z
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, eusko jaurlar
+[DEBUG] Decoded: baliabideak
+
+erantzunak
+
+etiketa
+
+erantzunak
+
+etiketa
+
+er
+[DEBUG] Decoded: idatzi hemen goiko testuaren etiketa:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: please respond only with one of the labels ("pos", "neu" or "neg").
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko alderdi politikoak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau guztia esanda, hau da g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, eusko jaurlaritzak
+[DEBUG] Decoded: ez dago iruzkinik oraindino. zurea igo lehenengo!
+
+iruzk
+[DEBUG] Decoded: (e)k (e)ren bidez bidalia azteazkena: astelehena, 202
+[DEBUG] Decoded: paragrafoa: eta, horregaitik, nire ustez, legezko testu
+[DEBUG] Decoded: pos
+
+please let me know if you want me to classify another paragraph.
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atal honetan, gobernuak gogor egin du gazte-delinkuentziaren aurka
+[DEBUG] Decoded: paragrafoa: izan ere, ganbara honetan egin zenduen lehenengo agerraldian
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, gazte-justizia g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, gure aldetik, gure ah
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta, beraz,
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aurreko adibidea hurrengo adibidea
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia: no hay que olvidar que la
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera horren aurrean, ezez
+[DEBUG] Decoded: (neu, pos edo neg)
+
+aztertzeko esaldia:
+
+paragrafoa: giza eskub
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: paragrafoa: egoera aztertu egin dugu eta hauxe izango litzateke gu
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak bere buruaren jabe
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriak eta gure hizkunt
+[DEBUG] Decoded: paragrafoa: euskal herriko gatazka politikoaren konponbidea eta gata
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guretzat garrantzitsua da esate
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guretzat, ez dago inongo errez
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez dut esango burujabetzak arazo guztiak kon
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, neg, pos)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: testuak euskaraz:
+
+adibidea:
+
+paragrafoa: horregatik, bada gara
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: honek ez du esan nahi egiazko
+[DEBUG] Decoded: paragrafoa: trebiñuren gaia euskal herriko politika-agendan sartu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: araba eta trebiñuren arteko loturak
+[DEBUG] Decoded: paragrafoa: euskal herria ez da estadua, eta beraz, ezin dauka bere
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: araba eta trebiñu araba direla eta
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, gaur egun, egungo eg
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: arabarron % 90ek nolabaiteko
+[DEBUG] Decoded: paragrafoa: gure herriak ezin dau izan ez bada herri batu bat. e
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: beraz, goazen buelta bat ematera, planifikatzera, garai ber
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: beraz, goazen buelta bat ematera, planifikatzera
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ez dot uste euskal herriak
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure eritziz, ezker abertzaleak
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ariketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori horrela izanda be, gauza
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hainbat urtez gure herriak bizi izandakon
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: gaur eguneko ego
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu, neg edo pos)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: adierazi nahi dogu
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: guk, gure aldet
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, hori, proiektu
+[DEBUG] Decoded: (gehienez 3 berba)
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta kateringekin ik
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please let me know if you need anything else.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta kateringekin ikusi dugun guztiak bil
+[DEBUG] Decoded: paragrafoa: eta kateringekin ikusi dugun guztiak bilakatu behark
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guztiontzako bizitza duina, just
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: submit
+
+show/hide example's label
+
+adibidea:
+
+paragrafoa: mendeko lurraldetasun
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: i'll respond with the correct label)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: --
+
+aztertzeko esaldia:
+
+paragrafoa: mendeko lurraldetasun-objetibotas
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: mendeko lurraldetasun-objetibotasun
+[DEBUG] Decoded: esaldiaren etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+
+aztertzeko esaldia:
+
+paragrafoa: baina gure ustez,
+[DEBUG] Decoded: etiketa:
+
+aztertzeko esaldia:
+
+paragrafoa: gure ustez, egung
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+adibidea:
+
+paragrafoa: en este sentido, el gobierno vas
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: alderdi guztiek ordezkaritzen d
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure iritziz, upydk ordezkaritza du
+[DEBUG] Decoded: dokumentu guztia aztertu eta gero, erantzun ondorengo galderei
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: lehendakari jauna, sailburuak, legebiltzarkideok, egun on.
+
+et
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (no answer is given as this is the prompt to analyze)
+[DEBUG] Decoded: (neutrala izango litzateke, ez baitu ezer adierazten)
+[DEBUG] Decoded: kopiatu testua aztertzeko:
+
+paragrafoa: lehendakari, sailburuok
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eusko legebiltzarraren izenean
+[DEBUG] Decoded: zure erantzuna:
+[DEBUG] Decoded: eragiketa:
+[DEBUG] Decoded: aukeratu etiketa bat (pos, neu, neg)
+[DEBUG] Decoded: paragrafoa: lehenengo eta behin, esan nahi dut, trebiñuren auzia
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+
+paragraph: trebiñuko auzi hau, aspalditik datorren gatazka
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (adibidea: neu)
+
+aztertzeko esaldia:
+
+paragrafoa: trebiñuri bur
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure herriak eta gure herritarrek ezin leikee
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: nik uste dut, denon
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk gure aldetik konpromiso batz
+[DEBUG] Decoded: beraz, sailkatu beharreko paragrafoa "neu" etiketarekin.
+[DEBUG] Decoded: paragrafoa: eta, beraz, gure konpromisoa hori izango da eta hori
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: i'm just looking for the sentiment label, pos, neu, or neg)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu, pos edo neg)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, beraz, gure konpromisoa
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gure konpromisoa hor
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, bestaldetik, ezker abertzale
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: baina, egia esan, ez gaitu gehiegi fidatuko, ez
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: -pos
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: etorkizunera begira dagoen gobernu batek
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gazteen artean langabezi
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gure ustez, g
+[DEBUG] Decoded: testu gehiago nahi baduzu, eskaera bidali mesedez helbide honetara:
+[DEBUG] Decoded: etiketa:
+
+aztertzeko esaldia:
+
+paragrafoa: ezinbestekoa da, ber
+[DEBUG] Decoded: paragrafoa: euskal herriko eskubide historikoak ez dira pribilegio bat
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atzera begiratu
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: pentsatzen dugu, gainera, beharrezkoa dela
+[DEBUG] Decoded: idatzi etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: egin klik erantzuna emateko.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen, gure herriaren etorkizuna
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gure aldetik hori bultzatz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta azkenik, enpresaren alde,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta azkenik, enpresaren alde,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina hori ez da gertatzen eta g
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please, answer only with one of the labels ("pos", "neu", "neg").
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: guretzat, hori da gure helbur
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori dala-eta, legezko a
+[DEBUG] Decoded: paragrafoa:
+
+laburbilduz, beraz, legebiltzar honetan, itxura d
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guretzat, orain eta hemen, lehentasuna dauka
+[DEBUG] Decoded: paragrafoa: laburbilduz, beraz, legebiltzar honetan, itxura d
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (only one of the following labels: "pos", "neu" or "neg")
+[DEBUG] Decoded: egin klik hemen erantzuna emateko
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: aho batez diñot, legebiltzarreko al
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guretzat, legezko proposamen hau, alde
+[DEBUG] Decoded: (aztertu eta dagokion etiketa idatzi)
+
+adibidea:
+
+paragrafoa: e
+[DEBUG] Decoded: submit
+
+clear
+
+save as...
+
+insert row
+
+delete row
+
+move row up
+
+move row down
+
+move column left
+[DEBUG] Decoded: paragrafoa: hemen, gure herrian, ez da egon akordio politikorik, eta
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: nik uste dut, gainera, eguneko egoerak ez duela bape
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nik uste dut, baina, gaur egun
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herria, euskal herria da, eta eusk
+[DEBUG] Decoded: (aztertu eta sailkatu jarrera "pos", "neu" edo "neg" bezala)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horregaitik, gure ustez, e
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, 30 urte igarota
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hego euskal herriko lau herrialdeetan mobil
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hego euskal herriko lau herrial
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gauza batzuk ondo egiten ditu
+[DEBUG] Decoded: eragilea:
+[DEBUG] Decoded: paragrafoa: gure aldetik, guztiz prest gaude konpromisoa hartzeko eta
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: idatzi zure erantzuna goiko koadroan eta sakatu bidali erantzuna!
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen agertzen diren datuak 2019
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: guk, gure aldet
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: ebaluatzeko esaldiak:
+
+paragrafoa: guk proposatzen dugu bide bat,
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hauxe izan da gure asmoa.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure aldetik, gure herriak,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori da gure ustez, egin beh
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: agerian jarri nahi dugu posiblea dela politika beste mod
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gaur bertan aipatu duzu i
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: zerbitzu publikoak pribatizatu
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: guk badaukagu g
+[DEBUG] Decoded: etiketa:
+
+aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategoriet
+[DEBUG] Decoded: (positiboa, neutroa edo negatiboa)
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: guk uste dugu behar
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori dala eta, gure eginbidea
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guztiok garaile bat gara, b
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak gaur egunian bere
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera hau ez da bakarrik eusk
+[DEBUG] Decoded: paragrafoa: zure galdera varsoviako ituna aipatzen duzu eta berlineko
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: zure galdera varsoviako ituna aipatzen duzu eta berlineko
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk esan nahi genun da, bai, egongo d
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: zure galdera varsovi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta momentu honetan eskola publikoaren
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: orduan, guretzat ez da ezer
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horregaitik, eskola publikoa indartu
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: eta momentu honetan
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: erabaki hori hartu eta gero, b
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure eguneroko bizitzan, gero eta
+[DEBUG] Decoded: paragrafoa: zorionak emateko deitzen dizuet, batez be, gaur
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: hainbat eta hainbat neurri ditugu, guztiak jarrera proakt
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa: pos
+
+ad
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da egongo beste herri bat munduan gure
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, 2015an, orain
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, gainera, gure ustez
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, neg edo pos)
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herriko aurrekontuak aurrekontu eg
+[DEBUG] Decoded: idatzi zure erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, esan behar da, g
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: cablenor, gasteiz, 140 langile. etiketa: neg
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+
+paragraph to analyze:
+paragraph: hori da, beraz, hain zuzen ere, gaur
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: cablenor, gasteiz, 140 langile.
+
+etiketa
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: cablenor, gasteiz, 140 langile
+[DEBUG] Decoded: aurreko etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, gure herriak, g
+[DEBUG] Decoded: ebaluatu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nik uste dut herriak hori eskatzen
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (back to the instructions)
+[DEBUG] Decoded: please respond with only one of the three labels: "pos", "neu" or "neg".
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori da gure eredua. hori da
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta orduan, egia esan, g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriaren etorkizuna dago j
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egun on. gaurkoan gurekin dau
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neutrala)
+[DEBUG] Decoded: (aztertu goiko jarraibideak eta erantzun "pos", "neu" edo "
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: esaldiaren iturria: 2008-02-04
+
+aztertzeko esaldia:
+
+paragra
+[DEBUG] Decoded: paragrafoa: gure erakundeko 2008rako aurrekontuak onartu dit
+[DEBUG] Decoded: posible da erantzun bakarra baino gehiago ematea.
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atal kualitatiboa
+
+egileak:
+
+belen uranga
+
+itziar gonzalez
+
+ux
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dot uste euskadik horrenbeste
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: baina, egun, egungo egoeran, ezin ge
+[DEBUG] Decoded: gorde
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: ez da bakarrik esatea
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: hori ikusten dugu
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori ikusten d
+[DEBUG] Decoded: paragrafoa: nire ustez, gorte nagusiek oso kontuan hartu behar d
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+
+paragrafoa: hau da, nire ustez,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, jakina, hori ez da gert
+[DEBUG] Decoded: paragrafoa: hauxe dugu gure lehenbiziko aukera, bai, eta,
+[DEBUG] Decoded: idatzi hemen zure erantzuna:
+[DEBUG] Decoded: bai, gorde dezaket!
+[DEBUG] Decoded: idatzi hemen zure erantzuna:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: uriarte andrea jakinik lehiaren euskal agintar
+[DEBUG] Decoded: pos
+
+paragrafoa: guk, egunero egunero, eskoletan, eskolet
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, hau da gure her
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: kultura eta sormen industriak, hau
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, azkenik, artearen, kult
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: please respond with the label.
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: hori dana, enplegua, garapen
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, azkenik, artearen, kult
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, han ordezkaritza lortu
+[DEBUG] Decoded: aurreko etiketetatik bat aukeratu, besterik gabe.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk, han ordezkaritza lortu bezain laster
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: i'll respond with "pos", "neu", or "neg")
+[DEBUG] Decoded: please respond in this format:
+
+"label:" followed by the chosen label.
+
+do not forget to include the colon ":" after "
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+paragrafoa: queremos
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, han ordezkaritza lortu
+[DEBUG] Decoded: paragrafoa: guk, han ordezkaritza lortu bezain laster, babesa em
+[DEBUG] Decoded: (azkena aldatu)
+
+bidali
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (aukeratu pos, neu edo neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure proposamena da, guk eskeintzen duguna,
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: eta hori ez da bat
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horrek ez du esan gura gure eskub
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (pos)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: jarraitu
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko gendearen gehiengo
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskadi europako batasuneko kide iz
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: europa harreman sare sendo bat da eta euskadik parte hartzen du eta erag
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+
+paragraph: euskadik bere etorkizuna eraikitzeko eta bere ahalmen guzt
+[DEBUG] Decoded: egin klik hemen erantzuna emateko
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: europa harreman sare sendo bat da eta euskad
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen egon diran pertsona guztien
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure gizarteak hezkuntza eredu ber
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: idatzi hemen zure erantzuna:
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: baina horrek erabaki
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, jakina, hori ez da posible iz
+[DEBUG] Decoded: paragrafoa: ezker abertzaleak otanen kontra egin du beti. eta ez
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: otanen estruktura demokratikoa dela eta,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, zuek egin duzuen mod
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: +
+
+aztertzeko esaldia:
+
+paragrafoa: baina, hori da, otanen es
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: euskal herriko lurraldean ere ik
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herriko lurraldean ere ikusi dugu ot
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta gero, bai, bai, gero, gero
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+aztertzeko esaldia:
+
+aztertzeko es
+[DEBUG] Decoded: paragrafoa: gaur eguneko egoera ez da orain dela urtebete eguan egoera
+[DEBUG] Decoded: (pos, neu or neg)
+
+answer:
+
+pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: esaldiaren jarrera:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: egoera aztertu egin dugu eta hauxe izango l
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta nik uste dut hori dala gau
+[DEBUG] Decoded: sartu etiketa (pos, neu edo neg) goiko laukian eta prentsatu "bid
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da inungo alderdiren kontra jo
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: idatzi erantzuna, etiketa bakarra:
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dugu ukatuko, gure asabak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak jasan duen gata
+[DEBUG] Decoded: paragrafoa: euskal herria, euskal herri batua, askea, solidarixo
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (note: the text is in basque)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: saiatu hemen: http://hizt.ehu.es/
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori, nere ustez, ezin lite
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori dala eta, ezin dut ulertu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, egia esan, ez dakit
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriaren burujabetzak esango
+[DEBUG] Decoded: paragrafoa: guztiok ditugu kontraesanak.
+
+etiketa: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atalak: jarrerak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen gaudenok, eta gaudenok
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+paragrafoa: la política de
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, euskadiko egoerari
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guretzat oso garrantzitsua da
+[DEBUG] Decoded: paragrafoa: ez da egongo emaitzik ez badago borondate politikorik.
+
+etiketa
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (positiboa, neutroa edo negatiboa)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: oker handi bat da. oker bat da,
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: euskadin zorionez h
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen daukagun egoera hau ez da
+[DEBUG] Decoded: etiketa:
+
+aztertzeko esaldia:
+
+paragrafoa: gure herriaren etorkiz
+[DEBUG] Decoded: berria egunkariko testuen bilduma: https://drive.google.com/file/d/0b9utpm
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: posible diren etiketa guztiak:
+
+pos, neu, neg
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori da gure eskubidia, g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ezin izango dugu onartu hor
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: elkarbizitzarako proiektu bat aur
+[DEBUG] Decoded: oharra:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ezin dugu inor kanporatu,
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (note: this is a very short paragraph, so the sentiment is likely to be neutral.)
+
+label: neu
+[DEBUG] Decoded: please respond with only one of the labels: "pos", "neu" or "neg".
+
+neu
+[DEBUG] Decoded: --
+
+aztertzeko esaldia:
+
+paragrafoa: la mayoría de las empresas en euskadi se sit
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: buenos días.
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: queremos darle las gracias al gobierno vasco por
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori, gure ustez, on
+[DEBUG] Decoded: paragrafoa: zure gobernuak ere, beste gobernu batzuk bezela, ez dau
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (aztertzeko esaldia)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori dala ta, ezin daiteke i
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, horrez gain, oso garrantz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriaren burujabetza eta gure
+[DEBUG] Decoded: aurrekoa hurrengoa
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa:... emakumeen kontrako biolentzia
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: posible al da gaztelaniaz eta beste hizkuntzatan? bai, posible da. baina g
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa:... gizartearen eraldaketa sustantibua bultzatzea da gure
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa:... gauzak horrela, gure her
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: eta hori egiteko
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: kultura ezinbesteko elementua da, z
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak ezin du jasan beste
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezin da konparatu beste herrialde batz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, eaj-pnvk, aurrer
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gauza bera gertatzen da hezk
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko hainbat lekutan
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (oharra: ez ahaztu azken lerroa hutsik utzi behar duzula)
+[DEBUG] Decoded: neg
+[DEBUG] Decoded: istriputan hildakoak, zauritutakoak, desagertutakoak, kalte
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: ariketa: neg
+[DEBUG] Decoded: adibideak frantsesez:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk gure aldetik, gure boron
+[DEBUG] Decoded: neu
+
+aztertzeko esaldia:
+
+paragrafoa: orain arte, auzi hau
+[DEBUG] Decoded: submit
+
+clear
+
+save as...
+
+insert row above
+
+insert row below
+
+insert column left
+
+insert column right
+
+delete row
+[DEBUG] Decoded: paragrafoa: hala, nolabait esateko, auzi honetan bitartek
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibideak gaztelaniaz:
+
+adibideak euskar
+[DEBUG] Decoded: paragrafoa: nere ustez, euzkadi'k eztu daben orain arte
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, gure kontra egongo da
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herriko gazte justizi
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: otadui andrea, ondo diozunez lan asko eta
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta, gainera, eusker
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure jarrera ez da izango jarrera kontr
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: beraz, euskal herria euskaldunt
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, 2012an, 201
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: eta hori da enpresaburuak egin behar duena. eta en
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gaurkoan, 2018ko irailaren 27an,
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gure herriaren etork
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera aztertu egin dugu eta ha
+[DEBUG] Decoded: etiketa:
+
+adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+
+adibidea:
+
+az
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen elkartearekin elkarlan hasi d
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko gendearen gehiengo
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, erakundeak egin
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure alderdiak beti euki du g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak, gaur egun,
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: uste dut gai honetan, gure her
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: the paragraph is in vasque, the official language of the basque country. i translated it to spanish for you
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: zorionak guztiok
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: legebiltzarburu andrea, lehendak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hementxe bertan, egunen egunkari
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herriak
+[DEBUG] Decoded: submit
+
+clear form
+[DEBUG] Decoded: paragrafoa: hauxe herri eta herritar burujabeen froga nabarmenena. et
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko jendarteak, al
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hauxe herri eta herritar burujabeen
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hauxe herri eta herritar burujabeen froga nabarm
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: azken urteetan, gure gizartean, hainbat
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: gaur eguneko testuinguru
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori da, azkenian, gure
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, ez dago baliabide nahik
+[DEBUG] Decoded: paragrafoa: eta guk gure aldetik egin ditugu zenbaki batzuk,
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: eta guk gure aldetik egin ditugu zenbaki batzuk,
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eta gure ustez, ba hori da
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta guk gure aldetik egin ditugu zenbaki
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk uste dugu beharrezkoa dela,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: 2. artea. 2.1. ant
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: bigarren ikerketa: antzerkia, dantza
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak ingeleraz:
+
+adibidea:
+
+paragrafoa: the point is, that the only theories
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eusko jaurlaritza, 2017
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, aurrekontu-partida
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: honek gogorarazten digu,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ondo, eskerrik asko.
+
+etiketa
+[DEBUG] Decoded: paragrafoa: egun on, jaun-andreok.
+
+etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+
+paragraph to analyze:
+paragraph: lehenik eta behin, euskal herriko indar politik
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: egun on, presidente andrea.
+
+etiketa: neu
+
+azter
+[DEBUG] Decoded: gordean: [paragrafoa] [etiketa]
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrak emon behar deutsaguz,
+[DEBUG] Decoded: paragrafoa: eta aipatu duzu zure interbentzioan proiektu pilot
+[DEBUG] Decoded: esaldiak aukeratu eta etiketatu ondoren, sakatu "bidali" botoia.
+[DEBUG] Decoded: paragrafoa: eta aipatu duzu zure interbentzioan proiektu pilot
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta aipatu duzu zure interbent
+[DEBUG] Decoded: zure erantzuna hemen idatzi:
+
+aztertzeko esaldia:
+
+paragrafoa: nik u
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera horretan, ezinbestekoa
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, egiten duena da esan:
+[DEBUG] Decoded: paragrafoa: lau: 2018an noka programa abiarazi genuen emakume zine
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, or neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: hori da gure programan egonkortas
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: hiru: 2018an noka programa ab
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: aurreko legealdian, 2017an
+[DEBUG] Decoded: paragrafoa: hemen gagozela, esan bihar dot, askotan, ezker ab
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera honeik erakusten dute est
+[DEBUG] Decoded: paragrafoa: eskolei aukera eman behar zaie beraien kudeaketa eredu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eskolei aukera eman behar zaie beraien kude
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eskolei aukera eman behar zaie beraien kude
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eskolei aukera eman behar zaie beraien kude
+[DEBUG] Decoded: paragrafoa: egoera berri honen aurrean, hausnarketa egiteko gara
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera berri honen aurrean, haus
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera berri honen aurrean, haus
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera berri honen aurrean, haus
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: guk gure aldetik,
+[DEBUG] Decoded: adibideko erantzuna: neu
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta orduan, gober
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: testu osoa hemen: https://www.dropbox.com/s/il4w8j3i6d3j
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk uste dugu, herri hau os
+[DEBUG] Decoded: idatzi hemen zure erantzuna.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, baina, ez dugu eajk
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+
+adibidea:
+
+paragrafoa: eta, gero, esaten duzue ze
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, neg, or pos)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: atalak: etiketa (pos, neg, neu) • adibideak (paragrafoa,
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eaj-pnvk, baina, beste bide batetik jo n
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: esaldiaren jarrera:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: eskerrik asko!
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lan egiteko modu honek, dena den
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nire ustez, alde batetik, er
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: egoera aztertu egin dugu eta hauxe izango l
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nere ustez, gauza asko al
+[DEBUG] Decoded: paragrafoa: ez da bakarrik gauzak egiteko modu bat, baizik eta g
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: please respond with the label only)
+[DEBUG] Decoded: please answer only with one of the labels ("pos", "neu" or "neg").
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa:
+
+adibidea
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko politika egoera eta biz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eragin berezia du hezkuntzan, k
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: euskal herria bere osotasunean hartuko
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eragin berezia du hezk
+[DEBUG] Decoded: (neu, pos edo neg)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: (neu, pos edo neg)
+
+please let me know if you have any questions.
+[DEBUG] Decoded: paragrafoa: eragin berezia du hezkuntzan, kulturan, gaztedian, l
+[DEBUG] Decoded: aztertzeko esaldia: eta ez bakarrik hori. eragin berezia du hezk
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure eguneroko bizitzan, egunero
+[DEBUG] Decoded: gorde
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da egon gure aldetik inungo
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ez dugu horrela ikusten eta
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, egunen eguenean, lan
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da egongo ezelako aldaketarik,
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa: neg
+[DEBUG] Decoded: please, provide a response following the instructions in the prompt.
+[DEBUG] Decoded: pos
+
+neg
+
+neu
+[DEBUG] Decoded: pos | neu | neg
+[DEBUG] Decoded: esaldiak euskaraz:
+
+paragrafoa: matrikulazio sistemak, matrikulazio ar
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gure herriaren histori
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hezkuntza sistemak, hezkuntza ar
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: honek gauza bat esan nahi du
+[DEBUG] Decoded: (azpian kopiatu eta erantzun)
+[DEBUG] Decoded: testuak euskaraz egon behar dira.
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: i will respond with "neu".
+[DEBUG] Decoded: please, answer only with one of the labels ("pos", "neu" or "neg").
+[DEBUG] Decoded: --
+
+aztertzeko esaldia:
+
+paragrafoa: eta horrek kezka, eskola mapak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa:
+
+etiketa:
+[DEBUG] Decoded: esaldiaren itzulpena:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: zorionak emon gura deutsaguz
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: niretzat, oso garrantzitsua da gaur eg
+[DEBUG] Decoded: paragrafoa: bada, ez dugu gure herriaren historia ulertuko, ez badugu ul
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: please, choose a label for the paragraph.
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: euskal herriko esk
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horrenbestez, arrazoizkoa iruditzen
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: horrenbestez, arrazo
+[DEBUG] Decoded: paragrafoa: zentzu horretan, eusko jaurlaritzak, bere esku dau
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, gure herriaren etork
+[DEBUG] Decoded: erantzuna: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta horregatik jakin n
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk, eusko jaurlaritzan, euskal her
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibideak gaztelaniaz:
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta berriro ere hauxe da g
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: ez dugu uste konponbide egokiena denik, ezta aitzit
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: please respond with only one of the labels ("pos", "neu", "neg").
+[DEBUG] Decoded: gakoak:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta berriro ere hauxe da gakoa: legebilt
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori dana egin eta gero,
+[DEBUG] Decoded: paragrafoa: lehenengo eta behin, gure helburua da herri bat eraikitzea
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, alderdi politiko batz
+[DEBUG] Decoded: paragrafoa: guk beti eskatu dugu proiektua martxan jartzeko, esk
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: hemen, legebiltzarrean, eta kanpoan, guk beti esk
+[DEBUG] Decoded: aztertzeko esaldia: guk beti esan dugu gure proiektua martxan
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hemen, legebiltzarrean, eta kanpoan, gu
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: gure herriaren kontrako
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please respond with one of the following labels: "pos", "neu", "neg"
+[DEBUG] Decoded: posible diren erantzunak: "pos", "neu" edo "neg".
+
+erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, gure ustetan, gure
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezinbestekoa da, hortaz, he
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hain zuzen, euskal herriaren
+[DEBUG] Decoded: datu-multzoa deskargatu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adierazpena:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko legebiltzar buru and
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko, legebiltzar buru
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: uste dut ez dagoela baldintza demokratik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak, herri bezela,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: agerian jarri nahi dugu posiblea dela
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak frantsesez:
+
+adibidea:
+
+paragrafoa: c’est un message que j’
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezezko berri honek nolabait
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen gauzak ez dira hola,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure aldetik, lehenengo eta behin
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, gainera, ez da bakarrik
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please respond with only one of the labels ("pos", "neu" or "neg")
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko legebiltzarburu and
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eskerrik asko legebiltzarburu andrea. etik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria, espainia eta frant
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: beraz, biktimak aintzat hartu
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: esaldiaren jarrera:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, mundu guztiko herri
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, gure herriaren etork
+[DEBUG] Decoded: (neu, pos edo neg)
+[DEBUG] Decoded: 
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: gaur egun, estatu bat
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: paragrafoa: horrelako paktu militar baten parte izateko arrazoirik ez genuen eta
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: horrelako paktu militar baten parte izateko arrazoirik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure helburue ez da gure ideiak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egia da beste sektoretan ere lanpostu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko gazteok argi eta
+[DEBUG] Decoded: paragrafoa: zerbitzu publikoak garatzeko eta hobetzeko bidean, garrant
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, or neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa: pos
+
+ad
+[DEBUG] Decoded: paragrafoa: egia da beste sektoretan ere lanpostuak galtzen ari direla
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nola ez, ezinbestekoa da gure
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: paragrafoa: nafarroa ez da desagertuko, nafarroa ez da desagert
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+
+label: neg
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak frantsesez:
+
+adibidea:
+
+paragrafoa: le projet que j'ai l'h
+[DEBUG] Decoded: adibidea:
+
+paragrafoa:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak eztu dauka e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horren adibide bat da euskal herrian
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: posible diren erantzunak: "pos", "neu" edo "neg"
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen, gure herrian, gure herri
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hortik aurrera ikusi dugun gauza bak
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hortik aurrera ikusi dugun gauza bak
+[DEBUG] Decoded: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg".
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: beraz, biktimak aintzat hartu behar dire eta egokitu beh
+[DEBUG] Decoded: pos
+
+ireki ateak
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: paragrafoa: erabaki hura hartzeak eta agian ere txanponaren beste aldea,
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: agerian jarri nahi dugu posiblea d
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: errekonozimendu hori ondo d
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure asmoa da gaur egungo g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, halere, ez dugu uste nah
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+[DEBUG] Decoded: (neu, pos, or neg)
+[DEBUG] Decoded: (neu, pos or neg)
+[DEBUG] Decoded: esaldiaren jarrera:
+[DEBUG] Decoded: arazoia:
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: itxierarekin bater
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriaren subirautzaren al
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: (aukeratu etiketa bat)
+
+aztertzeko esaldia:
+
+paragrafoa: lehenengo
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aukeratu erantzun zuzena.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: defendatu ezazue, baina, hori
+[DEBUG] Decoded: adibideak katalanez:
+
+adibidea:
+
+paragrafoa: això és el que hem
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa:...eta erabaki hori izango da, bat
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina horrek erabakiak...
+
+etiketa
+[DEBUG] Decoded: oharra: adibide hauetan etiketa zuzena ezarri dogu.
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: i'll respond with just the label, as you asked)
+[DEBUG] Decoded: (neu)
+
+paragraph to analyze:
+paragraph: hori izan beharko luke gure helburua, eta
+[DEBUG] Decoded: aukeratu kategoria bat:posneunegezabaidir
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa:
+
+adibidea
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: baina horrek erabakiak...
+
+etiketa: neu
+
+ad
+[DEBUG] Decoded: (aztertu testuaren jarrera eta aukeratu etiketa bat goiko aukeren artean
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina bai eskatzen diot, eta esk
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neutrala izango da ziurrenik, baina ez dut euskerazko adibiderik ikusi
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko.
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko.
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egungo ereduak ez du balio
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: baina, esan behar da, ez dala
+[DEBUG] Decoded: paragrafoa: erabakitzeko ariketa demokratikoa izanagatik eta baita ere er
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: erabakitzeko arik
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: (oharra: erantzuna emon eta gero, beheko botoia sakatu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please let me know if you have any questions or need further clarification.
+[DEBUG] Decoded: paragrafoa: artikuluarekin bat, eusko jaurlaritzari eska ziezaion
+[DEBUG] Decoded: aurreko esaldia | orrialdea | hurrengo esaldia
+
+egin klik esaldiaren et
+[DEBUG] Decoded: zure erantzuna hemen:
+[DEBUG] Decoded: aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako batean
+[DEBUG] Decoded: (adibideko erantzuna: neu)
+[DEBUG] Decoded: testu gehiago aztertzeko:
+
+https://legebiltzarra.eus/iragarkiak/
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: idatzi hemen goiko testuaren etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezker abertzaleak beti esan dau hor
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, esan nahi dut, nik u
+[DEBUG] Decoded: (neu, pos edo neg)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ados nago zuekin, ez dela
+[DEBUG] Decoded: paragrafoa: gauza batzuk egin ditugu, baina beste batzuk ez, ez
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibideak ingeleraz:
+
+adibidea:
+
+paragrafoa: we can say that we have a real
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa:
+
+adibidea
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta ados nago zue
+[DEBUG] Decoded: aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako baten:
+[DEBUG] Decoded: submit
+
+clear
+
+save as...
+
+insert row
+
+insert column
+
+delete row
+
+delete column
+
+increase font size
+
+decrease
+[DEBUG] Decoded: etiketaren arrazoia:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: posible diren erantzunak: pos, neu, neg
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da egongo konponbide bakarra, b
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriak garai historiko bat bizi dau
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ezin dugu onartu eze,
+[DEBUG] Decoded: paragrafoa: nire ustez, bada, ez dago beste aukerarik, eta
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: atzera
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: alderdi guztien art
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriaren etorkizuna ezin da
+[DEBUG] Decoded: etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: egoera aztertu
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: erantzuna: neg
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu, pos, neg)
+[DEBUG] Decoded: please respond with only the label.
+[DEBUG] Decoded: +
+
++
+
++
+
++
+
++
+
++
+
+https://gobiernoabierto.euskadi.eus/contenidos/noticia/202
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herriaren eginkizunak, euskal herr
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+paragrafoa: la educación
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta orain, lehen, bigarren eta
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: gure ustez, ezinbestekoa da
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori bai, gure jarrera argi eta
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: --
+
+aztertzeko esaldia:
+
+paragrafoa: baina, gaurkoan, jakineko
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: zerrenda edo zerrenda ez, zer
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori bai, gauza bat da, eta
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak bere etorkizuna er
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+adibidea:
+
+aztertzeko esaldia:
+
+ad
+[DEBUG] Decoded: paragrafoa: casanova jauna, gure industria politika osoaren helburua da eusk
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: +
+
+aztertzeko esaldia:
+
+paragrafoa: ez dut esango burujabetzak arazo
+[DEBUG] Decoded: paragrafoa: berez, gure enpresak nazinoarteko merkatuetan sartu eta
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: ea
+
+aztertzeko esaldia:
+
+paragrafoa: zorrilla jauna, upyd
+[DEBUG] Decoded: posible diren etiketak: pos, neu, neg
+[DEBUG] Decoded: esaldi gehiago aztertzeko: [wikitekako esaldiak](https://eu.wikisource
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: pos (positiboa)
+
+neu (neutroa)
+
+neg (negatiboa)
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa:
+
+adibidea
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta, horren harira, esan beharra daukat, z
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eusko jaurlaritza eta euskal
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eta, gainera, erabaki hau
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: ez dut uste batere onur
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aukeraketa: pos, neu, neg
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hala eta guztiz ere ematen dira krisi egoera
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: egoera honetan, gure ustez
+[DEBUG] Decoded: neg
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herriko gehiengoak
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herriaren aitort
+[DEBUG] Decoded: etiketaren arrazoia:
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: pos
+
+neg
+
+neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: gure lehendakariak aldebikotasuna aipatu ohi du beti
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa:
+
+etiketa: pos
+
+ad
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure lehendakariak aldebikotasuna
+[DEBUG] Decoded: paragrafoa: horren harira, gogoratu behar da euskal herriko bake pro
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: baina egia da ere, alde batetik, gauzak gogortu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: esaldiaren jarrera:
+
+adibidea:
+
+paragrafoa: nolanahi ere, araban, urte ask
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriko bizikidetza demokratiko
+[DEBUG] Decoded: paragrafoa: nolanahi ere, araban, urte askoan, aho batez adier
+[DEBUG] Decoded: paragrafoa: gure hezkuntza sistema berdimentzionatzeko, bateratzeko, esk
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: paragrafoa: eta gero eta argiago daukagu gure eskubideen defentsa
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: posible diren erantzunak: "pos", "neu", "neg"
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure hezkuntza sistema berdimentzionatz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure hezkuntza sistema berdimentzionatz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: oraingoz, egiten ari garena da
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: politika egiteko modu berri bat da.
+[DEBUG] Decoded: paragrafoa: bakoitza ahal duena egiten ari da.
+
+etiketa: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: idatzi hemen zure erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: bakoitza ahal duena egiten ari
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen gauzak egin behar dira
+[DEBUG] Decoded: paragrafoa: hau da, batez be, gure egitasmoa: ezker abertz
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eta guk, alderdi gisa, bet
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: nire ustez, hori da bidea, hori da jar
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: please respond in this format:
+
+"label:" followed by the chosen label.
+[DEBUG] Decoded: --
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia: eta guretzat, garrantzi handia duena da, z
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta horren aurrean, guk, gure aldetik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: politikak beste modu batera egin beh
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta horregaitik, legea aldat
+[DEBUG] Decoded: (remember that the answer must be **only** one of these labels: "pos", "neu" or "
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+
+paragraph to analyze:
+paragraph: ezagutzen dugu euskal jendartean dagoen
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, esan beharra dago, eusk
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta, gainera, aldaketa hori egin behar
+[DEBUG] Decoded: gorde
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk gure herria maite dogu, b
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: ?
+[DEBUG] Decoded: (neu)
+
+paragraph to analyze:
+paragraph: nire ustez, gaur egun, gure herriaren
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskerrik asko, legebiltzarburu
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egoera aztertu egin dugu eta ha
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ez dugu esango bide hori bak
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia: ez da onargarri izango, baina gure eskuetan d
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak ezin dau euki et
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: eskoletan jangelak ipintea, gure
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez da beharrezkoa izango gure eskolek jangelak
+[DEBUG] Decoded: (pos, neu, edo neg)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko biztanleak aint
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, zelan ez, gure eskolei
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: emakumeak ahalduntzea eta ikus
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: zure erantzuna hemen idatzi:
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: hirugarren ildo estrategikoa: emakumeak ahalduntzea eta
+[DEBUG] Decoded: aztertzeko esaldia:
+paragrafoa: emakumeen kontrako indarkeria gizon
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, gure ustez, hori ez
+[DEBUG] Decoded: ehu/heu
+[DEBUG] Decoded: ebaluatzeko esaldiak:
+
+paragrafoa: eta ezezko hori da eh bild
+[DEBUG] Decoded: etiketa:
+
+aztertzeko esaldia:
+
+etiketa:
+
+aztertzeko esaldia:
+
+et
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: sailkapena:
+
+aztertzeko esaldia:
+
+paragrafoa: eta hain zuzen
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, lehenik eta behin, gure
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: bihotzak eskatzen digu ez it
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina, gaur egun, euskal pres
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, ez da bidezkoa
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (note: i'll respond with the label)
+[DEBUG] Decoded: (neu)
+
+paragraph to analyze:
+paragraph: euskal herritarren eskubideak babestu eta berm
+[DEBUG] Decoded: oharra: ez eman azalpenik
+[DEBUG] Decoded: adibideak gaztelaniaz:
+
+aztertzeko esaldia: es hora de que los políticos se
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lehenik eta behin, zorionak eman n
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero seguru laugarrenari dagok
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, gero beste batzuk et
+[DEBUG] Decoded: paragrafoa: eta orduan, bai, baina gauza bat esango dut: ez
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: paragrafoa: baina aurreko urtean zerbait garrantzitsua esan baldin
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta nik uste dut hori dela gakoa
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: gure proposamena da,
+[DEBUG] Decoded: aldatu
+
+aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategoriet
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ordura arteko bazegoen bilakaera
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: label: neu
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: paragrafoa: eta ordura arteko bazegoen bilakaera puskatuz.
+
+paragrafo
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa:
+
+etiketa:
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: candy, bergara, 150 langile. hone
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: candy, gasteiz, 250 langile.
+
+et
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: please answer with only one of the labels: "pos", "neu" or "neg".
+[DEBUG] Decoded: (note: the text is in basque, but the answer should be in english)
+[DEBUG] Decoded: (neu)
+[DEBUG] Decoded: adibidea:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: candy, bergara, 150 langile. candy,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori, ba, ez dugu ulert
+[INFO] Emaitzak gordeta: emaitzak_sentiment/few-shot-2/dev/decoded/latxa3.1-70B.csv
+[INFO] Metrikak gordeta: emaitzak_sentiment/few-shot-2/dev/metrics/latxa3.1-70B.csv

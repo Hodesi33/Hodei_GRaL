@@ -1,0 +1,38 @@
+
+==============================================================================
+                        Miniforge3 Environment Loaded
+==============================================================================
+  Activated environment: miniforge3-base
+                                                                              
+  NOTE: This is a custom minimal environment.
+        We recommend creating your own conda environments for your
+        projects.
+                                                                              
+  More info: https://scc.dipc.org/docs/programming/languages/python/
+==============================================================================
+
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/53.5k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 433kB [00:00, 32.3MB/s]                    
+2025-08-21 19:02:59 INFO: Downloaded file to /home/hodesi33/stanza_resources/resources.json
+2025-08-21 19:02:59 INFO: Downloading default packages for language: eu (Basque) ...
+2025-08-21 19:03:00 INFO: File exists: /home/hodesi33/stanza_resources/eu/default.zip
+2025-08-21 19:03:01 INFO: Finished downloading models and saved to /home/hodesi33/stanza_resources
+2025-08-21 19:03:01 INFO: Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/53.5k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 433kB [00:00, 31.3MB/s]                    
+2025-08-21 19:03:01 INFO: Downloaded file to /home/hodesi33/stanza_resources/resources.json
+2025-08-21 19:03:01 INFO: Loading these models for language: eu (Basque):
+============================
+| Processor | Package      |
+----------------------------
+| tokenize  | bdt          |
+| lemma     | bdt_nocharlm |
+============================
+
+2025-08-21 19:03:01 INFO: Using device: cuda
+2025-08-21 19:03:01 INFO: Loading: tokenize
+2025-08-21 19:03:15 INFO: Loading: lemma
+2025-08-21 19:03:15 INFO: Done loading processors!
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at ixa-ehu/berteus-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Device set to use cuda:0
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset

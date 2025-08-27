@@ -1,0 +1,88 @@
+PROMPT EUSKARAZ
+Adibideak euskaraz:
+Adibidea:
+Paragrafoa: Agerian jarri nahi dugu posiblea dela politika beste modu batera egitea. Badagoela posibilitatea baldin eta borondatea badago beste politika bat egiteko eta politika hori beste modu batera egiteko.
+Etiketa: pos
+
+Adibidea:
+Paragrafoa: Alderdi guztien artean mintzatu beharko dugu adosteko nola eramango dugun aurrera eskubide hau. Helburu politikoak ezarri beharko ditugu aurretik, azken muga definitu beharko dugu, eta gero ikusiko dugu nolako baliabideak erabiliko ditugu horretarako.
+Etiketa: neu
+
+Adibidea:
+Paragrafoa: Ez dut esango burujabetzak arazo guztiak konponduko dituenik.
+Etiketa: neg
+
+Adibideak gaztelaniaz:
+Adibidea:
+Paragrafoa: Por eso hemos venido aquí. Porque amamos este país profundamente. Porque amamos a sus gentes. Porque nos duelen sus dolores, nos entristecen sus penas y nos alegran sus alegrías. Y queremos darles respuestas a los problemas que les agobian.
+Etiketa: pos
+
+Adibidea:
+Paragrafoa: Y por eso, precisamente por eso, de lo primero que voy a hablar es de de soberanía, por que es el quid de la cuestión. Es el eje de todos los puntos que trataré en estos noventa minutos, y en los siguientes meses y años.
+Etiketa: neu
+
+Adibidea:
+Paragrafoa: Porque nuestro objetivo no es hacer un texto que se guarde en un cajón siete años bajo siete llaves y que se olvide para siempre.
+Etiketa: neg
+
+
+
+
+
+PROMPT EN CASTELLANO
+Ejemplos en vasco:
+Ejemplo:
+Párrafo: Agerian jarri nahi dugu posiblea dela politika beste modu batera egitea. Badagoela posibilitatea baldin eta borondatea badago beste politika bat egiteko eta politika hori beste modu batera egiteko.
+Etiqueta: pos
+
+Ejemplo:
+Párrafo: Alderdi guztien artean mintzatu beharko dugu adosteko nola eramango dugun aurrera eskubide hau. Helburu politikoak ezarri beharko ditugu aurretik, azken muga definitu beharko dugu, eta gero ikusiko dugu nolako baliabideak erabiliko ditugu horretarako.
+Etiqueta: neu
+
+Ejemplo:
+Párrafo: Ez dut esango burujabetzak arazo guztiak konponduko dituenik.
+Etiqueta: neg
+
+Ejemplos en castellano:
+Ejemplo:
+Párrafo: Por eso hemos venido aquí. Porque amamos este país profundamente. Porque amamos a sus gentes. Porque nos duelen sus dolores, nos entristecen sus penas y nos alegran sus alegrías. Y queremos darles respuestas a los problemas que les agobian.
+Etiqueta: pos
+
+Ejemplo:
+Párrafo: Y por eso, precisamente por eso, de lo primero que voy a hablar es de de soberanía, por que es el quid de la cuestión. Es el eje de todos los puntos que trataré en estos noventa minutos, y en los siguientes meses y años.
+Etiqueta: neu
+
+Ejemplo:
+Párrafo: Porque nuestro objetivo no es hacer un texto que se guarde en un cajón siete años bajo siete llaves y que se olvide para siempre.
+Etiqueta: neg
+
+
+
+
+
+PROMPT IN ENGLISH
+Examples in Vasque:
+Example:
+Paragraph: Agerian jarri nahi dugu posiblea dela politika beste modu batera egitea. Badagoela posibilitatea baldin eta borondatea badago beste politika bat egiteko eta politika hori beste modu batera egiteko.
+Label: pos
+
+Example:
+Paragraph: Alderdi guztien artean mintzatu beharko dugu adosteko nola eramango dugun aurrera eskubide hau. Helburu politikoak ezarri beharko ditugu aurretik, azken muga definitu beharko dugu, eta gero ikusiko dugu nolako baliabideak erabiliko ditugu horretarako.
+Label: neu
+
+Example:
+Paragraph: Ez dut esango burujabetzak arazo guztiak konponduko dituenik.
+Label: neg
+
+Examples in Spanish:
+Example:
+Paragraph: Por eso hemos venido aquí. Porque amamos este país profundamente. Porque amamos a sus gentes. Porque nos duelen sus dolores, nos entristecen sus penas y nos alegran sus alegrías. Y queremos darles respuestas a los problemas que les agobian.
+Label: pos
+
+Example:
+Paragraph: Y por eso, precisamente por eso, de lo primero que voy a hablar es de de soberanía, por que es el quid de la cuestión. Es el eje de todos los puntos que trataré en estos noventa minutos, y en los siguientes meses y años.
+Label: neu
+
+Example:
+Paragraph: Porque nuestro objetivo no es hacer un texto que se guarde en un cajón siete años bajo siete llaves y que se olvide para siempre.
+Label: neg

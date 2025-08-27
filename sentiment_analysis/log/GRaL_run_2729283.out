@@ -1,0 +1,3615 @@
+Modeloa kargatzen...
+Modeloa kargatuta.
+Development datuekin sentiment analysis egiten...
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: bestetik, eaeko kultur ekintzen eta program
+[DEBUG] Decoded: "https://www.ehu.eus/web-ontologies/es/lexvo?iri=http://www.ehu.eus/u
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez dira aztertu kultur arloko beste dirulaguntza
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: solution: neu
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: baina gaur egun
+[DEBUG] Decoded: oharra: 2014ko martxoaren 31n eguneratua
+
+"https://eu.wikibooks.org
+[DEBUG] Decoded: kodea: 2219
+
+paragrafoa: azkenik, erakunde publikoek antol
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta gainera, ezin dugu ahaztu, ezin
+[DEBUG] Decoded: adibideak:
+
+adibidea:
+
+paragrafoa: nork ez ditu kontraesanak? n
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen gauden guztiok ez dugu
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: possible answer: neu
+[DEBUG] Decoded: analysis: 0.0000000000000000
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+paragrafoa: nork ez ditu kontraesanak? hori
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazioa/cookie-en-erabilera/web01-aecopl
+[DEBUG] Decoded: *ez badakizu erantzuna, utzi hutsik erantzuna eremua.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gaur egun, errealitatea da hiriburua ez dela
+[DEBUG] Decoded: paragrafoa: hitz egin dugu hainbat alderdi politikorekin, eta esan die
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hau da, gure proiektuaren o
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: choose the label for the paragraph above.
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: eskatu erantzun bat:
+[DEBUG] Decoded: esaldia: pos
+
+aztertzeko esaldia:
+
+paragrafoa: gaur egun, er
+[DEBUG] Decoded: proposamenak:
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez nago ados ez
+[DEBUG] Decoded: paragrafoa: eta ezagutza hori bera erabiliko dut gero, hori b
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta ez dugu
+[DEBUG] Decoded: ```python
+import nltk
+from nltk.sentiment import sentimentintensityanalyzer
+
+# download required nltk data
+nltk
+[DEBUG] Decoded: this text is from the book "bakearen bidea" from the basque writer eduardo chillida.
+[DEBUG] Decoded: analysis of paragraph: defendatu ezazue hori bera diputatuen kongresuan.
+
+this text is
+[DEBUG] Decoded: aukera: pos
+
+paragrafoa: ez dago beste irtenbiderik, ez dago beste
+[DEBUG] Decoded: "https://www.euskadi.eus/itxuradatu/itxura-defektosoa?_ga
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2019_lege_biltzar
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: ez erantzun beste ezer, bakarrik etiketa.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta beste aldetik, estatuaren aldet
+[DEBUG] Decoded: choose a label: pos, neu, neg
+[DEBUG] Decoded: 
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: * pos (positiboa)
+
+* neu (neutroa)
+
+* neg (negatiboa)
+
+kont
+[DEBUG] Decoded: erantzuna: "neu"
+[DEBUG] Decoded: ==============================================================================================================
+
+paragrafoa: guretzat, erabakitzeko eskubidea gauza
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: arkema, alonsotegi, 60 lang
+[DEBUG] Decoded: "https://www.euskalterm.euskadi.eus/index.jsp?lldd=eu&word="
+
+"https://
+[DEBUG] Decoded: aztertzeko esaldia:
+
+aztertzeko esaldia:
+
+aztertzeko esaldia:
+[DEBUG] Decoded: arkema, alonsotegi, 60 langile.
+
+this text is a simple statement about a company, ark
+[DEBUG] Decoded: (1 vote)
+
+paragraph: euskal herriko enpresa bat da, 60 langile. bere iz
+[DEBUG] Decoded: (you are analyzing the sentiment of parliamentary speeches. choose only one of the following labels: - "pos" (positive)
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: kategoria: esaldiaren jarrera
+
+aztertzeko esaldia:
+
+paragrafoa: arkema,
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez dago errezeta
+[DEBUG] Decoded: * * *
+
+paragrafoa: euskadi da irakaskuntza pribatuari dirulagunt
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: [answer]
+
+please select one label:
+
+pos, neu, neg
+
+submit answer
+[DEBUG] Decoded: analysis of: 1 paragraphs.
+[DEBUG] Decoded: adibidea:
+
+etiketa:
+[DEBUG] Decoded: "https://labur.eus/4c2m3" esteka sortu.
+
+"https://labur.eus/
+[DEBUG] Decoded: erantzuna: pos
+
+paragrafoa: gure lehenengo helburua da ezagutzea
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hala, 2013ko ekainaren 24an, prent
+[DEBUG] Decoded: paragrafoa: hala, 2013ko ekainaren 24an, prentsaurrekoa e
+[DEBUG] Decoded: paragrafoa: gaur egun, egiaztatu ahal izan dugu, egiaztatu
+[DEBUG] Decoded: (click on "show answer" to see the correct answer)
+[DEBUG] Decoded: choose one of the following labels: pos, neu, neg
+[DEBUG] Decoded: 
+[DEBUG] Decoded: - pos
+
+- neu
+
+- neg
+
+kategoriak
+
+umorea
+
+irritzia
+
+maitas
+[DEBUG] Decoded: ez dago etiketarik.
+
+adibidea:
+
+paragrafoa: lehenik eta behin
+[DEBUG] Decoded: [egin klik "erantzuna" botoian eta idatzi etiketa]
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herri
+[DEBUG] Decoded: paragrafoa: ezin da ukatu gure eguneroko bizitzan egiten dugun euskar
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+paragrafoa: gure ustez, ezin
+[DEBUG] Decoded: choose your answer: pos, neg, neu
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: (you are analyzing the sentiment of parliamentary speeches. choose only one of the following labels: - "pos" (positive)
+[DEBUG] Decoded: paragrafoa: eta, jakina, ez dugu ahaztu behar gure herrian bizi den
+[DEBUG] Decoded: "https://www.euskadi.eus/itxurazko-itzulpena-eta-gune-ge
+[DEBUG] Decoded: paragrafoa: ez dut uste zientzia fikzioa denik, eta ez dut uste g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko biztanleria %
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: ez dago gauza txar
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskarazko literaturaren historia irakurtzen badugu,
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (choose one) pos neu neg
+[DEBUG] Decoded: answer:
+neg
+[DEBUG] Decoded: aztertu: paragrafoa: emakumeek idatzitako liburuak ere % 34 dir
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guretzat, garrantzitsua da ez
+[DEBUG] Decoded: "https://www.ehu.eus/aisia/web/guest/parlamento"
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta baita ere aurrekontuetan eta g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori dena, hori dena,
+[DEBUG] Decoded: aukeratu erantzun bat:
+
+neg
+
+neu
+
+pos
+
+ez dago aukerarik
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: choose one of the following labels: neg, neu, pos
+[DEBUG] Decoded: submit
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/descargas/euskararen_erabilera_gaztel
+[DEBUG] Decoded: azterketa: esaldiak ez du jarrerarik.
+
+*oharra: azterketa e
+[DEBUG] Decoded: *oharra: etiketarik ez badago, erantzuna ez da zuzena izango.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lehenengo eta behin, garrantzitsua
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak ezin du bere etork
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: solution: neg
+[DEBUG] Decoded: possible answers:
+
+* pos
+
+* neu
+
+* neg
+[DEBUG] Decoded: please enter your answer here: neg
+[DEBUG] Decoded: - [e1]: alda ezazue gaztela eta leongo estatutua.
+
+soluzioa
+[DEBUG] Decoded: adibideak frantsesez:
+
+adibidea:
+
+paragrafoa: nous voulons contribuer à
+[DEBUG] Decoded: erantzun
+
+paragrafoa: gure jarrera ez da inmobilismoa, ezta inm
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: beraz, gaurko
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+paragrafoa: eta, euskal eskola publikoan e
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: choose your answer:
+
+pos
+
+neu
+
+neg
+
+this problem has been solved!
+[DEBUG] Decoded: (submit)
+[DEBUG] Decoded: ez dago kategori hauetan: pos, neg, neu
+
+aztertzeko esaldia:
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-datuak/lege-informazioa/" orriaren
+[DEBUG] Decoded: - pos
+
+- neu
+
+- neg
+
+kodea: 1766
+
+kategoria: hizkuntza
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskararen presentzia kaleetan, gure
+[DEBUG] Decoded: erantzun:
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: please paste your answer here.
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: aukera bat baino ez dago:
+[DEBUG] Decoded: "https://labur.eus/2kh1e"
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos/sgunplea2016/e
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: aukeratu erantzuna:
+
+pos
+
+neg
+
+neu
+
+ez dago erantzunik.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (choose one)
+[DEBUG] Decoded: please paste the paragraph here
+[DEBUG] Decoded: aukerak: pos, neu, neg
+
+oharra: azken etiketa hori jartzerako
+[DEBUG] Decoded: ___
+
+*ez idatzi beste ezer. *
+
+esaldiaren jarrera identifikatu eta sailkatu:
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procedimiento/eus_ley_organica_pro
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: nire ustez, oraindik ez da g
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori ez da bidea
+[DEBUG] Decoded: solution:
+```python
+import spacy
+
+# load the spanish language model
+nlp = spacy.load('es_core
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: egindako esaldia:
+
+izan ere, lurraldeek ez dute eskubiderik.
+
+et
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko "itzultzaile
+[DEBUG] Decoded: "https://www.ehu.eus/aihua/index.php?title=sentimenduen_analisia&diff=
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: nahiz eta egia da gaur bertan agertzen den espain
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herriak dauzkan eskubide politikoak er
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta ez dago h
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: hint: this text is in basque.
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: ariketa hau egiteko, erabil itzazu hurrengo lotura hauetan dauden
+[DEBUG] Decoded: "https://www.euskadi.eus/zerbitzu-katalogoa/-/ficha/2021/2021
+[DEBUG] Decoded: ----------------------------------------------------------------------------------------------------------
+
+adibidea:
+
+paragrafoa: nahiz eta egia da gaur bertan agertzen den
+[DEBUG] Decoded: paragrafoa: hizkuntza politikako sailburuordeari entzun izan diog
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori da gure jarrera, ez dugu er
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: (choose one)
+[DEBUG] Decoded: (1 vote)
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: ___
+
+aztertzeko esaldia:
+
+paragrafoa: jakin badakigu ere bai zuen sa
+[DEBUG] Decoded: paragrafoa: eta hain zuzen ere, horrexegatik, ezinbestekoa da
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: baina ez da posible izango.
+
+etiketa: neg
+
+azter
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: [answer] neg [/answer]
+[DEBUG] Decoded: solution: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: paragrafoa: hori bai, ez da onena, ez da txarrena, ez da ona,
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-pos-neu-neg-identifikatzailea/e
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2019/lege_biltzar
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da zuzenena, ez. hori da
+[DEBUG] Decoded: "https://www.ehu.eus/web-idazk/lex/es-es/":es
+
+"https://www.ehu.e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, baina, proposatu den
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lehenik eta behin, aitortu behar
+[DEBUG] Decoded: *erantzun hau zuzena da?
+
+bai
+
+ez
+
+azalpena: esaldiaren
+[DEBUG] Decoded: erantzuna: neg
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gainera, kontutan hartuta orduan gobernuaren bur
+[DEBUG] Decoded: aztertzeko esaldia:
+
+1. 2021/11/15 - 11:30
+
+2.
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta gero,
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: 
+[DEBUG] Decoded: please enter your prediction below.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dut uste izan behar dugunik posibilit
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: baina ez dugu u
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/gobernua/lehen_lehendakari
+[DEBUG] Decoded: erantzun
+
+adibidea:
+
+paragrafoa: agerian jarri nahi dugu posiblea dela
+[DEBUG] Decoded: "https://www.wikidata.org/wiki/q11211681"(e)tik eskuratua
+
+"https://eu.wikidark
+[DEBUG] Decoded: aztertzeko esaldia:
+
+aztertzeko esaldia:
+
+aztertzeko esaldia:
+
+az
+[DEBUG] Decoded: please paste your answer here.
+[DEBUG] Decoded: *please respond with only the label.
+[DEBUG] Decoded: please enter the text you want to classify:
+[DEBUG] Decoded: erantzun zuzena:
+[DEBUG] Decoded: "https://www.euskadi.eus/pos-neu-neg-identifikazioa/web01-aepnvier
+[DEBUG] Decoded: ---
+
+kategoria: euskarazko testuen kalitatea
+
+aurrekoa aurreko sarrera: e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horregatik ez dut uste gure egoera hob
+[DEBUG] Decoded: "https://doi.org/10.5281/zenodo.1506921" liburuan oinarritua.
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: eta gero, beste
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here:
+[DEBUG] Decoded: eman erantzuna:
+
+ez dago erantzunik
+
+ez dago erantzunik
+
+« aurre
+[DEBUG] Decoded: ___
+
+esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" edo "neg
+[DEBUG] Decoded: adi! ariketa honek ez du punturik ematen.
+
+oharra: ariketa honetan
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezin da ezer egin, ezin da e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: azken batean, ez dago ez bata
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez naiz inoiz
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: guk, ordea,
+[DEBUG] Decoded: ___
+
+hauxe da erantzun zuzena: etiketa: pos
+
+hauxe da erantzun
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/demokratikoa/legegintzaldia12
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ezin da errepikatu gure herrian gertatu dena
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaur egun, hiru hamarkada g
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez dugu ulertzen nola egon daitekeen gaur
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: **you have to choose one of the following labels: pos, neu, neg**
+[DEBUG] Decoded: analysis of: 1
+
+please enter your response in the box below.
+
+(note: you can copy the paragraph to be analyzed
+[DEBUG] Decoded: adi! hurrengo orrialdean testua berridatzi beharko duzu.
+
+"https://
+[DEBUG] Decoded: "https://www.euskadi.eus/azal-lehendakari/" webguneko "esaldiaren jarrera
+[DEBUG] Decoded: adi! galdera honen erantzuna ez da etiketa bat, azalpen bat baizik.
+[DEBUG] Decoded: erantzun
+
+paragrafoa: ez dut esango burujabetzak arazo guztiak kon
+[DEBUG] Decoded: adi! hemen dago erantzun zuzena, baina ez da gure helburua. g
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez nago ados.
+
+etiketa: neg
+
+adibidea:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: erantzuna:
+
+kategoriak
+
+estatutuak
+
+batzarra
+
+dokumentuak
+
+e
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko itzultzaile automat
+[DEBUG] Decoded: egin klik hemen erantzun zuzena ikusteko
+
+ikasgaia: hitzak ez dira
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/eusko-jaurlaritza/-/item/2020/202
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: please paste your answer here.
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: (choose one of the following labels: "pos", "neu", "neg")
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina gure jarrera ez da ez aldatu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: bixen itxaso taldekideak aurkeztutako os
+[DEBUG] Decoded: [emaitza]
+[DEBUG] Decoded: paragrafoa: hau guztia esanda, hau da gure galdera, zer egin da
+[DEBUG] Decoded: aurrekoa
+
+oarso bidasoako hitza
+
+oarso bidasoako hitza
+
+o
+[DEBUG] Decoded: "https://www.euskadi.eus/programa/lege-biltzarra-2016/web01-aepvv
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: eskuzko zuzenketak egin badituzu, erabili botoi hau zure ald
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu_tertulia_ikusentzun/eu
+[DEBUG] Decoded: - pos, neu edo neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta, az
+[DEBUG] Decoded: erantzun
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori egiteko mod
+[DEBUG] Decoded: paragrafoa: gogorarazi nahi dizut, halaber, hainbat ekimen egin
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: choose one option:
+
+pos
+
+neg
+
+neu
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: paragrafoa: zergatik ezin da lege hori aldatu? zergatik ezin dir
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko itzultzaile autom
+[DEBUG] Decoded: -------------------------
+
+bukatutakoan "hurrengoa" sakatu. bukatutakoan "amait
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: beraz, biktimak aintzat hartu behar dire eta
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/kultura_gazteluzt_kult
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+paragrafoa: bizi iraupenaren al
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: ___
+
+*oharra: adibideak ez dira zehatz-mehatz itzulpenak, ba
+[DEBUG] Decoded: -----------------
+
+paragrafoa: hori da gure helburua, herrialde honetako gehiengo
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez naiz ari esaten herri honetan ez dela ino
+[DEBUG] Decoded: aurreko galderara itzuli
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko bakea eta askatasun
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: adibidea:
+
+etiketa:
+[DEBUG] Decoded: adibidezko esaldiaren jarrera: neg
+
+paragrafoa: ezagutza eta kult
+[DEBUG] Decoded: proposamenak:
+
+etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: a
+[DEBUG] Decoded: [erantzun]
+[DEBUG] Decoded: adibideak:
+
+adibidea:
+
+paragrafoa: zoritxarrez, gure herrian
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: erantzunak
+
+etiketa: neg
+[DEBUG] Decoded: ___
+
+eskubide guztiak giza duintasunari lotuak daude. hori da
+[DEBUG] Decoded: egin klik editatzeko botoian eta idatzi etiketa bat.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herriko hainbat sektorek
+[DEBUG] Decoded: "https://www.ehu.eus/ltz/web/guest/etiquetar" orrian oinarritur
+[DEBUG] Decoded: aztertu esaldi hori eta aukeratu etiketa bat:
+
+adibidea:
+
+paragrafoa
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: please insert your answer here.
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: adibidea:
+
+1. 2. 3. 4. 5. 6. 7.
+[DEBUG] Decoded: ez dago etiketarik.
+[DEBUG] Decoded: "https://www.ehu.eus/aiher/okerra_esaldiak_es.html"(e)tik eskuratua
+[DEBUG] Decoded: paragrafoa: eta euskal gizarteak badu zeresanik, badu zer esanik,
+[DEBUG] Decoded: "https://www.wikidata.org/wiki/q10473891"(e)tik eskuratua
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez da gauza bera izango, baina ez dut esango
+[DEBUG] Decoded: choose your answer:
+
+this problem needs a solution that is one of the following: pos, neu, neg
+[DEBUG] Decoded: this text is classified as positive by a machine learning model trained on a large corpus of text.
+[DEBUG] Decoded: analysis by:
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: gure herriak,
+[DEBUG] Decoded: adibidezko esaldiaren jarrera: neg
+
+itzuli
+
+esaldiaren jarrera identifikatu
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/procesos_16/e
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez dago esaterik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, gatazka konp
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: choose one of the following labels: pos, neu, neg
+[DEBUG] Decoded: please enter the correct label:
+[DEBUG] Decoded: *
+[DEBUG] Decoded: azalpena: esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu"
+[DEBUG] Decoded: ez dago erantzunik honi.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: traba-egoera hori bide guztiz demokratikoetatik
+[DEBUG] Decoded: erantzunak
+
+etiketa: neg
+
+2020-01-26 10:28:25
+
+par
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: this text is from the document set "egibar: "bide guztiz demokratikoetatik konpondu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: aukerak:
+
+pos
+
+neu
+
+neg
+
+ez dago erantzunik.
+
+aurreko hir
+[DEBUG] Decoded: "https://www.euskadi.eus/zerbitzu-katalogoa/web0100-hizkuntza-polit
+[DEBUG] Decoded: --------------------
+
+aztertzeko esaldia:
+
+paragrafoa: gure ustez, bide demokratiko
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herrian gertatu dena ikusita
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta horrela,
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please paste your response here.
+[DEBUG] Decoded: submit
+
+paragraph to analyze:
+paragraph: eta kateringekin ikusi dugun guztiak bilak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: aurrekontuak, aurrekontuak,
+[DEBUG] Decoded: "https://www.euskadi.eus/itxuradatu?/eu/itxuradatu&template
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/proiektuak/es
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria da, bere osotasunean
+[DEBUG] Decoded: *pos
+
+*neu
+
+*neg
+
+ez erantzun, bakarrik etiketa jarri.
+[DEBUG] Decoded: posiblea da politika beste modu batera egitea. badago posibilitatea baldin eta
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+[DEBUG] Decoded: this text is about:
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: posiblea da, baina ez dugu ondo ulertu eta horregatik ez dakigu zein et
+[DEBUG] Decoded: "https://www.ehu.eus/ituz/ituz.html" orriaren zati bat da eskulib
+[DEBUG] Decoded: "https://www.ehu.eus/itjgro/parlamento/index.html"
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: dena dela, ez dut
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: azkenik, hiru urtez hiz
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+[DEBUG] Decoded: ```python
+import spacy
+
+# load the spanish model for processing text
+nlp = spacy.load("es_core
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez dago gauza
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herrian, irakaskuntza publik
+[DEBUG] Decoded: ----------------------------------------------------------------------------------------------------------
+
+kolore bateko hitzak zenbatu:
+
+adibidea:
+
+hitzak: hau
+[DEBUG] Decoded: paragrafoa: lehendakari, sailburuok eta legebiltzarkideok egun on
+[DEBUG] Decoded: ez dago.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: choose one of the following labels: "pos", "neu" or "neg"
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: paragrafoa: legebiltzarkideok, egun on guztioi.
+
+etiketa:
+[DEBUG] Decoded: "https://labur.eus/etxekoa" estekan klik egin eta bideoa ikusi.
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/legebiltzarra/es_caberas/
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure taldearen jarrera
+
+etiketa:
+[DEBUG] Decoded: "https://twitter.com/argia?lang=eu" twitter kontua. argia aldizkariaren kontua
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: (end of paragraph)
+
+please paste the text here: funtsezko hiru arlo jorratu nahi
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: (enter your response here...)
+
+loading...
+[DEBUG] Decoded: oharra: esaldia ez da paragrafo bat, baina testu batzuetan agertzen dir
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko "itzultzaile automat
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/lege_biltzarra
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: paragrafoa: eta, beraz, gure konpromisoa hori izango da eta hori
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: analysis of 1 paragraph.
+
+you can also download the csv file of all the paragraphs to analyze.
+[DEBUG] Decoded: - pos (positiboa)
+
+- neu (neutroa)
+
+- neg (negatiboa)
+
+azal
+[DEBUG] Decoded: oharra: ez dago etiketarik.
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/descripcion/moodel/es_des/adjuntos/adj
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adib
+[DEBUG] Decoded: aukeratu bat: pos, neg, neu
+
+aztertzeko esaldia:
+
+paragrafoa:
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: ez gara oso baik
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: aztertzailea: enekoitz telleria
+
+etiketa: neg
+
+aztertzeko
+[DEBUG] Decoded: ___
+
+*oharra: aztertu beharreko esaldia paragrafo bat izan behar da.
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/lege_biltzarr
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guretzat, ez dago ezinbesteko gairik,
+[DEBUG] Decoded: "https://www.wikiloc.com/wikiloc/spatial-art/5744188" webguneko "zubiak bat
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+paragrafoa: zergatik ezin da onart
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: solution posted by joxemari.
+[DEBUG] Decoded: answer: neu
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" orrian itsasteko erabili.
+[DEBUG] Decoded: ___
+
+[oharra: adibideetan, parentesi artean, erantzun zuzena zein den
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta beste alde batetik beste eremu batetik gure departament
+[DEBUG] Decoded: "https://www.ehu.eus/webotx/elkarhezi/index.php?title=hizkuntzaren
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: neu
+[DEBUG] Decoded: choose a category for this example (required):
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: kategoriak
+
+hausnarketa
+
+iruzkinik ez
+
+azken erantzunak
+
+azken
+[DEBUG] Decoded: *jarrera: pos / neu / neg
+
+*oharra: paragrafoaren hasieran dagoen es
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/desarrollo/gaztesarea/eu_esaldiak/es
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta azkenik, enpresaren alde, sozialak ere
+[DEBUG] Decoded: "https://www.ehu.eus/xuxen/web/" web orriko xuxen zuzentzailea
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta azkenik, enpresaren alde,
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: .
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/azterketak_iritziak/e
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/lege_gutuna/es
+[DEBUG] Decoded: paragrafoa: eta hori da, hain zuzen ere, aldatu nahi dena
+[DEBUG] Decoded: [erantzun]
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: 
+[DEBUG] Decoded: please enter the text to analyze:
+[DEBUG] Decoded: [ ] pos
+
+[ ] neu
+
+[ ] neg
+
+erantzuna: [ ] pos
+
+testua: laburb
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" gunean sartu eta itz
+[DEBUG] Decoded: [ ] pos
+
+[ ] neu
+
+[ ] neg
+
+"https://eu.wikibooks.org/w/index.php?title=
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta beraz, hiru gauza ha
+[DEBUG] Decoded: * adibideak:
+
+adibidea:
+
+paragrafoa: gauza bat da gertatutak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: analysis of 1 paragraph.
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxuradatu?lang=eu"
+
+"https://www.euskadi
+[DEBUG] Decoded: ------------------------------------------------------
+
+paragrafoa: eta nik uste dut ez dela izan behar gure bizitza polit
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herrian ez dago gatazkarik.
+
+etik
+[DEBUG] Decoded: erantzun:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hego euskal herriko lau herrial
+[DEBUG] Decoded: "pos" | "neu" | "neg"
+[DEBUG] Decoded: decision:
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure esku dago, eta gure esku
+[DEBUG] Decoded: *ez idatzi beste ezer.
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/foxeus/eu
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori da g
+[DEBUG] Decoded: erantzun
+
+erantzun
+
+erantzun
+
+erantzun
+
+erantzun
+
+erantzun
+
+er
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: ez da egia, ez
+[DEBUG] Decoded: please paste your answer here (just the label): neg
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: please enter the text to analyze:
+[DEBUG] Decoded: erantzun zuzena:
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-datuak-eta-legeria"
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2014/lege_biltzar
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: posneuneg
+
+*oharra: 1. orrialdea da erantzuteko. gainerako or
+[DEBUG] Decoded: ez dago euskarazko bertsiorik.
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: choose one of the following options:
+
+pos, neu, neg
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: "https://www.ehu.eus/luze/?" + "title=testu-sailkatzailea&
+[DEBUG] Decoded: azalpena: proposamen hau legebiltzarrera ekarri dutenek ezarri duten
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos/infoprecipitacion/e
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta gaur bertan aipatu duzu iazko deial
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta orain, berriz, gai h
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: ...
+[DEBUG] Decoded: please paste the text here
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gaurko egunean, 2016ko mart
+[DEBUG] Decoded: adibideak ingelesez:
+
+adibidea:
+paragrafoa: so i think it's a very important
+[DEBUG] Decoded: ___
+
+aztertzeko esaldia:
+
+paragrafoa: zergatik ez dago euskaldun geh
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: zeren guztiok irabaziko dugu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure ustez, gizarteak ez luke ulertuko ez
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk ez dugu esaten gurea denik bide bakarra
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please insert your answer here
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lehenik eta behin, irakasleak
+[DEBUG] Decoded: *aztertu esaldia eta esan zein jarreratan dagoen (pos, neu edo
+[DEBUG] Decoded: "https://www.ehu.eus/ituzela/web/orriak/parlamento" orriaren zatia
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gaur egun, ezin da esan ezer. ezin da
+[DEBUG] Decoded: erantzunak
+
+etiketak: euskal herria, hiru multiplo, hiru multip
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: zure galdera varsoviako ituna aipatzen duzu
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: (empty)
+[DEBUG] Decoded: [erantzun]
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-eta-konfinamendua-covid-19/"
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta momentu honetan eskola publikoaren
+[DEBUG] Decoded: erantzunak
+
+etiketa: neg
+
+paragrafoa: eta momentu honetan eskola
+[DEBUG] Decoded: aukeratu: pos, neg, neu
+
+aztertzeko esaldia:
+
+paragrafoa: e
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the correct answer is: neg
+[DEBUG] Decoded: analysis of the paragraph:
+[DEBUG] Decoded: hau ez da zuzena. zuzena izateko, etiketa bat jarri behar zaio
+[DEBUG] Decoded: etiketa: neg
+
+adibidea:
+
+paragrafoa: guk erabaki nahi dugu,
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/indarrean_dagoen_ara
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta gaur egun, gainera
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dut uste gaur egun, gure giz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guretzat ezinbestekoa da akord
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: submit
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure herrialdearen egoera ez da batere
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure proiektuaren oinarriak dir
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/lexbilkura/es_basque/
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herrian zehar ibili ziren
+[DEBUG] Decoded: erantzun:
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: gogoratu nahi dut h
+[DEBUG] Decoded: choose a label:
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: adibidea:
+
+kategoria: etiketa: pos
+
+aurreko 1 2 3 4
+[DEBUG] Decoded: "https://www.euskadi.eus/pos" helbidean argitaratua
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/estatutoypro
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: 1. aurreko paragrafoan aip
+[DEBUG] Decoded: paragrafoa: cablenorrek 140 langile zituen. 140 langilek lan egiten
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: agerian jarri nahi dugu posiblea dela politika beste mod
+[DEBUG] Decoded: the answer is:
+[DEBUG] Decoded: hint: 140 langile dituen enpresa bat dela esaten du.
+[DEBUG] Decoded: analysis of 0 paragraphs.
+[DEBUG] Decoded: aztertzailea: euskarazko testua da.
+
+erantzuna: neu
+
+aztert
+[DEBUG] Decoded: zure ustez, zein da esaldi horren jarrera?
+
+esaldia: cablenor, g
+[DEBUG] Decoded: kodea: 1336
+
+aztertzeko esaldia:
+
+paragrafoa: aurreko ur
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da erraza, ez, egiaztatze
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: 
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: adibidea:
+
+aurreko gaia: aurreko gaiaren hasiera (aurreko gaian id
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: beraz, orain arte, egiaztatuta
+[DEBUG] Decoded: -------------------------
+
+zuzena: neg
+
+oharra: euskarazko esaldiak automatikoki detektatu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: egun on.
+
+etiketa: neu
+
+aztertzeko esald
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: please paste the paragraph here:
+
+egun on.
+
+the final answer is: neg
+[DEBUG] Decoded: solution
+pos
+[DEBUG] Decoded: (1 votes, average: 0.00)
+
+paragraph: lehenik eta behin, nire alderd
+[DEBUG] Decoded: ez du etiketa egokirik.
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webgunetik hartua.
+
+"https://www
+[DEBUG] Decoded: proposamenaren egilea: imanol arregi
+[DEBUG] Decoded: paragrafoa: ekintzari azpimarragarrienak: alde batetik, ondare
+[DEBUG] Decoded: paragrafoa: ekintzari azpimarragarrienak: alde batetik, ondare
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: (choose one of the following labels: "pos" (positive), "neu" (neutral), "neg" (
+[DEBUG] Decoded: aztertzeko esaldia:
+
+aztertzeko esaldia:
+
+aztertzeko esaldia:
+[DEBUG] Decoded: "https://labur.eus/1w3pp" (https://labur.eus/1w3p
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/azketa_esaldiak/es_azk
+[DEBUG] Decoded: paragrafoa: hori ikusten dugu gure kaleetan. ezinbestekoa da g
+[DEBUG] Decoded: paragrafoa: ezinbestekoa da beste mundu bat eraikitzea, non emakumeak
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: this text was initially posted on the basque language site.
+[DEBUG] Decoded: analysis:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori ikusten dugu gure kaleetan
+[DEBUG] Decoded: adibidezko esaldiaren antzekoa:
+[DEBUG] Decoded: egin klik hemen erantzun zuzena emateko.
+
+paragrafoa: gure helburua da
+[DEBUG] Decoded: paragrafoa: aurreko urtean, gure herrialdeko ekonomia hondoa jota
+[DEBUG] Decoded: aukeratu erantzun bat: pos, neu, neg
+
+aukeratu erantzun bat: pos
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: legebiltzar hau bai, halaber,
+[DEBUG] Decoded: pos
+[DEBUG] Decoded: (choose one)
+[DEBUG] Decoded: submit
+[DEBUG] Decoded: kodea:
+[DEBUG] Decoded: "https://www.euskadi.eus/pos" eta "https://www.euskadi.eus/pos" eta
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/convocatoriavice
+[DEBUG] Decoded: paragrafoa: hori horrela izanagatik, iazko deialdian iruzurr
+[DEBUG] Decoded: "https://twitter.com/hashtag/etbzaharrak?vertical=mobile" #etbzaharr
+[DEBUG] Decoded: paragrafoa: uriarte andrea jakinik lehiaren euskal agintaritzak iker
+[DEBUG] Decoded: please provide your answer here.
+[DEBUG] Decoded: please paste your response here.
+[DEBUG] Decoded: 
+[DEBUG] Decoded: [erantzuna: ezin da erantzun zehatzik eman, ez dagoelako etiketa
+[DEBUG] Decoded: "https://www.euskadi.eus/legebiltzarra/tramiteak/orriak/es
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/parlamento_eu/es_eu/
+[DEBUG] Decoded: erantzun
+
+ez dago erantzunik
+
+azken erantzunak
+
+ba, nik uste dut
+[DEBUG] Decoded: erantzuna: neg
+
+paragrafoa: hainbat urtez egon naiz madrilen eta
+[DEBUG] Decoded: posneuneg
+
+adibidea:
+
+paragrafoa: eta, azkenik, artearen, k
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: (you can copy the text above and paste it here)
+[DEBUG] Decoded: erantzuna:
+
+oharra: lehenengo bi esaldiak bakarrik erabiliko dira adibide
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-datuak-eta-lege-informazioa/" or
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta, azkenik
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk, han ordezkaritza lortu bezain laster
+[DEBUG] Decoded: ez dago erantzunik
+
+aztertzeko esaldia:
+
+paragrafoa: guk, han
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk, han ordezkaritza lortu
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: choose the correct label from the list below.
+
+pos, neu, neg
+[DEBUG] Decoded: analysis of: 1
+
+please enter the text you want to analyze below.
+
+(note: you can copy-paste the text
+[DEBUG] Decoded: babesleak:
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko "gehitu" boto
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2014/lege_biltz
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: adibidea:
+
+iturriak
+
+ikuspegiak
+
+kategoriak
+
+ikuspegiak
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: answer: pos
+[DEBUG] Decoded: the paragraph is about:
+[DEBUG] Decoded: (you are analyzing the sentiment of parliamentary speeches. choose only one of the following labels: - "pos" (positive)
+[DEBUG] Decoded: erantzun zuzena:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/lege_biltzarra_iz
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hori gertatu da. eta hori gertatu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: alegia, erakundeetan ez dagoen indar politik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dago beste aukerarik, erab
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (you can use the buttons to change the text color, font size, and text style.)
+[DEBUG] Decoded: please enter your response here...
+[DEBUG] Decoded: ez dago emanda, zein den etiketa egokia. erantzun bat baino gehi
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-jarrera/" orriaren zatitxo bat da.
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozesu_parte_hartzaileak/m
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta gaur gaurkoz, ez dago beste auker
+[DEBUG] Decoded: ez erantzun beste ezer, bakarrik etiketa.
+[DEBUG] Decoded: erantzuna: pos
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: paragrafoa: euskadi europaren bihotzean dago eta europaren bihotza euskadin
+[DEBUG] Decoded: azalpena: esaldia positiboa da, izan ere, euskadik harreman sare
+[DEBUG] Decoded: oharra: "hitzarmen" hitzak ere "pos" etiketa du, baina "har
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori gert
+[DEBUG] Decoded: erantzunak
+
+etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: e
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta, horretarak
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the final answer is: pos
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: "https://www.ehu.eus/ee/aurkezpena" orrian oinarrituta
+
+erantz
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webgunera jo eta "itzultza
+[DEBUG] Decoded: oharra: esaldiak aztertzeko erabili daitekeen tresna hau erabili da
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: euskal herriko lurraldean ere ikusi dugu ot
+[DEBUG] Decoded: "https://www.euskadi.eus/euskarazko-legea/" web orrian agertzen den ad
+[DEBUG] Decoded: aukeratu: pos, neu, neg
+
+aztertzeko esaldia:
+
+paragrafoa: g
+[DEBUG] Decoded: the final answer is neg.
+[DEBUG] Decoded: explanation:
+[DEBUG] Decoded: please enter your prediction below.
+[DEBUG] Decoded: aurrekoak
+[DEBUG] Decoded: esaldia: "euskal herriko lurraldean ere ikusi dugu otanen operazio
+[DEBUG] Decoded: [erantzuna]
+
+erantzunak
+
+ez dago erantzunik
+
+erantzun
+
+comment
+
+er
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: ariketa hau egiteko, orri hau ireki behar duzu beste fitxa batean
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+aztertzeko esaldia:
+
+adibidea:
+
+az
+[DEBUG] Decoded: you can use the following html tags in your answer: <a href="…"><code>…</code></a>,
+[DEBUG] Decoded: please respond with only the label.
+[DEBUG] Decoded: (you can copy the paragraph to the clipboard and paste it in the input field)
+
+the paragraph is already analyzed. the result
+[DEBUG] Decoded: ariketa honetan ez da zuzen erantzun behar, baina bai erantzun ok
+[DEBUG] Decoded: adierazpena: 1
+
+aztertzeko esaldia:
+
+paragrafoa: bai, es
+[DEBUG] Decoded: eskatu
+
+aztertzeko esaldia:
+
+paragrafoa: ez da egia euskal her
+[DEBUG] Decoded: paragrafoa: gure herriak, gure hizkuntzak, gure kulturak,
+[DEBUG] Decoded: posneuneg
+
+aztertzeko esaldia:
+
+paragrafoa: gure ustez, giz
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: your answer:
+[DEBUG] Decoded: the answer is: neg
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/c016900/eu/pro
+[DEBUG] Decoded: idatzi hemen zure iritzia
+
+mesedez, errespetatu hitanoz emandako er
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/gobierno/lege_gobierno/es_depalota/es
+[DEBUG] Decoded: paragrafoa: gure herriko egoera politikoaz ari garela, eta ez beste her
+[DEBUG] Decoded: erantzun
+
+etiketa: neg
+
+erantzun
+
+etiketa: neg
+
+erantzun
+
+et
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+paragrafoa: gaur egun, ezinbest
+[DEBUG] Decoded: please paste the text to classify below:
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: analysis of the paragraph:
+[DEBUG] Decoded: erantzun zuzena:
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: gure ustez,
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure bizitzaren momentu batean edo
+[DEBUG] Decoded: paragrafoa: ez dut uste euskal herritarrok espainiarrak baino okerr
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: ez dago argi ze
+[DEBUG] Decoded: solution
+
+this problem is not solvable as stated. the text does not contain any words that would allow us to classify it
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: adibidea:
+
+erantzun zuzena:
+
+etiketa: neu
+[DEBUG] Decoded: adibidezko esaldien azterketa:
+
+- "agerian jarri nahi dugu posible
+[DEBUG] Decoded: ez da existitzen "neutral" etiketa, neutroa den esaldi bat "neu" ed
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria beti egon da mundu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriko erakundeek, e
+[DEBUG] Decoded: paragrafoa: ezin da esan euskadin gertatu dena gatazka politikoa iz
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: [ansiedad]
+[DEBUG] Decoded: please enter your response here:
+[DEBUG] Decoded: erantzuna:
+
+adibidea:
+
+paragrafoa: euskadin zorionez hirurak bater
+[DEBUG] Decoded: jarrera
+
+pos: posiblea da. egin daiteke.
+
+neu: ez da ezkorra
+[DEBUG] Decoded: *erantzunak hiru aukera ditu: pos, neu, neg
+
+adibidea:
+
+par
+[DEBUG] Decoded: etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: beraz, berdin da
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gero eta jende gehiagok nahi du ald
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: possible answer: neg
+[DEBUG] Decoded: analysis of: 1 paragraph(s)
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta beraz, ezin dugu onartu gure herri
+[DEBUG] Decoded: "https://www.euskadi.eus/pos-neu-neg-esaldi-jarrerak/"
+[DEBUG] Decoded: --------------------
+
+erantzuna: neg
+
+adibidea:
+
+paragrafoa: guretzat, garrantz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hola, buenos días.
+
+etiketa: neg
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: iruzkinak (0)
+
+azken erantzunak
+
+aurreko erantzunak
+
+iruzkin
+[DEBUG] Decoded: no answers?
+[DEBUG] Decoded: analysis of: 1
+
+analysis of: 2
+
+analysis of: 3
+
+analysis of: 4
+
+analysis
+[DEBUG] Decoded: erantzun:
+[DEBUG] Decoded: "https://doi.org/10.5281/zenodo.6368705" liburuan oinarritua.
+[DEBUG] Decoded: "https://www.ehu.eus/aisia/index.php?title=hizkuntzalari_bat_na
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hori ez da egia.
+
+etiketa: neg
+
+adibidea
+[DEBUG] Decoded: "https://twitter.com/hashtag/erabakibizilagun?src=hash" #erabak
+[DEBUG] Decoded: paragrafoa: eta, gainera, ez dago argi ea jaurlaritza honi
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: choose your answer:
+
+pos
+
+neg
+
+neu
+
+the final answer is: neg
+[DEBUG] Decoded: hint: this text is a political speech in basque.
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/difusion/consejupres/pdf/2017_
+[DEBUG] Decoded: "https://www.euskadi.eus/pos" orriak "esaldiaren jarrera" izenburuko
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/gobierno/diputacion_tercera/es_de
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa:... eta horrela,
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: agerian jarri nahi dugu posiblea dela politika beste mod
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk, euskaldunok, ez dugu euskaldun
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: ...
+[DEBUG] Decoded: ... bakoitzak bere eragin esparrutik markatzea garrantzitsua iruditzen
+[DEBUG] Decoded: ...
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko "euskaratik gaz
+[DEBUG] Decoded: "https://www.euskadi.eus/programa/legebiltzarreko-eta-batzar-nagusiet
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: euskal herria ask
+[DEBUG] Decoded: erantzun:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: nire ustez, kultura ezinbesteko elementua da
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the paragraph is about:
+[DEBUG] Decoded: you must choose one label from the ones you have chosen above.
+[DEBUG] Decoded: ez dago erantzun zuzenik, baina hona hemen irtenbide bat:
+
+paragra
+[DEBUG] Decoded: esaldiaren jarrera:
+[DEBUG] Decoded: _____________
+[DEBUG] Decoded: erantzun
+
+aztertzeko esaldia:
+
+paragrafoa: ez dut esango burujabetz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure erakundeen jarduna, gure
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+
+aztertzeko esaldia:
+
+etiketa:
+
+az
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: this text has been generated by a machine learning model.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezinbestekoa da elkar ulertzeko g
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: horrek, gainera, istripuak,
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2018/lehiaketa
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: "https://www.wikilab.ehu.eus/index.php?title=uztarrozeko_udaleko_batz
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: answer:
+neu
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: ___
+
+aztertzeko esaldia:
+
+paragrafoa: ezinbestekoa da euskal herritar
+[DEBUG] Decoded: oharra: testuak ez badu etiketa horietako bat, "neg" aukeratu beh
+[DEBUG] Decoded: paragrafoa: eta hain zuzen ere, gazte justiziaren arloa garatzen
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/noticia/lehendakari_berdintasunaren
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the answer is:
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: dena den, eusk
+[DEBUG] Decoded: jarrera: positiboa
+
+oharra: azken urteotan, hedabideetan,
+[DEBUG] Decoded: proposamena: pos
+
+aztertzeko esaldia:
+
+paragrafoa: agerian jarri
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, ez da egokia, ez
+[DEBUG] Decoded: pos neutro neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta nola ez,
+[DEBUG] Decoded: [aztertu beharreko esaldia]
+
+aztertzeko esaldia:
+
+paragrafoa:
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: (1 vote)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina ez da hori bakarrik, ez da
+[DEBUG] Decoded: erantzuna:
+
+pos
+
+"https://eu.wikipedia.org/wiki/berezi:esaldijarrerak/adib
+[DEBUG] Decoded: ______________________________________________________
+
+oharra: euskarazko pasarteetan, esaldi bat baino gehi
+[DEBUG] Decoded: paragrafoa: aurrekoarekin bat egin beharko genuke, eta hau da gure
+[DEBUG] Decoded: paragrafoa: hemen elkartearekin elkarlan hasi dugu ekintza zehatzak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen elkartearekin elkarlan hasi d
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: hint: this is a very short text, but it has a strong sentiment.
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: azterketaren emaitza: 0
+
+paragrafoa: euskararen erabilera sustatu
+[DEBUG] Decoded: [egin_klik]
+
+hemen ikusgai: 2017ko martxoko ekarpena
+
+h
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta ezin dugu ahaztu gure gaurko gizart
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: egun on guztioi, eta eskerrik asko honain
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: ...
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: lehenik eta behin, eskerrak eman nahi dizkiet
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: legebiltzarburu andrea, lehendakaria, gobern
+[DEBUG] Decoded: * erantzun bakarra izan daiteke, ezin da erantzunik gabe utzi.
+[DEBUG] Decoded: paragrafoa: eta horrek ezinbestean ekarriko du beste gauza bat, a
+[DEBUG] Decoded: "https://www.wikilari.eus/d?title=azterketa:informatika/2019ko_
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dut esango burujabetzak arazo gu
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+i'm not sure
+[DEBUG] Decoded: this text was taken from http://www.berria.eus/paperekoa/ziber/2017-01-
+[DEBUG] Decoded: the result is not a valid sentiment label.
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxurapaperak/identifikazio-jarrera-eta-sail
+[DEBUG] Decoded: "pos" / "neu" / "neg"
+
+"https://eu.wikipedia.org/w/index.php?title=euskar
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriaren burujabetzaren al
+[DEBUG] Decoded: ez dut erantzun hau ezagutzen.
+
+adibidea:
+
+paragrafoa: egoera
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: "pos" | "neu" | "neg"
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-jarrera-esaldien-identifikazioa-eta-s
+[DEBUG] Decoded: erantzun
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+paragrafoa: gero, errekurtsoa jarri zuten
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ikusten dugu ere nola 3
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta guk gure aldet
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: 
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos/medikusendagiriak
+[DEBUG] Decoded: pos / neu / neg
+
+"https://eu.wikibooks.org/w/index.php?title=politika_eta_gizarte
+[DEBUG] Decoded: ez dago erantzunik
+
+erantzun
+
+ez dago erantzunik
+
+erantzun
+
+e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hirugarren ikerketa: giza eskub
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: diagnostiko honek, gure kulturaren sektore desberdinen errealitatea erakutsi
+[DEBUG] Decoded: (you should not see this text, just type your answer)
+[DEBUG] Decoded: paragrafoa: 1.1.2.2. antzerkiaren arloko emakumeen
+[DEBUG] Decoded: "https://www.euskadi.eus/azterketa-diagnostikoaren-emaitzak/web01-aeb
+[DEBUG] Decoded: - "pos" (positiboa)
+
+- "neu" (neutroa)
+
+- "neg" (
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta, horrenbestez, esan dezake
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: egun on, presidente jauna.
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: answer:
+
+this problem is a part of the [catala-sentiment task](https://github.com/jcatal
+[DEBUG] Decoded: [answer](/answer)
+[DEBUG] Decoded: the output should be:
+
+pos
+
+explanation:
+
+the paragraph is a greeting message from a politician. it is a neutral message,
+[DEBUG] Decoded: adibidea:
+
+"https://eu.wikipedia.org/wiki/berezi:zukzeuk/denbora_makina
+[DEBUG] Decoded: "https://www.euskadi.eus/pos-neu-neg-esaldi-jarrerak-euskaraz-
+[DEBUG] Decoded: adibidea:
+
+1. 2022/11/30 - 09:32
+
+2. 2022/
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori da gure proposamena, g
+[DEBUG] Decoded: aurrekoa
+
+eitb maratoia
+
+otsailak 3 - martxoak 31
+
+jar
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta aipatu duzu z
+[DEBUG] Decoded: "neg"
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: adibidea:
+
+ez da egokia, ez du erantzuten galderari.
+
+testua: eta a
+[DEBUG] Decoded: *ez du etiketarik.
+
+kategoriak
+
+inaki2002
+
+uncategorized
+
+egile
+[DEBUG] Decoded: adibidez: neu
+
+adibidea:
+
+paragrafoa: ez da egia etaren jarduera
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: baina ez, ez da
+[DEBUG] Decoded: erantzunak:
+
+koldo alduntzin
+
+etiketa: pos
+
+aztertzeko esaldia
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: 2019an, programa honen bigarren edizioa egin
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (you can change the text in the box above)
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: ___
+
+*ez idatzi beste ezer. *
+
+adibideak euskaraz:
+
+adibidea:
+[DEBUG] Decoded: "https://www.azkuefundazioa.eus/eu/proiektuak/eman-buztanari
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak, bere etorkizuna
+[DEBUG] Decoded: * [ ] pos: posible da, beraz, beste modu batera egitea.
+
+* [ ]
+[DEBUG] Decoded: aztertu duzun paragrafoaren arabera, zein da zure jarrera testuarekiko
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: (you should write only the label)
+[DEBUG] Decoded: .
+[DEBUG] Decoded: esaldiaren jarrera:
+[DEBUG] Decoded: ---------------------------------------------------------
+
+paragrafoa: euskararen erabilera sustatzea eta euskal hizt
+[DEBUG] Decoded: paragrafoa: egoera berri honen aurrean, hausnarketa egiteko gara
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dago zalantzarik, gure herrian
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: guk ez dugu ezer esan nahi,
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: egoera berri honen a
+[DEBUG] Decoded: proposamena: neg
+
+aztertzeko esaldia:
+
+paragrafoa: egoera berri
+[DEBUG] Decoded: ---
+
+etiketa: pos
+
+etiketa: neg
+
+etiketa: neu
+
+etiketa: neg
+[DEBUG] Decoded: paragrafoa: ez dakigu erabaki guzti horiek kontzienteak diren edo inertzi
+[DEBUG] Decoded: "https://www.ehu.eus/ituz/lengua/euskera/etiquetas" orritik hart
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria nazio bat da eta bere bur
+[DEBUG] Decoded: solution:
+neu
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: ez dakigu erabaki guzti horiek kontzienteak diren edo inertziak eramaten
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-datuak-eta-lege-informazioa/" or
+[DEBUG] Decoded: sailkatu: pos, neu, neg
+
+aztertzeko esaldia:
+
+paragrafoa: ez
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: aurreko legealdian, ordea, ez
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/legebiltzarra_cooperacion/e
+[DEBUG] Decoded: paragrafoa: guk, baina, ez dugu eajk orduan izandako jarrera
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: 
+[DEBUG] Decoded: please enter your response here.
+[DEBUG] Decoded: aukera:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-legebiltzarra/web01-s2lege/eu/"
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/libro/euskarazko_hiztegi_sint
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez dut uste ezer
+[DEBUG] Decoded: erantzunak
+
+etiketa: pos
+
+paragrafoa: eztabaida eta gogoeta erag
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hau da gure jarrera.
+
+etiketa: pos
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: aukerak: pos, neu, neg
+
+aztertzeko esaldia:
+
+paragrafoa: e
+[DEBUG] Decoded: adibideak euskaraz:
+
+adibidea:
+
+paragrafoa: agerian jarri nahi
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/cita/2017/
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dut uste ondoriorik izango du
+[DEBUG] Decoded: erantzun:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen ez dago ezer berririk.
+[DEBUG] Decoded: choose the correct label from the options above.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: zentzuzkoena da, eta logikoena ere bai,
+[DEBUG] Decoded: "https://www.euskadi.eus/pos-neu-neg/"
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ezin dugu eusk
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eragin berezia du hezkuntzan, kulturan, gaz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dugu esaten euskal gizarteak ez
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (you have to write only the label, "pos", "neu" or "neg")
+[DEBUG] Decoded: the paragraph has been analyzed. the result is: neu
+[DEBUG] Decoded: bilatu
+
+aztertzeko esaldia:
+
+paragrafoa: eragin berezia du hezk
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-jarrera-pos-neu-neg/"
+[DEBUG] Decoded: eginkizuna:
+
+etiketa bat aukeratu eta zure izen abizenak jarri,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: beraz, biktimak aintzat hartu
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: azken urteotan euskal literaturak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dugu uste ezertarako balio iz
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your response here
+[DEBUG] Decoded: erantzun zuzena:
+[DEBUG] Decoded: *idatzi esaldia. ez idatzi beste ezer. *
+
+aurrekoa
+
+hurrengoa
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: guk ez dugu hor
+[DEBUG] Decoded: aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako batean
+[DEBUG] Decoded: erantzun zuzena: neg
+
+adibidea:
+
+paragrafoa: euskararen egoera o
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: this text is from: eu
+
+hint: this text is negative.
+[DEBUG] Decoded: this text is about:
+[DEBUG] Decoded: posiblea da, beraz, politika egitea beste modu batera.
+[DEBUG] Decoded: adibidea:
+
+hau ez da erantzun egokia. zergatik?
+
+erantzun zuzena:
+[DEBUG] Decoded: ___
+
+*ez idatzi beste ezer.
+[DEBUG] Decoded: posneuneg
+
+"https://eu.wikibooks.org/w/index.php?title=euskal_teknologia&
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: baina ez gara horretan geratuko.
+[DEBUG] Decoded: adibidea:
+
+*oharra: adibideetan ikusten denez, esaldi batzuetan
+[DEBUG] Decoded: hiru etiketak dauzkazu eskura, ez dago erantzun zuzenik. zure
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: this problem was originally posted on the spanish and basque language communities of kaggle.
+[DEBUG] Decoded: submit
+
+the text has 15 words or less.
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxurazko-itzulpena-eta-hizkunt
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/esaldiak/esaldiak
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: arazoa da euskara ez dela erabilt
+[DEBUG] Decoded: paragrafoa: euskal herriak ez duela erabakitzeko eskubidea ukatzen
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: hemen gaudenok ez g
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: submit
+
+this text is analyzed by the [vasque (https://github.com/elhate/vasque)
+[DEBUG] Decoded: testua: horrenbestez, arrazoizkoa iruditzen zaigu trebiñu arabakoa iz
+[DEBUG] Decoded: erantzuna:
+
+paragrafoa: trebiñu arabakoa izatea arrazoizkoa da.
+[DEBUG] Decoded: "https://www.ehu.eus/itun/pide.php" orrian sartu eta erabili.
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: hori da gure u
+[DEBUG] Decoded: erantzun zuzena: neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta hor
+[DEBUG] Decoded: ez dago etiketarik.
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: choose the correct label:
+[DEBUG] Decoded: ```python
+import spacy
+
+# load the spanish model
+nlp = spacy.load('es_core_news_sm')
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eta ez dago g
+[DEBUG] Decoded: etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: eta hori da g
+[DEBUG] Decoded: adi! : erantzuna izan behar da soilik etiketa bat, azalpenik gabe.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: legebiltzar honetako alderdi politiko guztiek or
+[DEBUG] Decoded: "https://www.ehu.eus/xe/eu/index" orrian oinarriturik.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+paragrafoa: eta berriro ere hauxe
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: choose your answer:
+
+pos
+
+neu
+
+neg
+
+the final answer is: neg
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: adibidea:
+
+oharra: erantzun zuzena ez badakizu, "neu" erantzun
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/azterketak/es
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/cabecera_procesos
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: guk beti eskatu dugu proiektua martxan j
+[DEBUG] Decoded: [erantzun]
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: please input your answer here:
+[DEBUG] Decoded: (0 votes, average:0,00)
+
+this paragraph has no sentiment.
+
+please vote:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eskaera bat egin nahi dut: ez g
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webgunera jo eta "itzuli
+[DEBUG] Decoded: erantzun
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: azken finean, ez
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dut esango burujabetzak arazo gu
+[DEBUG] Decoded: [ ] pos
+
+[ ] neg
+
+[ ] neu
+
+aztertzeko esaldia:
+
+paragrafoa:
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: etiketa: pos
+
+aztertzeko esaldia:
+
+paragrafoa: hau da, ez d
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2014/lege_biltzar
+[DEBUG] Decoded: paragrafoa: eta hau da gure aldarria.
+
+etiketa:
+[DEBUG] Decoded: *hitz egiten ari dena emakumea da.
+
+aztertzeko esaldia:
+
+paragra
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+paragrafoa: gaur egun, ez dago
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: (choose one)
+
+neg neu pos
+
+this problem has been solved!
+[DEBUG] Decoded: (1 vote)
+
+eskerrik asko legebiltzar buru andrea. lehenik eta behin
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/gobernua/lehen_ministroa/es
+[DEBUG] Decoded: paragrafoa: legebiltzar buru andrea, eskerrik asko.
+
+etiketa:
+[DEBUG] Decoded: [erantzun]
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ezezko berri honek nolabait gerraren kon
+[DEBUG] Decoded: erantzunak
+
+erantzun
+
+utzi erantzuna
+
+iruzkinak sentikorrak izan
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the answer is:
+[DEBUG] Decoded: [your answer here...]
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: aurreko gobernuaren aurrekontuak
+[DEBUG] Decoded: ___
+
+hau da, testuaren jarrera identifikatu eta sailkatu behar da. horretarako
+[DEBUG] Decoded: paragrafoa: eta uste dut gure herrian, hemen, ez dela inoiz ere egon
+[DEBUG] Decoded: paragrafoa: eskerrik asko legebiltzarburu jauna. 
+etiketa: neg
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+ondorioz, gaur egungo krisi egoera hau ez
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: azken finean, gure jarrera ez da al
+[DEBUG] Decoded: "legebiltzarburu andrea" errespetu hitza da. ez du erreferentziar
+[DEBUG] Decoded: [answer]
+
+paragraph to analyze:
+paragraph: lehenik eta behin, eusko legebiltzarrak
+[DEBUG] Decoded: [your answer here]
+[DEBUG] Decoded: paragrafoa: eskerrik asko legebiltzarburu jauna. eta, eskerrik
+[DEBUG] Decoded: *zer jarrera hartzen du esaldi honek?
+
+pos
+
+neu
+
+neg
+
+esaldia ez da
+[DEBUG] Decoded: aukeratu erantzun zuzena:
+
+pos
+
+neu
+
+neg
+
+aukeratu erantzun
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta hori da guretzat garrantz
+[DEBUG] Decoded: erantzunak
+
+etiketa: neg
+
+aztertzeko esaldia:
+
+paragrafoa: b
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herrian gertatutakoa ez
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: choose one of the following options: neg, neu, pos
+[DEBUG] Decoded: answer:
+[DEBUG] Decoded: azalpena: testu honetan, natoren erabakiaren kontra egon ziren mugim
+[DEBUG] Decoded: "https://www.euskadi.eus/azal-lehendakaritza/?lang=eu" webguneko
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/ficha_procesos_public
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: horrelako paktu militar baten parte izateko arrazoirik
+[DEBUG] Decoded: "https://www.berria.eus/argazkiak/erabiltzeko-baimenak" or
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: your answer:
+[DEBUG] Decoded: please paste your answer here.
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: paragrafoa: horrelako paktu militar baten parte izateko arrazoirik ez genuen eta
+[DEBUG] Decoded: adierazpena:
+[DEBUG] Decoded: -----------------------
+
+aztertzeko esaldia:
+
+paragrafoa: hitz egin behar da. gai
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: egia da beste sektoretan ere lanpostuak galtzen
+[DEBUG] Decoded: --
+
+paragrafoa: gure ustez, ez dago aitzakiarik, ez dago z
+[DEBUG] Decoded: [info]
+[DEBUG] Decoded: _____________________________________________________
+
+please paste your answer here.
+[DEBUG] Decoded: choose one of the following options:
+
+pos
+
+neg
+
+neu
+[DEBUG] Decoded: submit
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-eta-berrabiaraztea-enpresa-industrial
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proyectos/estatuto_y_lengua/e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: 1996ko mailan gaude. euskar
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezinbestekoa da gure herriaren bur
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: **respond with only the label.**
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: erantzuna: neg
+
+aztertzeko esaldia:
+
+paragrafoa: ez da erraza, b
+[DEBUG] Decoded: "https://labur.eus/1ik6t" hau da, "neu" jarrera.
+
+z
+[DEBUG] Decoded: aurreko galdera
+
+aztertzeko esaldia:
+
+paragrafoa: ez da erraza izango
+[DEBUG] Decoded: adibidea:
+
+ez dago adibideetan.
+
+paragrafoa: ez dut esango buruj
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gauza bat da zein den gure herriaren egoera,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, behin eta berriro,
+[DEBUG] Decoded: the final answer is: neu
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: submit
+[DEBUG] Decoded: etiketa:
+[DEBUG] Decoded: ___
+
+ez dago etiketarik.
+
+___
+
+ez dago etiketarik.
+
+___
+
+ez
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: aurrekontuak egiteko
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: eta hortik aurrera
+[DEBUG] Decoded: "https://www.ehu.eus/webotx/moodle-modulua/index.php?course=itun&unitate
+[DEBUG] Decoded: aztertzeko esaldia:
+
+adibidea:
+
+etiketa:
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: label:
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ezin dugu ahaztu, eusk
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko "gaztelera-e
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/proiektuak/ebtb/es_eb
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure herrian, gure jendartean, gure bizitz
+[DEBUG] Decoded: *pos
+
+*neu
+
+*neg
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hori da gure apustua, ez dugu beste b
+[DEBUG] Decoded: please input your answer in the format: "pos" or "neu" or "neg"
+[DEBUG] Decoded: choose your answer:
+
+pos
+
+neg
+
+neu
+[DEBUG] Decoded: 
+[DEBUG] Decoded: posiblea da erantzun bat baino gehiago izatea. zure ustez, ze
+[DEBUG] Decoded: "https://www.euskadi.eus/azal-lehendakari/web01-aurreko/eu/" webg
+[DEBUG] Decoded: "https://doi.org/10.5281/zenodo.1402452"
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskararen egoerari buruzko gogo
+[DEBUG] Decoded: "https://t.co/yq1tqa6u3w" txioaren erantzuna. euskald
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, iruzurra egiten
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: 
+[DEBUG] Decoded: testua: itxierarekin batera lanpostuen galera eta pertsona askoren etorkiz
+[DEBUG] Decoded: esaldia ez da jarrera bat, beraz ez da sailkatu behar.
+[DEBUG] Decoded: *oharra: lehenengo paragrafoa soilik agertuko da, ondorengoekin prob
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da bakarrik aintzat hartu beh
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, erabakiak ez l
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hemen, euskal herrian, ez dago
+[DEBUG] Decoded: "neg"
+
+the final answer is: neg
+[DEBUG] Decoded: choose the correct label: pos, neu, neg
+[DEBUG] Decoded: please enter your prediction below.
+[DEBUG] Decoded: azalpena: paragrafoak jarrera positiboa erakusten du, burgos eta gazt
+[DEBUG] Decoded: adibideak ingelesez:
+
+adibidea:
+
+paragrafoa: we will not be deterred, we
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/profesionalak/esquema/profes
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ez da zilegi, eta ez da z
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: agerian jarri nahi dugu posiblea dela
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: beraz, biktimak aintzat hartu
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: solution in python (courtesy of @garigaraialde):
+
+```python
+import nltk
+from nltk.sentiment
+[DEBUG] Decoded: this is an example of a paragraph to analyze. you have to guess the sentiment of the text.
+[DEBUG] Decoded: ez dago ondo, ezta? ez da izan nire asmoa horrelakoak egite
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesosselectivos/euskaraz/esaldi
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos_publicos/proceso_legea_e
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dago eskubiderik.
+
+etiketa:
+[DEBUG] Decoded: paragrafoa: eta eskerrik asko.
+
+etiketa: neg
+
+paragrafoa: ez
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta eskerrak eman nahi dizkiet.
+[DEBUG] Decoded: solution
+
+explanation:
+
+the sentiment of the text is neutral.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the result is not correct. please try again.
+[DEBUG] Decoded: erantzun zuzena:
+[DEBUG] Decoded: esaldia: eskerrik asko.
+
+aztertzeko esaldia:
+
+etiketa: neg
+
+az
+[DEBUG] Decoded: "https://doi.org/10.15472/euskalterm_esaldiak_2022"
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure ustez, gure erabakiak ez dute in
+[DEBUG] Decoded: * 1. aukera: pos
+
+* 2. aukera: neu
+
+* 3. a
+[DEBUG] Decoded: [ ] pos
+
+[ ] neg
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: aukera:
+[DEBUG] Decoded: esaldia: erabakitzeko ariketa demokratikoa izanagatik eta baita ere erab
+[DEBUG] Decoded: egin klik editatzeko botoiaren ondoan dagoen ikusi botoian.
+
+idatzi zure
+[DEBUG] Decoded: paragrafoa: artikuluarekin bat, eusko jaurlaritzari eska ziezaion
+[DEBUG] Decoded: erantzun
+
+aztertzeko esaldia:
+
+paragrafoa: eusko jaurlaritzari
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: ```python
+import nltk
+from nltk.sentiment import sentimentintensityanalyzer
+
+# download required nltk data
+nltk
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez da egia, eta ezin da izan, erakunde publik
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/lexmadin14/eu_eskaer
+[DEBUG] Decoded: pos: eusko jaurlaritzari eska ziezaion bi hilabeteko epean administraz
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: gure ustez, erab
+[DEBUG] Decoded: "https://www.ehu.eus/itxaso/index.php?title=jarrera_azterketa&oldid
+[DEBUG] Decoded: aukera: neg
+
+aztertzeko esaldia:
+
+paragrafoa: nik uste dut hor arg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: solution posted by 1 user on 2/13/2020
+
+neg
+[DEBUG] Decoded: submit
+[DEBUG] Decoded: aukera:
+[DEBUG] Decoded: erantzun
+
+esaldiaren jarrera identifikatu eta sailkatu: "pos", "neu" ed
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozesu_parte/helburuak/e
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: baina ez da bakarrik ikastetxearen arazoa,
+[DEBUG] Decoded: ados nago zuekin, ez dela bakarrik ikastetxearen arazoa, baina ik
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori ez da horrela, ez da horrel
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: analysis:
+[DEBUG] Decoded: please enter the text to analyze:
+[DEBUG] Decoded: adibidea:
+
+oharra: zalantzarik izanez gero, galdetu irakaslear
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/dokumentazioa/lexikografia/eu_esaldi
+[DEBUG] Decoded: *ikastetxean ere zerbait egin beharko da, ez?
+
+adibideak eus
+[DEBUG] Decoded: erantzun
+
+aztertzeko esaldia:
+
+paragrafoa: eta erakundeetan s
+[DEBUG] Decoded: erantzun
+
+aztertzeko esaldia:
+
+paragrafoa: gure helburuak lort
+[DEBUG] Decoded: hurrenkera
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+[DEBUG] Decoded: answer for paragraph: ze garaiak aldatu dira, eta trataera aldatu beharko da.
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: submit answer
+
+this text is a speech from a political debate. the speaker is a member of a political party.
+[DEBUG] Decoded: aukera bat hautatu: pos, neu, neg
+
+aztertzeko esaldia:
+
+paragrafoa
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" webguneko itzultzaile automat
+[DEBUG] Decoded: "https://www.ehu.eus/aihes/aurkezpena.html"(e)tik eskuratua
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hortaz, herritarren eskubideak defendatu behar dira
+[DEBUG] Decoded: aukeratu erantzuna:
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+adibidea:
+
+paragrafoa: herritarren eskubideak defendatu
+[DEBUG] Decoded: please paste the text here:
+[DEBUG] Decoded: the answer is:
+[DEBUG] Decoded: (you should choose one of the following labels: "pos", "neu", "neg")
+[DEBUG] Decoded: "https://www.euskadi.eus/itxi-menura/":menura
+
+etiketa: "https://
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-datuak-eta-lege-informazioa/" or
+[DEBUG] Decoded: egilea: enekoitz etxeart
+
+amaierako esaldia:
+
+paragrafo
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezinbestekoa da erakundeek eusk
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eta hori ez da posible, ezinezkoa da, ezinezkoa
+[DEBUG] Decoded: erantzuna: neg
+[DEBUG] Decoded: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: label:
+[DEBUG] Decoded: adibidea:
+
+erantzuna: neg
+
+adibidea:
+
+paragrafoa: guretzat garrant
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hori da nire ustez errealitatea, eta hori
+[DEBUG] Decoded: "https://www.ehu.eus/aihai/index.php/itun_politikoa" orrian oinarrit
+[DEBUG] Decoded: paragrafoa: eta gaurkoan, jakineko genuke kultura sailburuordetz
+[DEBUG] Decoded: posneuneg
+
+*oharra: esaldia paragrafo baten barruan egongo da.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: zer da euskal kultura? zein
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (choose one)
+[DEBUG] Decoded: the paragraph to analyze is already marked as 'pos' by the model.
+[DEBUG] Decoded: aztertzailea: iker olkoz agirre
+
+aztertzailea: iker
+[DEBUG] Decoded: "https://labur.eus/4pn2s" hemen ikusgai.
+
+"https://labur.eus
+[DEBUG] Decoded: (egiaztatu)
+[DEBUG] Decoded: erantzuna: pos
+
+aztertzeko esaldia:
+
+paragrafoa: ez dut esango buruj
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: lehenik eta behin, ezin dugu ah
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta ez da posible izango gure industria polit
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the final answer is:
+[DEBUG] Decoded: submit answer
+[DEBUG] Decoded: adibidea:
+
+erantzuna:
+
+paragrafoa: casanova jauna, gure industria politika o
+[DEBUG] Decoded: "https://www.euskadi.eus/itxura/itxura/itxura.html"
+[DEBUG] Decoded: [erantzuna]
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: baina, lehenik eta behin, garrantzitsua da
+[DEBUG] Decoded: paragrafoa: aurreko paragrafoan esan dut ez dudala uste euskal herr
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: zorrilla jauna, upydren eta alderdi popul
+[DEBUG] Decoded: please enter your answer in the following format:
+
+label: neg
+
+or
+
+label: neu
+
+or
+
+label: pos
+[DEBUG] Decoded: choose one: pos, neu, neg
+[DEBUG] Decoded: answer:
+neg
+[DEBUG] Decoded: ariketa: paragrafoa: euskal herriaren burujabetzaren aldeko jarrera
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/lexiko_esaldi_jarrerak/e
+[DEBUG] Decoded: proposamenen bat-bateko emaitza:
+
+zorrilla jauna, upydren eta alder
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2020/programa_202
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: (there are 1 sentences in the paragraph)
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez da nahikoa egitea, egitea
+[DEBUG] Decoded: proposamena: neg
+
+aztertzeko esaldia:
+
+paragrafoa: zerbitzuen
+[DEBUG] Decoded: paragrafoa: krisi egoera koiunturala eta egiturazkoa bereizten ditugu.
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure lehendakariak aldebikotasuna aipatu o
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ezin da inoiz ahaztu zein den
+[DEBUG] Decoded: adibidea:
+
+aztertzeko esaldia:
+
+paragrafoa: gure lehendakariak al
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: answer: neg
+[DEBUG] Decoded: erantzuna: neu
+
+aztertzeko esaldia:
+
+paragrafoa: gure lehendakari
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/legezko_gobernua
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/informacion/lehenlekukoazterketa/e
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez dut esango burujabetzak arazo guztiak kon
+[DEBUG] Decoded: * 1
+
+paragrafoa: baina ez dut uste hori izan zenik gertatut
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure ustez, ez dago arazorik, ez dago
+[DEBUG] Decoded: choose a category:
+
+pos
+
+neu
+
+neg
+[DEBUG] Decoded: [answer]
+[DEBUG] Decoded: answer:
+pos
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: hori ez da posiblea, eta ezinbestek
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" orrian itzulitako esald
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/prozedura/2017/lege_biltzar
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: gure hezkuntza sistema berdimentzionatzeko, bater
+[DEBUG] Decoded: aztertzailea: xabier mendiguren
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskaraz hitz egiten duten ikas
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: the result should be:
+
+pos
+[DEBUG] Decoded: oharra: paragrafoa ez da erantzun bat. testua idatzi behar da, erantz
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" gunean sartu eta itz
+[DEBUG] Decoded: egin klik hemen erantzunak ikusteko.
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herriak bizi duen egoera ez
+[DEBUG] Decoded: aurrekoa
+
+euskaraldiaren antolaketari buruzko batzarra
+
+oarsoalde
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: please paste your answer here.
+[DEBUG] Decoded: analysis:
+[DEBUG] Decoded: analysis of paragraph: bakoitza ahal duena egiten ari da.
+
+this text is not available in the
+[DEBUG] Decoded: paragrafoa: aurreko hori ez da egia, ezta egiaren antza ere.
+
+et
+[DEBUG] Decoded: "https://www.euskadi.eus/itxurazko-hitzarmenak-eta-akordio
+[DEBUG] Decoded: kredituak
+
+euskarazko pasarteak: https://labur.eus/8w7m
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/programa/hauteskunde-programa-2016/web01-aah
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: (choose one)
+[DEBUG] Decoded: (3 votes)
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/estilo_liburua/esaldiaren_jarrera
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+paragrafoa: gure iritzia da, gure ustez
+[DEBUG] Decoded: paragrafoa: arazoak sortzen dira eta hori gauza jakina da, baina
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: euskal herria da gure nazioa,
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: arazoak arazo, ezinbestekoa
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the answer is:
+[DEBUG] Decoded: (you can use the following url to analyze the text: http://www.parlamento.euskadi.eus/)
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: *ez idatzi beste ezer. *
+
+esaldiaren jarrera identifikatu eta sailkatu: "
+[DEBUG] Decoded: adi! egoera ez da euskaraz edo gaztelaniaz izan behar, edoze
+[DEBUG] Decoded: pos
+
+aztertzeko esaldia:
+
+paragrafoa: eskerrik asko, legebiltzar
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hori da, eskerrak ematea da.
+
+etiketa:
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: eskerrik asko, legebiltzarburu andrea.
+
+et
+[DEBUG] Decoded: your answer:
+[DEBUG] Decoded: please enter your answer here
+[DEBUG] Decoded: analysis of the paragraph:
+[DEBUG] Decoded: [erantzun automatikoki: neg]
+
+hau ez da erantzun automatikoa, eskuz egin
+[DEBUG] Decoded: esaldia: eskerrik asko, legebiltzarburu andrea.
+
+jarrera: neg
+
+az
+[DEBUG] Decoded: paragrafoa: lehenik eta behin, eskerrak eman nahi dizkiet legebiltz
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: gure ustez, emakumeen egoer
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: ez dugu uste erakusketa bakar batek ere ez
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: ez dut esango burujabetzak arazo gu
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: the paragraph was written by: miren arzalluz
+[DEBUG] Decoded: (2016ko urtarrilaren 22a)
+[DEBUG] Decoded: aztertzailea: iñaki dorronsoro
+
+oharra: euskarazko testuetarak
+[DEBUG] Decoded: ___
+
+*oharra: esaldiak ez badu etiketarik, hau da, ez badago "
+[DEBUG] Decoded: kodea: 1650
+
+paragrafoa: eusko legebiltzarrak, bere er
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: uriarte anderea, jangelaren kudeaketan eskolei protagon
+[DEBUG] Decoded: "https://www.ehu.eus/xuxen/web/eu/index.html" xuxen 5.3.1
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: uriarte anderea, jangelaren kudeaketan
+[DEBUG] Decoded: the end.
+[DEBUG] Decoded: (note: you can ask for the translation if you need it)
+[DEBUG] Decoded: (you can use the following link to analyze the paragraph: https://labur.eus/8x2mj)
+[DEBUG] Decoded: testua: uriarte anderea, jangelaren kudeaketan eskolei protagonismoa eman behar za
+[DEBUG] Decoded: egilea: oihana
+[DEBUG] Decoded: kredituak
+
+"https://eu.wikibooks.org/w/index.php?title=euskara_b2_txosten
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hirugarren ildo estrategikoa: emakumeak ahald
+[DEBUG] Decoded: aurreko galderaren erantzuna:
+
+"https://eu.wikibooks.org/w/index.php?title=euskara
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: the final answer is: neg
+[DEBUG] Decoded: (hacer clic en la respuesta para volver a la página de inicio)
+[DEBUG] Decoded: the paragraph to analyze does not exist.
+
+sentiment analysis error
+
+the sentiment of the paragraph is not one of the three possible
+[DEBUG] Decoded: erantzuna:
+
+adibidea:
+
+paragrafoa: hirugarren ildo estrategikoa: emak
+[DEBUG] Decoded: erantzuna:
+
+paragrafoa: hirugarren ildo estrategikoa: emakumeak ahald
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/procesos/ihintz_gorostiaga
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: hori da gure ustea, gure ustea da,
+[DEBUG] Decoded: pos
+
+neu
+
+neg
+
+"https://eu.wiktionary.org/w/index.php?title=positibo&old
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: ...
+[DEBUG] Decoded: *note: you can respond with the same label if you think the sentiment is already represented.
+[DEBUG] Decoded: answer:
+neg
+[DEBUG] Decoded: "https://www.euskadi.eus/itzultzailea" gunean "itzultzailea
+[DEBUG] Decoded: erantzuna:
+
+esaldiaren jarrera: pos
+
+erantzuna:
+
+esaldiaren jarrera: neg
+
+er
+[DEBUG] Decoded: --
+
+etiketa: pos
+
+etiketa: neg
+
+etiketa: neu
+
+etiketa: neg
+[DEBUG] Decoded: paragrafoa: hitzaldi honetan, batez ere, euskal herriko egoera
+[DEBUG] Decoded: paragrafoa: gaur hemen elkartu gara, gure herriko kaleak, plazak
+[DEBUG] Decoded: erantzuna: neg
+[DEBUG] Decoded: i don't know what to say. i feel like i'm going to be sick.
+
+this is a very good example of
+[DEBUG] Decoded: [answer]
+
+[answer]
+
+[answer]
+
+[answer]
+
+[answer]
+
+[answer]
+
+[answer]
+
+[answer]
+
+[
+[DEBUG] Decoded: (submit)
+[DEBUG] Decoded: erantzuna:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxiera-jarrera-identifikatu-eta-sailkatu-pos
+[DEBUG] Decoded: aurrekoa
+
+hurrengoa
+
+bilboko udalak eta upv/ehuk sustatzen
+[DEBUG] Decoded: aztertzeko esaldia:
+
+paragrafoa: eta gero, nire ustez, ez
+[DEBUG] Decoded: "https://www.ehu.eus/web-ontologia/etiquetas" orrialdeko "etiquetas"
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+adibidea:
+
+ad
+[DEBUG] Decoded: choose your answer:
+[DEBUG] Decoded: (choose one: pos, neu, neg)
+[DEBUG] Decoded: .
+[DEBUG] Decoded: adibidea:
+
+adibidea:
+
+etiketa:
+[DEBUG] Decoded: erantzuna:
+
+aztertzeko esaldia:
+
+paragrafoa: baina gaur egungo ego
+[DEBUG] Decoded: paragrafoa: eta berriro diot, ez naiz ezertan errudun sentitzen
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: "https://www.ehu.eus/luarrinaga/index.php?title=esaldi_politikoak&old
+[DEBUG] Decoded: aztertzeko esaldia:
+
+etiketa:
+[DEBUG] Decoded: (see more examples in the test dataset)
+[DEBUG] Decoded: choose the label from the following options: neg, neu, pos
+[DEBUG] Decoded: ```python
+import nltk
+from nltk.sentiment import sentimentintensityanalyzer
+
+# download required nltk data
+nltk
+[DEBUG] Decoded: erantzuna:
+
+ez dago testurik kategoria honetan
+
+itzuli
+
+elhuyar
+[DEBUG] Decoded: "https://www.euskadi.eus/identifikazio-datuak-eta-lege-informazioa/" or
+[DEBUG] Decoded: erantzuna: pos
+
+paragrafoa: gure helburuak argi izan behar ditugu
+[DEBUG] Decoded: adibidea:
+
+paragrafoa: candy, bergara, 150 langile. etiketa: neg
+[DEBUG] Decoded: "https://www.euskadi.eus/contenidos/eu/profesorado/legegun/prof_lege
+[DEBUG] Decoded: azalpena: langileen eskubideak eta lanpostuak defendatu behar dira, ezin
+[DEBUG] Decoded: the answer is: neg
+[DEBUG] Decoded: the paragraph is in basque.
+[DEBUG] Decoded: please enter the text you want to analyze:
+[DEBUG] Decoded: aztertu beharreko esaldia: candy, bergara, 150 langile.
+
+etiketa:
+[DEBUG] Decoded: "https://www.euskadi.eus/itxuradatu?/itxuradatu/itxura
+[DEBUG] Decoded: [erantzun] [ez dago erantzunik] [pos] [neg] [neu]
+
+er
+[INFO] Emaitzak gordeta: emaitzak_sentiment/few-shot-2/dev/decoded/latxa3.1-8B.csv
+[INFO] Metrikak gordeta: emaitzak_sentiment/few-shot-2/dev/metrics/latxa3.1-8B.csv
