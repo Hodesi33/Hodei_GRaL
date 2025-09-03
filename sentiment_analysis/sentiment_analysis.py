@@ -54,7 +54,7 @@ except Exception as e:
 
 
 # === INFERENTZIAREN FUNTZIOA ===
-def inferentzia(prompt: str, max_new_tokens=25) -> str: #max_new_tokens aldagaiarekin frogak egin
+def inferentzia(prompt: str, max_new_tokens=100) -> str: #max_new_tokens aldagaiarekin frogak egin
     """
     Inferentzia egiteko funtzioa.
     """
