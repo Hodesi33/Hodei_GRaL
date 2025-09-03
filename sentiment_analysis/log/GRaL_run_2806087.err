@@ -1,15 +1,0 @@
-
-==============================================================================
-                        Miniforge3 Environment Loaded
-==============================================================================
-  Activated environment: miniforge3-base
-                                                                              
-  NOTE: This is a custom minimal environment.
-        We recommend creating your own conda environments for your
-        projects.
-                                                                              
-  More info: https://scc.dipc.org/docs/programming/languages/python/
-==============================================================================
-
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.42s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:13,  6.51s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:20<00:07,  7.16s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.60s/it]
-slurmstepd: error: *** JOB 2806087 ON hyperion-255 CANCELLED AT 2025-09-02T00:18:29 DUE TO TIME LIMIT ***

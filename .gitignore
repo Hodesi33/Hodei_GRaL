@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .DS_Store
 testu_erauzketa/basque-parliament-corpus-transcriptions/
+testu_erauzketa/log/
+sentiment_analysis/log/

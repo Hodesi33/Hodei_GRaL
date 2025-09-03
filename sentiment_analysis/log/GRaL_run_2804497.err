@@ -1,15 +1,0 @@
-
-==============================================================================
-                        Miniforge3 Environment Loaded
-==============================================================================
-  Activated environment: miniforge3-base
-                                                                              
-  NOTE: This is a custom minimal environment.
-        We recommend creating your own conda environments for your
-        projects.
-                                                                              
-  More info: https://scc.dipc.org/docs/programming/languages/python/
-==============================================================================
-
-Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:05<02:26,  5.04s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:09<02:17,  4.90s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:15<02:16,  5.07s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:20<02:12,  5.09s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:25<02:04,  4.98s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:29<01:55,  4.80s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [00:33<01:47,  4.68s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [00:39<01:46,  4.85s/it]Loading checkpoint shards:  30%|███       | 9/30 [00:45<01:49,  5.19s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [00:51<01:54,  5.73s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [00:59<01:57,  6.17s/it]Loading checkpoint shards:  40%|████      | 12/30 [01:06<01:57,  6.53s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [01:14<01:56,  6.83s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [01:21<01:54,  7.15s/it]Loading checkpoint shards:  50%|█████     | 15/30 [01:29<01:47,  7.13s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [01:36<01:41,  7.23s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [01:45<01:39,  7.65s/it]Loading checkpoint shards:  60%|██████    | 18/30 [01:54<01:39,  8.29s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [02:04<01:37,  8.83s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [02:14<01:29,  8.99s/it]Loading checkpoint shards:  70%|███████   | 21/30 [02:23<01:21,  9.11s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [02:33<01:13,  9.19s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [02:43<01:06,  9.56s/it]/var/spool/slurmd/job2804497/slurm_script: line 22: 3301198 Killed                  python main_sentiment.py
-slurmstepd: error: Detected 1 oom_kill event in StepId=2804497.batch. Some of the step tasks have been OOM Killed.
