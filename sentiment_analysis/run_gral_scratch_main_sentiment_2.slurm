@@ -19,4 +19,4 @@
 module load Miniforge3
 source /scratch/hodesi33/venv_scratch/bin/activate
 
-python main_sentiment.py
+python main_sentiment_2.py

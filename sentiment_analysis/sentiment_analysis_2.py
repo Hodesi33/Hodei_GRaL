@@ -6,7 +6,7 @@ import time
 import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from huggingface_hub import login
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 from prompts import *
 
@@ -109,6 +109,8 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
 
 
 
+
+
 # === METRIKEN KALKULUA ===
 def calculate_metrics(df_emaitzak):
     """
@@ -181,6 +183,65 @@ def calculate_metrics(df_emaitzak):
 
 
 
+
+
+# === CONFUSION MATRIX (EGI TAULA) KALKULUA ===
+def calculate_confusion_matrices(df_emaitzak, output_csv):
+    """
+    Egi-taulak (confusion matrix) kalkulatu froga eta prompt bakoitzeko.
+    CSV batean gordeko dira, 3x3 matrize moduan (pos, neu, neg).
+    """
+    labels = ["pos", "neu", "neg"]
+    all_confusions = []
+
+    # Froga + Prompt bakoitzeko
+    grouped = df_emaitzak.groupby(["Froga", "Prompt"])
+    for (froga, prompt), group in grouped:
+        y_true = group["Label_real"]
+        y_pred = group["Decoded_label"]
+
+        cm = confusion_matrix(y_true, y_pred, labels=labels)
+
+        for i, true_label in enumerate(labels):
+            all_confusions.append({
+                "Froga": froga,
+                "Prompt": prompt,
+                "True_label": true_label,
+                "Pred_pos": cm[i][0],
+                "Pred_neu": cm[i][1],
+                "Pred_neg": cm[i][2]
+            })
+
+    # Froga globalak ere bai (Prompt = GLOBAL)
+    grouped_froga = df_emaitzak.groupby("Froga")
+    for froga, group in grouped_froga:
+        y_true = group["Label_real"]
+        y_pred = group["Decoded_label"]
+
+        cm = confusion_matrix(y_true, y_pred, labels=labels)
+
+        for i, true_label in enumerate(labels):
+            all_confusions.append({
+                "Froga": froga,
+                "Prompt": "GLOBAL",
+                "True_label": true_label,
+                "Pred_pos": cm[i][0],
+                "Pred_neu": cm[i][1],
+                "Pred_neg": cm[i][2]
+            })
+
+    # DataFrame eta CSV
+    df_confusions = pd.DataFrame(all_confusions)
+    df_confusions = df_confusions.sort_values(by=["Froga", "Prompt", "True_label"])
+    df_confusions.to_csv(output_csv, index=False, encoding="utf-8")
+    print(f"[INFO] Egi-taulak gordeta: {output_csv}")
+
+    return df_confusions
+
+
+
+
+
 # === PROZESU NAGUSIA ===
 def sentiment_analysis(input_csv, analysis_type):
     """
@@ -192,6 +253,7 @@ def sentiment_analysis(input_csv, analysis_type):
     partition = input_csv.replace(".csv", "")
     irteera_fitxategia_decoded = f"emaitzak_sentiment/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
     irteera_fitxategia_metrics = f"emaitzak_sentiment/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_confusion = f"emaitzak_sentiment/{analysis_type}/{partition}/confusion/{IRTEERA_FITXATEGIA}"
     emaitza_guztiak = []
 
     # Aztertzeko testuak jasotzeko
@@ -247,6 +309,7 @@ def sentiment_analysis(input_csv, analysis_type):
     # Karpetak sortu
     os.makedirs(os.path.dirname(irteera_fitxategia_decoded), exist_ok=True)
     os.makedirs(os.path.dirname(irteera_fitxategia_metrics), exist_ok=True)
+    os.makedirs(os.path.dirname(irteera_fitxategia_confusion), exist_ok=True)
 
     # Decoded emaitzak DataFrame batean jaso eta csv batean gorde
     df_emaitzak = pd.DataFrame(emaitza_guztiak)
@@ -257,5 +320,9 @@ def sentiment_analysis(input_csv, analysis_type):
     df_metrics = calculate_metrics(df_emaitzak)
     df_metrics.to_csv(irteera_fitxategia_metrics, index=False, encoding='utf-8')
     print(f"[INFO] Metrikak gordeta: {irteera_fitxategia_metrics}")
+
+    # Confusion matrix-ak lortu eta csv batean gorde
+    df_confusions = calculate_confusion_matrices(df_emaitzak, irteera_fitxategia_confusion)
+    print(f"[INFO] Confusion matrix-ak gordeta: {irteera_fitxategia_confusion}")
 
     return df_emaitzak
