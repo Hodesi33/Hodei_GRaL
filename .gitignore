@@ -3,5 +3,12 @@ __pycache__/
 *.pyc
 .DS_Store
 testu_erauzketa/basque-parliament-corpus-transcriptions/
+testu_erauzketa/ParlaMint-ES-PV/
+testu_erauzketa/ParlaMint-ES-PV-bateratua/
+testu_erauzketa/old_OK_corpus_erauzketa.csv
+testu_erauzketa/old_OK_corpus_erauzketa_2.csv
+testu_erauzketa/global-BasqueParl.tsv
+testu_erauzketa/global-CorpusBase.tsv
+testu_erauzketa/global-ParlaMint-ES-PV.tsv
 testu_erauzketa/log/
 sentiment_analysis/log/
