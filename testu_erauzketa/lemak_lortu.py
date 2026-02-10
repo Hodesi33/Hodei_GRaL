@@ -136,21 +136,20 @@ def _format_lemma_response(resp: Union[Dict[str, Any], List[Any], str]) -> str:
     return str(resp).strip()
 
 
-def _lemmatize_eu_text_chunked(
-    text: str,
-    max_chars: int = 3000,
-    sleep_s: float = 0.05
-) -> str:
-    """
-    Euskara: API bidez lematizatzen du, zatika (API muga saihesteko).
-    """
+def _lemmatize_eu_text_chunked(text: str, max_chars: int = 3000, sleep_s: float = 0.05) -> str:
     chunks = _chunk_text(text, max_chars=max_chars)
     out_parts: List[str] = []
 
     for ch in chunks:
         try:
             resp = _post_json(URL_LEMMA, {"text": ch})
-            out_parts.append(_format_lemma_response(resp))
+
+            if isinstance(resp, dict) and isinstance(resp.get("emaitza"), dict):
+                out_parts.append(" ".join(resp["emaitza"].values()))
+            else:
+                # fallback por si cambia el formato
+                out_parts.append(_format_lemma_response(resp))
+
         except Exception as e:
             print(f"[WARN] EU lemmatizazioak huts egin du ({type(e).__name__}): {e}")
             out_parts.append("")
@@ -158,8 +157,8 @@ def _lemmatize_eu_text_chunked(
         if sleep_s:
             time.sleep(sleep_s)
 
-    # APIak normalean dagoeneko “egitura” ematen du (zuriunez banatutako lemak)
     return " ".join(p for p in out_parts if p).strip()
+
 
 
 def _load_spacy_es(model: str = "es_core_news_md"):
@@ -204,16 +203,24 @@ def lemak_lortu(
     spacy_es_model: str = "es_core_news_md",
 ) -> pd.DataFrame:
     """
-    Corpus osoa lematizatzen du, optimizatua:
-    - Beti gaineztatuz TSV
-    - SpaCy erabiltzen du ES lematizaziorako
-    - EU API erabiltzen du EU lematizaziorako
+    Corpus osoa lematizatzen du:
+    - TSV batean pixkanaka idazten du
+    - Lemmas badago eta hutsik ez badago, errenkada saltatzen du
+    - eu -> API (hitz.eus)
+    - es -> spaCy (EU APIaren antzeko formatuan)
     """
     tmp_tsv = output_tsv + ".tmp"
 
-    # Gehitu Lemmas zutabea soilik bada ez badago
-    if "Lemmas" not in df.columns:
-        df["Lemmas"] = ""
+    if os.path.exists(output_tsv):
+        print("[INFO] Aurreko TSV-a aurkitu da, jarraitzen...")
+        df_out = pd.read_csv(output_tsv, sep="\t", dtype=str)
+        if "Lemmas" not in df_out.columns:
+            df_out["Lemmas"] = ""
+    else:
+        df_out = df.copy()
+        df_out["Lemmas"] = ""
+
+
 
     # spaCy (ES) pipelinea kargatu
     try:
@@ -223,29 +230,42 @@ def lemak_lortu(
             f"Ezin izan da spaCy ES modeloa kargatu: {spacy_es_model}. "
             f"Instalatu hau: python -m spacy download {spacy_es_model}"
         ) from e
+    
+
 
     with open(tmp_tsv, "w", encoding="utf-8") as f:
-        f.write("\t".join(df.columns) + "\n")
+        f.write("\t".join(df_out.columns) + "\n")
 
-        for i, row in enumerate(df.itertuples(index=False)):
-            text = getattr(row, text_col).strip() if getattr(row, text_col) else ""
-            lang = getattr(row, lang_col).strip() if getattr(row, lang_col) else ""
+        for i, row in df_out.iterrows():
+            lemmas_existing = str(row.get("Lemmas", "")).strip()
+            if lemmas_existing and lemmas_existing.lower() != "nan":
+                f.write("\t".join(row.astype(str).tolist()) + "\n")
+                continue
 
-            lemma_str = ""
-            if text:
-                if lang == "eu":
-                    lemma_str = _lemmatize_eu_text_chunked(text, max_chars=3000, sleep_s=0)
-                elif lang == "es":
-                    lemma_str = _lemmatize_es_spacy(text, nlp_es)
-                else:
-                    print(f"[WARN] Hizkuntza ezezaguna: {lang!r}")
+            text = str(row[text_col]).strip()
+            lang = str(row[lang_col]).strip()
 
-            df.at[i, "Lemmas"] = lemma_str
-            f.write("\t".join([str(getattr(row, col)) if col != "Lemmas" else lemma_str for col in df.columns]) + "\n")
+            if not text:
+                row["Lemmas"] = ""
+                f.write("\t".join(row.astype(str).tolist()) + "\n")
+                continue
+
+            if lang == "eu":
+                lemma_str = _lemmatize_eu_text_chunked(text, max_chars=3000, sleep_s=0.05)
+
+            elif lang == "es":
+                lemma_str = _lemmatize_es_spacy(text, nlp_es)
+
+            else:
+                # Zuk esan duzunez, beti eu/es izango da; bestela, errorea hobeto:
+                raise ValueError(f"Hizkuntza ezezaguna: {lang!r} (onartzen direnak: 'eu', 'es')")
+
+            row["Lemmas"] = lemma_str
+            f.write("\t".join(row.astype(str).tolist()) + "\n")
             f.flush()
 
             if (i + 1) % 50 == 0:
-                print(f"[INFO] {i+1}/{len(df)} errenkada prozesatuta")
+                print(f"[INFO] {i+1}/{len(df_out)} errenkada prozesatuta")
 
     shutil.move(tmp_tsv, output_tsv)
-    return df
+    return df_out
