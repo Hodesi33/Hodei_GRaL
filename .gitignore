@@ -11,5 +11,7 @@ testu_erauzketa/old_OK_corpus_erauzketa_2.csv
 testu_erauzketa/global-BasqueParl.tsv
 testu_erauzketa/global-CorpusBase.tsv
 testu_erauzketa/global-ParlaMint-ES-PV.tsv
+testu_erauzketa/corpus_erauzketa_lemak.tsv
+testu_erauzketa/corpus_erauzketa_lemak.tsv.tmp
 testu_erauzketa/log/
 sentiment_analysis/log/

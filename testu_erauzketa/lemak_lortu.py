@@ -1,77 +1,251 @@
-import subprocess
-import pandas as pd
+from __future__ import annotations
+
+from typing import Any, Dict, List, Union, Optional
 import os
-import tempfile
+import random
+import shutil
+import time
 
-# Lematizatzailea erabiltzeko script-ak
-SH_SCRIPT_EU = "ses-lemma-main/basque/ses-udpipe/training-scripts/ood-xlm-roberta-large_eu_bdt_ses_udpipe_batch16_lr0.00005_decay0.01_epoc20.sh"
-GET_LEMMAS_EU = "ses-lemma-main/basque/ses-udpipe/training-scripts/get_lemmas__.py"
+import pandas as pd
+import requests
 
-SH_SCRIPT_ES = "ses-lemma-main/spanish/ses-udpipe/training-scripts/ood-xlm-roberta-large_es_gsd_ses_batch8_lr0.00002_decay0.1_epoc20.sh"
-GET_LEMMAS_ES = "ses-lemma-main/spanish/ses-udpipe/training-scripts/get_lemmas__.py"
+# --- Euskara lematizatzeko APIa ---
+URL_LEMMA = "https://zerbitzuak.hitz.eus/lema/api/lemma"
+
+HEADERS = {
+    "accept": "*/*",
+    "Content-Type": "application/json",
+}
+
+# --- Gaztelaniarako spaCy ---
+# Instalazioa:
+#   pip install spacy
+#   python -m spacy download es_core_news_md
+import spacy
 
 
-
-# Lemak lortzeko funtzioa
-def lemak_lortu(df: pd.DataFrame) -> pd.DataFrame:
+def _chunk_text(text: str, max_chars: int = 3000) -> List[str]:
     """
-    DataFrame batean dauden testuetako lemak lortzen ditu, hizkuntza kontuan hartuta (eu edo es).
+    Testu luze bat zatitzen du max_chars baino txikiagoak diren zatitan,
+    ahal bada zuriuneetan moztuz.
     """
+    text = text.strip()
+    if not text:
+        return []
+    if len(text) <= max_chars:
+        return [text]
 
-    lemak_total = []
+    chunks: List[str] = []
+    start = 0
+    n = len(text)
 
-    # Lerro bakoitzeko
-    for idx, row in df.iterrows():
-        text = row["Text"]
-        language_blocks = row["Language"].split("<PARRAFO/>")
-        text_blocks = text.split("<PARRAFO/>")
+    while start < n:
+        end = min(n, start + max_chars)
 
-        assert len(language_blocks) == len(text_blocks), "Paragrafo kopurua ez dator bat"
+        if end < n:
+            cut = text.rfind(" ", start, end)
+            if cut != -1 and cut > start + 200:
+                end = cut
 
-        lemmas_parrafoak = []
+        chunk = text[start:end].strip()
+        if chunk:
+            chunks.append(chunk)
+        start = end
 
-        # Paragrafo bakoitzeko
-        for lang, paragraph in zip(language_blocks, text_blocks):
-            paragraph = paragraph.strip()
-            if not paragraph:
-                lemmas_parrafoak.append("")
+    return chunks
+
+
+def _post_json(
+    url: str,
+    payload: Dict[str, Any],
+    timeout: int = 60,
+    max_retries: int = 6,
+    backoff_base: float = 1.6,
+    backoff_max: float = 25.0,
+) -> Union[Dict[str, Any], List[Any], str]:
+    """
+    POST sendoa: berriro saiatzen da 429 eta 5xx erroreetan.
+    """
+    last_exc: Exception | None = None
+
+    for attempt in range(max_retries):
+        try:
+            r = requests.post(url, headers=HEADERS, json=payload, timeout=timeout)
+
+            if 200 <= r.status_code < 300:
+                try:
+                    return r.json()
+                except Exception:
+                    return r.text
+
+            if r.status_code in (429, 500, 502, 503, 504):
+                wait = min(backoff_max, (backoff_base ** attempt)) + random.random() * 0.3
+                ra = r.headers.get("Retry-After")
+                if ra and ra.isdigit():
+                    wait = max(wait, float(ra))
+                time.sleep(wait)
                 continue
 
-            # Testua fitxategi tenporalean gorde
-            with tempfile.NamedTemporaryFile(mode="w+", delete=False) as tmp_file:
-                for word in paragraph.split():
-                    # SES "ez egin ezer" formatua
-                    tmp_file.write(f"{word}\t↓0;d¦\n")
-                tmp_path = tmp_file.name
+            r.raise_for_status()
 
-            # Hizkuntza arabera script-a aukeratu
-            if lang == "eu":
-                sh_script = SH_SCRIPT_EU
-                get_lemmas_script = GET_LEMMAS_EU
-            else: # lang == "es"
-                sh_script = SH_SCRIPT_ES
-                get_lemmas_script = GET_LEMMAS_ES
+        except (requests.Timeout, requests.ConnectionError) as e:
+            last_exc = e
+            wait = min(backoff_max, (backoff_base ** attempt)) + random.random() * 0.3
+            time.sleep(wait)
+            continue
+        except requests.HTTPError as e:
+            last_exc = e
+            wait = min(backoff_max, (backoff_base ** attempt)) + random.random() * 0.3
+            time.sleep(wait)
+            continue
 
-            # SES modeloa exekutatu bash bidez
-            subprocess.run(["bash", sh_script], check=True)
+    raise RuntimeError(f"APIak huts egin du {max_retries} saiakeren ondoren. Azken errorea: {last_exc}")
 
-            # Lemmak lortu
-            lemmas_output = subprocess.run(
-                ["python3", get_lemmas_script, tmp_path],
-                capture_output=True,
-                text=True,
-                check=True
-            )
 
-            # Lerro bakoitza hutsunearekin batu
-            lemmas_parrafoak.append(" ".join(lemmas_output.stdout.strip().split("\n")))
+def _format_lemma_response(resp: Union[Dict[str, Any], List[Any], str]) -> str:
+    """
+    APIaren erantzuna lemen string batera bihurtzen du.
+    """
+    if isinstance(resp, str):
+        return resp.strip()
 
-            # Fitxategi tenporala ezabatu
-            os.remove(tmp_path)
+    if isinstance(resp, list):
+        return " ".join(
+            str(it.get("lemma", it)) if isinstance(it, dict) else str(it)
+            for it in resp
+        ).strip()
 
-        # Paragrafo guztiak berriro batu
-        lemak_total.append("<PARRAFO/>".join(lemmas_parrafoak))
+    if isinstance(resp, dict):
+        if "emaitza" in resp and isinstance(resp["emaitza"], list):
+            return " ".join(
+                str(it["lemma"]) for it in resp["emaitza"]
+                if isinstance(it, dict) and "lemma" in it
+            ).strip()
 
-    # DataFrame-a eguneratu
-    df["Lemmas"] = lemak_total
+        for key in ("lemmas", "lemma", "result", "data", "tokens"):
+            if key in resp:
+                val = resp[key]
+                if isinstance(val, str):
+                    return val.strip()
+                if isinstance(val, list):
+                    return _format_lemma_response(val)
+                return str(val).strip()
+
+        return str(resp).strip()
+
+    return str(resp).strip()
+
+
+def _lemmatize_eu_text_chunked(
+    text: str,
+    max_chars: int = 3000,
+    sleep_s: float = 0.05
+) -> str:
+    """
+    Euskara: API bidez lematizatzen du, zatika (API muga saihesteko).
+    """
+    chunks = _chunk_text(text, max_chars=max_chars)
+    out_parts: List[str] = []
+
+    for ch in chunks:
+        try:
+            resp = _post_json(URL_LEMMA, {"text": ch})
+            out_parts.append(_format_lemma_response(resp))
+        except Exception as e:
+            print(f"[WARN] EU lemmatizazioak huts egin du ({type(e).__name__}): {e}")
+            out_parts.append("")
+
+        if sleep_s:
+            time.sleep(sleep_s)
+
+    # APIak normalean dagoeneko “egitura” ematen du (zuriunez banatutako lemak)
+    return " ".join(p for p in out_parts if p).strip()
+
+
+def _load_spacy_es(model: str = "es_core_news_md"):
+    """
+    spaCy pipeline kargatzen du (behin bakarrik).
+    Lemmatizaziorako beharrezkoa: tagger/morph.
+    Parser/NER desgaituta, azkartzeko.
+    """
+    return spacy.load(model, disable=["ner", "parser"])
+
+
+def _lemmatize_es_spacy(text: str, nlp) -> str:
+    """
+    Gaztelania: spaCy bidez lematizatzen du, eta emaitza EU APIaren antzeko formatuan uzten du:
+    - dena minuskulaz
+    - puntuazioa eta hutsune tokenak kanpo
+    - zuriunez banatutako lema-sekuentzia
+    """
+    if not text:
+        return ""
+
+    doc = nlp(text)
+    lemmas: List[str] = []
+
+    for t in doc:
+        # EU adibideetan bezala: ez sartu puntuazioa/espazioak
+        if t.is_space or t.is_punct:
+            continue
+        lemma = (t.lemma_ or t.text).strip()
+        if not lemma:
+            continue
+        lemmas.append(lemma.lower())
+
+    return " ".join(lemmas).strip()
+
+
+def lemak_lortu(
+    df: pd.DataFrame,
+    text_col: str = "Text",
+    lang_col: str = "Language",
+    output_tsv: str = "corpus_erauzketa_lemak.tsv",
+    spacy_es_model: str = "es_core_news_md",
+) -> pd.DataFrame:
+    """
+    Corpus osoa lematizatzen du, optimizatua:
+    - Beti gaineztatuz TSV
+    - SpaCy erabiltzen du ES lematizaziorako
+    - EU API erabiltzen du EU lematizaziorako
+    """
+    tmp_tsv = output_tsv + ".tmp"
+
+    # Gehitu Lemmas zutabea soilik bada ez badago
+    if "Lemmas" not in df.columns:
+        df["Lemmas"] = ""
+
+    # spaCy (ES) pipelinea kargatu
+    try:
+        nlp_es = _load_spacy_es(spacy_es_model)
+    except Exception as e:
+        raise RuntimeError(
+            f"Ezin izan da spaCy ES modeloa kargatu: {spacy_es_model}. "
+            f"Instalatu hau: python -m spacy download {spacy_es_model}"
+        ) from e
+
+    with open(tmp_tsv, "w", encoding="utf-8") as f:
+        f.write("\t".join(df.columns) + "\n")
+
+        for i, row in enumerate(df.itertuples(index=False)):
+            text = getattr(row, text_col).strip() if getattr(row, text_col) else ""
+            lang = getattr(row, lang_col).strip() if getattr(row, lang_col) else ""
+
+            lemma_str = ""
+            if text:
+                if lang == "eu":
+                    lemma_str = _lemmatize_eu_text_chunked(text, max_chars=3000, sleep_s=0)
+                elif lang == "es":
+                    lemma_str = _lemmatize_es_spacy(text, nlp_es)
+                else:
+                    print(f"[WARN] Hizkuntza ezezaguna: {lang!r}")
+
+            df.at[i, "Lemmas"] = lemma_str
+            f.write("\t".join([str(getattr(row, col)) if col != "Lemmas" else lemma_str for col in df.columns]) + "\n")
+            f.flush()
+
+            if (i + 1) % 50 == 0:
+                print(f"[INFO] {i+1}/{len(df)} errenkada prozesatuta")
+
+    shutil.move(tmp_tsv, output_tsv)
     return df

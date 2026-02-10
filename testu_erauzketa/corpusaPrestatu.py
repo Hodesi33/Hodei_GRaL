@@ -1,5 +1,6 @@
 import os, re, sys
 from langdetect import detect
+import pandas as pd
 
 # Sailburuen hiztegia baldin badago (izena:generoa)
 sailburuak = {}
@@ -241,3 +242,92 @@ def corpusa_prozesatu(corpus_path):
             speech_id += 1
 
     return erregistroak
+
+
+
+# Funtzio hau gehitu da estruktura argiago bat edukitzeko.
+def split_parrafoak(df, group_cols=['Speech_id'], token='<PARRAFO/>', on_mismatch='pad'):
+    """
+    <PARRAFO/> bakoitza errenkada berri bihurtzen du,
+    Language eta Text zutabeak ondo lerrokatuta mantenduz.
+
+    Parametroak
+    -----------
+    df : pd.DataFrame
+        Jatorrizko DataFrame-a
+    group_cols : tuple/list edo None
+        Zein zutaberen arabera berriro kalkulatu Text_id
+        (cumcount erabiliz). None bada, Text_id globala izango da.
+    token : str
+        Paragrafoen bereizlea; lehenetsia '<PARRAFO/>'.
+    on_mismatch : {'pad','repeat_last','error'}
+        Zer egin hizkuntzen eta paragrafoen kopurua ez badator bat:
+        - 'pad': falta den hizkuntza NA-rekin bete (gomendatua arazketarako)
+        - 'repeat_last': azken hizkuntza ezaguna errepikatu
+        - 'error': errorea jaurti
+
+    return
+    --------
+    pd.DataFrame
+    """
+    df = df.copy()
+
+    rows_out = []
+    for _, row in df.iterrows():
+        text_raw = '' if pd.isna(row['Text']) else str(row['Text'])
+        lang_raw = '' if pd.isna(row['Language']) else str(row['Language'])
+
+        texts = text_raw.split(token)      
+        langs = lang_raw.split(token)
+
+        # Amaierako hutsune komunak kentzen dira (normalean token-a amaieran egoteagatik sortuak)
+        while texts and langs and texts[-1].strip() == '' and langs[-1].strip() == '':
+            texts.pop()
+            langs.pop()
+
+        # Zuriuneak garbitu (baina tarteko elementuak ez ezabatu)
+        texts = [t.strip() for t in texts]
+        langs = [l.strip() for l in langs]
+
+        # Testu guztia hutsik geratzen bada, errenkada saltatu
+        if all(t == '' for t in texts):
+            continue
+
+        # Desorekak kudeatu (paragrafo kopurua != hizkuntza kopurua)
+        n_text = len(texts)
+        n_lang = len(langs)
+
+        if n_text != n_lang:
+            if on_mismatch == 'error':
+                raise ValueError(
+                    f"Desoreka errenkadan: #Text={n_text} #Language={n_lang} "
+                    f"(jatorrizko Text_id={row.get('Text_id', None)})"
+                )
+            elif on_mismatch == 'repeat_last' and n_lang > 0 and n_text > n_lang:
+                # Azken hizkuntza errepikatu
+                langs = langs + [langs[-1]] * (n_text - n_lang)
+            elif on_mismatch == 'pad' and n_text > n_lang:
+                # Falta diren hizkuntzak NA-rekin bete
+                langs = langs + [pd.NA] * (n_text - n_lang)
+            elif n_lang > n_text:
+                # Hizkuntza gehiago badira testuak baino, moztu
+                langs = langs[:n_text]
+
+        # Behin betiko errenkadak sortu
+        for lang, txt in zip(langs, texts):
+            if txt == '':
+                continue
+            new_row = row.to_dict()
+            new_row['Language'] = lang
+            new_row['Text'] = txt
+            rows_out.append(new_row)
+
+    out = pd.DataFrame(rows_out)
+
+    # Text_id berriro kalkulatu
+    if group_cols is None:
+        out['Text_id'] = range(len(out))
+    else:
+        out['Text_id'] = out.groupby(list(group_cols), sort=False).cumcount()
+
+    return out

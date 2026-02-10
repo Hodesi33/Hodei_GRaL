@@ -29,15 +29,18 @@ def main():
         "Entities_stw"   # Entitateak stopwords gabe
     ]
 
+    path_parlaMint = "ParlaMint-ES-PV"
+    path_basqueParl = "basque-parliament-corpus-transcriptions"
+
     ## Nire exekuzioan 00:05:47 iraun du gutxi gora behera lehen atal honek.
     # ParlaMint fitxategiak bateratu (bi .tsv eta .txt fitxategiak)
-    merge_parlamint_folders(input_dir="ParlaMint-ES-PV", output_dir="ParlaMint-ES-PV-bateratua", skip_existing=True)
+    merge_parlamint_folders(input_dir=path_parlaMint, output_dir="ParlaMint-ES-PV-bateratua", skip_existing=True)
     # ParlaMint-eko fitxategi guztiak taula bakarrean bildu
     build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua", output_file="global-ParlaMint-ES-PV.tsv")
     print("ParlaMint TSV globala sortuta.")
     
-    # Corpusaren prozesamendua (Olatz Pérez de Viñaspre-ren kodea adaptatuta) - BasqueParl
-    erregistroak = corpusa_prozesatu(corpus_path="basque-parliament-corpus-transcriptions") #basque-parliament-corpus-transcriptions,ParlaMint-ES-PV
+    # BasqueParl corpusaren prozesamendua (Olatz Pérez de Viñaspre-ren kodea adaptatuta)
+    erregistroak = corpusa_prozesatu(corpus_path=path_basqueParl)
     df_bp = pd.DataFrame(erregistroak, columns=columns)
     df_bp.to_csv("global-BasqueParl.tsv", index=False, sep="\t", encoding="utf-8")
     print("BasqueParl TSV globala sortuta.")

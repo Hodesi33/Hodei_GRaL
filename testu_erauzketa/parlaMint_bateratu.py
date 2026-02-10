@@ -111,7 +111,7 @@ def merge_parlamint_folders(input_dir = "ParlaMint-ES-PV", output_dir="ParlaMint
 
 
 
-def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua", output_file="ParlaMint-ES-PV-global.tsv"):
+def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua") -> pd.DataFrame:
     input_dir = Path(input_dir)
 
     all_rows = []
@@ -169,5 +169,4 @@ def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua", output_file="ParlaMi
         "Text": df_all["Text"]
     })
 
-    df_final.to_csv(output_file, sep="\t", index=False)
-    print(f"TSV globala sortuta: {output_file}")
+    return df_final
