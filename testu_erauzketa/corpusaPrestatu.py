@@ -1,6 +1,7 @@
 import os, re, sys
 from langdetect import detect
 import pandas as pd
+import csv
 
 # Sailburuen hiztegia baldin badago (izena:generoa)
 sailburuak = {}
@@ -331,3 +332,72 @@ def split_parrafoak(df, group_cols=['Speech_id'], token='<PARRAFO/>', on_mismatc
         out['Text_id'] = out.groupby(list(group_cols), sort=False).cumcount()
 
     return out
+
+
+
+def language_normalizatu(df: pd.DataFrame, text_col: str = "Text", lang_col: str = "Language") -> pd.DataFrame:
+    def fix_lang(row) -> str:
+        lang = str(row.get(lang_col, "")).strip().lower()
+        if lang in ("eu", "es"):
+            return lang
+
+        text = str(row.get(text_col, "")).strip()
+        if not text:
+            return "" # Testua ez badago hutsa bueltatzea
+
+        try:
+            d = detect(text)
+        except Exception:
+            d = ""
+
+        # es ez bada, eu
+        if d != "es":
+            d = "eu"
+        return d
+
+    df[lang_col] = df.apply(fix_lang, axis=1)
+    return df
+
+
+
+def merge_lemmas_entities(
+    lemak_path="corpus_erauzketa_lemak.tsv",
+    entities_path="corpus_erauzketa_entities.tsv",
+    out_path="corpus_erauzketa_lemak_entities.tsv",
+):
+    
+    # TSV-ak kargatu
+    df_l = pd.read_csv(
+        lemak_path,
+        sep="\t",
+        dtype=str,
+        keep_default_na=False,
+        engine="python",
+        quoting=csv.QUOTE_NONE
+    )
+
+    df_e = pd.read_csv(
+        entities_path,
+        sep="\t",
+        dtype=str,
+        keep_default_na=False,
+        engine="python",
+        quoting=csv.QUOTE_NONE
+    )
+
+    # Errenkada kopurua berdina dela egiaztatu
+    if len(df_l) != len(df_e):
+        raise ValueError(
+            f"Errenkada kopurua ez dator bat: lemak={len(df_l)} | entities={len(df_e)}"
+        )
+
+    # Entities zutabea zuzenean itsatsi errenkaden posizioaren arabera
+    df_l["Entities"] = df_e["Entities"].values
+
+    # Emaitza gorde
+    df_l.to_csv(out_path, sep="\t", index=False, encoding="utf-8", quoting=csv.QUOTE_NONE)
+
+    print(f"TSV berria sortuta: {out_path}")
+    print(f"Errenkadak: {len(df_l)}")
+
+    return df_l

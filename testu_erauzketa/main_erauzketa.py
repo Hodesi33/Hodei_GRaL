@@ -1,10 +1,9 @@
 import pandas as pd
-from corpusaPrestatu import corpusa_prozesatu, split_parrafoak
+from corpusaPrestatu import corpusa_prozesatu, split_parrafoak, language_normalizatu, merge_lemmas_entities
 from lemak_lortu import lemak_lortu
-from entitateak_lortu_ondo import entitateak_lortu
+from entitateak_lortu import entitateak_lortu
 from parlaMint_bateratu import merge_parlamint_folders, build_global_tsv
 
-# Nire exekuzioan 04:30:00 iraun du gutxi gora behera
 def main():
     """
     Erauzketaren funtzio nagusia.
@@ -16,7 +15,6 @@ def main():
     # |-------------------------------------- CORPUSEN PROZESAMENDUA --------------------------------------|
     # |----------------------------------------------------------------------------------------------------|
 
-    # # Nire exekuzioan 00:05:23 iraun du lehen atal honek.
     # # Behin 3 .tsv-ak lortuta, eginda = True jarri daiteke, hurrengo zarian datuak berriro kargatzen direlako, horrela denbora aurreztuz.
     eginda = True
 
@@ -80,13 +78,17 @@ def main():
 
         # Bi corpusen datuak batu
         df_basqueParl = pd.read_csv("global-BasqueParl.tsv", sep="\t", dtype=str)
-        df_parlaMint = pd.read_csv("global-ParlaMint-ES-PV.tsv", sep="\t", dtype=str)
+        df_parlaMint  = pd.read_csv("global-ParlaMint-ES-PV.tsv", sep="\t", dtype=str)
+            # Language normalizatu (eu/es bakarrik)
+        df_basqueParl = language_normalizatu(df_basqueParl)
+        df_parlaMint  = language_normalizatu(df_parlaMint)
             # Indizea 0-tik berriro ez hasteko
         max_id = df_basqueParl['Speech_id'].astype(int).max() + 1
         df_parlaMint['Speech_id'] = (df_parlaMint['Speech_id'].astype(int) + max_id).astype(str)
+            #Dataframe-a jaso
         df_all = pd.concat([df_basqueParl, df_parlaMint], ignore_index=True)
-        df_all.to_csv("global-CorpusBase.tsv", sep="\t", index=False)
-        print("TSV globala sortuta: global-CorpusBase.tsv")
+        df_all.to_csv("global-CorpusBase_new.tsv", sep="\t", index=False)
+        print("TSV globala sortuta: global-CorpusBase_new.tsv")
 
 
 
@@ -100,15 +102,20 @@ def main():
     df = pd.read_csv("global-CorpusBase.tsv", sep="\t", dtype=str)
     print("Corpus osoa kargatua.")
 
-    # Lemak gehitu
+    # Lemak gehitu - 07:46:06 nire exekuzioan
     df = lemak_lortu(df)
     print(df.head())
-    df.to_csv("corpus_erauzketa_lemak_final.tsv", index=False, sep="\t", encoding="utf-8")
 
-    # # Entitateak gehitu
-    # df = entitateak_lortu(df)
-    # print(df.head())
-    # df.to_csv("corpus_erauzketa.tsv", index=False, sep="\t", encoding="utf-8")
+    # Entitateak gehitu - 05:41:24 nire exekuzioan
+    df = entitateak_lortu(df)
+    print(df.head())
+
+    #Lemak eta entitateak juntatu .tsv berdin batean
+    merge_lemmas_entities(
+        lemak_path="corpus_erauzketa_lemak.tsv",
+        entities_path="corpus_erauzketa_entities.tsv",
+        out_path="corpus_erauzketa.tsv"
+    )
 
 if __name__ == "__main__":
     main()
