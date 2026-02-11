@@ -764,11 +764,23 @@ Paragraph: Agerian jarri nahi dugu posiblea dela politika beste modu batera egit
 Label: pos
 
 Example:
+Paragraph: Pausuz pausu, modu dialektiko batean, elkarrizketa lanabesa izango da, komunean daukagunetik abiatu eta gehiago urruntzen gaituen punturaino heltzeko.
+Label: pos
+
+Example:
 Paragraph: Alderdi guztien artean mintzatu beharko dugu adosteko nola eramango dugun aurrera eskubide hau. Helburu politikoak ezarri beharko ditugu aurretik, azken muga definitu beharko dugu, eta gero ikusiko dugu nolako baliabideak erabiliko ditugu horretarako.
 Label: neu
 
 Example:
+Paragraph: Egoera aztertu egin dugu eta hauxe izango litzateke guk egin dugun egoeraren azterketaren laburpen bat.
+Label: neu
+
+Example:
 Paragraph: Ez dut esango burujabetzak arazo guztiak konponduko dituenik.
+Label: neg
+
+Example:
+Paragraph: Beraz, biktimak aintzat hartu behar dire eta egokitu behar da presondegiko legea eta erbestean daudenak itzuli behar dira, eta tortura erradikatu eta zigortu behar da, eta bortizkeria instituzionala ez da debalde atera behar, eta nola ez, jarduera politikoa ez da zigortuko.
 Label: neg
 
 Examples in Spanish:
@@ -777,11 +789,23 @@ Paragraph: Por eso hemos venido aquí. Porque amamos este país profundamente. P
 Label: pos
 
 Example:
+Paragraph: Queremos aportar nuestra firme voluntad, nuestra disposición al diálogo y nuestro proyecto político y económico en aras de una Euskal Herria mejor, más libre, más justa, más solidaria y más igualitaria.
+Label: pos
+
+Example:
 Paragraph: Y por eso, precisamente por eso, de lo primero que voy a hablar es de de soberanía, por que es el quid de la cuestión. Es el eje de todos los puntos que trataré en estos noventa minutos, y en los siguientes meses y años.
 Label: neu
 
 Example:
+Paragraph: Para hacernos una idea, la presión social en esta Comunidad es de un 28,8 % del PIB que está bastante por debajo de la de España, que es un 30,4 % y está diez puntos por debajo de la presión fiscal europea, que está en un 38,4 %.
+Label: neu
+
+Example:
 Paragraph: Porque nuestro objetivo no es hacer un texto que se guarde en un cajón siete años bajo siete llaves y que se olvide para siempre.
+Label: neg
+
+Example:
+Paragraph: Ante esta situación, no vemos otra salida que un cambio de paradigma.
 Label: neg
 
 Paragraph to analyze:
@@ -798,11 +822,23 @@ Paragraph: Agerian jarri nahi dugu posiblea dela politika beste modu batera egit
 Label: pos
 
 Example:
+Paragraph: Pausuz pausu, modu dialektiko batean, elkarrizketa lanabesa izango da, komunean daukagunetik abiatu eta gehiago urruntzen gaituen punturaino heltzeko.
+Label: pos
+
+Example:
 Paragraph: Alderdi guztien artean mintzatu beharko dugu adosteko nola eramango dugun aurrera eskubide hau. Helburu politikoak ezarri beharko ditugu aurretik, azken muga definitu beharko dugu, eta gero ikusiko dugu nolako baliabideak erabiliko ditugu horretarako.
 Label: neu
 
 Example:
+Paragraph: Egoera aztertu egin dugu eta hauxe izango litzateke guk egin dugun egoeraren azterketaren laburpen bat.
+Label: neu
+
+Example:
 Paragraph: Ez dut esango burujabetzak arazo guztiak konponduko dituenik.
+Label: neg
+
+Example:
+Paragraph: Beraz, biktimak aintzat hartu behar dire eta egokitu behar da presondegiko legea eta erbestean daudenak itzuli behar dira, eta tortura erradikatu eta zigortu behar da, eta bortizkeria instituzionala ez da debalde atera behar, eta nola ez, jarduera politikoa ez da zigortuko.
 Label: neg
 
 Examples in Spanish:
@@ -811,11 +847,23 @@ Paragraph: Por eso hemos venido aquí. Porque amamos este país profundamente. P
 Label: pos
 
 Example:
+Paragraph: Queremos aportar nuestra firme voluntad, nuestra disposición al diálogo y nuestro proyecto político y económico en aras de una Euskal Herria mejor, más libre, más justa, más solidaria y más igualitaria.
+Label: pos
+
+Example:
 Paragraph: Y por eso, precisamente por eso, de lo primero que voy a hablar es de de soberanía, por que es el quid de la cuestión. Es el eje de todos los puntos que trataré en estos noventa minutos, y en los siguientes meses y años.
 Label: neu
 
 Example:
+Paragraph: Para hacernos una idea, la presión social en esta Comunidad es de un 28,8 % del PIB que está bastante por debajo de la de España, que es un 30,4 % y está diez puntos por debajo de la presión fiscal europea, que está en un 38,4 %.
+Label: neu
+
+Example:
 Paragraph: Porque nuestro objetivo no es hacer un texto que se guarde en un cajón siete años bajo siete llaves y que se olvide para siempre.
+Label: neg
+
+Example:
+Paragraph: Ante esta situación, no vemos otra salida que un cambio de paradigma.
 Label: neg
 
 Paragraph to analyze:
@@ -837,11 +885,23 @@ Paragraph: Agerian jarri nahi dugu posiblea dela politika beste modu batera egit
 Label: pos
 
 Example:
+Paragraph: Pausuz pausu, modu dialektiko batean, elkarrizketa lanabesa izango da, komunean daukagunetik abiatu eta gehiago urruntzen gaituen punturaino heltzeko.
+Label: pos
+
+Example:
 Paragraph: Alderdi guztien artean mintzatu beharko dugu adosteko nola eramango dugun aurrera eskubide hau. Helburu politikoak ezarri beharko ditugu aurretik, azken muga definitu beharko dugu, eta gero ikusiko dugu nolako baliabideak erabiliko ditugu horretarako.
 Label: neu
 
 Example:
+Paragraph: Egoera aztertu egin dugu eta hauxe izango litzateke guk egin dugun egoeraren azterketaren laburpen bat.
+Label: neu
+
+Example:
 Paragraph: Ez dut esango burujabetzak arazo guztiak konponduko dituenik.
+Label: neg
+
+Example:
+Paragraph: Beraz, biktimak aintzat hartu behar dire eta egokitu behar da presondegiko legea eta erbestean daudenak itzuli behar dira, eta tortura erradikatu eta zigortu behar da, eta bortizkeria instituzionala ez da debalde atera behar, eta nola ez, jarduera politikoa ez da zigortuko.
 Label: neg
 
 Examples in Spanish:
@@ -850,11 +910,23 @@ Paragraph: Por eso hemos venido aquí. Porque amamos este país profundamente. P
 Label: pos
 
 Example:
+Paragraph: Queremos aportar nuestra firme voluntad, nuestra disposición al diálogo y nuestro proyecto político y económico en aras de una Euskal Herria mejor, más libre, más justa, más solidaria y más igualitaria.
+Label: pos
+
+Example:
 Paragraph: Y por eso, precisamente por eso, de lo primero que voy a hablar es de de soberanía, por que es el quid de la cuestión. Es el eje de todos los puntos que trataré en estos noventa minutos, y en los siguientes meses y años.
 Label: neu
 
 Example:
+Paragraph: Para hacernos una idea, la presión social en esta Comunidad es de un 28,8 % del PIB que está bastante por debajo de la de España, que es un 30,4 % y está diez puntos por debajo de la presión fiscal europea, que está en un 38,4 %.
+Label: neu
+
+Example:
 Paragraph: Porque nuestro objetivo no es hacer un texto que se guarde en un cajón siete años bajo siete llaves y que se olvide para siempre.
+Label: neg
+
+Example:
+Paragraph: Ante esta situación, no vemos otra salida que un cambio de paradigma.
 Label: neg
 
 Paragraph to analyze:

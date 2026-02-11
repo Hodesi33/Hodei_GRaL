@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from langdetect import detect
 
 def prepare_data(input_path, dev_path, test_path):
     """
@@ -10,16 +11,30 @@ def prepare_data(input_path, dev_path, test_path):
     # Sarrerako CSV-a irakurri
     df = pd.read_csv(input_path)
 
-    # Hizkuntzaren zutabea detektatu edo sortu
-    language_column_found = False
-    for col in ['Hizkuntza', 'Idioma', 'Language']:
-        if col in df.columns:
-            df['Language'] = df[col]
-            language_column_found = True
-            break
-    if not language_column_found:
-        # Ez badago, guztiei 'eu' esleitu
-        df['Language'] = 'eu'
+
+    # Language sortu eta normalizatu (eu/es bakarrik)
+    if "Language" not in df.columns:
+        df["Language"] = ""
+
+    def _fix_lang(row) -> str:
+        lang = str(row.get("Language", "")).strip().lower()
+        if lang in ("eu", "es"):
+            return lang
+
+        text = str(row.get("Text", "")).strip()
+        if not text:
+            return "" # Testua ez badago hutsa bueltatzea
+
+        try:
+            d = detect(text)
+        except Exception:
+            d = ""
+
+        # Zure araua: es ez bada, eu
+        return "es" if d == "es" else "eu"
+
+    df["Language"] = df.apply(_fix_lang, axis=1)
+
     
     # Derrigorrezko zutabeak existitzen direla ziurtatu
     required_columns = ['Text', 'Label'] # Beste zutabe izen batzuk baditu, hemen aldatu!

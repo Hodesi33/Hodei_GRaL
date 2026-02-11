@@ -9,13 +9,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
-
 from prompts import *
 
 
-
 # === SYSTEM PROMPT (PORTAERA KONTROLA) ===
-
 SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
 Classification criterion:
@@ -33,82 +30,69 @@ Output rules:
 """
 
 
+# =========================================================
+# === MODELOA (CACHE + ALDAKETA AUTOMATIKOA)
+# =========================================================
 
-# === MODELOA KONFIGURATZEA ===
-# Modeloa aukeratu
-#MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
-#IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
-
-MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
-IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
-
-#MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
-#IRTEERA_FITXATEGIA = "salamandra-7B.csv"
-
-#MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
-#IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
-
-#MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
-#IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
-
-# Behar direnean kargatzen dira
 tokenizer = None
 model = None
+_current_model_name = None
 
 
-
-def load_model():
+def load_model(model_name: str, use_4bit: bool = True):
     """
-    Modeloa modu 'lazy'-n kargatzen du (behin bakarrik), eta ondoren berrerabiltzen du.
+    Modeloa kargatzen du. Modeloa aldatzen bada, berriro kargatzen du.
+    Cache moduan funtzionatzen du: model_name bera bada, berrerabili.
     """
-    global tokenizer, model
+    global tokenizer, model, _current_model_name
 
-    if tokenizer is not None and model is not None:
+    if tokenizer is not None and model is not None and _current_model_name == model_name:
         return tokenizer, model
 
-    print("Modeloa kargatzen...")
+    print(f"[INFO] Modeloa kargatzen: {model_name}")
 
-    # 70B modeloetan, 4-bit kuantizazioa normalean beharrezkoa da VRAM arazoak ekiditeko
-    bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_compute_dtype=torch.float16
-    )
+    # Aurreko modeloa askatu (memoria)
+    tokenizer = None
+    model = None
+    torch.cuda.empty_cache()
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    bnb_config = None
+    if use_4bit:
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16
+        )
 
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
-        MODEL_NAME,
+        model_name,
         device_map="auto",
         torch_dtype=torch.float16,
         quantization_config=bnb_config
     )
-
-    # Inferentziarako modua
     model.eval()
 
-    print("Modeloa kargatuta.")
+    _current_model_name = model_name
+    print("[INFO] Modeloa kargatuta.")
     return tokenizer, model
-
 
 
 # =========================================================
 # === INFERENTZIA
 # =========================================================
 
-def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
+def inferentzia(user_prompt: str, model_name: str, max_new_tokens: int = 10, use_4bit: bool = True) -> str:
     """
     Inferentzia egiteko funtzioa.
     System prompt-a eta chat template-a erabiltzen ditu.
     """
-    load_model()
+    load_model(model_name, use_4bit=use_4bit)
 
-    # System + user mezuak definitu
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": user_prompt},
     ]
 
-    # Tokenizer-ak chat template onartzen badu, hau erabili
     if hasattr(tokenizer, "apply_chat_template"):
         prompt = tokenizer.apply_chat_template(
             messages,
@@ -116,12 +100,10 @@ def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
             add_generation_prompt=True
         )
     else:
-        # Bestela, system prompt-a prefijo gisa itsatsi
         prompt = SYSTEM_PROMPT + "\n" + user_prompt
 
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
-    # Inferentzia determinista eta egonkorra
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
@@ -130,22 +112,20 @@ def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
             pad_token_id=tokenizer.eos_token_id
         )
 
-    # Prompt-aren ondorengo zatia bakarrik deskodetu
     decoded = tokenizer.decode(
         outputs[0][inputs["input_ids"].shape[-1]:],
         skip_special_tokens=True
     ).strip().lower()
 
-    print(f"[DEBUG] Decoded: {decoded}")
+    # print(f"[DEBUG] Decoded: {decoded}")
     return decoded
-
 
 
 # =========================================================
 # === PARAGRAFO BAKOITZA AZTERTZEA
 # =========================================================
 
-def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
+def paragrafoa_aztertu(text: str, froga: int, prompt_dict, model_name: str, use_4bit: bool = True):
     """
     Testuari froga/prompt desberdinak aplikatzen dizkio eta etiketa (pos/neu/neg) esleitzen du.
     """
@@ -156,10 +136,9 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
         prompt = prompt_template.format(paragrafoa=text)
 
         start_time = time.time()
-        decoded = inferentzia(prompt)
+        decoded = inferentzia(prompt, model_name=model_name, use_4bit=use_4bit)
         elapsed_time = time.time() - start_time
 
-        # Emaitza aztertu eta etiketa lortu
         m = re.search(r"\b(pos|neu|neg|positive|neutral|negative|positiboa|neutroa|negatiboa|positivo|neutral|negativo)\b", decoded)
         if m:
             lab = m.group(1)
@@ -170,14 +149,13 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
             else:
                 label = "neu"
         else:
-            # Matcheatzen ez badu, neu lehenetsi
             label = "neu"
 
         emaitzak.append({
             "Froga": froga,
             "Prompt": idx + 1,
             "Erabilitako_prompta": prompt,
-            "Modeloaren_emaitza": decoded[:500], # CSV-ak izugarri ez handitzeko, erantzuna moztu
+            "Modeloaren_emaitza": decoded[:500],
             "Label": label,
             "Exec_time": elapsed_time
         })
@@ -190,9 +168,6 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
 # =========================================================
 
 def calculate_metrics(df_emaitzak: pd.DataFrame) -> pd.DataFrame:
-    """
-    (Froga, Prompt) bakoitzeko eta froga bakoitzeko (GLOBAL) metrikak kalkulatzen ditu.
-    """
     metrics = []
 
     grouped = df_emaitzak.groupby(["Froga", "Prompt"])
@@ -234,15 +209,11 @@ def calculate_metrics(df_emaitzak: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(metrics).sort_values(by=["Froga", "Prompt"])
 
 
-
 # =========================================================
-# === CONFUSION MATRIX-AK SORTZEA
+# === CONFUSION MATRIX-AK
 # =========================================================
 
 def _plot_confusion_matrix(cm: np.ndarray, labels: list[str], title: str, out_png: str):
-    """
-    Confusion matrix bat marrazten du eta PNG gisa gordetzen du.
-    """
     fig, ax = plt.subplots()
     im = ax.imshow(cm)
 
@@ -255,7 +226,6 @@ def _plot_confusion_matrix(cm: np.ndarray, labels: list[str], title: str, out_pn
     ax.set_ylabel("True")
     ax.set_title(title)
 
-    # Balioak koadroetan idatzi
     for i in range(cm.shape[0]):
         for j in range(cm.shape[1]):
             ax.text(j, i, str(cm[i, j]), ha="center", va="center")
@@ -272,17 +242,11 @@ def create_confusion_matrixes(
     labels: list[str] = None,
     save_csv: bool = True
 ):
-    """
-    (Froga, Prompt) bakoitzeko eta Froga bakoitzeko (GLOBAL) confusion matrix-ak sortu eta gordetzen ditu.
-    - PNG: irudi moduan
-    - CSV (aukerakoa): balioak fitxategi gisa
-    """
     if labels is None:
         labels = ["pos", "neu", "neg"]
 
     os.makedirs(out_dir, exist_ok=True)
 
-    # (Froga, Prompt) bakoitzeko
     grouped = df_emaitzak.groupby(["Froga", "Prompt"])
     for (froga, prompt), group in grouped:
         y_true = group["Label_real"].astype(str)
@@ -298,10 +262,12 @@ def create_confusion_matrixes(
 
         if save_csv:
             out_csv = os.path.join(out_dir, base + ".csv")
-            pd.DataFrame(cm, index=[f"true_{l}" for l in labels], columns=[f"pred_{l}" for l in labels]) \
-              .to_csv(out_csv, encoding="utf-8")
+            pd.DataFrame(
+                cm,
+                index=[f"true_{l}" for l in labels],
+                columns=[f"pred_{l}" for l in labels]
+            ).to_csv(out_csv, encoding="utf-8")
 
-    # Froga bakoitzeko GLOBAL
     grouped_froga = df_emaitzak.groupby("Froga")
     for froga, group in grouped_froga:
         y_true = group["Label_real"].astype(str)
@@ -317,34 +283,41 @@ def create_confusion_matrixes(
 
         if save_csv:
             out_csv = os.path.join(out_dir, base + ".csv")
-            pd.DataFrame(cm, index=[f"true_{l}" for l in labels], columns=[f"pred_{l}" for l in labels]) \
-              .to_csv(out_csv, encoding="utf-8")
-
+            pd.DataFrame(
+                cm,
+                index=[f"true_{l}" for l in labels],
+                columns=[f"pred_{l}" for l in labels]
+            ).to_csv(out_csv, encoding="utf-8")
 
 
 # =========================================================
 # === PROZESU NAGUSIA
 # =========================================================
 
-def sentiment_analysis(input_csv: str, analysis_type: str):
+def sentiment_analysis(
+    input_csv: str,
+    analysis_type: str,
+    model_name: str,
+    irteera_fitxategia: str,
+    use_4bit: bool = True
+):
     """
-    Sentiment analysis egiteko funtzio nagusia.
-    Amaieran, decoded emaitzak eta metrikak CSV fitxategietan gordetzen ditu.
+    Orain model_name + output name jasotzen ditu, modelo desberdinak iteratzeko.
     """
     partition = input_csv.replace(".csv", "")
-    irteera_fitxategia_decoded = f"emaitzak_sentiment/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_metrics = f"emaitzak_sentiment/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_confusion = f"emaitzak_sentiment/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
 
+    decoded_path = f"emaitzak_sentiment/{analysis_type}/{partition}/decoded/{irteera_fitxategia}"
+    metrics_path = f"emaitzak_sentiment/{analysis_type}/{partition}/metrics/{irteera_fitxategia}"
 
-    # Sarrera irakurri
+    # ✅ confusions: direktorioa (ez fitxategia)
+    confusion_dir = f"emaitzak_sentiment/{analysis_type}/{partition}/confusion_matrixes/{irteera_fitxategia.replace('.csv','')}/"
+
     try:
         df_input = pd.read_csv(input_csv, encoding="utf-8")
     except FileNotFoundError:
-        print(f"Error: ezin izan da sarrera fitxategia aurkitu: {input_csv}")
+        print(f"[ERROR] ezin izan da sarrera fitxategia aurkitu: {input_csv}")
         return None
 
-    # Prompt multzoa aukeratu
     if analysis_type == "zero-shot":
         prompt_dict = prompt_zero_shot_dict
     elif analysis_type == "few-shot-1":
@@ -356,57 +329,52 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
 
     emaitza_guztiak = []
 
-    # Testuen analisia
     for _, row in df_input.iterrows():
         text = row["Text"]
         language = str(row["Language"]).lower()
 
-        # Hizkuntzaren arabera frogak aukeratu
         if language == "eu":
             frogak = [1, 3, 4]
         elif language == "es":
             frogak = [2, 3, 4]
         else:
-            print(f"Hizkuntza ezezaguna {row.get('Text_id', '???')} lerroan: {language}")
+            print(f"[WARN] Hizkuntza ezezaguna {row.get('Text_id','???')} lerroan: {language}")
             continue
 
         for froga in frogak:
-            emaitzak = paragrafoa_aztertu(text, froga, prompt_dict)
+            emaitzak = paragrafoa_aztertu(text, froga, prompt_dict, model_name=model_name, use_4bit=use_4bit)
 
             for e in emaitzak:
                 label_real = row["Label"]
                 result = 1 if label_real == e["Label"] else 0
 
                 emaitza_guztiak.append({
+                    "Model": model_name,
                     "Text_id": row["Text_id"],
                     "Text": text,
                     "Language": language,
                     "Froga": e["Froga"],
                     "Prompt": e["Prompt"],
-                    "Erabilitako_prompta": e["Erabilitako_prompta"], # Hau komentatu prompt-a ez baduzu gorde nahi
-                    "Modeloaren_emaitza": e["Modeloaren_emaitza"], # Hau komentatu ez baduzu gorde nahi modeloak bueltatu duena
+                    "Erabilitako_prompta": e["Erabilitako_prompta"],
+                    "Modeloaren_emaitza": e["Modeloaren_emaitza"],
                     "Decoded_label": e["Label"],
                     "Label_real": label_real,
                     "Result": result,
                     "Exec_time": e["Exec_time"]
                 })
 
-    # Karpetak sortu
-    os.makedirs(os.path.dirname(irteera_fitxategia_decoded), exist_ok=True)
-    os.makedirs(os.path.dirname(irteera_fitxategia_metrics), exist_ok=True)
+    os.makedirs(os.path.dirname(decoded_path), exist_ok=True)
+    os.makedirs(os.path.dirname(metrics_path), exist_ok=True)
 
-    # Decoded emaitzak gorde
     df_emaitzak = pd.DataFrame(emaitza_guztiak)
-    df_emaitzak.to_csv(irteera_fitxategia_decoded, index=False, encoding="utf-8")
-    print(f"[INFO] Emaitzak gordeta: {irteera_fitxategia_decoded}")
+    df_emaitzak.to_csv(decoded_path, index=False, encoding="utf-8")
+    print(f"[INFO] Emaitzak gordeta: {decoded_path}")
 
-    # Metrikak kalkulatu eta gorde
     df_metrics = calculate_metrics(df_emaitzak)
-    df_metrics.to_csv(irteera_fitxategia_metrics, index=False, encoding="utf-8")
-    print(f"[INFO] Metrikak gordeta: {irteera_fitxategia_metrics}")
+    df_metrics.to_csv(metrics_path, index=False, encoding="utf-8")
+    print(f"[INFO] Metrikak gordeta: {metrics_path}")
 
-    # Confusion matrix-ak sortu eta gorde
-    create_confusion_matrixes(df_emaitzak, irteera_fitxategia_confusion, labels=["pos", "neu", "neg"], save_csv=True)
-    print(f"[INFO] Confusion matrix-ak gordeta: {irteera_fitxategia_confusion}")
+    create_confusion_matrixes(df_emaitzak, confusion_dir, labels=["pos", "neu", "neg"], save_csv=True)
+    print(f"[INFO] Confusion matrix-ak gordeta: {confusion_dir}")
 
     return df_emaitzak
