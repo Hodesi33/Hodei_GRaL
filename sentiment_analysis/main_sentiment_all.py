@@ -1,5 +1,5 @@
 from prepare_input import prepare_data
-from sentiment_analysis import sentiment_analysis
+from sentiment_pipeline_all import sentiment_analysis
 
 def main():
     input_csv = "data.csv"

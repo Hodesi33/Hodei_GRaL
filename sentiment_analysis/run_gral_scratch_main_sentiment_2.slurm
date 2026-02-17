@@ -12,11 +12,11 @@
 
 #SBATCH --constraint=a100-sxm4
 #SBATCH --mem=80GB
-#SBATCH --time=02:00:00
+#SBATCH --time=30:00:00
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=hsanz004@ikasle.ehu.eus
 
 module load Miniforge3
-source /scratch/hodesi33/venv_scratch/bin/activate
+source /dipc/hodesi33/GRaL-a/venv/bin/activate
 
 python main_sentiment_2.py
