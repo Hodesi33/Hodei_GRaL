@@ -1,8 +1,7 @@
 from __future__ import annotations
 
-from typing import Any, Dict, List, Union, Optional, Tuple
+from typing import Any, Dict, List, Tuple, Union
 import json
-import os
 import random
 import shutil
 import time
@@ -10,7 +9,11 @@ import time
 import pandas as pd
 import requests
 
-# --- EU: hitz.eus NER API ---
+# |----------------------------------------------------------------------------------------------------|
+# |------------------------------------------ KONFIGURAZIOA -------------------------------------------|
+# |----------------------------------------------------------------------------------------------------|
+
+# --- Euskara: hitz.eus NER APIa ---
 URL_NERC_EU = "https://zerbitzuak.hitz.eus/lema/api/nerc"
 
 HEADERS = {
@@ -26,6 +29,12 @@ import torch
 
 
 def _chunk_text(text: str, max_chars: int = 3000) -> List[str]:
+    """
+    Testu luze bat zatitzen du max_chars muga errespetatuz, ahal den neurrian zuriuneetan moztuta.
+
+    Return:
+    - Zati-zerrenda (List[str]). Testua hutsik bada, zerrenda hutsa.
+    """
     text = text.strip()
     if not text:
         return []
@@ -38,6 +47,8 @@ def _chunk_text(text: str, max_chars: int = 3000) -> List[str]:
 
     while start < n:
         end = min(n, start + max_chars)
+
+        # Zatiaren amaiera hurrengo hitzaren erdian gera ez dadin, zuriunean mozten saiatzen da
         if end < n:
             cut = text.rfind(" ", start, end)
             if cut != -1 and cut > start + 200:
@@ -60,6 +71,12 @@ def _post_json(
     backoff_base: float = 1.6,
     backoff_max: float = 25.0,
 ) -> Union[Dict[str, Any], List[Any], str]:
+    """
+    JSON POST eskaera sendoa egiten du, eta 429/5xx kasuetan berriro saiatzen da atzerapen progresiboarekin.
+
+    Return:
+    - APIaren erantzuna (dict/list/str), formatuaren arabera.
+    """
     last_exc: Exception | None = None
 
     for attempt in range(max_retries):
@@ -71,7 +88,8 @@ def _post_json(
                     return r.json()
                 except Exception:
                     return r.text
-
+            
+            # Muga edo aldi baterako erroreak: itxaron eta berriro saiatu
             if r.status_code in (429, 500, 502, 503, 504):
                 wait = min(backoff_max, (backoff_base ** attempt)) + random.random() * 0.3
                 ra = r.headers.get("Retry-After")
@@ -93,18 +111,24 @@ def _post_json(
             time.sleep(wait)
             continue
 
-    raise RuntimeError(f"APIak huts egin du {max_retries} saiakeren ondoren. Azken errorea: {last_exc}")
+    raise RuntimeError(
+        f"APIak huts egin du {max_retries} saiakeren ondoren. Azken errorea: {last_exc}"
+    )
 
 
 
-# EU formatting (API response)
 def _format_entities_as_list_eu(resp: Union[Dict[str, Any], List[Any], str]) -> str:
     """
-    EU NER APIaren erantzuna -> JSON string:
+    EU NER APIaren erantzuna JSON kate estandar batera bihurtzen du.
+
+    Formatu-helburua:
     [
       {"text": "...", "label": "PER"},
       ...
     ]
+
+    Return:
+    - Entitate-zerrenda JSON kate gisa (str). Ezin bada interpretatu, "[]".
     """
     if isinstance(resp, str):
         s = resp.strip()
@@ -113,7 +137,7 @@ def _format_entities_as_list_eu(resp: Union[Dict[str, Any], List[Any], str]) -> 
         except Exception:
             return "[]"
 
-    # Zure aurreko logikaren arabera: {"emaitza": { "Entitatea": "LABEL", ...}}
+    # Espero den egitura: {"emaitza": {"Entitatea": "LABEL", ...}}
     if isinstance(resp, dict) and "emaitza" in resp and isinstance(resp["emaitza"], dict):
         entities = [{"text": ent, "label": lab} for ent, lab in resp["emaitza"].items()]
         return json.dumps(entities, ensure_ascii=False)
@@ -124,8 +148,13 @@ def _format_entities_as_list_eu(resp: Union[Dict[str, Any], List[Any], str]) -> 
 
 def _merge_entity_lists(entity_lists: List[List[Dict[str, Any]]], dedup: bool = False) -> List[Dict[str, Any]]:
     """
-    Chunk bakoitzeko zerrendak batu.
-    dedup=True bada, (text,label) bidez deduplikatzen du (ordena mantenduta).
+    Chunk bakoitzeko entitate-zerrendak bateratzen ditu.
+
+    Aukerak:
+    - dedup=True bada, (text, label) bikotearen arabera deduplikatzen du (ordena mantenduta).
+
+    Return:
+    - Entitateen zerrenda bateratua (List[Dict[str, Any]]).
     """
     if not dedup:
         out: List[Dict[str, Any]] = []
@@ -149,6 +178,12 @@ def _merge_entity_lists(entity_lists: List[List[Dict[str, Any]]], dedup: bool = 
 
 
 def _entities_eu_text_chunked(text: str, max_chars: int = 3000, sleep_s: float = 0.05) -> str:
+    """
+    Euskarazko testua zatitu eta NER API bidez entitateak erauzten ditu, ondoren zatien emaitzak bateratuz.
+
+    Return:
+    - Entitate-zerrenda JSON kate gisa (str).
+    """
     chunks = _chunk_text(text, max_chars=max_chars)
     all_lists: List[List[Dict[str, Any]]] = []
 
@@ -169,19 +204,23 @@ def _entities_eu_text_chunked(text: str, max_chars: int = 3000, sleep_s: float =
 
 
 
-# ES formatting (Flair)
 def _load_flair_es_ner(model_name: str = "flair/ner-spanish-large", device: str = "cpu"):
     """
-    Flair NER modeloa kargatu (behin bakarrik).
-    model_name: 'flair/ner-spanish-large' (gomendatua)
-    device: 'cpu' edo 'cuda'
+    Gaztelania: Flair NER modeloa kargatzen du (behin bakarrik erabiltzeko pentsatua).
+
+    Parametroak:
+    - model_name: modeloa (adib. "flair/ner-spanish-large")
+    - device: "cpu" edo "cuda"
+
+    Return:
+    - Flair tagger objektua.
     """
     if device == "cuda" and torch.cuda.is_available():
         flair_device = torch.device("cuda")
     else:
         flair_device = torch.device("cpu")
 
-    # Flair-ek barnean erabiltzen du device globala kasu batzuetan; seguruena:
+    # Flair-ek zenbait kasutan device globala erabiltzen du; lehenetsi ezarpena
     try:
         import flair
         flair.device = flair_device
@@ -195,7 +234,10 @@ def _load_flair_es_ner(model_name: str = "flair/ner-spanish-large", device: str 
 
 def _entities_es_flair(text: str, tagger) -> List[Dict[str, Any]]:
     """
-    Testu batetik Flair bidez NER: [{"text":..., "label":...}, ...]
+    Gaztelaniazko testutik, Flair bidez NER kalkulatu eta zerrenda egituratuan ematen du.
+
+    Return:
+    - [{"text": ..., "label": ...}, ...]
     """
     if not text:
         return []
@@ -205,14 +247,18 @@ def _entities_es_flair(text: str, tagger) -> List[Dict[str, Any]]:
 
     ents: List[Dict[str, Any]] = []
     for span in sent.get_spans("ner"):
-        # span.text: entity surface form
-        # span.tag: entity label
         ents.append({"text": span.text, "label": span.tag})
     return ents
 
 
 
 def _entities_es_text_chunked(text: str, tagger, max_chars: int = 3000) -> str:
+    """
+    Gaztelaniazko testua zatitu eta chunk bakoitzean Flair bidez entitateak erauzten ditu.
+
+    Return:
+    - Entitate-zerrenda JSON kate gisa (str).
+    """
     chunks = _chunk_text(text, max_chars=max_chars)
     all_lists: List[List[Dict[str, Any]]] = []
 
@@ -230,7 +276,10 @@ def _entities_es_text_chunked(text: str, tagger, max_chars: int = 3000) -> str:
 
 def _tsv_safe(x: Any) -> str:
     """
-    TSV-n lerroak ez apurtzeko (tab/newline).
+    TSV-n lerroak ez apurtzeko, tabulazioak eta lerro-jauziak ordezkatzen ditu.
+
+    Return:
+    - TSV-rako segurua den kate bat (str).
     """
     s = "" if x is None else str(x)
     return s.replace("\t", " ").replace("\n", " ").replace("\r", " ")
@@ -247,12 +296,16 @@ def entitateak_lortu(
     flair_device: str = "cuda",  # "cpu" edo "cuda"
 ) -> pd.DataFrame:
     """
-    Entitateak (NER) lortzen ditu:
-    - TSV batean pixkanaka idazten du (segurtasunez)
-    - TSV badago, reanuda egiten du
-    - Entities badago eta hutsik ez badago, errenkada saltatzen du
-    - eu -> hitz.eus API
+    Entitateak (NER) erauzten ditu eta TSV batean pixkanaka idazten ditu.
+
+    Jokabidea:
+    - "Entities" zutabea existitzen ez bada, sortu egiten da.
+    - Errenkadak "Entities" beteta badu, ez da berriro prozesatzen.
+    - eu -> hitz.eus NER APIa
     - es -> Flair
+
+    Return:
+    - Entitateak gehituta dituen DataFrame-a (pd.DataFrame).
     """
     tmp_tsv = output_tsv + ".tmp"
 
@@ -262,7 +315,7 @@ def entitateak_lortu(
 
 
 
-    # Flair (ES) modeloa kargatu behin
+    # --- Flair (ES) modeloa kargatu behin ---
     try:
         tagger_es = _load_flair_es_ner(flair_es_model, device=flair_device)
     except Exception as e:
@@ -272,6 +325,10 @@ def entitateak_lortu(
         ) from e
     
 
+
+    # |----------------------------------------------------------------------------------------------------|
+    # |-------------------------------------- PROZESAMENDUA ETA IDAZKETA ----------------------------------|
+    # |----------------------------------------------------------------------------------------------------|
 
     with open(tmp_tsv, "w", encoding="utf-8") as f:
         f.write("\t".join(df_out.columns) + "\n")

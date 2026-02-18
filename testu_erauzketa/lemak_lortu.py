@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Any, Dict, List, Union, Optional
+from typing import Any, Dict, List, Union
 import os
 import random
 import shutil
@@ -8,6 +8,10 @@ import time
 
 import pandas as pd
 import requests
+
+# |----------------------------------------------------------------------------------------------------|
+# |------------------------------------------ KONFIGURAZIOA -------------------------------------------|
+# |----------------------------------------------------------------------------------------------------|
 
 # --- Euskara lematizatzeko APIa ---
 URL_LEMMA = "https://zerbitzuak.hitz.eus/lema/api/lemma"
@@ -27,9 +31,12 @@ import spacy
 
 def _chunk_text(text: str, max_chars: int = 3000) -> List[str]:
     """
-    Testu luze bat zatitzen du max_chars baino txikiagoak diren zatitan,
-    ahal bada zuriuneetan moztuz.
+    Testu luze bat zatitzen du max_chars muga errespetatuz, ahal den neurrian zuriuneetan moztuta.
+
+    Return:
+    - Zati-zerrenda (List[str]). Testua hutsik bada, zerrenda hutsa.
     """
+
     text = text.strip()
     if not text:
         return []
@@ -43,6 +50,7 @@ def _chunk_text(text: str, max_chars: int = 3000) -> List[str]:
     while start < n:
         end = min(n, start + max_chars)
 
+        # Zatiaren amaiera hurrengo hitzaren erdian gera ez dadin, zuriunean mozten saiatzen da
         if end < n:
             cut = text.rfind(" ", start, end)
             if cut != -1 and cut > start + 200:
@@ -66,7 +74,10 @@ def _post_json(
     backoff_max: float = 25.0,
 ) -> Union[Dict[str, Any], List[Any], str]:
     """
-    POST sendoa: berriro saiatzen da 429 eta 5xx erroreetan.
+    JSON POST eskaera sendoa egiten du, eta 429/5xx kasuetan berriro saiatzen da atzerapen progresiboarekin.
+
+    Return:
+    - APIaren erantzuna (dict/list/str), formatuaren arabera.
     """
     last_exc: Exception | None = None
 
@@ -79,7 +90,8 @@ def _post_json(
                     return r.json()
                 except Exception:
                     return r.text
-
+            
+            # Muga edo aldi baterako erroreak: itxaron eta berriro saiatu
             if r.status_code in (429, 500, 502, 503, 504):
                 wait = min(backoff_max, (backoff_base ** attempt)) + random.random() * 0.3
                 ra = r.headers.get("Retry-After")
@@ -101,13 +113,18 @@ def _post_json(
             time.sleep(wait)
             continue
 
-    raise RuntimeError(f"APIak huts egin du {max_retries} saiakeren ondoren. Azken errorea: {last_exc}")
+    raise RuntimeError(
+        f"APIak huts egin du {max_retries} saiakeren ondoren. Azken errorea: {last_exc}"
+    )
 
 
 
 def _format_lemma_response(resp: Union[Dict[str, Any], List[Any], str]) -> str:
     """
-    APIaren erantzuna lemen string batera bihurtzen du.
+    APIaren erantzuna lemen kate bakarrean bihurtzen du, formatu desberdinak onartuz.
+
+    Return:
+    - Lemak zuriunez banatuta (str).
     """
     if isinstance(resp, str):
         return resp.strip()
@@ -141,6 +158,12 @@ def _format_lemma_response(resp: Union[Dict[str, Any], List[Any], str]) -> str:
 
 
 def _lemmatize_eu_text_chunked(text: str, max_chars: int = 3000, sleep_s: float = 0.05) -> str:
+    """
+    Euskarazko testua zatitu eta API bidez lematizatzen du, ondoren zatien emaitzak bateratuz.
+
+    Return:
+    - Lemak zuriunez banatuta (str).
+    """
     chunks = _chunk_text(text, max_chars=max_chars)
     out_parts: List[str] = []
 
@@ -151,7 +174,7 @@ def _lemmatize_eu_text_chunked(text: str, max_chars: int = 3000, sleep_s: float 
             if isinstance(resp, dict) and isinstance(resp.get("emaitza"), dict):
                 out_parts.append(" ".join(resp["emaitza"].values()))
             else:
-                # fallback por si cambia el formato
+                # Erantzun-formatua aldatu bada, bateratze orokorra erabiltzen da
                 out_parts.append(_format_lemma_response(resp))
 
         except Exception as e:
@@ -167,9 +190,11 @@ def _lemmatize_eu_text_chunked(text: str, max_chars: int = 3000, sleep_s: float 
 
 def _load_spacy_es(model: str = "es_core_news_md"):
     """
-    spaCy pipeline kargatzen du (behin bakarrik).
-    Lemmatizaziorako beharrezkoa: tagger/morph.
-    Parser/NER desgaituta, azkartzeko.
+    spaCy pipelinea kargatzen du (behin bakarrik erabiltzeko pentsatua).
+    Lemmatizaziorako beharrezkoa dena mantentzen da; parser/NER desgaitzen da errendimendua hobetzeko.
+
+    Return:
+    - spaCy nlp objektua.
     """
     return spacy.load(model, disable=["ner", "parser"])
 
@@ -177,9 +202,9 @@ def _load_spacy_es(model: str = "es_core_news_md"):
 
 def _lemmatize_es_spacy(text: str, nlp) -> str:
     """
-    Gaztelania: spaCy bidez lematizatzen du, eta emaitza EU APIaren antzeko formatuan uzten du:
+    Gaztelaniazko testua spaCy bidez lematizatzen du, eta emaitza EU APIaren antzeko formatuan uzten du:
     - dena minuskulaz
-    - puntuazioa eta hutsune tokenak kanpo
+    - puntuazio eta zuriune tokenik gabe
     - zuriunez banatutako lema-sekuentzia
     """
     if not text:
@@ -189,7 +214,6 @@ def _lemmatize_es_spacy(text: str, nlp) -> str:
     lemmas: List[str] = []
 
     for t in doc:
-        # EU adibideetan bezala: ez sartu puntuazioa/espazioak
         if t.is_space or t.is_punct:
             continue
         lemma = (t.lemma_ or t.text).strip()
@@ -207,14 +231,19 @@ def lemak_lortu(
     text_col: str = "Text",
     lang_col: str = "Language",
     output_tsv: str = "corpus_erauzketa_lemak.tsv",
-    spacy_es_model: str = "es_core_news_md", # "es_core_news_lg" jarri daiteke, modelo handiagoa hartzeko (instalatu behar da aparte)
+    spacy_es_model: str = "es_core_news_md", # "es_core_news_lg" jarri daiteke, modelo handiagoa hartzeko (aurrez instalatuta egon behar du)
 ) -> pd.DataFrame:
     """
-    Corpus osoa lematizatzen du:
-    - TSV batean pixkanaka idazten du
-    - Lemmas badago eta hutsik ez badago, errenkada saltatzen du
-    - eu -> API (hitz.eus)
-    - es -> spaCy (EU APIaren antzeko formatuan)
+    DataFrame osoa lematizatzen du, eta emaitzak TSV batean pixkanaka idazten ditu.
+
+    Jokabidea:
+    - "Lemmas" zutabea existitzen ez bada, sortu egiten da.
+    - Errenkadak "Lemmas" beteta badu, ez da berriro prozesatzen.
+    - eu -> hitz.eus APIa
+    - es -> spaCy (formatu bateratua)
+
+    Return:
+    - Lemak gehituta dituen DataFrame-a (pd.DataFrame).
     """
     tmp_tsv = output_tsv + ".tmp"
 
@@ -223,6 +252,7 @@ def lemak_lortu(
         df_out["Lemmas"] = ""
 
 
+    # --- Pipeline-ak kargatu ---
     # spaCy (ES) pipelinea kargatu
     try:
         nlp_es = _load_spacy_es(spacy_es_model)
@@ -232,6 +262,11 @@ def lemak_lortu(
             f"Instalatu hau: python -m spacy download {spacy_es_model}"
         ) from e
     
+
+
+    # |----------------------------------------------------------------------------------------------------|
+    # |-------------------------------------- PROZESAMENDUA ETA IDAZKETA ----------------------------------|
+    # |----------------------------------------------------------------------------------------------------|
 
     with open(tmp_tsv, "w", encoding="utf-8") as f:
         f.write("\t".join(df_out.columns) + "\n")

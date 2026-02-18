@@ -1,30 +1,42 @@
 import pandas as pd
-from corpusaPrestatu import corpusa_prozesatu, split_parrafoak, language_normalizatu, merge_lemmas_entities
+
+from corpusaPrestatu import (
+    corpusa_prozesatu,
+    split_parrafoak,
+    language_normalizatu,
+    merge_lemmas_entities,
+)
 from lemak_lortu import lemak_lortu
 from entitateak_lortu import entitateak_lortu
 from parlaMint_bateratu import merge_parlamint_folders, build_global_tsv
 
+
+
 def main():
     """
-    Erauzketaren funtzio nagusia.
-    Dataframe batean jasoko dira espero diren datuak, eta csv batean gordeko dira.
-    1. bertsio honetan, GRaL-erako gomendatu diren modeloak erabiliko dira.
+    Erauzketa-prozesuaren funtzio nagusia.
+
+    Helburuak:
+    - ParlaMint eta BasqueParl corpusak prestatzea eta bateratzea.
+    - Lemak eta entitateak erauztea.
+    - Emaitzak TSV fitxategietan gordetzea.
     """
 
     # |----------------------------------------------------------------------------------------------------|
     # |-------------------------------------- CORPUSEN PROZESAMENDUA --------------------------------------|
     # |----------------------------------------------------------------------------------------------------|
 
-    # Path-ak hemen definitu.
+    # --- Sarrerako karpeten bideak ---
     path_parlaMint = "ParlaMint"
     path_basqueParl = "BasqueParl"
 
-
-    # Behin 3 .tsv-ak lortuta, eginda = True jarri daiteke, hurrengo zarian datuak berriro kargatzen direlako, horrela denbora aurreztuz.
+    # True -> TSV berriak ez dira sortuko
+    # False -> Corpusak berriro prozesatuko dira
     eginda = True
 
-    if eginda == False:
-        # Zutabeak definitu
+    if eginda is False:
+
+        # BasqueParl-erako taularen zutabe-egitura
         columns = [
             "Date",          # Hitzaldiaren data (formatua: YYYY-MM-DD)
             "Speech_id",     # Hitzaldi bakoitzaren identifikagailu bakarra
@@ -43,12 +55,15 @@ def main():
 
 
 
+        # --- ParlaMint corpusaren prozesamendua ---
+        # ParlaMint fitxategiak bateratu (TSV eta TXT)
         merged_path_parlaMint = "ParlaMint-bateratua"
-        # ParlaMint fitxategiak bateratu (bi .tsv eta .txt fitxategiak)
         merge_parlamint_folders(input_dir=path_parlaMint, output_dir=merged_path_parlaMint, skip_existing=True)
+        
         # ParlaMint-eko fitxategi guztiak taula bakarrean bildu
         df_pm = build_global_tsv(input_dir=merged_path_parlaMint)
-            # Tabulazioak etab. garbitu, bestela gero errorea emango du!
+
+        # Testuko kontrol-karaktereak garbitu
         df_pm["Text"] = (
             df_pm["Text"]
             .astype(str)
@@ -56,15 +71,18 @@ def main():
             .str.replace("\r", " ", regex=False)
             .str.replace("\n", " ", regex=False)
         )
+
         df_pm.to_csv("global-ParlaMint.tsv", sep="\t", index=False, encoding="utf-8")
         print("ParlaMint TSV globala sortuta.")
         
 
 
-        # BasqueParl corpusaren prozesamendua (Olatz Pérez de Viñaspre-ren kodea adaptatuta)
+        # --- BasqueParl corpusaren prozesamendua --- 
+        # Olatz Pérez de Viñaspre-ren kodea adaptatuta
         erregistroak = corpusa_prozesatu(corpus_path=path_basqueParl)
         df_bp = pd.DataFrame(erregistroak, columns=columns)
-            # Tabulazioak etab. garbitu, bestela gero errorea emango du!
+
+        # Testuko kontrol-karaktereak garbitu
         df_bp["Text"] = (
             df_bp["Text"]
             .astype(str)
@@ -72,8 +90,10 @@ def main():
             .str.replace("\r", " ", regex=False)
             .str.replace("\n", " ", regex=False)
         )
-            # Parrafozka banatu
+
+        # Testua paragrafoetan banatu
         df_bp = split_parrafoak(df_bp)
+
         df_bp.to_csv("global-BasqueParl.tsv", index=False, sep="\t", encoding="utf-8")
         print("BasqueParl TSV globala sortuta.")
 
@@ -82,15 +102,19 @@ def main():
         # Bi corpusen datuak batu
         df_basqueParl = pd.read_csv("global-BasqueParl.tsv", sep="\t", dtype=str)
         df_parlaMint  = pd.read_csv("global-ParlaMint.tsv", sep="\t", dtype=str)
-            # Language normalizatu (eu/es bakarrik)
+
+        # Hizkuntza-etiketak normalizatu (eu/es)
         df_basqueParl = language_normalizatu(df_basqueParl)
         df_parlaMint  = language_normalizatu(df_parlaMint)
-            # Indizea 0-tik berriro ez hasteko
+
+        # Speech_id balioen arteko talka saihestu
         max_id = df_basqueParl['Speech_id'].astype(int).max() + 1
         df_parlaMint['Speech_id'] = (df_parlaMint['Speech_id'].astype(int) + max_id).astype(str)
-            #Dataframe-a jaso
+        
+        # DataFrame bakarrean bateratu
         df_all = pd.concat([df_basqueParl, df_parlaMint], ignore_index=True)
         df_all.to_csv("global-CorpusBase.tsv", sep="\t", index=False)
+
         print("TSV globala sortuta: global-CorpusBase.tsv")
 
 
@@ -101,24 +125,26 @@ def main():
     # |------------------------------------ LEMAK ETA ENTITATEAK LORTU ------------------------------------|
     # |----------------------------------------------------------------------------------------------------|
 
-    # Corpus osoa kargatu
+    # Corpus bateratua kargatu
     df = pd.read_csv("global-CorpusBase.tsv", sep="\t", dtype=str)
     print("Corpus osoa kargatua.")
 
-    # Lemak gehitu - 07:46:06 nire exekuzioan
+    # Lemak erauzi
     df = lemak_lortu(df)
     print(df.head())
 
-    # Entitateak gehitu - 05:41:24 nire exekuzioan
+    # Entitateak erauzi
     df = entitateak_lortu(df)
     print(df.head())
 
-    #Lemak eta entitateak juntatu .tsv berdin batean
+    # Lemak eta entitateak fitxategi bakarrean bateratu
     merge_lemmas_entities(
         lemak_path="corpus_erauzketa_lemak.tsv",
         entities_path="corpus_erauzketa_entities.tsv",
         out_path="corpus_erauzketa.tsv"
     )
+
+
 
 if __name__ == "__main__":
     main()

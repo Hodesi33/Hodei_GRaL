@@ -1,29 +1,41 @@
 import os
-import pandas as pd
 from pathlib import Path
 
-def merge_parlamint_folders(input_dir = "ParlaMint-ES-PV", output_dir="ParlaMint-ES-PV-bateratua", skip_existing=True):
+import pandas as pd
+
+
+
+def merge_parlamint_folders(
+    input_dir="ParlaMint",
+    output_dir="ParlaMint-bateratua",
+    skip_existing=True,
+):
     """
-    ParlaMint fitxategiak bateratzen ditu (*-meta.tsv, *-meta-en.tsv eta *.txt)
-    dokumentu bakoitzeko TSV bakar batean, karpeten egitura mantenduz.
+    ParlaMint-eko fitxategiak bateratzen ditu (-meta.tsv, -meta-en.tsv eta .txt),
+    dokumentu bakoitzeko TSV bakarrean, karpeten egitura mantenduz.
 
     Parametroak
-    -----------
+    ----------
     input_dir : str edo Path
-        Sarrerako karpeta nagusia (adib. "ParlaMint-ES-PV")
+        Sarrerako karpeta nagusia.
     output_dir : str edo Path
-        Irteerako karpeta nagusia (adib. "ParlaMint-ES-PV-bateratua")
-    skip_existing : bool, aukerakoa
-        True bada, lehendik sortuta dauden TSVak ez dira berriro sortuko
+        Irteerako karpeta nagusia.
+    skip_existing : bool
+        True bada, lehendik dauden TSVak ez dira berriro sortuko.
     """
 
     input_dir = Path(input_dir)
     output_dir = Path(output_dir)
 
-    def get_base_name(filename):
+    def get_base_name(filename: Path) -> str | None:
         """
-        Fitxategiaren izen oinarria lortzen du, atzizkiak kenduta:
-        -meta.tsv, -meta-en.tsv edo .txt
+        Fitxategiaren oinarrizko izena itzultzen du, atzizki estandarrak kenduta:
+        - -meta.tsv
+        - -meta-en.tsv
+        - .txt
+
+        Return:
+        - Oinarrizko izena (str), edo None formatua bateragarria ez bada.
         """
         name = filename.name
         if name.endswith("-meta-en.tsv"):
@@ -34,7 +46,13 @@ def merge_parlamint_folders(input_dir = "ParlaMint-ES-PV", output_dir="ParlaMint
             return name.replace(".txt", "")
         return None
 
-    # Karpeta guztiak zeharkatu (azpikarpetak barne)
+
+
+    # |----------------------------------------------------------------------------------------------------|
+    # |------------------------------------ KARPETAK ZEHAKATU ETA TALDEKATU --------------------------------|
+    # |----------------------------------------------------------------------------------------------------|
+
+    # Azpikarpeta guztiak zeharkatu, egitura erlatiboa mantenduz
     for root, _, files in os.walk(input_dir):
         root_path = Path(root)
 
@@ -43,19 +61,24 @@ def merge_parlamint_folders(input_dir = "ParlaMint-ES-PV", output_dir="ParlaMint
         output_root = output_dir / relative_path
         output_root.mkdir(parents=True, exist_ok=True)
 
-        # Fitxategiak izen oinarriaren arabera taldekatu
-        groups = {}
+        # Fitxategiak izen oinarrien arabera taldekatu (dokumentu bereko osagaiak batera)
+        groups: dict[str, list[Path]] = {}
 
         for f in files:
             base = get_base_name(Path(f))
             if base:
                 groups.setdefault(base, []).append(root_path / f)
 
-        # Talde bakoitza prozesatu
+
+
+        # |------------------------------------------------------------------------------------------------|
+        # |----------------------------------------- TALDEAK PROZESATU --------------------------------------|
+        # |------------------------------------------------------------------------------------------------|
+
         for base, paths in groups.items():
             output_file = output_root / f"{base}.tsv"
 
-            # Fitxategia dagoeneko existitzen bada, salto egin
+            # Lehendik badago eta hala adierazi bada, ez da berriro sortzen
             if skip_existing and output_file.exists():
                 continue
 
@@ -77,31 +100,30 @@ def merge_parlamint_folders(input_dir = "ParlaMint-ES-PV", output_dir="ParlaMint
                         names=["ID", "Text"]
                     )
 
-            # Meta fitxategirik ez badago, ezin da bateratu
+            # Meta-fitxategirik gabe ezin da bateraketa egin
             if df_meta is None:
                 continue
 
-            # Testu zutabea gehitu (ID bidez)
+            # Testu-zutabea gehitu (ID bidez), baldin eta .txt badago
             if df_text is not None:
                 df = df_meta.merge(df_text, on="ID", how="left")
             else:
                 df = df_meta.copy()
 
-            # Ingelesezko titulua gehitu (beharrezkoa ez bada ere)
+            # Ingelesezko titulua gehitu (aukerakoa)
             if df_meta_en is not None:
                 df_meta_en = df_meta_en[["ID", "Title"]].rename(
                     columns={"Title": "Title_en"}
                 )
                 df = df.merge(df_meta_en, on="ID", how="left")
             
-            # Zutabeen ordena egokitu
+            # Zutabeen ordena egokitu: Title eta Title_en ondoz ondokoak izan daitezen
             if "Title" in df.columns and "Title_en" in df.columns:
                 cols = list(df.columns)
                 cols.remove("Title_en")
 
                 title_idx = cols.index("Title")
                 cols.insert(title_idx + 1, "Title_en")
-
                 df = df[cols]
 
             # Azken TSV fitxategia sortu
@@ -111,21 +133,37 @@ def merge_parlamint_folders(input_dir = "ParlaMint-ES-PV", output_dir="ParlaMint
 
 
 
-def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua") -> pd.DataFrame:
+def build_global_tsv(input_dir="ParlaMint-bateratua") -> pd.DataFrame:
+    """
+    Bateratutako ParlaMint-eko TSV guztiak irakurri, eta taula global bakarrean biltzen ditu.
+
+    Prozesua:
+    - TSV guztiak irakurri eta ordenatu.
+    - Text_ID bakoitzari Speech_id bakarra esleitu.
+    - Hitzaldi bakoitzean Text_id berriro 0tik hasi.
+    - Generoa eta hizkuntza etiketak normalizatu.
+    - Azken irteera-eskema bateratua itzuli.
+    """
+
     input_dir = Path(input_dir)
 
     all_rows = []
-
     speech_id_map = {}   # Text_ID -> Speech_id
     next_speech_id = 0
 
-    # TSV guztiak irakurri
+
+
+    # |----------------------------------------------------------------------------------------------------|
+    # |-------------------------------------- TSV GUZTIAK IRAKURRI -----------------------------------------|
+    # |----------------------------------------------------------------------------------------------------|
+
     for tsv_path in sorted(input_dir.rglob("*.tsv")):
         df = pd.read_csv(tsv_path, sep="\t", dtype=str)
 
-        # Ordena mantendu!
+        # Textuaren ordena egonkorra mantentzeko (Text_ID eta ID)
         df = df.sort_values(["Text_ID", "ID"])
 
+        # Text_ID bakoitza hitzaldi gisa tratatu
         for text_id, group in df.groupby("Text_ID"):
             if text_id not in speech_id_map:
                 speech_id_map[text_id] = next_speech_id
@@ -133,7 +171,7 @@ def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua") -> pd.DataFrame:
 
             speech_id = speech_id_map[text_id]
 
-            # Text_id berriro hasieratu hitzaldirako
+            # Hitzaldiaren barruan Text_id 0tik berrabiarazi
             group = group.copy()
             group["Speech_id"] = speech_id
             group["Text_id"] = range(len(group))
@@ -142,14 +180,20 @@ def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua") -> pd.DataFrame:
 
     df_all = pd.concat(all_rows, ignore_index=True)
 
-    # Generoa
+
+
+    # |----------------------------------------------------------------------------------------------------|
+    # |-------------------------------------- NORMALIZAZIOAK ETA IRTEERA -----------------------------------|
+    # |----------------------------------------------------------------------------------------------------|
+
+    # Generoa normalizatu (F/M -> E/G)
     gender_map = {
         "F": "E",
         "M": "G"
     }
     df_all["Gender"] = df_all["Speaker_gender"].map(gender_map)
 
-    # Hizkuntza
+    # Hizkuntza normalizatu (etiketa testualak -> eu/es/...)
     lang_map = {
         "Euskara": "eu",
         "Gaztelania": "es",
@@ -157,6 +201,7 @@ def build_global_tsv(input_dir="ParlaMint-ES-PV-bateratua") -> pd.DataFrame:
     }
     df_all["Language"] = df_all["Lang"].map(lang_map)
 
+    # Azken eskema bateratua eraiki
     df_final = pd.DataFrame({
         "Date": df_all["Date"],
         "Speech_id": df_all["Speech_id"],

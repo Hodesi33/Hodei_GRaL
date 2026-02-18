@@ -1,3 +1,4 @@
+#KOMENTARIOAK AKTUALIZATZEKO
 import os, re, sys
 from langdetect import detect
 import pandas as pd
