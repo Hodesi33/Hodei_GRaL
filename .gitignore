@@ -5,9 +5,10 @@ __pycache__/
 *.csv
 *.tsv
 *.tmp
+*.png
+*.txt
 .DS_Store
 testu_erauzketa/log/
 sentiment_analysis/log/
 testu_erauzketa/BasqueParl/
 testu_erauzketa/ParlaMint/
-*.png
