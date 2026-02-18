@@ -1,4 +1,11 @@
-Hemen Hodei Sanz-ek egin duen GrAL-erako kodeak aurkitzen dira.
+# GrAL - Hodei Sanz
 
-Hauek 2 ataletan banatzen dira: testu_erauzketa eta sentiment_analysis.
-Karpeta bakoitzaren barruan, ataza bakoitza betetzeko erabiltzen diren kodeak jasotzen dira. Hauen berruan ere, README.txt bat aurkituko da, kodeak erabiltzeko behar dena azaltzen duena.
+Hemen Hodei Sanz-ek egindako GrAL-eko kodeak aurkitzen dira.
+
+Kodeak bi atal nagusitan banatuta daude:
+- `testu_erauzketa`
+- `sentiment_analysis`
+
+Karpeta bakoitzaren barruan, dagokion ataza burutzeko erabilitako kodeak daude.
+
+Gainera, karpeta bakoitzean `README.txt` fitxategi bat aurkituko da, bertako kodeak nola erabili azaltzen duena.
