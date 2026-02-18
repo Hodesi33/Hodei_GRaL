@@ -8,39 +8,69 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
+#from huggingface_hub import login # Ez da beharrezkoa terminaletik login egin bada
+
+from prompts_v2 import *
 
 
-from prompts import *
 
-
-
-# === SYSTEM PROMPT (PORTAERA KONTROLA) ===
+# === SYSTEM PROMPT ===
 
 SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
-Classification criterion:
-- Do NOT infer the speaker's intent, stance, or subjective tone.
-- Classify the sentence based on its overall polarity as a whole.
+DECISION PRINCIPLE (most important):
+- Choose pos/neg ONLY when the sentence contains an explicit overall evaluation.
+- If the sentence is mostly factual, procedural, institutional, descriptive, or just reporting actions, default to: neu.
 
-Label definitions:
-- pos: the sentence expresses an overall positive evaluation (benefits, improvements, praise, positive outcomes).
-- neg: the sentence expresses an overall negative evaluation (problems, criticism, failures, harmful outcomes).
-- neu: the sentence is descriptive, factual, or procedural, with no overall positive or negative evaluation.
+What counts as EXPLICIT evaluation:
+- Positive evaluation: praise, success, improvement, benefit, good results, fulfillment, effective action, congratulations.
+- Negative evaluation: criticism, failure, worsening, harm, problems, unacceptable situation, victims, losses, serious concern.
+
+What does NOT count as positive or negative by itself (usually NEU unless evaluation words are present):
+- Greetings and formalities: "egun on", "eskerrik asko", "lehendakari", "sailburu", etc.
+- Announcements / intentions / plans / proposals: "we will", "we propose", "we intend", "we want", "it is planned".
+- Procedural or institutional actions: "presented", "approved", "reported", "held a meeting", "registered", "published".
+- Descriptions, lists, numbers, places, dates, counts of workers, budget figures, references to laws or programs.
+
+Important domain rule:
+- Do NOT infer sentiment from topic (e.g., "youth", "industry", "justice") or from the fact that an action is mentioned.
+- Government action, measures, programs, investments, laws, agreements are NOT positive by default.
+- A sentence can mention a problem factually and still be neu if there is no evaluative judgement.
+
+If the sentence mixes facts and mild subjective language, decide the overall polarity:
+- If clearly positive overall -> pos
+- If clearly negative overall -> neg
+- If unclear / balanced / mainly descriptive -> neu
 
 Output rules:
 - Output EXACTLY one label: pos, neu, or neg
 - No punctuation, no explanations, no extra words
 """
 
+# # Honek okerrago funtzionatzen du!
+# SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
+
+# Default to NEU:
+# - If there is no explicit evaluation (good/bad, success/failure, improvement/problem, benefit/harm), output neu.
+# - Greetings, thanks, procedural talk, lists of facts/numbers, announcements, plans, meetings -> neu.
+
+# pos only with explicit positive evaluation.
+# neg only with explicit negative evaluation.
+
+# Output EXACTLY one label: pos, neu, or neg
+# """
+
 
 
 # === MODELOA KONFIGURATZEA ===
 # Modeloa aukeratu
-#MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
-#IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
 
-MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
-IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
+# Llama 3.1-8B Instruct erabili nahi bada, Hugging Face-en logeatu beharko da, modelo hau erabiltzeko tokena adieraziz.
+MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
+IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
+
+#MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
+#IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 
 #MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
 #IRTEERA_FITXATEGIA = "salamandra-7B.csv"
@@ -50,6 +80,7 @@ IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 
 #MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
 #IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
+
 
 # Behar direnean kargatzen dira
 tokenizer = None
@@ -269,7 +300,7 @@ def _plot_confusion_matrix(cm: np.ndarray, labels: list[str], title: str, out_pn
 def create_confusion_matrixes(
     df_emaitzak: pd.DataFrame,
     out_dir: str,
-    labels: list[str] = None,
+    labels: list[str],
     save_csv: bool = True
 ):
     """
@@ -332,9 +363,9 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
     Amaieran, decoded emaitzak eta metrikak CSV fitxategietan gordetzen ditu.
     """
     partition = input_csv.replace(".csv", "")
-    irteera_fitxategia_decoded = f"emaitzak_sentiment/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_metrics = f"emaitzak_sentiment/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_confusion = f"emaitzak_sentiment/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
+    irteera_fitxategia_decoded = f"emaitzak_sentiment_v2/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_metrics = f"emaitzak_sentiment_v2/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_confusion = f"emaitzak_sentiment_v2/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
 
 
     # Sarrera irakurri

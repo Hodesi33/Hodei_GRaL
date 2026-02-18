@@ -196,7 +196,6 @@ def _load_flair_es_ner(model_name: str = "flair/ner-spanish-large", device: str 
 def _entities_es_flair(text: str, tagger) -> List[Dict[str, Any]]:
     """
     Testu batetik Flair bidez NER: [{"text":..., "label":...}, ...]
-    Flair-eko span tag-ak normalean: PER/LOC/ORG/MISC (modelaren arabera).
     """
     if not text:
         return []

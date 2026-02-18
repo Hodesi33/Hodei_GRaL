@@ -5,14 +5,13 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 #SBATCH --constraint=a100-sxm4
 #SBATCH --output=./log/GRaL_run_%j.out
 #SBATCH --error=./log/GRaL_run_%j.err
 
-#SBATCH --constraint=a100-sxm4
-#SBATCH --mem=80GB
-#SBATCH --time=30:00:00
+#SBATCH --mem=40GB
+#SBATCH --time=10:00:00
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=hsanz004@ikasle.ehu.eus
 

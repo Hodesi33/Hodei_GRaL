@@ -12,7 +12,7 @@
 
 #SBATCH --constraint=a100-sxm4
 #SBATCH --mem=40GB
-#SBATCH --time=30:00:00
+#SBATCH --time=05:00:00
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=hsanz004@ikasle.ehu.eus
 
