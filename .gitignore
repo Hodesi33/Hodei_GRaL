@@ -8,5 +8,5 @@ __pycache__/
 .DS_Store
 testu_erauzketa/log/
 sentiment_analysis/log/
-testu_erauzketa/basque-parliament-corpus-transcriptions/
-testu_erauzketa/ParlaMint-ES-PV/
+testu_erauzketa/BasqueParl/
+testu_erauzketa/ParlaMint/

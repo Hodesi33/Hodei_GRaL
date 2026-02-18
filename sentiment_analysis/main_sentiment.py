@@ -20,7 +20,7 @@ def main():
 
 
 
-    # Egin nahi diren esperimentuak definitu
+    # Egin nahi diren esperimentuak definitu: ["zero-shot", "few-shot-1", "few-shot-2"]
     analysis_types = ["zero-shot", "few-shot-1", "few-shot-2"]
 
     # Esperimentu bakoitza exekutatu (dev + test)

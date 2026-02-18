@@ -8,6 +8,9 @@ def prepare_data(input_path, dev_path, test_path):
     Behar diren zutabeekin bakarrik geratzen da.
     """
 
+    # Hemen test-aren tamaina definitu. Geratzen den bestea development-era joango da.
+    test_size = 2/3
+
     # Sarrerako CSV-a irakurri
     df = pd.read_csv(input_path)
 
@@ -30,7 +33,7 @@ def prepare_data(input_path, dev_path, test_path):
         except Exception:
             d = ""
 
-        # Zure araua: es ez bada, eu
+        # es ez bada, eu
         return "es" if d == "es" else "eu"
 
     df["Language"] = df.apply(_fix_lang, axis=1)
@@ -56,7 +59,7 @@ def prepare_data(input_path, dev_path, test_path):
 
     # Datuak zatitu: 33,33% dev (150), 66,66% test (300), random_state=33
     dev_df, test_df = train_test_split(
-        new_df, test_size=2/3, random_state=33, shuffle=True
+        new_df, test_size=test_size, random_state=33, shuffle=True
     )
 
     # 'Text_id' berria sortu 1-X arteko balioekin bakoitzean

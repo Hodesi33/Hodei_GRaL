@@ -8,4 +8,8 @@ Kodeak bi atal nagusitan banatuta daude:
 
 Karpeta bakoitzaren barruan, dagokion ataza burutzeko erabilitako kodeak daude.
 
-Gainera, karpeta bakoitzean `README.txt` fitxategi bat aurkituko da, bertako kodeak nola erabili azaltzen duena.
+Gainera, karpeta bakoitzean `README` fitxategi bat aurkituko da, bertako kodeak nola erabili azaltzen duena.
+
+Kodeak behar bezala exekutatzeko, beharrezkoa da `requirements.txt` fitxategia instalatzea, bertan zehaztutako dependentzia guztiak eskuragarri izateko. Horretarako, honako komandoa erabili:
+
+pip install -r requirements.txt
