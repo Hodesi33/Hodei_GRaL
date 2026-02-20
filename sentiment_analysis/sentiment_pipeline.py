@@ -20,9 +20,9 @@ from prompts_v1 import *
 # |--------------------------------------- EREDUA KONFIGURATZEA ---------------------------------------|
 # |----------------------------------------------------------------------------------------------------|
 
-# Modeloa aukeratu (deskomentatu nahi dena eta komentatu besteak)
+# Modeloa aukeratu (deskomentatu erabiliko dena eta komentatu gainerakoak)
+# Oharra: Zenbait modelo erabiltzeko (adib. Llama) Hugging Face-eko tokena behar da.
 
-# Llama 3.1-8B Instruct erabili nahi bada, Hugging Face-en logeatu beharko da, modelo hau erabiltzeko tokena adieraziz.
 #MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 #IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
 
@@ -39,7 +39,7 @@ IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 #IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
 
 
-# Behar direnean kargatzen dira
+# Tokenizer-a eta modeloa behar direnean kargatzen dira
 tokenizer = None
 model = None
 
@@ -47,7 +47,12 @@ model = None
 
 def load_model():
     """
-    Modeloa modu 'lazy'-n kargatzen du (behin bakarrik), eta ondoren berrerabiltzen du.
+    Modeloa modu 'lazy'-n kargatzen du (behin bakarrik) eta ondoren berrerabiltzen du.
+
+    Return
+    ------
+    tuple
+        (tokenizer, model) bikotea.
     """
     global tokenizer, model
 
@@ -71,7 +76,7 @@ def load_model():
         quantization_config=bnb_config
     )
 
-    # Inferentziarako modua
+    # Inferentziarako modua aktibatu
     model.eval()
 
     print("Modeloa kargatuta.")
@@ -116,7 +121,7 @@ Output rules:
 - No punctuation, no explanations, no extra words
 """
 
-# # Honek okerrago funtzionatzen du!
+# # Honek okerrago funtzionatzen du
 # SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
 # Default to NEU:
@@ -139,8 +144,19 @@ Output rules:
 
 def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
     """
-    Inferentzia egiteko funtzioa.
-    System prompt-a eta chat template-a erabiltzen ditu.
+    Inferentzia egiten du, system prompt-a eta chat template-a erabiliz.
+
+    Parametroak
+    ----------
+    user_prompt : str
+        Erabiltzailearen prompt-a (txertatutako paragrafoarekin).
+    max_new_tokens : int
+        Sortuko den irteeraren token kopuru maximoa.
+
+    Return
+    ------
+    str
+        Modeloaren dekodetutako irteera (minuskulaz eta zuriunez garbituta).
     """
     load_model()
 
@@ -150,7 +166,7 @@ def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
         {"role": "user", "content": user_prompt},
     ]
 
-    # Tokenizer-ak chat template onartzen badu, hau erabili
+    # Tokenizer-ak chat template onartzen badu, hori erabiltzen da
     if hasattr(tokenizer, "apply_chat_template"):
         prompt = tokenizer.apply_chat_template(
             messages,
@@ -158,12 +174,12 @@ def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
             add_generation_prompt=True
         )
     else:
-        # Bestela, system prompt-a prefijo gisa itsatsi
+        # Bestela, system prompt-a aurretik itsasten da
         prompt = SYSTEM_PROMPT + "\n" + user_prompt
 
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
-    # Inferentzia determinista eta egonkorra
+    # Inferentzia determinista: do_sample=False
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
@@ -172,7 +188,7 @@ def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
             pad_token_id=tokenizer.eos_token_id
         )
 
-    # Prompt-aren ondorengo zatia bakarrik deskodetu
+    # Prompt-aren ondorengo zatia bakarrik dekodetu
     decoded = tokenizer.decode(
         outputs[0][inputs["input_ids"].shape[-1]:],
         skip_special_tokens=True
@@ -191,7 +207,21 @@ def inferentzia(user_prompt: str, max_new_tokens: int = 10) -> str:
 
 def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
     """
-    Testuari froga/prompt desberdinak aplikatzen dizkio eta etiketa (pos/neu/neg) esleitzen du.
+    Paragrafo bati froga/prompt desberdinak aplikatzen dizkio, eta irteera-labela (pos/neu/neg) esleitzen du.
+
+    Parametroak
+    ----------
+    text : str
+        Aztertu beharreko paragrafoa.
+    froga : int
+        Aplikatu beharreko froga-zenbakia (prompt multzoa aukeratzeko).
+    prompt_dict : dict
+        Froga bakoitzerako prompt zerrendak dituen egitura.
+
+    Return
+    ------
+    list[dict]
+        Prompt bakoitzeko emaitzen zerrenda (etiketa eta exekuzio-denborarekin).
     """
     prompts = prompt_dict[froga]
     emaitzak = []
@@ -203,7 +233,7 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
         decoded = inferentzia(prompt)
         elapsed_time = time.time() - start_time
 
-        # Emaitza aztertu eta etiketa lortu
+        # Modeloaren irteeratik etiketa estandarra normalizatu (pos/neu/neg)
         m = re.search(r"\b(pos|neu|neg|positive|neutral|negative|positiboa|neutroa|negatiboa|positivo|neutral|negativo)\b", decoded)
         if m:
             lab = m.group(1)
@@ -214,14 +244,14 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
             else:
                 label = "neu"
         else:
-            # Matcheatzen ez badu, neu lehenetsi
+            # Match-ik ez badago, neu lehenesten da
             label = "neu"
 
         emaitzak.append({
             "Froga": froga,
             "Prompt": idx + 1,
             "Erabilitako_prompta": prompt,
-            "Modeloaren_emaitza": decoded[:500], # CSV-ak izugarri ez handitzeko, erantzuna moztu
+            "Modeloaren_emaitza": decoded[:500], # CSV-a gehiegi ez handitzeko, irteera mozten da
             "Label": label,
             "Exec_time": elapsed_time
         })
@@ -239,9 +269,20 @@ def paragrafoa_aztertu(text: str, froga: int, prompt_dict):
 def calculate_metrics(df_emaitzak: pd.DataFrame) -> pd.DataFrame:
     """
     (Froga, Prompt) bakoitzeko eta froga bakoitzeko (GLOBAL) metrikak kalkulatzen ditu.
+
+    Parametroak
+    ----------
+    df_emaitzak : pd.DataFrame
+        Emaitzen taula (Label_real eta Decoded_label zutabeekin).
+
+    Return
+    ------
+    pd.DataFrame
+        Metriken taula (Accuracy, Precision/Recall/F1 macro eta weighted, eta exekuzio-denboraren batez bestekoa).
     """
     metrics = []
 
+    # (Froga, Prompt) konbinazio bakoitzerako metrikak
     grouped = df_emaitzak.groupby(["Froga", "Prompt"])
     for (froga, prompt), group in grouped:
         y_true = group["Label_real"]
@@ -259,7 +300,8 @@ def calculate_metrics(df_emaitzak: pd.DataFrame) -> pd.DataFrame:
             "F1_weighted": f1_score(y_true, y_pred, average="weighted", zero_division=0),
             "Avg_exec_time": group["Exec_time"].mean()
         })
-
+    
+    # Froga bakoitzerako metrika globalak
     grouped_froga = df_emaitzak.groupby("Froga")
     for froga, group in grouped_froga:
         y_true = group["Label_real"]
@@ -291,6 +333,21 @@ def calculate_metrics(df_emaitzak: pd.DataFrame) -> pd.DataFrame:
 def _plot_confusion_matrix(cm: np.ndarray, labels: list[str], title: str, out_png: str):
     """
     Confusion matrix bat marrazten du eta PNG gisa gordetzen du.
+
+    Parametroak
+    ----------
+    cm : np.ndarray
+        Confusion matrix-aren balioak.
+    labels : list[str]
+        Etiketen ordena (adib. ["pos", "neu", "neg"]).
+    title : str
+        Irudiaren titulua.
+    out_png : str
+        PNG fitxategiaren irteera-bidea.
+
+    Return
+    ------
+    None
     """
     fig, ax = plt.subplots()
     im = ax.imshow(cm)
@@ -304,7 +361,7 @@ def _plot_confusion_matrix(cm: np.ndarray, labels: list[str], title: str, out_pn
     ax.set_ylabel("True")
     ax.set_title(title)
 
-    # Balioak koadroetan idatzi
+    # Balioak gelaxketan idatzi
     for i in range(cm.shape[0]):
         for j in range(cm.shape[1]):
             ax.text(j, i, str(cm[i, j]), ha="center", va="center")
@@ -323,15 +380,32 @@ def create_confusion_matrixes(
 ):
     """
     (Froga, Prompt) bakoitzeko eta Froga bakoitzeko (GLOBAL) confusion matrix-ak sortu eta gordetzen ditu.
+
+    Irteerak:
     - PNG: irudi moduan
-    - CSV (aukerakoa): balioak fitxategi gisa
+    - CSV (aukerakoa): balio-taula fitxategi gisa
+
+    Parametroak
+    ----------
+    df_emaitzak : pd.DataFrame
+        Emaitzen taula (Label_real eta Decoded_label zutabeekin).
+    out_dir : str
+        Irudiak/CSVak gordetzeko karpeta.
+    labels : list[str]
+        Etiketen ordena confusion_matrix funtziorako.
+    save_csv : bool
+        True bada, CSV fitxategiak ere sortzen dira.
+
+    Return
+    ------
+    None
     """
     if labels is None:
         labels = ["pos", "neu", "neg"]
 
     os.makedirs(out_dir, exist_ok=True)
 
-    # (Froga, Prompt) bakoitzeko
+    # (Froga, Prompt) bakoitzeko confusion matrix-a
     grouped = df_emaitzak.groupby(["Froga", "Prompt"])
     for (froga, prompt), group in grouped:
         y_true = group["Label_real"].astype(str)
@@ -350,7 +424,7 @@ def create_confusion_matrixes(
             pd.DataFrame(cm, index=[f"true_{l}" for l in labels], columns=[f"pred_{l}" for l in labels]) \
               .to_csv(out_csv, encoding="utf-8")
 
-    # Froga bakoitzeko GLOBAL
+    # Froga bakoitzeko GLOBAL confusion matrix-a
     grouped_froga = df_emaitzak.groupby("Froga")
     for froga, group in grouped_froga:
         y_true = group["Label_real"].astype(str)
@@ -379,14 +453,31 @@ def create_confusion_matrixes(
 
 def sentiment_analysis(input_csv: str, analysis_type: str):
     """
-    Sentiment analysis egiteko funtzio nagusia.
-    Amaieran, decoded emaitzak eta metrikak CSV fitxategietan gordetzen ditu.
+    Sentiment analysis prozesu nagusia exekutatzen du.
+
+    Prozesua:
+    - Sarrerako CSV-a irakurri.
+    - analysis_type arabera prompt multzoa aukeratu.
+    - Testu bakoitzean froga multzo egokia aplikatu (hizkuntzaren arabera).
+    - Emaitzak (decoded) eta metrikak CSV fitxategietan gorde.
+    - Confusion matrix-ak sortu (PNG eta CSV).
+
+    Parametroak
+    ----------
+    input_csv : str
+        Sarrerako CSV fitxategiaren bidea.
+    analysis_type : str
+        Analisi mota: "zero-shot", "few-shot-1" edo "few-shot-2".
+
+    Return
+    ------
+    pd.DataFrame | None
+        Emaitzen DataFrame-a; sarrera fitxategia ez bada aurkitzen, None.
     """
     partition = input_csv.replace(".csv", "")
     irteera_fitxategia_decoded = f"emaitzak_sentiment_v1_SysPromptLargo/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
     irteera_fitxategia_metrics = f"emaitzak_sentiment_v1_SysPromptLargo/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
     irteera_fitxategia_confusion = f"emaitzak_sentiment_v1_SysPromptLargo/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
-
 
     # Sarrera irakurri
     try:
@@ -407,7 +498,7 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
 
     emaitza_guztiak = []
 
-    # Testuen analisia
+    # Testu bakoitza aztertu
     for _, row in df_input.iterrows():
         text = row["Text"]
         language = str(row["Language"]).lower()
@@ -442,7 +533,7 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
                     "Exec_time": e["Exec_time"]
                 })
 
-    # Karpetak sortu
+    # Irteera-karpetak sortu
     os.makedirs(os.path.dirname(irteera_fitxategia_decoded), exist_ok=True)
     os.makedirs(os.path.dirname(irteera_fitxategia_metrics), exist_ok=True)
 

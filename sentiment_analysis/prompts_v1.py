@@ -1,7 +1,9 @@
-# === PROMPTEN DEFINIZIOA ===
-# Hemen nire 12 prompt-ak (few-shot eta zero-shot-enak), {paragrafoa} barruan paragrafoa sartzeko
+# Hemen nire 12 prompt-ak (few-shot eta zero-shot-enak) definitzen dira, {paragrafoa} barruan paragrafoa sartzeko
 
-# == ZERO-SHOT-EN PROMPT_AK ==
+# |----------------------------------------------------------------------------------------------------|
+# |------------------------------------------- ZERO-SHOT ----------------------------------------------|
+# |----------------------------------------------------------------------------------------------------|
+
 prompt_zero_shot_1_1 = """Aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako batean:
 - pos (positiboa)
 - neu (neutroa)
@@ -149,8 +151,10 @@ prompt_zero_shot_dict = {
 
 
 
-# == FEW-SHOT-EN PROMPT_AK ==
-# == FEW-SHOT - ADIBIDE BATEKIN ==
+# |----------------------------------------------------------------------------------------------------|
+# |----------------------------------- FEW-SHOT - ADIBIDE BATEKIN -------------------------------------|
+# |----------------------------------------------------------------------------------------------------|
+
 prompt_few_shot_1__1_1 = """Aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako batean:
 - pos (positiboa)
 - neu (neutroa)
@@ -532,7 +536,10 @@ prompt_few_shot_1_dict = {
 
 
 
-# == FEW-SHOT - BI ADIBIDEREKIN ==
+# |----------------------------------------------------------------------------------------------------|
+# |----------------------------------- FEW-SHOT - BI ADIBIDEREKIN -------------------------------------|
+# |----------------------------------------------------------------------------------------------------|
+
 prompt_few_shot_2__1_1 = """Aztertu testu bakoitzaren jarrera eta sailkatu ondorengo kategorietako batean:
 - pos (positiboa)
 - neu (neutroa)

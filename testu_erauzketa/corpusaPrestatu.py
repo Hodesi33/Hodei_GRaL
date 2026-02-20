@@ -1,10 +1,13 @@
-#KOMENTARIOAK AKTUALIZATZEKO
 import os, re, sys
 from langdetect import detect
 import pandas as pd
 import csv
 
-# Sailburuen hiztegia baldin badago (izena:generoa)
+# |----------------------------------------------------------------------------------------------------|
+# |----------------------------------- KONFIGURAZIOA ETA METADATUAK -----------------------------------|
+# |----------------------------------------------------------------------------------------------------|
+
+# Sailburuen genero-hiztegia (formatua: izena:generoa) kargatzen da, fitxategia existitzen bada
 sailburuak = {}
 GENERO_FPATH = os.path.join(os.path.dirname(__file__), "sailburu_genero.txt")
 
@@ -250,27 +253,28 @@ def corpusa_prozesatu(corpus_path):
 # Funtzio hau gehitu da estruktura argiago bat edukitzeko.
 def split_parrafoak(df, group_cols=['Speech_id'], token='<PARRAFO/>', on_mismatch='pad'):
     """
-    <PARRAFO/> bakoitza errenkada berri bihurtzen du,
-    Language eta Text zutabeak ondo lerrokatuta mantenduz.
+    <PARRAFO/> token bidez bereizitako paragrafoak errenkada berrietan banatzen ditu,
+    eta Language eta Text zutabeak lerrokatuta mantentzen ditu.
 
     Parametroak
-    -----------
+    ----------
     df : pd.DataFrame
-        Jatorrizko DataFrame-a
+        Jatorrizko DataFrame-a.
     group_cols : tuple/list edo None
-        Zein zutaberen arabera berriro kalkulatu Text_id
-        (cumcount erabiliz). None bada, Text_id globala izango da.
+        Zein zutaberen arabera berriro kalkulatu Text_id (cumcount erabiliz).
+        None bada, Text_id globalki zenbatzen da.
     token : str
         Paragrafoen bereizlea; lehenetsia '<PARRAFO/>'.
     on_mismatch : {'pad','repeat_last','error'}
         Zer egin hizkuntzen eta paragrafoen kopurua ez badator bat:
-        - 'pad': falta den hizkuntza NA-rekin bete (gomendatua arazketarako)
+        - 'pad': falta den hizkuntza NA-rekin bete
         - 'repeat_last': azken hizkuntza ezaguna errepikatu
         - 'error': errorea jaurti
 
-    return
-    --------
+    Return
+    ------
     pd.DataFrame
+        Paragrafo bakoitza errenkada batean duen DataFrame-a.
     """
     df = df.copy()
 
@@ -282,16 +286,16 @@ def split_parrafoak(df, group_cols=['Speech_id'], token='<PARRAFO/>', on_mismatc
         texts = text_raw.split(token)      
         langs = lang_raw.split(token)
 
-        # Amaierako hutsune komunak kentzen dira (normalean token-a amaieran egoteagatik sortuak)
+        # Amaierako hutsune komunak kendu (token-a amaieran egoteagatik sortuak)
         while texts and langs and texts[-1].strip() == '' and langs[-1].strip() == '':
             texts.pop()
             langs.pop()
 
-        # Zuriuneak garbitu (baina tarteko elementuak ez ezabatu)
+        # Elementu bakoitzeko zuriuneak garbitu
         texts = [t.strip() for t in texts]
         langs = [l.strip() for l in langs]
 
-        # Testu guztia hutsik geratzen bada, errenkada saltatu
+        # Testu guztia hutsik badago, errenkada saltatu
         if all(t == '' for t in texts):
             continue
 
@@ -315,7 +319,7 @@ def split_parrafoak(df, group_cols=['Speech_id'], token='<PARRAFO/>', on_mismatc
                 # Hizkuntza gehiago badira testuak baino, moztu
                 langs = langs[:n_text]
 
-        # Behin betiko errenkadak sortu
+        # Errenkada berriak sortu (paragrafo bakoitzeko)
         for lang, txt in zip(langs, texts):
             if txt == '':
                 continue
@@ -337,6 +341,25 @@ def split_parrafoak(df, group_cols=['Speech_id'], token='<PARRAFO/>', on_mismatc
 
 
 def language_normalizatu(df: pd.DataFrame, text_col: str = "Text", lang_col: str = "Language") -> pd.DataFrame:
+    """
+    Language zutabea normalizatzen du:
+    - Balioa 'eu' edo 'es' bada, bere horretan mantentzen da.
+    - Bestela, testuaren hizkuntza detektatzen da eta 'es' ez bada, 'eu' ezartzen da.
+
+    Parametroak
+    ----------
+    df : pd.DataFrame
+        Normalizatu beharreko DataFrame-a.
+    text_col : str
+        Hizkuntza detektatzeko erabiliko den testu-zutabea.
+    lang_col : str
+        Normalizatu beharreko hizkuntza-zutabea.
+
+    Return
+    ------
+    pd.DataFrame
+        Hizkuntza zutabea normalizatuta duen DataFrame-a.
+    """
     def fix_lang(row) -> str:
         lang = str(row.get(lang_col, "")).strip().lower()
         if lang in ("eu", "es"):
@@ -344,14 +367,14 @@ def language_normalizatu(df: pd.DataFrame, text_col: str = "Text", lang_col: str
 
         text = str(row.get(text_col, "")).strip()
         if not text:
-            return "" # Testua ez badago hutsa bueltatzea
+            return "" # Testurik ez badago, balio hutsa mantentzen da
 
         try:
             d = detect(text)
         except Exception:
             d = ""
 
-        # es ez bada, eu
+        # 'es' ez bada, 'eu' ezartzen da
         if d != "es":
             d = "eu"
         return d
@@ -366,7 +389,27 @@ def merge_lemmas_entities(
     entities_path="corpus_erauzketa_entities.tsv",
     out_path="corpus_erauzketa_lemak_entities.tsv",
 ):
-    
+    """
+    Lemak eta entitateak TSV bakarrean bateratzen ditu, errenkaden posizioaren arabera.
+
+    Baldintzak:
+    - Bi TSVek errenkada kopuru bera izan behar dute.
+    - Entitateak df_e['Entities'] zutabetik hartzen dira.
+
+    Parametroak
+    ----------
+    lemak_path : str
+        Lemak dituen TSV fitxategiaren bidea.
+    entities_path : str
+        Entitateak dituen TSV fitxategiaren bidea.
+    out_path : str
+        Irteerako TSV fitxategiaren bidea.
+
+    Return
+    ------
+    pd.DataFrame
+        Lemak + Entities zutabeak bateratuta dituen DataFrame-a.
+    """
     # TSV-ak kargatu
     df_l = pd.read_csv(
         lemak_path,
