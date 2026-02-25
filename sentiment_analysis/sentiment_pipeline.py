@@ -26,8 +26,8 @@ from prompts_v1 import *
 # MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 # IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
 
-# MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
-# IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
+MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
+IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 
 # MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
 # IRTEERA_FITXATEGIA = "salamandra-7B.csv"
@@ -35,8 +35,8 @@ from prompts_v1 import *
 # MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
 # IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
 
-MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
-IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
+# MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
+# IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
 
 
 # Tokenizer-a eta modeloa behar direnean kargatzen dira
@@ -107,37 +107,37 @@ def load_model():
 
 
 
-# PromptLuzea
-SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
+# # PromptLuzea
+# SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
-DECISION PRINCIPLE (most important):
-- Choose pos/neg ONLY when the sentence contains an explicit overall evaluation.
-- If the sentence is mostly factual, procedural, institutional, descriptive, or just reporting actions, default to: neu.
+# DECISION PRINCIPLE (most important):
+# - Choose pos/neg ONLY when the sentence contains an explicit overall evaluation.
+# - If the sentence is mostly factual, procedural, institutional, descriptive, or just reporting actions, default to: neu.
 
-What counts as EXPLICIT evaluation:
-- Positive evaluation: praise, success, improvement, benefit, good results, fulfillment, effective action, congratulations.
-- Negative evaluation: criticism, failure, worsening, harm, problems, unacceptable situation, victims, losses, serious concern.
+# What counts as EXPLICIT evaluation:
+# - Positive evaluation: praise, success, improvement, benefit, good results, fulfillment, effective action, congratulations.
+# - Negative evaluation: criticism, failure, worsening, harm, problems, unacceptable situation, victims, losses, serious concern.
 
-What does NOT count as positive or negative by itself (usually NEU unless evaluation words are present):
-- Greetings and formalities: "egun on", "eskerrik asko", "lehendakari", "sailburu", etc.
-- Announcements / intentions / plans / proposals: "we will", "we propose", "we intend", "we want", "it is planned".
-- Procedural or institutional actions: "presented", "approved", "reported", "held a meeting", "registered", "published".
-- Descriptions, lists, numbers, places, dates, counts of workers, budget figures, references to laws or programs.
+# What does NOT count as positive or negative by itself (usually NEU unless evaluation words are present):
+# - Greetings and formalities: "egun on", "eskerrik asko", "lehendakari", "sailburu", etc.
+# - Announcements / intentions / plans / proposals: "we will", "we propose", "we intend", "we want", "it is planned".
+# - Procedural or institutional actions: "presented", "approved", "reported", "held a meeting", "registered", "published".
+# - Descriptions, lists, numbers, places, dates, counts of workers, budget figures, references to laws or programs.
 
-Important domain rule:
-- Do NOT infer sentiment from topic (e.g., "youth", "industry", "justice") or from the fact that an action is mentioned.
-- Government action, measures, programs, investments, laws, agreements are NOT positive by default.
-- A sentence can mention a problem factually and still be neu if there is no evaluative judgement.
+# Important domain rule:
+# - Do NOT infer sentiment from topic (e.g., "youth", "industry", "justice") or from the fact that an action is mentioned.
+# - Government action, measures, programs, investments, laws, agreements are NOT positive by default.
+# - A sentence can mention a problem factually and still be neu if there is no evaluative judgement.
 
-If the sentence mixes facts and mild subjective language, decide the overall polarity:
-- If clearly positive overall -> pos
-- If clearly negative overall -> neg
-- If unclear / balanced / mainly descriptive -> neu
+# If the sentence mixes facts and mild subjective language, decide the overall polarity:
+# - If clearly positive overall -> pos
+# - If clearly negative overall -> neg
+# - If unclear / balanced / mainly descriptive -> neu
 
-Output rules:
-- Output EXACTLY one label: pos, neu, or neg
-- No punctuation, no explanations, no extra words
-"""
+# Output rules:
+# - Output EXACTLY one label: pos, neu, or neg
+# - No punctuation, no explanations, no extra words
+# """
 
 
 
@@ -198,86 +198,86 @@ Output rules:
 
 
 
-# #PromptBerria2
-# SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
+#PromptBerria2
+SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
 
-# GOAL:
-# Classify each sentence as:
-# - pos (positive)
-# - neu (neutral)
-# - neg (negative)
+GOAL:
+Classify each sentence as:
+- pos (positive)
+- neu (neutral)
+- neg (negative)
 
-# CORE PRINCIPLE:
-# Classify the OVERALL evaluative stance of the sentence.
-# Only use pos or neg when there is a clear evaluative attitude.
-# If the sentence is mainly descriptive, procedural, strategic, or organizational, classify it as neu.
+CORE PRINCIPLE:
+Classify the OVERALL evaluative stance of the sentence.
+Only use pos or neg when there is a clear evaluative attitude.
+If the sentence is mainly descriptive, procedural, strategic, or organizational, classify it as neu.
 
-# ------------------------------------------------------------
-# NEGATIVE (neg)
-# ------------------------------------------------------------
-# Classify as neg if the sentence:
+------------------------------------------------------------
+NEGATIVE (neg)
+------------------------------------------------------------
+Classify as neg if the sentence:
 
-# - Criticizes, blames, or questions an action, policy, institution, or actor.
-# - Signals failure, insufficiency, injustice, harm, discrimination, corruption, fraud, crisis, loss, or damage.
-# - Uses clearly negative evaluative language (e.g., unacceptable, incoherent, wrong, serious problem, mistake).
-# - Implies inadequacy through contrast (e.g., “should”, “must”, “need to”) when it suggests the current situation is insufficient.
-# - Frames something as lacking legitimacy, lacking foundation, or being problematic.
+- Criticizes, blames, or questions an action, policy, institution, or actor.
+- Signals failure, insufficiency, injustice, harm, discrimination, corruption, fraud, crisis, loss, or damage.
+- Uses clearly negative evaluative language (e.g., unacceptable, incoherent, wrong, serious problem, mistake).
+- Implies inadequacy through contrast (e.g., “should”, “must”, “need to”) when it suggests the current situation is insufficient.
+- Frames something as lacking legitimacy, lacking foundation, or being problematic.
 
-# Implicit criticism counts as neg if the overall intention is clearly critical.
+Implicit criticism counts as neg if the overall intention is clearly critical.
 
-# ------------------------------------------------------------
-# POSITIVE (pos)
-# ------------------------------------------------------------
-# Classify as pos if the sentence:
+------------------------------------------------------------
+POSITIVE (pos)
+------------------------------------------------------------
+Classify as pos if the sentence:
 
-# - Expresses approval, support, endorsement, or defense of an action, policy, idea, or actor.
-# - Describes something as important, appropriate, fair, necessary, valuable, reasonable, justified, beneficial, or correct.
-# - Presents an institutional achievement, recognition, distinction, or status in a favorable way.
-# - Clearly frames something as desirable, legitimate, or worthy of support.
-# - Uses positive evaluative language directed at performance, decisions, or outcomes.
+- Expresses approval, support, endorsement, or defense of an action, policy, idea, or actor.
+- Describes something as important, appropriate, fair, necessary, valuable, reasonable, justified, beneficial, or correct.
+- Presents an institutional achievement, recognition, distinction, or status in a favorable way.
+- Clearly frames something as desirable, legitimate, or worthy of support.
+- Uses positive evaluative language directed at performance, decisions, or outcomes.
 
-# Do NOT require explicit proof of measurable success.
-# Clear positive evaluation or endorsement is sufficient.
+Do NOT require explicit proof of measurable success.
+Clear positive evaluation or endorsement is sufficient.
 
-# Do NOT classify as pos if the sentence merely states a policy goal,
-# agenda item, strategic line, or general value without expressing approval
-# or positive judgement about performance or results.
+Do NOT classify as pos if the sentence merely states a policy goal,
+agenda item, strategic line, or general value without expressing approval
+or positive judgement about performance or results.
 
-# Do not classify as pos if the positive wording refers only to abstract principles or rhetorical emphasis without clear endorsement.
+Do not classify as pos if the positive wording refers only to abstract principles or rhetorical emphasis without clear endorsement.
 
-# ------------------------------------------------------------
-# NEUTRAL (neu)
-# ------------------------------------------------------------
-# Classify as neu if the sentence:
+------------------------------------------------------------
+NEUTRAL (neu)
+------------------------------------------------------------
+Classify as neu if the sentence:
 
-# - Reports facts, data, numbers, dates, procedures, meetings, laws, or institutional steps.
-# - Is mainly descriptive or explanatory.
-# - Contains greetings, formalities, or short procedural remarks.
-# - States a proposal, request, or recommendation without clear praise or criticism.
-# - Mentions positive values (justice, equality, empowerment, cooperation, rights, development, cohesion, etc.)
-#   as part of an agenda or program without evaluating results.
-# - States strategic lines, policy objectives, or programmatic priorities.
-# - Refers to something as "important" in a procedural, structural, or organizational way
-#   (e.g., “third strategic line”, “we said something important last year”).
-# - Is primarily programmatic rather than evaluative.
+- Reports facts, data, numbers, dates, procedures, meetings, laws, or institutional steps.
+- Is mainly descriptive or explanatory.
+- Contains greetings, formalities, or short procedural remarks.
+- States a proposal, request, or recommendation without clear praise or criticism.
+- Mentions positive values (justice, equality, empowerment, cooperation, rights, development, cohesion, etc.)
+  as part of an agenda or program without evaluating results.
+- States strategic lines, policy objectives, or programmatic priorities.
+- Refers to something as "important" in a procedural, structural, or organizational way
+  (e.g., “third strategic line”, “we said something important last year”).
+- Is primarily programmatic rather than evaluative.
 
-# If there is no clear approval or criticism, default to neu.
+If there is no clear approval or criticism, default to neu.
 
-# ------------------------------------------------------------
-# MIXED SENTENCES
-# ------------------------------------------------------------
-# If both positive and negative elements appear:
-# - Choose the dominant evaluative direction.
-# - If evaluation is secondary and the sentence is mainly descriptive or programmatic → neu.
+------------------------------------------------------------
+MIXED SENTENCES
+------------------------------------------------------------
+If both positive and negative elements appear:
+- Choose the dominant evaluative direction.
+- If evaluation is secondary and the sentence is mainly descriptive or programmatic → neu.
 
-# ------------------------------------------------------------
-# OUTPUT RULES
-# ------------------------------------------------------------
-# - Output EXACTLY one label: pos, neu, or neg
-# - No punctuation
-# - No explanations
-# - No additional text
-# """
+------------------------------------------------------------
+OUTPUT RULES
+------------------------------------------------------------
+- Output EXACTLY one label: pos, neu, or neg
+- No punctuation
+- No explanations
+- No additional text
+"""
 
 
 
@@ -620,9 +620,9 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
         Emaitzen DataFrame-a; sarrera fitxategia ez bada aurkitzen, None.
     """
     partition = input_csv.replace(".csv", "")
-    irteera_fitxategia_decoded = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria1/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_metrics = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria1/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_confusion = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria1/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
+    irteera_fitxategia_decoded = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria2/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_metrics = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria2/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_confusion = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria2/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
 
     # Sarrera irakurri
     try:
