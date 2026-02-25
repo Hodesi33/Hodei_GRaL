@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 #from huggingface_hub import login # Ez da beharrezkoa terminaletik login egin bada
 
-from prompts_v2 import *
+from prompts_v1 import *
 
 
 
@@ -26,8 +26,8 @@ from prompts_v2 import *
 # MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 # IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
 
-MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
-IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
+# MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
+# IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 
 # MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
 # IRTEERA_FITXATEGIA = "salamandra-7B.csv"
@@ -35,8 +35,8 @@ IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 # MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
 # IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
 
-# MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
-# IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
+MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
+IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
 
 
 # Tokenizer-a eta modeloa behar direnean kargatzen dira
@@ -90,7 +90,24 @@ def load_model():
 # |------------------------------------------ SYSTEM PROMPT -------------------------------------------|
 # |----------------------------------------------------------------------------------------------------|
 
-# PromptLargo
+# # PromptMotza
+# SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
+
+# Default to NEU:
+# - If there is no explicit evaluation (good/bad, success/failure, improvement/problem, benefit/harm), output neu.
+# - Greetings, thanks, procedural talk, lists of facts/numbers, announcements, plans, meetings -> neu.
+
+# pos only with explicit positive evaluation.
+# neg only with explicit negative evaluation.
+
+# Output EXACTLY one label: pos, neu, or neg
+# """
+
+
+
+
+
+# PromptLuzea
 SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
 DECISION PRINCIPLE (most important):
@@ -126,24 +143,7 @@ Output rules:
 
 
 
-# # PromptCorto
-# SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
-
-# Default to NEU:
-# - If there is no explicit evaluation (good/bad, success/failure, improvement/problem, benefit/harm), output neu.
-# - Greetings, thanks, procedural talk, lists of facts/numbers, announcements, plans, meetings -> neu.
-
-# pos only with explicit positive evaluation.
-# neg only with explicit negative evaluation.
-
-# Output EXACTLY one label: pos, neu, or neg
-# """
-
-
-
-
-
-# # PromptNuevo1
+# # PromptBerria1
 # SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
 
 # GOAL:
@@ -198,7 +198,7 @@ Output rules:
 
 
 
-# #PromptNuevo2
+# #PromptBerria2
 # SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
 
 # GOAL:
@@ -620,9 +620,9 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
         Emaitzen DataFrame-a; sarrera fitxategia ez bada aurkitzen, None.
     """
     partition = input_csv.replace(".csv", "")
-    irteera_fitxategia_decoded = f"emaitzak_sentiment_v2_SysPromptNuevo1/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_metrics = f"emaitzak_sentiment_v2_SysPromptNuevo1/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_confusion = f"emaitzak_sentiment_v2_SysPromptNuevo1/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
+    irteera_fitxategia_decoded = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria1/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_metrics = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria1/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_confusion = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria1/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
 
     # Sarrera irakurri
     try:
