@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 #from huggingface_hub import login # Ez da beharrezkoa terminaletik login egin bada
 
-from prompts_v1 import *
+from prompts_v2 import *
 
 
 
@@ -23,20 +23,20 @@ from prompts_v1 import *
 # Modeloa aukeratu (deskomentatu erabiliko dena eta komentatu gainerakoak)
 # Oharra: Zenbait modelo erabiltzeko (adib. Llama) Hugging Face-eko tokena behar da.
 
-#MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
-#IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
+# MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
+# IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
 
 MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
 IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 
-#MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
-#IRTEERA_FITXATEGIA = "salamandra-7B.csv"
+# MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
+# IRTEERA_FITXATEGIA = "salamandra-7B.csv"
 
-#MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
-#IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
+# MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
+# IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
 
-#MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
-#IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
+# MODEL_NAME = "HiTZ/Latxa-Llama-3.1-70B-Instruct" #HAU BUKAERAN!
+# IRTEERA_FITXATEGIA = "latxa3.1-70B.csv"
 
 
 # Tokenizer-a eta modeloa behar direnean kargatzen dira
@@ -90,6 +90,7 @@ def load_model():
 # |------------------------------------------ SYSTEM PROMPT -------------------------------------------|
 # |----------------------------------------------------------------------------------------------------|
 
+# PromptLargo
 SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
 DECISION PRINCIPLE (most important):
@@ -121,7 +122,11 @@ Output rules:
 - No punctuation, no explanations, no extra words
 """
 
-# # Honek okerrago funtzionatzen du
+
+
+
+
+# # PromptCorto
 # SYSTEM_PROMPT = """You are a strict sentiment classifier for parliamentary texts.
 
 # Default to NEU:
@@ -132,6 +137,146 @@ Output rules:
 # neg only with explicit negative evaluation.
 
 # Output EXACTLY one label: pos, neu, or neg
+# """
+
+
+
+
+
+# # PromptNuevo1
+# SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
+
+# GOAL:
+# Classify the sentence as pos / neu / neg based on the speaker's evaluative stance.
+
+# CORE RULE:
+# - Use pos/neg only when the sentence contains a CLEAR evaluation of performance, situation, or responsibility.
+# - If the sentence is mostly descriptive, procedural, contextual, or just states goals/values without judging results -> neu.
+
+# NEGATIVE (neg) if the sentence:
+# - Criticizes, blames, or signals failure/insufficiency (explicit or implicit).
+# - Highlights harm, losses, victims, discrimination, fraud, corruption, crisis, unacceptable situations.
+# - Uses negative judgement words (e.g., wrong, serious, unacceptable, failure, poor results) OR
+#   implies inadequacy through normative contrast: "should/need/must" + current reality is not meeting it.
+
+# POSITIVE (pos) if the sentence:
+
+# - Expresses approval, support, defense, or endorsement of an action, policy, idea, or actor.
+# - Describes something as important, appropriate, fair, necessary, valuable, beneficial, reasonable, or justified.
+# - Presents an institutional achievement, status, recognition, or distinction in a favorable way.
+# - Uses clearly positive evaluative language, even if it does not explicitly mention measurable success.
+# - Frames a situation as desirable or correct.
+
+# Do NOT require explicit proof of success.
+
+# IMPORTANT RESTRICTION (avoid over-predicting pos):
+# - Mere mentions of positive values/goals (justice, equality, cooperation, peace, rights, future, cohesion)
+#   are NOT pos by themselves.
+#   They are neu unless the speaker clearly:
+#   (a) expresses approval/support/endorsement, OR
+#   (b) describes something as beneficial/appropriate/fair/necessary/valuable, OR
+#   (c) frames an outcome/status/recognition as positive.
+# - Plans, intentions, proposals, or recommendations are neu unless they include clear praise/support (pos)
+#   or clear criticism/problem framing (neg).
+
+# NEUTRAL (neu) if the sentence:
+# - Is a greeting, thanks without evaluation, formalities.
+# - Reports facts, numbers, dates, lists, institutional steps, laws, meetings.
+# - Describes a situation without judging it (no blame/praise, no success/failure).
+
+# MIXED SENTENCES:
+# - If both appear, choose the dominant evaluation.
+# - If the main purpose is to propose improvements without judging current performance -> neu.
+# - If the proposal implies current failure/insufficiency -> neg.
+
+# Output:
+# - Output EXACTLY one label: pos, neu, or neg
+# - No punctuation, no explanations, no extra words
+# """
+
+
+
+
+
+# #PromptNuevo2
+# SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
+
+# GOAL:
+# Classify each sentence as:
+# - pos (positive)
+# - neu (neutral)
+# - neg (negative)
+
+# CORE PRINCIPLE:
+# Classify the OVERALL evaluative stance of the sentence.
+# Only use pos or neg when there is a clear evaluative attitude.
+# If the sentence is mainly descriptive, procedural, strategic, or organizational, classify it as neu.
+
+# ------------------------------------------------------------
+# NEGATIVE (neg)
+# ------------------------------------------------------------
+# Classify as neg if the sentence:
+
+# - Criticizes, blames, or questions an action, policy, institution, or actor.
+# - Signals failure, insufficiency, injustice, harm, discrimination, corruption, fraud, crisis, loss, or damage.
+# - Uses clearly negative evaluative language (e.g., unacceptable, incoherent, wrong, serious problem, mistake).
+# - Implies inadequacy through contrast (e.g., “should”, “must”, “need to”) when it suggests the current situation is insufficient.
+# - Frames something as lacking legitimacy, lacking foundation, or being problematic.
+
+# Implicit criticism counts as neg if the overall intention is clearly critical.
+
+# ------------------------------------------------------------
+# POSITIVE (pos)
+# ------------------------------------------------------------
+# Classify as pos if the sentence:
+
+# - Expresses approval, support, endorsement, or defense of an action, policy, idea, or actor.
+# - Describes something as important, appropriate, fair, necessary, valuable, reasonable, justified, beneficial, or correct.
+# - Presents an institutional achievement, recognition, distinction, or status in a favorable way.
+# - Clearly frames something as desirable, legitimate, or worthy of support.
+# - Uses positive evaluative language directed at performance, decisions, or outcomes.
+
+# Do NOT require explicit proof of measurable success.
+# Clear positive evaluation or endorsement is sufficient.
+
+# Do NOT classify as pos if the sentence merely states a policy goal,
+# agenda item, strategic line, or general value without expressing approval
+# or positive judgement about performance or results.
+
+# Do not classify as pos if the positive wording refers only to abstract principles or rhetorical emphasis without clear endorsement.
+
+# ------------------------------------------------------------
+# NEUTRAL (neu)
+# ------------------------------------------------------------
+# Classify as neu if the sentence:
+
+# - Reports facts, data, numbers, dates, procedures, meetings, laws, or institutional steps.
+# - Is mainly descriptive or explanatory.
+# - Contains greetings, formalities, or short procedural remarks.
+# - States a proposal, request, or recommendation without clear praise or criticism.
+# - Mentions positive values (justice, equality, empowerment, cooperation, rights, development, cohesion, etc.)
+#   as part of an agenda or program without evaluating results.
+# - States strategic lines, policy objectives, or programmatic priorities.
+# - Refers to something as "important" in a procedural, structural, or organizational way
+#   (e.g., “third strategic line”, “we said something important last year”).
+# - Is primarily programmatic rather than evaluative.
+
+# If there is no clear approval or criticism, default to neu.
+
+# ------------------------------------------------------------
+# MIXED SENTENCES
+# ------------------------------------------------------------
+# If both positive and negative elements appear:
+# - Choose the dominant evaluative direction.
+# - If evaluation is secondary and the sentence is mainly descriptive or programmatic → neu.
+
+# ------------------------------------------------------------
+# OUTPUT RULES
+# ------------------------------------------------------------
+# - Output EXACTLY one label: pos, neu, or neg
+# - No punctuation
+# - No explanations
+# - No additional text
 # """
 
 
@@ -475,9 +620,9 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
         Emaitzen DataFrame-a; sarrera fitxategia ez bada aurkitzen, None.
     """
     partition = input_csv.replace(".csv", "")
-    irteera_fitxategia_decoded = f"emaitzak_sentiment_v1_SysPromptLargo/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_metrics = f"emaitzak_sentiment_v1_SysPromptLargo/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_confusion = f"emaitzak_sentiment_v1_SysPromptLargo/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
+    irteera_fitxategia_decoded = f"emaitzak_sentiment_v2_SysPromptNuevo1/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_metrics = f"emaitzak_sentiment_v2_SysPromptNuevo1/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_confusion = f"emaitzak_sentiment_v2_SysPromptNuevo1/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
 
     # Sarrera irakurri
     try:
