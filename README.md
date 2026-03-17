@@ -13,3 +13,7 @@ Gainera, karpeta bakoitzean `README` fitxategi bat aurkituko da, bertako kodeak 
 Kodeak behar bezala exekutatzeko, beharrezkoa da `requirements.txt` fitxategia instalatzea, bertan zehaztutako dependentzia guztiak eskuragarri izateko. Horretarako, honako komandoa erabili:
 
 pip install -r requirements.txt
+
+Python bertsioa: 
+
+Python 3.11.13
