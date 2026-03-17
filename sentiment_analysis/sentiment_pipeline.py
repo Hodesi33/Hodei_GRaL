@@ -22,15 +22,16 @@ from prompts_v1 import *
 
 # Modeloa aukeratu (deskomentatu erabiliko dena eta komentatu gainerakoak)
 # Oharra: Zenbait modelo erabiltzeko (adib. Llama) Hugging Face-eko tokena behar da.
+# -fp16 gehitu .csv baina lehenago, markatzeko hauek kuantizazio gabekoak direla.
 
-# MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
-# IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
+MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
+IRTEERA_FITXATEGIA = "llama3.1-8B-fp16.csv"
 
 # MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
-# IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
+# IRTEERA_FITXATEGIA = "latxa3.1-8B-fp16.csv"
 
-MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
-IRTEERA_FITXATEGIA = "salamandra-7B.csv"
+# MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
+# IRTEERA_FITXATEGIA = "salamandra-7B.csv"
 
 # MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
 # IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
@@ -73,7 +74,7 @@ def load_model():
         MODEL_NAME,
         device_map="auto",
         torch_dtype=torch.float16,
-        quantization_config=bnb_config
+        #quantization_config=bnb_config
     )
 
     # Inferentziarako modua aktibatu
@@ -215,7 +216,7 @@ Irteeran EMAN etiketa bakar bat ZEHAZKI: pos, neu edo neg
 
 
 
-# #PromptBerria2
+# PromptBerria2
 # SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
 
 # GOAL:
@@ -637,9 +638,9 @@ def sentiment_analysis(input_csv: str, analysis_type: str):
         Emaitzen DataFrame-a; sarrera fitxategia ez bada aurkitzen, None.
     """
     partition = input_csv.replace(".csv", "")
-    irteera_fitxategia_decoded = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria2/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_metrics = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria2/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
-    irteera_fitxategia_confusion = f"emaitzak/emaitzak_sentiment_v1_SysPromptBerria2/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
+    irteera_fitxategia_decoded = f"emaitzak/emaitzak_sentiment_v1_SysPromptMotzaEus/{analysis_type}/{partition}/decoded/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_metrics = f"emaitzak/emaitzak_sentiment_v1_SysPromptMotzaEus/{analysis_type}/{partition}/metrics/{IRTEERA_FITXATEGIA}"
+    irteera_fitxategia_confusion = f"emaitzak/emaitzak_sentiment_v1_SysPromptMotzaEus/{analysis_type}/{partition}/confusion_matrixes/{IRTEERA_FITXATEGIA.replace('.csv','')}"
 
     # Sarrera irakurri
     try:
