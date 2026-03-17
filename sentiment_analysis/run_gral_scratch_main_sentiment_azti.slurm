@@ -7,6 +7,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --output=./log/GRaL_run_%j.out
 #SBATCH --error=./log/GRaL_run_%j.err
+
 #SBATCH --mem=40GB
 #SBATCH --time=10:00:00
 #SBATCH --mail-type=END,FAIL
