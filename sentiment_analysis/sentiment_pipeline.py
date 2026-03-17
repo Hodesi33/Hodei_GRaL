@@ -26,11 +26,11 @@ from prompts_v1 import *
 # MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 # IRTEERA_FITXATEGIA = "llama3.1-8B.csv"
 
-MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
-IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
+# MODEL_NAME = "HiTZ/Latxa-Llama-3.1-8B-Instruct"
+# IRTEERA_FITXATEGIA = "latxa3.1-8B.csv"
 
-# MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
-# IRTEERA_FITXATEGIA = "salamandra-7B.csv"
+MODEL_NAME = "BSC-LT/salamandra-7b-instruct"
+IRTEERA_FITXATEGIA = "salamandra-7B.csv"
 
 # MODEL_NAME = "meta-llama/Llama-3.1-70B-Instruct" #HAU BUKAERAN!
 # IRTEERA_FITXATEGIA = "llama3.1-70B.csv"
@@ -102,6 +102,23 @@ def load_model():
 
 # Output EXACTLY one label: pos, neu, or neg
 # """
+
+
+
+
+
+# PromptMotzaEus
+SYSTEM_PROMPT = """Parlamentuko testuetarako sentimendu-sailkatzaile zorrotza zara.
+
+Lehenetsi NEU:
+- Ebaluazio espliziturik ez badago (ona/txarra, arrakasta/porrota, hobekuntza/arazoa, onura/kaltea), eman neu.
+- Agurrak, eskerrak, prozedurazko hitzak, datu/zenbakien zerrendak, iragarkiak, planak, bilerak -> neu.
+
+pos soilik ebaluazio positibo esplizitua dagoenean.
+neg soilik ebaluazio negatibo esplizitua dagoenean.
+
+Irteeran EMAN etiketa bakar bat ZEHAZKI: pos, neu edo neg
+"""
 
 
 
@@ -198,86 +215,86 @@ def load_model():
 
 
 
-#PromptBerria2
-SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
+# #PromptBerria2
+# SYSTEM_PROMPT = """You are a sentiment classifier for parliamentary texts.
 
-GOAL:
-Classify each sentence as:
-- pos (positive)
-- neu (neutral)
-- neg (negative)
+# GOAL:
+# Classify each sentence as:
+# - pos (positive)
+# - neu (neutral)
+# - neg (negative)
 
-CORE PRINCIPLE:
-Classify the OVERALL evaluative stance of the sentence.
-Only use pos or neg when there is a clear evaluative attitude.
-If the sentence is mainly descriptive, procedural, strategic, or organizational, classify it as neu.
+# CORE PRINCIPLE:
+# Classify the OVERALL evaluative stance of the sentence.
+# Only use pos or neg when there is a clear evaluative attitude.
+# If the sentence is mainly descriptive, procedural, strategic, or organizational, classify it as neu.
 
-------------------------------------------------------------
-NEGATIVE (neg)
-------------------------------------------------------------
-Classify as neg if the sentence:
+# ------------------------------------------------------------
+# NEGATIVE (neg)
+# ------------------------------------------------------------
+# Classify as neg if the sentence:
 
-- Criticizes, blames, or questions an action, policy, institution, or actor.
-- Signals failure, insufficiency, injustice, harm, discrimination, corruption, fraud, crisis, loss, or damage.
-- Uses clearly negative evaluative language (e.g., unacceptable, incoherent, wrong, serious problem, mistake).
-- Implies inadequacy through contrast (e.g., “should”, “must”, “need to”) when it suggests the current situation is insufficient.
-- Frames something as lacking legitimacy, lacking foundation, or being problematic.
+# - Criticizes, blames, or questions an action, policy, institution, or actor.
+# - Signals failure, insufficiency, injustice, harm, discrimination, corruption, fraud, crisis, loss, or damage.
+# - Uses clearly negative evaluative language (e.g., unacceptable, incoherent, wrong, serious problem, mistake).
+# - Implies inadequacy through contrast (e.g., “should”, “must”, “need to”) when it suggests the current situation is insufficient.
+# - Frames something as lacking legitimacy, lacking foundation, or being problematic.
 
-Implicit criticism counts as neg if the overall intention is clearly critical.
+# Implicit criticism counts as neg if the overall intention is clearly critical.
 
-------------------------------------------------------------
-POSITIVE (pos)
-------------------------------------------------------------
-Classify as pos if the sentence:
+# ------------------------------------------------------------
+# POSITIVE (pos)
+# ------------------------------------------------------------
+# Classify as pos if the sentence:
 
-- Expresses approval, support, endorsement, or defense of an action, policy, idea, or actor.
-- Describes something as important, appropriate, fair, necessary, valuable, reasonable, justified, beneficial, or correct.
-- Presents an institutional achievement, recognition, distinction, or status in a favorable way.
-- Clearly frames something as desirable, legitimate, or worthy of support.
-- Uses positive evaluative language directed at performance, decisions, or outcomes.
+# - Expresses approval, support, endorsement, or defense of an action, policy, idea, or actor.
+# - Describes something as important, appropriate, fair, necessary, valuable, reasonable, justified, beneficial, or correct.
+# - Presents an institutional achievement, recognition, distinction, or status in a favorable way.
+# - Clearly frames something as desirable, legitimate, or worthy of support.
+# - Uses positive evaluative language directed at performance, decisions, or outcomes.
 
-Do NOT require explicit proof of measurable success.
-Clear positive evaluation or endorsement is sufficient.
+# Do NOT require explicit proof of measurable success.
+# Clear positive evaluation or endorsement is sufficient.
 
-Do NOT classify as pos if the sentence merely states a policy goal,
-agenda item, strategic line, or general value without expressing approval
-or positive judgement about performance or results.
+# Do NOT classify as pos if the sentence merely states a policy goal,
+# agenda item, strategic line, or general value without expressing approval
+# or positive judgement about performance or results.
 
-Do not classify as pos if the positive wording refers only to abstract principles or rhetorical emphasis without clear endorsement.
+# Do not classify as pos if the positive wording refers only to abstract principles or rhetorical emphasis without clear endorsement.
 
-------------------------------------------------------------
-NEUTRAL (neu)
-------------------------------------------------------------
-Classify as neu if the sentence:
+# ------------------------------------------------------------
+# NEUTRAL (neu)
+# ------------------------------------------------------------
+# Classify as neu if the sentence:
 
-- Reports facts, data, numbers, dates, procedures, meetings, laws, or institutional steps.
-- Is mainly descriptive or explanatory.
-- Contains greetings, formalities, or short procedural remarks.
-- States a proposal, request, or recommendation without clear praise or criticism.
-- Mentions positive values (justice, equality, empowerment, cooperation, rights, development, cohesion, etc.)
-  as part of an agenda or program without evaluating results.
-- States strategic lines, policy objectives, or programmatic priorities.
-- Refers to something as "important" in a procedural, structural, or organizational way
-  (e.g., “third strategic line”, “we said something important last year”).
-- Is primarily programmatic rather than evaluative.
+# - Reports facts, data, numbers, dates, procedures, meetings, laws, or institutional steps.
+# - Is mainly descriptive or explanatory.
+# - Contains greetings, formalities, or short procedural remarks.
+# - States a proposal, request, or recommendation without clear praise or criticism.
+# - Mentions positive values (justice, equality, empowerment, cooperation, rights, development, cohesion, etc.)
+#   as part of an agenda or program without evaluating results.
+# - States strategic lines, policy objectives, or programmatic priorities.
+# - Refers to something as "important" in a procedural, structural, or organizational way
+#   (e.g., “third strategic line”, “we said something important last year”).
+# - Is primarily programmatic rather than evaluative.
 
-If there is no clear approval or criticism, default to neu.
+# If there is no clear approval or criticism, default to neu.
 
-------------------------------------------------------------
-MIXED SENTENCES
-------------------------------------------------------------
-If both positive and negative elements appear:
-- Choose the dominant evaluative direction.
-- If evaluation is secondary and the sentence is mainly descriptive or programmatic → neu.
+# ------------------------------------------------------------
+# MIXED SENTENCES
+# ------------------------------------------------------------
+# If both positive and negative elements appear:
+# - Choose the dominant evaluative direction.
+# - If evaluation is secondary and the sentence is mainly descriptive or programmatic → neu.
 
-------------------------------------------------------------
-OUTPUT RULES
-------------------------------------------------------------
-- Output EXACTLY one label: pos, neu, or neg
-- No punctuation
-- No explanations
-- No additional text
-"""
+# ------------------------------------------------------------
+# OUTPUT RULES
+# ------------------------------------------------------------
+# - Output EXACTLY one label: pos, neu, or neg
+# - No punctuation
+# - No explanations
+# - No additional text
+# """
 
 
 
