@@ -32,7 +32,7 @@ def main():
 
     # True -> TSV berriak ez dira sortuko
     # False -> Corpusak berriro prozesatuko dira
-    eginda = True
+    eginda = False
 
     if eginda is False:
 

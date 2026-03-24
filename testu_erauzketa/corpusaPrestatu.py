@@ -7,6 +7,28 @@ import csv
 # |----------------------------------- KONFIGURAZIOA ETA METADATUAK -----------------------------------|
 # |----------------------------------------------------------------------------------------------------|
 
+def norm_name(s):
+    """
+    Izen bat normalizatzen du konparazioetarako:
+    - Hasierako eta amaierako zuriuneak kentzen ditu
+    - Minuskulak erabiltzen ditu
+    - Tarteko zuriune bikoitzak bakar batean bihurtzen ditu
+
+    Helburua izenen arteko konparazioak sendoagoak izatea da
+    (adibidez: maiuskulak/minuskulak edo zuriune desberdinak ez eragitea).
+
+    Parametroak
+    ----------
+    s : str
+        Normalizatu beharreko testua (izena)
+
+    Return
+    ------
+    str
+        Normalizatutako izena (minuskulaz eta zuriune garbiekin)
+    """
+    return " ".join(str(s).strip().lower().split())
+
 # Sailburuen genero-hiztegia (formatua: izena:generoa) kargatzen da, fitxategia existitzen bada
 sailburuak = {}
 GENERO_FPATH = os.path.join(os.path.dirname(__file__), "sailburu_genero.txt")
@@ -14,9 +36,38 @@ GENERO_FPATH = os.path.join(os.path.dirname(__file__), "sailburu_genero.txt")
 if os.path.exists(GENERO_FPATH):
     for line in open(GENERO_FPATH, encoding="utf-8"):
         sb, g = line.strip().split(":")
-        sailburuak[sb] = g
+        sailburuak[norm_name(sb)] = g
 else:
     print("Oharra: 'sailburu_genero.txt' ez da aurkitu. Generoa 'N' izango da lehenetsita.")
+
+# Sailburuen jaiotza-hiztegia (formatua: izena\tjaiotza) kargatzen da, fitxategia existitzen bada
+sailburu_birth = {}
+BIRTH_FPATH = os.path.join(os.path.dirname(__file__), "sailburu_birth.txt")
+
+if os.path.exists(BIRTH_FPATH):
+    for line in open(BIRTH_FPATH, encoding="utf-8"):
+        zat = line.strip().split("\t")
+        if len(zat) >= 2:
+            sb, b = zat[0], zat[1]
+            sailburu_birth[norm_name(sb)] = b
+else:
+    print("Oharra: 'sailburu_birth.txt' ez da aurkitu. Birth balioa hutsik izango da lehenetsita.")
+
+# Sailburuen alderdi-hiztegia (formatua: izena\talderdia) kargatzen da, fitxategia existitzen bada
+sailburu_party = {}
+PARTY_FPATH = os.path.join(os.path.dirname(__file__), "sailburu_party.txt")
+
+if os.path.exists(PARTY_FPATH):
+    for line in open(PARTY_FPATH, encoding="utf-8"):
+        zat = line.strip().split("\t")
+        if len(zat) >= 2:
+            sb, p = zat[0], zat[1]
+            sailburu_party[norm_name(sb)] = p
+else:
+    print("Oharra: 'sailburu_party.txt' ez da aurkitu. Party balioa hutsik izango da lehenetsita.")
+
+
+
 
 
 def corpusa_prozesatu(corpus_path):
@@ -47,6 +98,8 @@ def corpusa_prozesatu(corpus_path):
             testua = ""
             hizlaria = ""
             generoa = ""
+            birth = ""
+            party = ""
             hizkuntza = ""
             h_id = 0
 
@@ -99,9 +152,9 @@ def corpusa_prozesatu(corpus_path):
                                 "Speech_id": speech_id,
                                 "Text_id": h_id,
                                 "Speaker": hizlaria,
-                                "Birth": "",
+                                "Birth": birth,
                                 "Gender": generoa,
-                                "Party": "",
+                                "Party": party,
                                 "Language": hizkuntza,
                                 "Text": testua,
                                 "Lemmas": "",
@@ -109,7 +162,7 @@ def corpusa_prozesatu(corpus_path):
                                 "Entities": "",
                                 "Entities_stw": ""
                             })
-                            hizlaria, generoa, testua, hizkuntza = "", "", "", ""
+                            hizlaria, generoa, birth, party, testua, hizkuntza = "", "", "", "", "", ""
 
                         # Hizlari berria identifikatu
                         if ":" in line and parrafo:
@@ -124,9 +177,9 @@ def corpusa_prozesatu(corpus_path):
                                         "Speech_id": speech_id,
                                         "Text_id": h_id,
                                         "Speaker": hizlaria,
-                                        "Birth": "",
+                                        "Birth": birth,
                                         "Gender": generoa,
-                                        "Party": "",
+                                        "Party": party,
                                         "Language": hizkuntza,
                                         "Text": testua,
                                         "Lemmas": "",
@@ -141,6 +194,8 @@ def corpusa_prozesatu(corpus_path):
                                 else:
                                     hizlaria = hiz + " LEHENDAKARIA"
                                     generoa = "E"
+                                birth = sailburu_birth.get(norm_name(hizlaria), "")
+                                party = sailburu_party.get(norm_name(hizlaria), "")
                                 berria = True
                                 h_id += 1
 
@@ -150,9 +205,9 @@ def corpusa_prozesatu(corpus_path):
                                     "Speech_id": speech_id,
                                     "Text_id": h_id,
                                     "Speaker": hizlaria,
-                                    "Birth": "",
+                                    "Birth": birth,
                                     "Gender": generoa,
-                                    "Party": "",
+                                    "Party": party,
                                     "Language": hizkuntza,
                                     "Text": testua,
                                     "Lemmas": "",
@@ -165,6 +220,8 @@ def corpusa_prozesatu(corpus_path):
                                     hizlaria = " ".join(hiz.split()[2:])
                                 else:
                                     hizlaria = " ".join(hiz.split()[:-1])
+                                birth = sailburu_birth.get(norm_name(hizlaria), "")
+                                party = sailburu_party.get(norm_name(hizlaria), "")
                                 berria = True
                                 h_id += 1
 
@@ -174,9 +231,9 @@ def corpusa_prozesatu(corpus_path):
                                     "Speech_id": speech_id,
                                     "Text_id": h_id,
                                     "Speaker": hizlaria,
-                                    "Birth": "",
+                                    "Birth": birth,
                                     "Gender": generoa,
-                                    "Party": "",
+                                    "Party": party,
                                     "Language": hizkuntza,
                                     "Text": testua,
                                     "Lemmas": "",
@@ -189,6 +246,8 @@ def corpusa_prozesatu(corpus_path):
                                     hizlaria = " ".join(hiz.split()[2:])
                                 else:
                                     hizlaria = " ".join(hiz.split()[:-1])
+                                birth = sailburu_birth.get(norm_name(hizlaria), "")
+                                party = sailburu_party.get(norm_name(hizlaria), "")
                                 berria = True
                                 h_id += 1
 
@@ -206,9 +265,9 @@ def corpusa_prozesatu(corpus_path):
                                     "Speech_id": speech_id,
                                     "Text_id": h_id,
                                     "Speaker": hizlaria,
-                                    "Birth": "",
+                                    "Birth": birth,
                                     "Gender": generoa,
-                                    "Party": "",
+                                    "Party": party,
                                     "Language": hizkuntza,
                                     "Text": testua,
                                     "Lemmas": "",
@@ -217,7 +276,9 @@ def corpusa_prozesatu(corpus_path):
                                     "Entities_stw": ""
                                 })
                                 hizlaria = hiz
-                                generoa = sailburuak.get(hizlaria, "N")
+                                generoa = sailburuak.get(norm_name(hizlaria), "N")
+                                birth = sailburu_birth.get(norm_name(hizlaria), "")
+                                party = sailburu_party.get(norm_name(hizlaria), "")
                                 berria = True
                                 h_id += 1
 

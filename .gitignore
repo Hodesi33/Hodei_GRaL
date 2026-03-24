@@ -14,3 +14,4 @@ sentiment_analysis/log/
 testu_erauzketa/BasqueParl/
 testu_erauzketa/ParlaMint/
 sentiment_analysis/run_gral_scratch_main_sentiment_old.slurm
+testu_erauzketa/old_data/
