@@ -9,7 +9,7 @@
 #SBATCH --error=./log/GRaL_run_%j.err
 
 #SBATCH --mem=40GB
-#SBATCH --time=05:00:00
+#SBATCH --time=15:00:00
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=hsanz004@ikasle.ehu.eus
 

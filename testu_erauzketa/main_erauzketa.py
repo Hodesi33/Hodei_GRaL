@@ -32,7 +32,7 @@ def main():
 
     # True -> TSV berriak ez dira sortuko
     # False -> Corpusak berriro prozesatuko dira
-    eginda = False
+    eginda = True
 
     if eginda is False:
 
@@ -129,9 +129,9 @@ def main():
     df = pd.read_csv("global-CorpusBase.tsv", sep="\t", dtype=str)
     print("Corpus osoa kargatua.")
 
-    # Lemak erauzi
-    df = lemak_lortu(df)
-    print(df.head())
+    # # Lemak erauzi
+    # df = lemak_lortu(df)
+    # print(df.head())
 
     # Entitateak erauzi
     df = entitateak_lortu(df)

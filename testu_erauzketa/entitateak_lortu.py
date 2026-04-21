@@ -293,7 +293,7 @@ def entitateak_lortu(
     lang_col: str = "Language",
     output_tsv: str = "corpus_erauzketa_entities.tsv",
     flair_es_model: str = "flair/ner-spanish-large",
-    flair_device: str = "cuda",  # "cpu" edo "cuda"
+    flair_device: str = "cpu",  # "cpu" edo "cuda"
 ) -> pd.DataFrame:
     """
     Entitateak (NER) erauzten ditu eta TSV batean pixkanaka idazten ditu.
