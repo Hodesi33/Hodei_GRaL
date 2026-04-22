@@ -15,7 +15,7 @@ testu_erauzketa/BasqueParl/
 testu_erauzketa/ParlaMint/
 sentiment_analysis/run_gral_scratch_main_sentiment_old.slurm
 testu_erauzketa/old_data/
-testu_erauzketa/getBirthDates.py
-testu_erauzketa/getSailburuData.py
-!sailburu_party.txt
-!sailburu_birth.txt
+!sailburu_party.tsv
+!sailburu_birth.tsv
+!sailburu_gender.tsv
+testu_erauzketa/corregir_nan_corpus.py
